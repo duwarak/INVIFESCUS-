@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --polymath-bg: #0f0f14;
+  --polymath-surface: #1a1a24;
+  --polymath-border: #2a2a3a;
+  --polymath-accent: #7c5cfc;
+}
+
+body {
+  background: var(--polymath-bg);
+  color: #e2e2e8;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* React Flow overrides */
+.react-flow__background {
+  background: var(--polymath-bg) !important;
+}
+
+.react-flow__node {
+  background: var(--polymath-surface);
+  border: 1px solid var(--polymath-border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #e2e2e8;
+  font-size: 13px;
+}
+
+.react-flow__edge-path {
+  stroke: #4a4a6a;
+  stroke-width: 1.5;
+}
+
+/* Excalidraw overrides */
+.excalidraw {
+  --color-primary: var(--polymath-accent) !important;
+}

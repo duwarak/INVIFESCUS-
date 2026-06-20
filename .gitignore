@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env.local
+.env*.local
+dev-server.log
+tsconfig.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db

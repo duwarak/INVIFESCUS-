@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "inspiration": "Niantic Campfire, Meetup, Strava, Pokemon GO",
+    "mental_health_benefits": [
+      "Reduced depression through physical activity",
+      "Decreased social isolation",
+      "Increased sense of belonging",
+      "Accountability for goals",
+      "Cross-pollination of ideas",
+      "Sociological research: suicide prevention through community connection"
+    ],
+    "safety_features": [
+      "Verified meetup locations",
+      "Emergency contact sharing",
+      "Group size minimums",
+      "Block/report system",
+      "AI-moderated discussions"
+    ]
+  },
+  "features": [
+    {
+      "name": "Knowledge Map Explorer",
+      "description": "See nearby users' agent avatars on real map",
+      "mechanics": {
+        "agent_avatar": "Customizable representation showing domain expertise",
+        "proximity_bubble": "See users within configurable radius (100m - 10km)",
+        "domain_filter": "Filter by shared knowledge interests",
+        "privacy_levels": [
+          "Ghost (invisible)",
+          "Abstract (dot only, no details)",
+          "Standard (avatar + domain indicators)",
+          "Open (full profile + availability)"
+        ]
+      },
+      "engagement_hooks": [
+        "Discovery: '3 people nearby studying Machine Learning'",
+        "Serendipity: Random 'knowledge collision' prompts with nearby users",
+        "Challenges: 'Find someone from different domain, exchange insights'"
+      ]
+    },
+    {
+      "name": "Study Pod Matchmaking",
+      "description": "AI-matched small groups for deep learning sessions",
+      "mechanics": {
+        "matching_algorithm": "Complementary knowledge gaps + shared interests + schedule alignment + proximity",
+        "pod_size": "3-5 people optimal",
+        "session_types": [
+          "Deep Dive (2hrs, one topic)",
+          "Cross-Pollination (1hr, domain exchange)",
+          "Accountability Check (30 min, progress review)",
+          "Problem Solving (variable, tackle shared challenge)"
+        ],
+        "ai_facilitation": "Agent suggests discussion prompts, tracks key insights",
+        "output": "Auto-generated shared knowledge graph from session"
+      },
+      "sample_matches": [
+        {
+          "pod_id": "pod_001",
+          "members": [
+            "usr_001 (CS Student)",
+            "usr_004 (Music Producer)",
+            "usr_007 (Psychology PhD)"
+          ],
+          "topic": "Pattern Recognition across Domains",
+          "matching_reason": "CS algorithms + Music composition patterns + Cognitive pattern recognition",
+          "outcome_type": "Novel cross-domain insight generation"
+        },
+        {
+          "pod_id": "pod_002",
+          "members": [
+            "usr_002 (PM)",
+            "usr_005 (Startup Founder)",
+            "usr_008 (Economist)"
+          ],
+          "topic": "Decision Making Under Uncertainty",
+          "matching_reason": "Product decisions + Startup survival + Market dynamics",
+          "outcome_type": "Pre-mortem for each member's current challenge"
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Rallies",
+      "description": "Large-scale community events combining learning and socializing",
+      "types": [
+        {
+          "type": "Polymath Picnic",
+          "description": "Casual outdoor gathering, each person teaches one concept in 5 minutes",
+          "size": "10-30 people",
+          "frequency": "Monthly",
+          "gamification": "Best teacher vote, most surprising connection award"
+        },
+        {
+          "type": "Domain Expedition",
+          "description": "Group visit to relevant location (museum, factory, lab) with guided learning",
+          "size": "5-15 people",
+          "frequency": "Bi-weekly",
+          "gamification": "Scavenger hunt for concepts, group knowledge capture"
+        },
+        {
+          "type": "Reasoning Tournament",
+          "description": "Team-based reasoning challenges, judged by AI + peers",
+          "size": "20-50 people",
+          "frequency": "Monthly",
+          "gamification": "Team rankings, individual ELO rating, seasonal championships"
+        }
+      ]
+    },
+    {
+      "name": "Mentor Marketplace",
+      "description": "Connect with people 1-2 levels ahead in any domain",
+      "mechanics": {
+        "mentor_levels": [
+          "Peer (same level, different domain)",
+          "Guide (1-2 years ahead)",
+          "Mentor (5+ years ahead)",
+          "Master (recognized expert)"
+        ],
+        "exchange_model": "Knowledge currency: teach what you know, learn what you don't",
+        "session_formats": [
+          "15-min micro-mentoring (quick question)",
+          "1-hour deep session",
+          "Ongoing accountability partnership"
+        ]
+      }
+    }
+  ],
+  "community_data": {
+    "sample_users_nearby": [
+      {
+        "id": "usr_004",
+        "name": "Jordan",
+        "domains": [
+          "Music Production",
+          "Acoustics",
+          "Psychology"
+        ],
+        "distance_m": 150,
+        "status": "open_to_chat",
+        "current_focus": "Studying frequency patterns in emotional response"
+      },
+      {
+        "id": "usr_005",
+        "name": "Priya",
+        "domains": [
+          "Finance",
+          "Data Science",
+          "Yoga"
+        ],
+        "distance_m": 340,
+        "status": "in_study_pod",
+        "current_focus": "Quantitative trading algorithms"
+      },
+      {
+        "id": "usr_006",
+        "name": "Tom",
+        "domains": [
+          "Architecture",
+          "Physics",
+          "Photography"
+        ],
+        "distance_m": 520,
+        "status": "available",
+        "current_focus": "Structural load distribution patterns"
+      },
+      {
+        "id": "usr_007",
+        "name": "Elena",
+        "domains": [
+          "Psychology",
+          "Neuroscience",
+          "Education"
+        ],
+        "distance_m": 890,
+        "status": "hosting_rally",
+        "current_focus": "Cognitive load optimization in learning"
+      },
+      {
+        "id": "usr_008",
+        "name": "David",
+        "domains": [
+          "Economics",
+          "History",
+          "Chess"
+        ],
+        "distance_m": 1200,
+        "status": "open_to_chat",
+        "current_focus": "Game theory applications in historical conflicts"
+      }
+    ],
+    "active_events": [
+      {
+        "event_id": "evt_001",
+        "type": "Polymath Picnic",
+        "time": "2024-01-27T14:00:00",
+        "location": "Central Park, Area 3",
+        "topic": "Teach One Thing",
+        "attendees_count": 18,
+        "distance_km": 0.5
+      },
+      {
+        "event_id": "evt_002",
+        "type": "Study Pod",
+        "time": "2024-01-24T18:00:00",
+        "location": "Library Room 204",
+        "topic": "Machine Learning + Art",
+        "attendees_count": 4,
+        "distance_km": 1.2
+      },
+      {
+        "event_id": "evt_003",
+        "type": "Reasoning Tournament",
+        "time": "2024-01-28T10:00:00",
+        "location": "Community Center",
+        "topic": "Monthly Challenge",
+        "attendees_count": 32,
+        "distance_km": 2.1
+      }
+    ]
+  }
+}

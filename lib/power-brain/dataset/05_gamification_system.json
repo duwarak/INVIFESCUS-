@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "psychology_basis": [
+      "Loss Aversion (Kahneman & Tversky)",
+      "Self-Determination Theory (Deci & Ryan)",
+      "Variable Ratio Reinforcement (Skinner)",
+      "Social Comparison Theory (Festinger)",
+      "Flow State (Csikszentmihalyi)",
+      "Spaced Repetition (Ebbinghaus/Wozniak)",
+      "Progressive Overload (Fitness)",
+      "Achievement Motivation (McClelland)"
+    ],
+    "design_philosophy": "Optimize for LEARNING, not just engagement. Proxy metrics must align with genuine knowledge construction."
+  },
+  "core_mechanics": [
+    {
+      "name": "Knowledge Streak",
+      "description": "Daily engagement streak for knowledge capture or reasoning exercises",
+      "psychology": "Loss Aversion",
+      "mechanics": {
+        "base_streak": "Consecutive days of any knowledge activity",
+        "domain_streaks": "Per-domain streaks (CS streak, Music streak, etc.)",
+        "reasoning_streak": "Streak for completing Socratic prompts",
+        "streak_freeze": "1 freeze per week, 3 max stored - prevents catastrophic loss",
+        "milestone_rewards": {
+          "7_days": "Bronze Thinker Badge + 100 XP",
+          "30_days": "Silver Polymath Badge + 500 XP",
+          "90_days": "Golden Mind Badge + 2000 XP",
+          "365_days": "Platinum Architect Badge + 10000 XP + exclusive theme"
+        }
+      },
+      "anti_gaming": "Must include substantive capture (AI verified, not just app open)"
+    },
+    {
+      "name": "Cross-Domain Connection XP",
+      "description": "Bonus XP for linking concepts across different knowledge domains",
+      "psychology": "Novelty seeking + Achievement",
+      "mechanics": {
+        "base_connection": "50 XP per cross-domain link identified",
+        "novel_connection_bonus": "200 XP for first-time domain pair connection",
+        "depth_bonus": "Additional 100 XP for explaining the connection mechanism",
+        "peer_validated": "300 XP if community validates connection as insightful",
+        "examples": [
+          {
+            "from": "CS-Decomposition",
+            "to": "Music-Chord_Progression",
+            "xp": 50,
+            "novel": true
+          },
+          {
+            "from": "Business-Transaction_Cost",
+            "to": "Communication-Trust",
+            "xp": 250,
+            "novel": true,
+            "deep": true
+          }
+        ]
+      },
+      "visualization": "Animated 'synapse flash' when connection is made between domain nodes"
+    },
+    {
+      "name": "Mental Model Mastery",
+      "description": "Level up by correctly applying mental models to real situations",
+      "psychology": "Competence fulfillment + Progression",
+      "mechanics": {
+        "discovery": "Unlock mental models as you encounter relevant situations",
+        "application": "Log real-world use of mental model for XP",
+        "teaching": "Explain model to peer for 3x XP (Feynman Technique)",
+        "mastery_levels": {
+          "Discovered": "Just unlocked, 0 XP",
+          "Apprentice": "Used 1 time, 100 XP",
+          "Practitioner": "Used 5 times, 500 XP",
+          "Expert": "Used 15 times + taught 3 times, 2000 XP",
+          "Master": "Used 50 times + created variant, 10000 XP"
+        }
+      }
+    },
+    {
+      "name": "Reasoning Arena",
+      "description": "Daily reasoning challenges against AI agents or peers",
+      "psychology": "Social comparison + Challenge",
+      "mechanics": {
+        "daily_puzzle": "One reasoning challenge per day (inversion, pre-mortem, etc.)",
+        "difficulty_tiers": "Bronze \u2192 Silver \u2192 Gold \u2192 Diamond \u2192 Master",
+        "time_bonus": "Faster completion = more XP (but accuracy > speed)",
+        "peer_battles": "Challenge friends to same reasoning problem",
+        "leaderboard_segmentation": "Compete within engagement tier, not globally"
+      }
+    },
+    {
+      "name": "Knowledge Compression",
+      "description": "Gamified spaced repetition for optimal retention",
+      "psychology": "Spacing effect + Testing effect",
+      "mechanics": {
+        "review_cards": "AI-generated cards from your captures",
+        "recall_test": "Active recall before revealing notes (2x XP for correct recall)",
+        "compression_level": "Synthesize multiple notes into one 'compressed insight'",
+        "retention_score": "Track what you actually remember over time",
+        "algorithm": "FSRS-inspired: Difficulty, Stability, Retrievability tracking"
+      }
+    },
+    {
+      "name": "Domain Conquest",
+      "description": "Visual map of knowledge domains with exploration progress",
+      "psychology": "Exploration + Completionism",
+      "mechanics": {
+        "knowledge_map": "Visual galaxy of domains, each a constellation of concepts",
+        "exploration": "Capture concepts to 'light up' nodes on the map",
+        "constellation_bonus": "Light up all nodes in a domain for big reward",
+        "bridge_building": "Build bridges between domains for Polymath status",
+        "territory_expansion": "Weekly challenge to explore NEW domain"
+      }
+    }
+  ],
+  "badge_system": {
+    "categories": [
+      {
+        "name": "Engagement Badges",
+        "badges": [
+          {
+            "id": "b_001",
+            "name": "Early Bird",
+            "condition": "Capture knowledge before 7 AM",
+            "rarity": "Common"
+          },
+          {
+            "id": "b_002",
+            "name": "Night Owl",
+            "condition": "Complete reflection after 10 PM",
+            "rarity": "Common"
+          },
+          {
+            "id": "b_003",
+            "name": "Weekend Warrior",
+            "condition": "7-day streak including both weekend days",
+            "rarity": "Uncommon"
+          },
+          {
+            "id": "b_004",
+            "name": "Centurion",
+            "condition": "100-day streak",
+            "rarity": "Rare"
+          },
+          {
+            "id": "b_005",
+            "name": "Iron Mind",
+            "condition": "365-day streak",
+            "rarity": "Legendary"
+          }
+        ]
+      },
+      {
+        "name": "Connection Badges",
+        "badges": [
+          {
+            "id": "b_006",
+            "name": "Bridge Builder",
+            "condition": "Make 10 cross-domain connections",
+            "rarity": "Common"
+          },
+          {
+            "id": "b_007",
+            "name": "Renaissance Mind",
+            "condition": "Connect 5+ domains in one insight",
+            "rarity": "Rare"
+          },
+          {
+            "id": "b_008",
+            "name": "Pattern Seer",
+            "condition": "Have a community-validated novel connection",
+            "rarity": "Epic"
+          },
+          {
+            "id": "b_009",
+            "name": "Polymath",
+            "condition": "Active in 8+ domains with 50+ connections each",
+            "rarity": "Legendary"
+          }
+        ]
+      },
+      {
+        "name": "Reasoning Badges",
+        "badges": [
+          {
+            "id": "b_010",
+            "name": "Inverter",
+            "condition": "Complete 10 inversion exercises",
+            "rarity": "Common"
+          },
+          {
+            "id": "b_011",
+            "name": "Pre-Cog",
+            "condition": "Complete 10 pre-mortem analyses that prevented actual problems",
+            "rarity": "Rare"
+          },
+          {
+            "id": "b_012",
+            "name": "Steel Man",
+            "condition": "Successfully steelman 10 positions you disagree with",
+            "rarity": "Rare"
+          },
+          {
+            "id": "b_013",
+            "name": "Grandmaster",
+            "condition": "Reach Master level in 10 mental models",
+            "rarity": "Legendary"
+          }
+        ]
+      }
+    ]
+  },
+  "xp_system": {
+    "level_thresholds": "Exponential curve: Level N requires 1000 * 1.5^(N-1) XP",
+    "sample_levels": [
+      {
+        "level": 1,
+        "title": "Curious Mind",
+        "xp_required": 0
+      },
+      {
+        "level": 5,
+        "title": "Active Learner",
+        "xp_required": 5068
+      },
+      {
+        "level": 10,
+        "title": "Knowledge Synthesizer",
+        "xp_required": 38443
+      },
+      {
+        "level": 25,
+        "title": "Polymath Apprentice",
+        "xp_required": 5053913
+      },
+      {
+        "level": 50,
+        "title": "Universal Architect",
+        "xp_required": "~3.3 billion"
+      }
+    ],
+    "xp_sources": {
+      "knowledge_capture": "10-50 XP (quality-weighted by AI)",
+      "cross_domain_link": "50-300 XP",
+      "daily_reasoning": "25-200 XP",
+      "teaching_peer": "3x normal XP",
+      "community_validation": "2x bonus",
+      "streak_multiplier": "1.1x at 7 days, 1.5x at 30, 2x at 90"
+    }
+  }
+}
