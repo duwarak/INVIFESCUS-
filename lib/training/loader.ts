@@ -7,6 +7,31 @@ import journey from "./dataset/08_complete_user_journey.json";
 import connectionRules from "./dataset/training/D_connection_rules.json";
 import trainingPrompts from "./dataset/training/E_training_prompts.json";
 import schemaMock from "./dataset/second_brain_mock_dataset.json";
+import superScenarios from "./dataset/11_super_scenarios.json";
+
+export interface SuperScenario {
+  id: string;
+  user: string;
+  title: string;
+  domains_triggered: string[];
+  situation: string;
+  week_inputs: Record<string, string>;
+  ai_synthesis: {
+    detected_pattern: string;
+    cross_domain_solutions: { angle: string; solution: string; domains: string[] }[];
+  };
+  questions_to_ask: string[];
+  priority_list: string[];
+  safety_applied?: Record<string, string>;
+}
+
+export function loadSuperScenarios(): SuperScenario[] {
+  return (superScenarios as any).scenarios as SuperScenario[];
+}
+export function pickSuperScenario(seed: number): SuperScenario {
+  const list = loadSuperScenarios();
+  return list[Math.abs(seed) % list.length];
+}
 
 export interface SchemaInputItem {
   input_id: string;
@@ -124,7 +149,16 @@ export interface Scenario {
 }
 
 export function loadScenarios(): Scenario[] {
-  return (scenarios as any).scenarios as Scenario[];
+  const base = (scenarios as any).scenarios as Scenario[];
+  const supers = loadSuperScenarios().map((s) => ({
+    id: s.id,
+    title: s.title,
+    user: s.user,
+    situation: s.situation,
+    domains_triggered: s.domains_triggered,
+    ai_synthesis: s.ai_synthesis,
+  })) as Scenario[];
+  return [...base, ...supers];
 }
 export function pickScenario(seed: number): Scenario {
   const list = loadScenarios();
@@ -144,6 +178,7 @@ export function trainingStats() {
   const dr = loadConnectionRules();
   const g = loadGamification();
   const sm = loadSchemaDataset();
+  const sup = loadSuperScenarios();
   return {
     scenarios: s.length,
     domainsCovered: Array.from(new Set(s.flatMap((x) => x.domains_triggered))).length,
@@ -158,5 +193,8 @@ export function trainingStats() {
     schemaReflections: sm.data.reflection_prompts.length,
     schemaOutcomes: sm.data.outcome_records.length,
     schemaCommunity: sm.data.community_records.length,
+    superScenarios: sup.length,
+    superQuestions: sup.reduce((n, x) => n + x.questions_to_ask.length, 0),
+    superPriorities: sup.reduce((n, x) => n + x.priority_list.length, 0),
   };
 }

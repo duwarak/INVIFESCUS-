@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "count": 5,
+    "description": "Super-dataset of hand-crafted full-week scenarios. Each carries multimodal weekly inputs, cross-domain bridges, Socratic questions, and a generated priority list. Used by Empiricum mirror, Today's Brief, and the Omnilattice expansion pipeline.",
+    "schema": {
+      "id": "string",
+      "user": "string (role · age · city)",
+      "week_inputs": "object · per-domain raw inputs",
+      "ai_synthesis": { "detected_pattern": "string", "cross_domain_solutions": "array" },
+      "questions_to_ask": "array",
+      "priority_list": "array",
+      "safety_applied": "optional object · only for under-16 entries"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "SD001",
+      "user": "UG_student · 19 · Chennai",
+      "title": "Decomposition is the load-bearing skill across CS, gymnastics, and public speaking",
+      "domains_triggered": ["Technology", "Communication", "Business", "Music", "Sports", "Personal", "Financial"],
+      "situation": "A 19-year-old UG student in Chennai walks through a week of college classes (CS decomposition · English public speaking · business trading game · violin · gymnastics) plus a witnessed car crash, a family-trip Bezos-email story, a cash-vs-card gift purchase, and a stranger argument handled with English-class tone modulation.",
+      "week_inputs": {
+        "cs_class": "Decomposition: break complex systems into smaller manageable ones. Professor drew hierarchy diagram.",
+        "english_class": "Tone modulation: 1-on-1 vs small group vs auditorium. Slang warnings. Pronunciation drift.",
+        "business_game": "Skittles trade game. Teacher took 1 candy per trade, no competition needed. Hidden middleman economics revealed.",
+        "violin": "Chord progressions. Mastery via deliberate repetition. Emotional resonance of minor keys.",
+        "gymnastics": "Grip-spin-bend-kick-jump-fold-land. Strength + structure + pose.",
+        "real_world": "Witnessed car crash near campus. Low maintenance + delayed reaction = collision.",
+        "family_trip": "Uncle described Bezos's 'birth of AWS' email. Strategic email → infrastructure decade.",
+        "purchase": "Bought gift in cash, not card. Avoided 2% transaction fee. Applied business-class insight.",
+        "argument": "Stranger argued. Used English-class tone modulation. Outcome positive."
+      },
+      "ai_synthesis": {
+        "detected_pattern": "Decomposition is the load-bearing meta-skill across CS, public speaking, gymnastics, and risk assessment.",
+        "cross_domain_solutions": [
+          { "angle": "Form ⇌ Decomposition", "solution": "Break each gymnastics routine the way CS breaks algorithms — atomic units, then composition.", "domains": ["Technology", "Sports"] },
+          { "angle": "Audience ⇌ Modularity", "solution": "Adjust speaking tone the way a function adjusts its signature per caller.", "domains": ["Communication", "Technology"] },
+          { "angle": "Trade-fee ⇌ Risk", "solution": "Every car-maintenance skip is a hidden 'transaction fee' on future safety. Recognise both.", "domains": ["Business", "Personal"] },
+          { "angle": "Repetition ⇌ Inversion", "solution": "Practice violin the way Munger inverts: ask 'what makes me play worse,' eliminate that first.", "domains": ["Music", "Mental_Models"] }
+        ]
+      },
+      "questions_to_ask": [
+        "What was the plan when you sat in the violin class — focus, technique, or repetition?",
+        "How could the Bezos email idea apply to your project proposal due Friday?",
+        "Among the gift purchase, the gym session, and the violin practice, which one compounds the most?",
+        "Yesterday you said the car crash spooked you — is your own bike maintained?",
+        "Where in your day did you act like an FBI investigator (slow, evidence-first)? Where did you act like a startled bird?"
+      ],
+      "priority_list": [
+        "Pre-mortem the project proposal — what's the worst review you could get?",
+        "Apply decomposition to the proposal: break it into 4 atomic units.",
+        "Practice violin 20 min — repetition, not new material.",
+        "Maintenance check on the bike (15 min, low energy).",
+        "Walk + voice memo to family — close the loop on yesterday's argument."
+      ]
+    },
+    {
+      "id": "SD002",
+      "user": "PG_student · 24 · Bangalore",
+      "title": "Bayesian updating is the bridge from clinical diagnosis to marathon pacing to investing",
+      "domains_triggered": ["Mathematics", "Academic", "Sports", "Business", "Mental_Models"],
+      "situation": "A 24-year-old PG student in Bangalore moves through a week mixing Bayesian thesis work, a clinical rotation, marathon training, a Munger circle-of-competence reading, and an advisor demand for a falsifier.",
+      "week_inputs": {
+        "thesis_work": "Bayesian inference applied to clinical trial small-sample design.",
+        "clinical_rotation": "Doctor explained risk stratification: pre-test probability → updated post-test.",
+        "marathon_training": "30 km run, heart-rate drift after hour 2. Coach said 'fuel inversely with effort'.",
+        "investing": "Read about Munger's circle of competence. Skipped a hot crypto tip.",
+        "lab_meeting": "Advisor: 'don't run another experiment till you've designed the falsifier.'"
+      },
+      "ai_synthesis": {
+        "detected_pattern": "Bayesian updating is the same mechanism behind clinical diagnosis, marathon pacing, and investing decisions.",
+        "cross_domain_solutions": [
+          { "angle": "Pre-test ⇌ Pre-mortem", "solution": "Carry prior probability of failure into every lab session, like a clinician.", "domains": ["Mental_Models", "Academic"] },
+          { "angle": "Fuel-inverse ⇌ Compounding", "solution": "Energy investment scales like compounding interest — small consistent deposits beat hero efforts.", "domains": ["Sports", "Business"] },
+          { "angle": "Competence ⇌ Falsifier", "solution": "Stay inside circle of competence == design the falsifier first.", "domains": ["Mental_Models", "Academic"] }
+        ]
+      },
+      "questions_to_ask": [
+        "What was your prior probability of the experiment working when you started?",
+        "What new evidence would shift you from 50/50 to 80/20?",
+        "Where in your week did you act outside your circle of competence?"
+      ],
+      "priority_list": [
+        "Design the falsifier (45 min, high energy)",
+        "Update the thesis Bayesian prior with the new clinical data (60 min)",
+        "Easy 5 km recovery run, fuel pre-loaded",
+        "Read 1 chapter of Munger latticework"
+      ]
+    },
+    {
+      "id": "SD003",
+      "user": "Professional · 28 · Singapore",
+      "title": "The blind corner, the day-7 churn cliff, and System 1 leadership are the same failure",
+      "domains_triggered": ["Business", "Personal", "Psychology", "Mental_Models"],
+      "situation": "A 28-year-old professional in Singapore moves through a week of a missed-quarter post-mortem, a sharp 1-on-1, a near-miss observation, a churn analysis epiphany, and a Kahneman re-read — and Invifescus reveals the same structural failure mode under all four.",
+      "week_inputs": {
+        "monday_meeting": "Q3 missed by 11%. Director blamed pipeline coverage.",
+        "tuesday_oneonone": "Skip-level said 'you're solving the right problem the wrong week.'",
+        "wednesday_run": "Saw 2 separate accidents on the same blind corner. Pattern.",
+        "thursday_call": "Customer churn analysis showed onboarding day-7 is the cliff.",
+        "friday_book": "Read Kahneman: System 1 dominates under stress."
+      },
+      "ai_synthesis": {
+        "detected_pattern": "Repeated structural failure mode is the customer-onboarding cliff = the blind corner = the missed quarter.",
+        "cross_domain_solutions": [
+          { "angle": "Blind corner ⇌ Day-7 cliff", "solution": "Build a 'warning sign' the way the city should build a mirror — invisible failure modes need explicit alerts.", "domains": ["Personal", "Business"] },
+          { "angle": "System 1 ⇌ Pipeline blame", "solution": "Under stress, leadership defaults to blaming pipeline (System 1). System 2 asks: why is day-7 broken?", "domains": ["Psychology", "Business"] }
+        ]
+      },
+      "questions_to_ask": [
+        "Which day-7 metric did you ignore three quarters in a row?",
+        "If you only had one team intervention this month, which removes the most invisible cliffs?",
+        "What's the 'mirror at the blind corner' for your customers?"
+      ],
+      "priority_list": [
+        "Boss decision: ship day-7 nudge sequence vs hire one more rep (Empiricum run)",
+        "Send skip-level the 'right problem, wrong week' acknowledgement",
+        "Pre-mortem next quarter at the team meeting"
+      ]
+    },
+    {
+      "id": "SD004",
+      "user": "Entrepreneur · 32 · Bangalore",
+      "title": "Master 3 add 1 — across pitch, lifts, and dinners at home",
+      "domains_triggered": ["Business", "Sports", "Personal", "Mental_Models"],
+      "situation": "A 32-year-old entrepreneur in Bangalore moves through investor feedback on a shifting story, an engineer flagging refactor #5, a gym coach demanding focus, a stoicism re-read, and his daughter asking why he's never home — and Invifescus sees the same failure mode across all four.",
+      "week_inputs": {
+        "investor_call": "Lead VC: 'your story changes every pitch.'",
+        "team_standup": "Engineer flagged the 5th refactor in 6 weeks.",
+        "gym": "Coach: 'stop adding lifts. Master 3, add 1.'",
+        "philosophy_book": "Stoicism: control attention, not outcomes.",
+        "family": "Daughter asked why he's never home for dinner."
+      },
+      "ai_synthesis": {
+        "detected_pattern": "Same failure mode across pitch + product + parenting: changing the story too often, mastering nothing.",
+        "cross_domain_solutions": [
+          { "angle": "Gym ⇌ Pitch", "solution": "Master 3 slides, add 1. Master 3 lifts, add 1. Master 3 dinners-a-week, add 1.", "domains": ["Sports", "Business", "Personal"] }
+        ]
+      },
+      "questions_to_ask": [
+        "Which 3 things are you mastering? Which is the 4th you'll add this quarter?",
+        "What did you protect from change this week — and what did you let drift?"
+      ],
+      "priority_list": [
+        "Freeze the pitch deck for 30 days",
+        "Schedule 3 fixed dinners with daughter this week",
+        "End the refactor cycle: write the architecture freeze doc"
+      ]
+    },
+    {
+      "id": "SD005",
+      "user": "UG_student · 16 · Chennai",
+      "title": "Abstraction in CS, negative space in art, what's NOT said in arguments — the same skill",
+      "domains_triggered": ["Technology", "Design", "Communication", "Personal"],
+      "situation": "A 16-year-old high-school student in Chennai walks through a CS abstraction class, a Discord argument, a YouTube get-rich rabbit hole, a mother checking on her new online friend, and an art-class negative-space lesson. Under-16 safety mode is active throughout.",
+      "week_inputs": {
+        "school_class": "Computational thinking — abstraction.",
+        "online_argument": "Got into a fight on a public Discord.",
+        "youtube_rabbithole": "3 hours on 'how to become rich at 16'.",
+        "parent_check": "Mum asked who the new online friend was.",
+        "art_class": "Teacher demonstrated negative space."
+      },
+      "ai_synthesis": {
+        "detected_pattern": "Same skill in 3 fields — abstraction in CS, negative space in art, what's NOT said in arguments.",
+        "cross_domain_solutions": [
+          { "angle": "Abstraction ⇌ Negative space", "solution": "What you remove is as important as what you include — applies to code, art, and replies.", "domains": ["Technology", "Design", "Communication"] }
+        ]
+      },
+      "questions_to_ask": [
+        "What did you NOT say in the Discord fight that would have helped?",
+        "What did the YouTube video LEAVE OUT about getting rich at 16?",
+        "What negative space is in your school project?"
+      ],
+      "priority_list": [
+        "Show Mum the Discord — she + a moderator must approve next reply",
+        "Replace 1 hour of YouTube with art-class practice today",
+        "Apply negative space to your CS homework: remove 3 lines, see what breaks"
+      ],
+      "safety_applied": {
+        "visibility": "guardian_only",
+        "dm": "disabled",
+        "discord": "blocked",
+        "post_review": "human_only",
+        "parental_approval": "required on every connection request"
+      }
+    }
+  ]
+}
