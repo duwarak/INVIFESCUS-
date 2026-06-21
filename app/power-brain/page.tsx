@@ -1,8 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
-import { BrainView } from "../../lib/power-brain/types";
+import { BrainNode, BrainEdge, BrainView } from "../../lib/power-brain/types";
 import {
   loadAgents,
   loadGenealogySlice,
@@ -19,6 +19,39 @@ const RadialCanvas = dynamic(() => import("../../components/radial-canvas"), {
       style={{ color: SURFACE.textMuted }}
     >
       Loading radial canvas…
+    </div>
+  ),
+});
+const GlowCanvas = dynamic(() => import("../../components/glow-canvas"), {
+  ssr: false,
+  loading: () => (
+    <div
+      className="flex items-center justify-center h-full text-sm"
+      style={{ color: "#94a3b8" }}
+    >
+      Igniting glow cloud…
+    </div>
+  ),
+});
+const ForceGraph3DCanvas = dynamic(
+  () => import("../../components/force-graph-3d"),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        className="flex items-center justify-center h-full text-sm"
+        style={{ color: "#94a3b8" }}
+      >
+        Spinning up three.js scene…
+      </div>
+    ),
+  }
+);
+const PolymathCanvas = dynamic(() => import("../../components/polymath-canvas"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-full text-sm" style={{ color: "#5b6270" }}>
+      Booting Omnilattice…
     </div>
   ),
 });
@@ -60,13 +93,62 @@ const TABS: { key: BrainView; label: string; sub: string }[] = [
 
 const AGENTS = loadAgents();
 
+type LiveVisual = "rings" | "polymath" | "glow" | "force3d";
+type MemoryVisual = "force" | "glow" | "force3d";
+
+interface ExpansionNode {
+  id: string;
+  label: string;
+  group: string;
+  type: string;
+  origin: "dataset" | "memory" | "openalex" | "wikipedia" | "arxiv" | "persona" | "crossdomain";
+  url?: string;
+  summary?: string;
+  importance: number;
+}
+interface ExpansionEdge {
+  source: string;
+  target: string;
+  type: string;
+  weight: number;
+  label?: string;
+  origin: string;
+}
+interface AgentTrace {
+  agent: string;
+  action: string;
+  produced: number;
+}
+
+interface LiveHit {
+  id: string;
+  label: string;
+  source: "openalex" | "wikipedia" | "arxiv";
+  url: string;
+  parentId: string;
+  ts: number;
+}
+
 export default function PowerBrainPage() {
   const [view, setView] = useState<BrainView>("live");
+  const [liveVisual, setLiveVisual] = useState<LiveVisual>("polymath");
+  const [memoryVisual, setMemoryVisual] = useState<MemoryVisual>("force3d");
+  const [dim, setDim] = useState<"2d" | "3d">("3d");
+  const [fgDim, setFgDim] = useState<"2d" | "3d">("3d");
+  const [motion, setMotion] = useState(1);
   const [showEdges, setShowEdges] = useState(false);
   const [showLabels, setShowLabels] = useState(true);
   const [showSimilarity, setShowSimilarity] = useState(true);
   const [activeGroups, setActiveGroups] = useState<Set<string>>(new Set());
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [liveHits, setLiveHits] = useState<LiveHit[]>([]);
+  const [mounted, setMounted] = useState(false);
+  const [expandedNodes, setExpandedNodes] = useState<ExpansionNode[]>([]);
+  const [expandedEdges, setExpandedEdges] = useState<ExpansionEdge[]>([]);
+  const [expanding, setExpanding] = useState(false);
+  const [lastTrace, setLastTrace] = useState<AgentTrace[]>([]);
+
+  useEffect(() => setMounted(true), []);
 
   const liveGraph = useMemo(() => loadLiveSlice(), []);
   const memoryGraph = useMemo(() => loadMemorySlice(), []);
@@ -109,6 +191,72 @@ export default function PowerBrainPage() {
     });
   };
 
+  useEffect(() => {
+    if (!selectedId || liveVisual !== "glow") return;
+    let aborted = false;
+    fetch(`/api/power-brain/research?id=${encodeURIComponent(selectedId)}&scope=${view}`)
+      .then((r) => r.json())
+      .then((j: { hits: { source: "openalex" | "wikipedia" | "arxiv"; title: string; url: string }[] }) => {
+        if (aborted || !j.hits) return;
+        const ts = Date.now();
+        const fresh: LiveHit[] = j.hits.slice(0, 8).map((h, i) => ({
+          id: `hit-${selectedId}-${h.source}-${i}-${ts}`,
+          label: h.title.slice(0, 64),
+          source: h.source,
+          url: h.url,
+          parentId: selectedId,
+          ts,
+        }));
+        setLiveHits((prev) => {
+          const keep = prev.filter((p) => p.parentId !== selectedId);
+          return [...keep.slice(-20), ...fresh];
+        });
+      })
+      .catch(() => undefined);
+    return () => {
+      aborted = true;
+    };
+  }, [selectedId, liveVisual, view]);
+
+  useEffect(() => {
+    if (!selectedId || (liveVisual !== "polymath" && view !== "live")) return;
+    if (liveVisual !== "polymath") return;
+    if (selectedId.startsWith("web-") || selectedId.startsWith("persona-")) return;
+    let aborted = false;
+    setExpanding(true);
+    fetch(`/api/power-brain/expand?id=${encodeURIComponent(selectedId)}&scope=${view}`)
+      .then((r) => r.json())
+      .then((j: { newNodes: ExpansionNode[]; newEdges: ExpansionEdge[]; trace: AgentTrace[] }) => {
+        if (aborted) return;
+        setExpandedNodes((prev) => {
+          const ids = new Set(prev.map((p) => p.id));
+          const additions = (j.newNodes ?? []).filter((n) => !ids.has(n.id));
+          return [...prev, ...additions].slice(-400);
+        });
+        setExpandedEdges((prev) => {
+          const key = (e: ExpansionEdge) => `${e.source}->${e.target}:${e.type}`;
+          const seen = new Set(prev.map(key));
+          const additions = (j.newEdges ?? []).filter((e) => !seen.has(key(e)));
+          return [...prev, ...additions].slice(-800);
+        });
+        setLastTrace(j.trace ?? []);
+      })
+      .catch(() => undefined)
+      .finally(() => {
+        if (!aborted) setExpanding(false);
+      });
+    return () => {
+      aborted = true;
+    };
+  }, [selectedId, liveVisual, view]);
+
+  const resetExpansion = () => {
+    setExpandedNodes([]);
+    setExpandedEdges([]);
+    setLastTrace([]);
+    setSelectedId(null);
+  };
+
   return (
     <div
       className="flex flex-col h-[calc(100vh-3rem)] gap-4 p-2 -m-6 px-6 pt-6 pb-6"
@@ -121,7 +269,7 @@ export default function PowerBrainPage() {
               className="text-2xl font-semibold"
               style={{ color: SURFACE.text }}
             >
-              Power Brain Simulator
+              Omnilattice Simulator
             </h2>
             <span
               className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full"
@@ -133,7 +281,7 @@ export default function PowerBrainPage() {
               className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full"
               style={{ background: "#e0f3ff", color: "#0369a1" }}
             >
-              Polymath dataset · {memoryGraph.nodes.length} nodes
+              Invifescus dataset · {mounted ? memoryGraph.nodes.length : "…"} nodes
             </span>
           </div>
           <p
@@ -295,30 +443,238 @@ export default function PowerBrainPage() {
             </div>
             <div className="flex flex-col gap-2">
               {view === "live" && (
-                <label
-                  className="flex items-center gap-2 text-xs cursor-pointer"
-                  style={{ color: SURFACE.text }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={showEdges}
-                    onChange={(e) => setShowEdges(e.target.checked)}
-                  />
-                  Show ring edges
-                </label>
+                <>
+                  <div
+                    className="text-[10px] font-semibold uppercase tracking-wider"
+                    style={{ color: SURFACE.textMuted }}
+                  >
+                    Visual mode
+                  </div>
+                  <div
+                    className="flex flex-col gap-0.5 rounded-md p-0.5 border"
+                    style={{ borderColor: SURFACE.border }}
+                  >
+                    {([
+                      { k: "polymath", label: "Omnilattice Brain" },
+                      { k: "rings", label: "Rings" },
+                      { k: "glow", label: "Glow Cloud" },
+                      { k: "force3d", label: "Force-Graph 3D" },
+                    ] as { k: LiveVisual; label: string }[]).map((m) => (
+                      <button
+                        key={m.k}
+                        onClick={() => setLiveVisual(m.k)}
+                        className="flex-1 text-[11px] py-1 rounded-md transition-colors"
+                        style={
+                          liveVisual === m.k
+                            ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                            : { color: SURFACE.textMuted }
+                        }
+                      >
+                        {m.label}
+                      </button>
+                    ))}
+                  </div>
+                  {liveVisual === "rings" && (
+                    <label
+                      className="flex items-center gap-2 text-xs cursor-pointer"
+                      style={{ color: SURFACE.text }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={showEdges}
+                        onChange={(e) => setShowEdges(e.target.checked)}
+                      />
+                      Show ring edges
+                    </label>
+                  )}
+                  {liveVisual === "glow" && (
+                    <>
+                      <div
+                        className="flex items-center gap-0.5 rounded-md p-0.5 border"
+                        style={{ borderColor: SURFACE.border }}
+                      >
+                        {(["2d", "3d"] as const).map((d) => (
+                          <button
+                            key={d}
+                            onClick={() => setDim(d)}
+                            className="flex-1 text-[11px] py-1 rounded-md transition-colors uppercase"
+                            style={
+                              dim === d
+                                ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                                : { color: SURFACE.textMuted }
+                            }
+                          >
+                            {d}
+                          </button>
+                        ))}
+                      </div>
+                      <label
+                        className="flex flex-col gap-1 text-[11px]"
+                        style={{ color: SURFACE.textMuted }}
+                      >
+                        Motion intensity
+                        <input
+                          type="range"
+                          min={0}
+                          max={2}
+                          step={0.05}
+                          value={motion}
+                          onChange={(e) => setMotion(Number(e.target.value))}
+                        />
+                      </label>
+                    </>
+                  )}
+                  {liveVisual === "force3d" && (
+                    <div
+                      className="flex items-center gap-0.5 rounded-md p-0.5 border"
+                      style={{ borderColor: SURFACE.border }}
+                    >
+                      {(["2d", "3d"] as const).map((d) => (
+                        <button
+                          key={d}
+                          onClick={() => setFgDim(d)}
+                          className="flex-1 text-[11px] py-1 rounded-md transition-colors uppercase"
+                          style={
+                            fgDim === d
+                              ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                              : { color: SURFACE.textMuted }
+                          }
+                        >
+                          {d}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                  {liveVisual === "polymath" && (
+                    <div className="flex flex-col gap-2">
+                      <button
+                        onClick={resetExpansion}
+                        className="text-[11px] font-semibold rounded-md py-1.5 border transition-colors"
+                        style={{
+                          borderColor: SURFACE.border,
+                          color: SURFACE.text,
+                          background: "#ffffff",
+                        }}
+                      >
+                        Reset growth ({expandedNodes.length})
+                      </button>
+                      {lastTrace.length > 0 && (
+                        <div className="flex flex-col gap-1 text-[10px]">
+                          {lastTrace.map((t, i) => (
+                            <div key={i} className="flex justify-between" style={{ color: SURFACE.textMuted }}>
+                              <span className="truncate">{t.agent.replace(" Agent", "")}</span>
+                              <span style={{ color: SURFACE.accent }}>+{t.produced}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
               )}
               {view === "memory" && (
-                <label
-                  className="flex items-center gap-2 text-xs cursor-pointer"
-                  style={{ color: SURFACE.text }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={showLabels}
-                    onChange={(e) => setShowLabels(e.target.checked)}
-                  />
-                  Show labels
-                </label>
+                <>
+                  <div
+                    className="text-[10px] font-semibold uppercase tracking-wider"
+                    style={{ color: SURFACE.textMuted }}
+                  >
+                    Visual mode
+                  </div>
+                  <div
+                    className="flex flex-col gap-0.5 rounded-md p-0.5 border"
+                    style={{ borderColor: SURFACE.border }}
+                  >
+                    {([
+                      { k: "force3d", label: "Force-Graph 3D" },
+                      { k: "glow", label: "Glow Cloud" },
+                      { k: "force", label: "Compact Force" },
+                    ] as { k: MemoryVisual; label: string }[]).map((m) => (
+                      <button
+                        key={m.k}
+                        onClick={() => setMemoryVisual(m.k)}
+                        className="flex-1 text-[11px] py-1 rounded-md transition-colors text-left px-2"
+                        style={
+                          memoryVisual === m.k
+                            ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                            : { color: SURFACE.textMuted }
+                        }
+                      >
+                        {m.label}
+                      </button>
+                    ))}
+                  </div>
+                  {memoryVisual === "glow" && (
+                    <>
+                      <div
+                        className="flex items-center gap-0.5 rounded-md p-0.5 border"
+                        style={{ borderColor: SURFACE.border }}
+                      >
+                        {(["2d", "3d"] as const).map((d) => (
+                          <button
+                            key={d}
+                            onClick={() => setDim(d)}
+                            className="flex-1 text-[11px] py-1 rounded-md transition-colors uppercase"
+                            style={
+                              dim === d
+                                ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                                : { color: SURFACE.textMuted }
+                            }
+                          >
+                            {d}
+                          </button>
+                        ))}
+                      </div>
+                      <label
+                        className="flex flex-col gap-1 text-[11px]"
+                        style={{ color: SURFACE.textMuted }}
+                      >
+                        Motion intensity
+                        <input
+                          type="range"
+                          min={0}
+                          max={2}
+                          step={0.05}
+                          value={motion}
+                          onChange={(e) => setMotion(Number(e.target.value))}
+                        />
+                      </label>
+                    </>
+                  )}
+                  {memoryVisual === "force3d" && (
+                    <div
+                      className="flex items-center gap-0.5 rounded-md p-0.5 border"
+                      style={{ borderColor: SURFACE.border }}
+                    >
+                      {(["2d", "3d"] as const).map((d) => (
+                        <button
+                          key={d}
+                          onClick={() => setFgDim(d)}
+                          className="flex-1 text-[11px] py-1 rounded-md transition-colors uppercase"
+                          style={
+                            fgDim === d
+                              ? { background: SURFACE.text, color: "#ffffff", fontWeight: 600 }
+                              : { color: SURFACE.textMuted }
+                          }
+                        >
+                          {d}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                  {memoryVisual === "force" && (
+                    <label
+                      className="flex items-center gap-2 text-xs cursor-pointer"
+                      style={{ color: SURFACE.text }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={showLabels}
+                        onChange={(e) => setShowLabels(e.target.checked)}
+                      />
+                      Show labels
+                    </label>
+                  )}
+                </>
               )}
               {view === "genealogy" && (
                 <label
@@ -341,7 +697,21 @@ export default function PowerBrainPage() {
           className="flex-1 rounded-xl border overflow-hidden"
           style={{ background: SURFACE.panel, borderColor: SURFACE.border }}
         >
-          {view === "live" && (
+          {view === "live" && liveVisual === "polymath" && (
+            <PolymathCanvas
+              baseNodes={filteredNodes}
+              baseEdges={filteredEdges}
+              expandedNodes={expandedNodes}
+              expandedEdges={expandedEdges}
+              selectedId={selectedId}
+              onSelect={(id) => setSelectedId(id || null)}
+              onOpenUrl={(url) => {
+                if (typeof window !== "undefined") window.open(url, "_blank");
+              }}
+              expanding={expanding}
+            />
+          )}
+          {view === "live" && liveVisual === "rings" && (
             <RadialCanvas
               nodes={filteredNodes}
               edges={filteredEdges}
@@ -354,7 +724,34 @@ export default function PowerBrainPage() {
               onSelect={(id) => setSelectedId(id || null)}
             />
           )}
-          {view === "memory" && (
+          {view === "live" && liveVisual === "glow" && (
+            <GlowCanvas
+              nodes={filteredNodes}
+              edges={filteredEdges}
+              liveHits={liveHits}
+              dim={dim}
+              motion={motion}
+              selectedId={selectedId}
+              onSelect={(id) => setSelectedId(id || null)}
+              onHitOpen={(hit) => {
+                if (typeof window !== "undefined") window.open(hit.url, "_blank");
+              }}
+            />
+          )}
+          {view === "live" && liveVisual === "force3d" && (
+            <ForceGraph3DCanvas
+              nodes={filteredNodes}
+              edges={filteredEdges}
+              liveHits={liveHits}
+              dim={fgDim}
+              selectedId={selectedId}
+              onSelect={(id) => setSelectedId(id || null)}
+              onHitOpen={(hit) => {
+                if (typeof window !== "undefined") window.open(hit.url, "_blank");
+              }}
+            />
+          )}
+          {view === "memory" && memoryVisual === "force" && (
             <ForceCanvas
               nodes={filteredNodes}
               edges={filteredEdges}
@@ -362,6 +759,34 @@ export default function PowerBrainPage() {
               iterations={220}
               selectedId={selectedId}
               onSelect={(id) => setSelectedId(id || null)}
+            />
+          )}
+          {view === "memory" && memoryVisual === "glow" && (
+            <GlowCanvas
+              nodes={filteredNodes}
+              edges={filteredEdges}
+              liveHits={liveHits}
+              dim={dim}
+              motion={motion}
+              spread={2.2}
+              selectedId={selectedId}
+              onSelect={(id) => setSelectedId(id || null)}
+              onHitOpen={(hit) => {
+                if (typeof window !== "undefined") window.open(hit.url, "_blank");
+              }}
+            />
+          )}
+          {view === "memory" && memoryVisual === "force3d" && (
+            <ForceGraph3DCanvas
+              nodes={filteredNodes}
+              edges={filteredEdges}
+              liveHits={liveHits}
+              dim={fgDim}
+              selectedId={selectedId}
+              onSelect={(id) => setSelectedId(id || null)}
+              onHitOpen={(hit) => {
+                if (typeof window !== "undefined") window.open(hit.url, "_blank");
+              }}
             />
           )}
           {view === "genealogy" && (

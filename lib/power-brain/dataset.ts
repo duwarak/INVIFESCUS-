@@ -175,7 +175,19 @@ export function loadLiveSlice(): BrainGraph {
 }
 
 export function loadMemorySlice(): BrainGraph {
-  return loadFullGraph();
+  const full = loadFullGraph();
+  if (typeof window !== "undefined") return full;
+  try {
+    const { readMemory } = require("./memory-store") as typeof import("./memory-store");
+    const ext = readMemory();
+    if (!ext.nodes.length && !ext.edges.length) return full;
+    return {
+      nodes: [...full.nodes, ...ext.nodes],
+      edges: [...full.edges, ...ext.edges],
+    };
+  } catch {
+    return full;
+  }
 }
 
 export function loadGenealogySlice(): BrainGraph {
@@ -203,11 +215,56 @@ const AGENT_COLORS: Record<string, string> = {
   agent_coach: "#f4a02e",
   agent_evaluation: "#ef476f",
   agent_community: "#22c55e",
+  agent_cross_linker: "#ec4899",
+  agent_orphan_rescue: "#14b8a6",
+  agent_convergence: "#a855f7",
 };
+
+const EXTRA_AGENTS: AgentSpec[] = [
+  {
+    id: "agent_cross_linker",
+    name: "Cross-Linker Agent",
+    icon: "🔗",
+    description: "Scans the graph for missing wikilinks and bidirectional ties; suggests backlinks across domains.",
+    capabilities: [
+      "Find weak/missing edges between related concepts",
+      "Suggest bidirectional links the user has not yet drawn",
+      "Detect orphaned bridges (one-way only) and reciprocate",
+    ],
+    triggers: ["Daily sync", "After ingest", "Manual scan"],
+    color: AGENT_COLORS.agent_cross_linker,
+  },
+  {
+    id: "agent_orphan_rescue",
+    name: "Orphan-Rescue Agent",
+    icon: "🌱",
+    description: "Detects zero-backlink concepts and proposes neighbor candidates via embedding similarity.",
+    capabilities: [
+      "Identify nodes with no inbound or outbound edges",
+      "Compute candidate links via embedding cosine",
+      "Surface top-3 neighbor candidates per orphan",
+    ],
+    triggers: ["Weekly sweep", "Vault audit", "Manual run"],
+    color: AGENT_COLORS.agent_orphan_rescue,
+  },
+  {
+    id: "agent_convergence",
+    name: "Convergence Agent",
+    icon: "✶",
+    description: "Finds nodes that bridge two or more clusters — the polymath hubs hiding in plain sight.",
+    capabilities: [
+      "Domain-count per node's 1-hop neighborhood",
+      "Rank by (domain_count × neighbor_count × bridge_weight)",
+      "Hand top-K to Cross-Domain Synthesis for naming",
+    ],
+    triggers: ["Daily synthesis sweep", "User-requested map review"],
+    color: AGENT_COLORS.agent_convergence,
+  },
+];
 
 export function loadAgents(): AgentSpec[] {
   const roles = (ag.agent_roles as RawAgent[]) ?? [];
-  return roles.map((a) => ({
+  const base = roles.map((a) => ({
     id: a.id,
     name: a.name,
     icon: a.icon,
@@ -216,6 +273,7 @@ export function loadAgents(): AgentSpec[] {
     triggers: a.triggers,
     color: AGENT_COLORS[a.id] ?? "#5b6cff",
   }));
+  return [...base, ...EXTRA_AGENTS];
 }
 
 export function loadFlows(): RawFlow[] {

@@ -1,0 +1,1278 @@
+{
+  "metadata": {
+    "dataset_name": "Cross-Domain Valid Connections",
+    "description": "Verified cross-domain concept mappings for training AI synthesis models",
+    "total_connection_clusters": 100,
+    "domains_covered": 45
+  },
+  "connection_clusters": [
+    {
+      "id": "C001",
+      "source_concept": "Projectile Motion",
+      "source_domain": "Physics",
+      "multi_modal_input": {
+        "text_notes": "Parabolic trajectory under gravity. v\u2080, launch angle \u03b8, range R = v\u2080\u00b2sin2\u03b8/g, max height H = v\u2080\u00b2sin\u00b2\u03b8/2g. Horizontal and vertical motion are INDEPENDENT.",
+        "voice_transcript": "Throw a ball at any angle - it always makes a parabola. Horizontal motion is constant velocity, vertical is accelerated by gravity.",
+        "photo_description": "Whiteboard diagram showing parabolic trajectory with velocity vectors at multiple points, angle annotations"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Gymnastics",
+          "target_concept": "Double Back Flip",
+          "connection_type": "direct_analogy",
+          "explanation": "Gymnast's center of mass follows parabolic trajectory. Launch angle from springboard determines height and rotation time. More height = more time in air = time for 2 rotations.",
+          "transferable_principle": "Controlling launch angle and velocity components independently",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Engineering",
+          "target_concept": "Motion Graphics Animation",
+          "connection_type": "structural_mapping",
+          "explanation": "Motion graphics easing curves mirror projectile motion. 'Gravity' parameter in After Effects uses g=9.8 m/s\u00b2. Keyframe timing = time-of-flight calculation.",
+          "transferable_principle": "Natural motion follows parabolic easing - use physics in animation timing",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Basketball",
+          "target_concept": "Free Throw Arc",
+          "connection_type": "direct_application",
+          "explanation": "Optimal arc angle is 45-52 degrees. Players solve range equation every shot. Backspin (angular momentum) stabilizes projectile in air.",
+          "transferable_principle": "45-degree launch angle maximizes range; angular momentum stabilizes projectile",
+          "confidence_score": 0.97
+        },
+        {
+          "target_domain": "Military",
+          "target_concept": "Ballistics and Artillery",
+          "connection_type": "direct_application",
+          "explanation": "Artillery shells follow exact projectile motion equations. Range tables use R = v\u2080\u00b2sin2\u03b8/g. Coriolis effect and drag are corrections to ideal model.",
+          "transferable_principle": "Master the ideal model first, then add correction factors",
+          "confidence_score": 0.99
+        },
+        {
+          "target_domain": "Diving",
+          "target_concept": "Platform Dive Trajectory",
+          "connection_type": "direct_analogy",
+          "explanation": "Divers' center of mass follows parabola. Dive difficulty depends on rotations fitting within time of flight determined by platform height.",
+          "transferable_principle": "Available time in air determines complexity of maneuvers possible",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C002",
+      "source_concept": "Conservation of Energy",
+      "source_domain": "Physics",
+      "multi_modal_input": {
+        "text_notes": "PE + KE = constant. PE = mgh, KE = \u00bdmv\u00b2. Friction converts mechanical energy to heat.",
+        "voice_transcript": "Roller coaster: max PE at top, max KE at bottom. Total stays same minus friction as heat."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Finance",
+          "target_concept": "Budget Allocation",
+          "connection_type": "direct_analogy",
+          "explanation": "Fixed budget = conserved energy. Money converted from marketing to R&D changes form but total fixed. Friction = transaction fees/taxes.",
+          "transferable_principle": "Fixed total with convertible components; minimize dissipation",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Personal Productivity",
+          "target_concept": "Energy Management",
+          "connection_type": "direct_analogy",
+          "explanation": "Human energy is conserved daily. Morning = high PE, low KE. Burnout = all energy dissipated as heat (stress) instead of productive work.",
+          "transferable_principle": "Manage conversions, minimize dissipation, schedule recharging",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Nutrition",
+          "target_concept": "Calorie Conversion",
+          "connection_type": "direct_analogy",
+          "explanation": "Food calories (PE) convert to activity energy (KE) or stored fat. Metabolism = engine efficiency. 'Calories in, calories out' IS conservation of energy.",
+          "transferable_principle": "Track all energy forms including dissipation",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Business Strategy",
+          "target_concept": "Cash Conversion Cycle",
+          "connection_type": "structural_mapping",
+          "explanation": "Cash \u2192 inventory \u2192 product \u2192 revenue \u2192 cash. Each conversion has efficiency loss. Smart companies minimize conversion steps.",
+          "transferable_principle": "Each transformation has loss; minimize steps between forms",
+          "confidence_score": 0.82
+        }
+      ]
+    },
+    {
+      "id": "C003",
+      "source_concept": "Angular Momentum Conservation",
+      "source_domain": "Physics",
+      "multi_modal_input": {
+        "text_notes": "L = I \u00d7 \u03c9 = constant. No external torque \u2192 angular momentum conserved. Reduce moment of inertia I \u2192 increase angular velocity \u03c9.",
+        "photo_description": "Figure skater pulling arms in to spin faster - sequence of 3 frames showing arm position and rotation speed"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Gymnastics",
+          "target_concept": "Tuck Position in Flips",
+          "connection_type": "direct_application",
+          "explanation": "Tight tuck decreases I, increasing \u03c9. Gymnasts intuitively apply L=I\u03c9 in every flip. Layout (extended) = high I, slow rotation.",
+          "transferable_principle": "Tight body position increases rotational speed via reduced moment of inertia",
+          "confidence_score": 0.98
+        },
+        {
+          "target_domain": "Aerospace",
+          "target_concept": "Satellite Reaction Wheels",
+          "connection_type": "structural_mapping",
+          "explanation": "Satellites change orientation by spinning internal wheels - no external torque needed. Speeding up a wheel causes satellite to rotate oppositely.",
+          "transferable_principle": "Internal mass redistribution changes orientation without external push",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Biology",
+          "target_concept": "Cat Righting Reflex",
+          "connection_type": "biological_application",
+          "explanation": "Cats twist front body (small I = fast rotation) while keeping rear extended (large I = slow), then reverse. No external torque - pure I manipulation.",
+          "transferable_principle": "Asymmetric moment of inertia enables rotation without push-off",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Engineering",
+          "target_concept": "Flywheel Energy Storage",
+          "connection_type": "direct_application",
+          "explanation": "Flywheels store energy as rotational KE = \u00bdI\u03c9\u00b2. Changing I controls energy release. Used in power grids, hybrid vehicles, and uninterruptible power supplies.",
+          "transferable_principle": "Rotational energy storage scales with moment of inertia and angular velocity squared",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C004",
+      "source_concept": "Wave-Particle Duality",
+      "source_domain": "Quantum Physics",
+      "multi_modal_input": {
+        "text_notes": "Light exhibits wave interference and particle photoelectric effects. Observation collapses wavefunction. Heisenberg Uncertainty: position and momentum cannot both be precisely known.",
+        "voice_transcript": "Light is both wave and particle until you look. The act of measurement forces it to choose."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Observer Effect in Behavior",
+          "connection_type": "metaphorical",
+          "explanation": "People behave differently when observed (Hawthorne effect). Alone = 'wave' of possibilities; observed = 'particle' of defined behavior. Social context collapses identity.",
+          "transferable_principle": "Observation changes behavior; context collapses possibility space",
+          "confidence_score": 0.78
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Market Positioning Uncertainty",
+          "connection_type": "metaphorical",
+          "explanation": "Pre-launch company exists as 'wave' of possibilities. Market feedback 'observes' and collapses to specific position. Cannot be premium AND cheap simultaneously.",
+          "transferable_principle": "Positioning requires choosing which observables to optimize",
+          "confidence_score": 0.72
+        },
+        {
+          "target_domain": "Creativity",
+          "target_concept": "Ideation vs Execution",
+          "connection_type": "metaphorical",
+          "explanation": "Ideas = waves (spread, ambiguous). Execution = particles (specific, defined). Brainstorming keeps both 'doors' open; shipping requires choosing a path.",
+          "transferable_principle": "Preserve wave-state during ideation; collapse to particle for execution",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    {
+      "id": "C005",
+      "source_concept": "Newton's Third Law (Action-Reaction)",
+      "source_domain": "Physics",
+      "multi_modal_input": {
+        "text_notes": "For every action there is equal and opposite reaction. F\u2081\u2082 = -F\u2082\u2081. Forces always come in pairs. Rockets push exhaust down, exhaust pushes rocket up.",
+        "photo_description": "Skater pushing against wall: action force on wall, reaction force propels skater backward. Force vectors shown as equal and opposite arrows."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Communication",
+          "target_concept": "Feedback Loops",
+          "connection_type": "direct_analogy",
+          "explanation": "Every message (action) generates a response (reaction). Criticism creates defensiveness (equal and opposite). Praise creates openness. You cannot deliver a force without receiving one back.",
+          "transferable_principle": "Every communicative action generates an equal interpersonal reaction",
+          "confidence_score": 0.85
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Competitive Response",
+          "connection_type": "direct_analogy",
+          "explanation": "Price cut (action) triggers competitor price cut (reaction). Market entry (action) triggers incumbent defense (reaction). Second-Order Thinking: anticipate the reaction before the action.",
+          "transferable_principle": "Every strategic action provokes equal competitive reaction",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Projection",
+          "connection_type": "metaphorical",
+          "explanation": "Every emotional 'push' creates an equal emotional 'push back.' Aggression begets aggression. Empathy begets empathy. The 'force' you send is the force you receive.",
+          "transferable_principle": "Emotional output determines emotional input; manage your action force",
+          "confidence_score": 0.79
+        },
+        {
+          "target_domain": "Politics",
+          "target_concept": "Sanctions and Blowback",
+          "connection_type": "direct_application",
+          "explanation": "Economic sanctions (action) create retaliatory sanctions (reaction). Military intervention creates insurgent resistance. Every geopolitical force generates equal opposing force.",
+          "transferable_principle": "Unilateral force generates opposition; balance of power emerges",
+          "confidence_score": 0.82
+        }
+      ]
+    },
+    {
+      "id": "C006",
+      "source_concept": "Recursion",
+      "source_domain": "Computer Science",
+      "multi_modal_input": {
+        "text_notes": "Function calls itself with smaller input until base case. Components: base case (termination), recursive case (self-call with reduced problem).",
+        "handwritten_notes": "Nested boxes drawing: fib(5) contains fib(4) contains fib(3)... smallest fib(1)=1. Arrows showing return values bubbling up.",
+        "voice_transcript": "Professor used Matryoshka dolls: each doll contains a smaller version. The smallest doll is the base case."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Mathematics",
+          "target_concept": "Mathematical Induction",
+          "connection_type": "mathematical_equivalence",
+          "explanation": "Induction IS recursion in proof form. Base case = prove n=1. Inductive step: assume n, prove n+1. The 'assumption' is the recursive call.",
+          "transferable_principle": "Induction and recursion are the same logic in different notation",
+          "confidence_score": 0.97
+        },
+        {
+          "target_domain": "Music",
+          "target_concept": "Musical Canons and Rounds",
+          "connection_type": "structural_mapping",
+          "explanation": "Canons (Row Row Row Your Boat) are musical recursion. Melody starts, then 'copy' begins before first finishes. Fractal music uses self-similar patterns at different time scales.",
+          "transferable_principle": "Self-similar patterns at different scales = recursion",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Linguistics",
+          "target_concept": "Embedded Sentences",
+          "connection_type": "structural_mapping",
+          "explanation": "Sentences contain sentences: 'John said [that Mary believed [that Tom knew...]]' Each clause = recursive call. Grammar itself is recursive.",
+          "transferable_principle": "Self-embedding structures with base case = recursive grammar",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Visual Art",
+          "target_concept": "Fractals (Mandelbrot)",
+          "connection_type": "visual_analogy",
+          "explanation": "Fractals are visual recursion. Zoom in \u2192 see copies of whole set at smaller scales. Formula z\u2099\u208a\u2081 = z\u2099\u00b2 + c is recursive. Nature: coastlines, trees, clouds.",
+          "transferable_principle": "Self-similar patterns from recursive rules appear throughout nature",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Biology",
+          "target_concept": "Cell Division (Mitosis)",
+          "connection_type": "biological_process",
+          "explanation": "Cell division IS recursion: one cell divides into two identical copies, each can divide again. Base case: differentiation (stops). Cancer = infinite recursion without base case.",
+          "transferable_principle": "Replication with termination (differentiation) = healthy recursion",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Storytelling",
+          "target_concept": "Frame Narrative",
+          "connection_type": "narrative_structure",
+          "explanation": "1001 Nights: story within story within story. Each nested story = recursive call. Base case = innermost story resolves, allowing outer stories to resolve. Inception movie too.",
+          "transferable_principle": "Nested narratives with inner resolution enabling outer resolution",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Organizational Hierarchy",
+          "connection_type": "structural_mapping",
+          "explanation": "CEO delegates to VPs who delegate to directors... Each level = recursive call with same pattern. Base case: individual contributor. Org chart IS recursion tree.",
+          "transferable_principle": "Hierarchical delegation with execution at leaf nodes",
+          "confidence_score": 0.84
+        }
+      ]
+    },
+    {
+      "id": "C007",
+      "source_concept": "Graph Traversal (DFS/BFS)",
+      "source_domain": "Computer Science",
+      "multi_modal_input": {
+        "text_notes": "DFS: explore deep before wide (stack, recursive). BFS: explore wide before deep (queue, iterative). Used for pathfinding, web crawling, dependency resolution.",
+        "screenshot": "Animation showing DFS going deep down left branch first vs BFS exploring level by level, nodes colored by visit order"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Depth vs Breadth Thinking",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Some people think DFS-style: deep dive into one topic before moving on. Others BFS: sample many topics shallowly. Both valid. Best thinkers switch based on situation.",
+          "transferable_principle": "Match exploration strategy to problem structure",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Social Networks",
+          "target_concept": "Viral Spread / Six Degrees",
+          "connection_type": "direct_application",
+          "explanation": "Social contagion spreads BFS: one person \u2192 immediate friends \u2192 their friends. LinkedIn connections use BFS for 'people you may know.' Six degrees of separation = BFS diameter of social graph.",
+          "transferable_principle": "Information spreads through breadth-first exploration of network",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Emergency Response",
+          "target_concept": "Disaster Search Patterns",
+          "connection_type": "direct_application",
+          "explanation": "Search and rescue uses BFS for area sweeps (check all nearby first) and DFS for following specific leads (tunnel vision on one trail). Algorithm choice = survival.",
+          "transferable_principle": "BFS for area coverage, DFS for following leads",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Curriculum Design",
+          "connection_type": "pedagogical_analogy",
+          "explanation": "BFS curriculum: survey many subjects broadly first, then specialize. DFS curriculum: deep dive into one subject, then next. Most education systems are BFS (liberal arts) then DFS (graduate school).",
+          "transferable_principle": "BFS for foundation, DFS for specialization",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C008",
+      "source_concept": "Load Balancing",
+      "source_domain": "Computer Science",
+      "multi_modal_input": {
+        "text_notes": "Distribute incoming requests across multiple servers to prevent any single server from being overwhelmed. Algorithms: round-robin, least-connections, weighted, consistent hashing.",
+        "voice_transcript": "Think of supermarket checkout lines. You don't want everyone in one line while others are empty. Load balancing spreads shoppers across all registers."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "Traffic Distribution",
+          "connection_type": "direct_analogy",
+          "explanation": "Traffic engineers use load balancing principles: traffic lights, one-way streets, and routing apps (Waze) distribute cars across road network. Goal: minimize max congestion on any single route.",
+          "transferable_principle": "Distribute load evenly to prevent any single node from bottlenecking",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Workforce Management",
+          "target_concept": "Task Distribution",
+          "connection_type": "direct_analogy",
+          "explanation": "Managers balance workload across team members. Round-robin = everyone takes turns. Least-loaded = give to person with least current work. Consistent hashing = same person handles same type of task.",
+          "transferable_principle": "Monitor capacity and route incoming work to least-loaded resource",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Electrical Engineering",
+          "target_concept": "Circuit Parallel Design",
+          "connection_type": "direct_analogy",
+          "explanation": "Parallel circuits distribute current across multiple paths, preventing overload on any single branch. Circuit breakers = health checks that remove failed nodes from the pool.",
+          "transferable_principle": "Parallel paths increase total capacity and provide redundancy",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Healthcare",
+          "target_concept": "Patient Triage Distribution",
+          "connection_type": "direct_application",
+          "explanation": "ER distributes patients across doctors based on severity and availability. 'Least connections' = doctor with fewest current patients. Health checks ensure doctors aren't overloaded.",
+          "transferable_principle": "Route patients to available capacity; re-route if provider fails",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C009",
+      "source_concept": "Caching",
+      "source_domain": "Computer Science",
+      "multi_modal_input": {
+        "text_notes": "Store frequently-accessed data in fast, nearby memory to avoid slow retrieval from origin. LRU (Least Recently Used) eviction. Hit rate determines effectiveness.",
+        "textbook_excerpt": "Cache works because of temporal locality: data accessed once is likely accessed again soon. Spatial locality: nearby data is likely needed too."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Spaced Repetition",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Spaced repetition IS caching for memory. Frequently-accessed memories (repeated at intervals) are stored in fast-retrieval cache. Memories not 'accessed' (reviewed) are evicted (forgotten). Anki/SuperMemo are LRU caches for knowledge.",
+          "transferable_principle": "Store important information in fast-access memory through repeated retrieval",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Retail",
+          "target_concept": "Inventory Positioning",
+          "connection_type": "direct_analogy",
+          "explanation": "Amazon places frequently-ordered items in local warehouses (cache) rather than shipping from central depot every time. Prime = cache hit (fast delivery). Non-Prime from far warehouse = cache miss (slow).",
+          "transferable_principle": "Position frequently-needed items close to point of use",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Culinary Arts",
+          "target_concept": "Mise en Place",
+          "connection_type": "direct_analogy",
+          "explanation": "Chefs pre-prepare ingredients (cache frequently-used items) so they're instantly available during cooking. Not caching = stopping to chop garlic mid-cook (cache miss = slow retrieval).",
+          "transferable_principle": "Pre-position frequently-used resources for instant access during execution",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Working Memory",
+          "connection_type": "biological_equivalence",
+          "explanation": "Working memory IS the brain's cache. Limited capacity (7\u00b12 items), fast access. Information rehearsed (accessed repeatedly) transfers to long-term storage (disk). Cognitive overload = cache thrashing.",
+          "transferable_principle": "Working memory is limited; optimize what you keep in fast-access storage",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C010",
+      "source_concept": "Encryption / Cryptography",
+      "source_domain": "Computer Science",
+      "multi_modal_input": {
+        "text_notes": "Public-key cryptography: encrypt with public key, decrypt with private key. RSA uses factoring difficulty. Symmetric encryption uses shared secret. Hash functions are one-way.",
+        "voice_transcript": "Think of a padlock: anyone can lock it (public key), but only you have the key to unlock (private key)."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Biology",
+          "target_concept": "DNA Transcription / Translation",
+          "connection_type": "structural_mapping",
+          "explanation": "DNA \u2192 mRNA \u2192 Protein is like encryption pipeline. DNA = plaintext (in nucleus, protected). mRNA = encrypted message (can leave nucleus). Ribosome = private key holder (decodes mRNA to protein). One-way: can't reverse protein to DNA.",
+          "transferable_principle": "Information flow with controlled access and one-way transformations",
+          "confidence_score": 0.85
+        },
+        {
+          "target_domain": "Linguistics",
+          "target_concept": "Secret Languages / Codes",
+          "connection_type": "historical_analogy",
+          "explanation": "Pig Latin, Cockney rhyming slang, and military phonetic alphabets are all encryption schemes. The 'key' is knowing the transformation rule. Same principle: obscure meaning from outsiders, reveal to those with the key.",
+          "transferable_principle": "Transform information so only authorized parties can understand it",
+          "confidence_score": 0.8
+        },
+        {
+          "target_domain": "Social Psychology",
+          "target_concept": "Social Masks and Authenticity",
+          "connection_type": "metaphorical",
+          "explanation": "People present a 'public key' persona to the world while keeping 'private key' authentic self protected. Close friends get the decryption key. Social anxiety = fear the private key will be compromised.",
+          "transferable_principle": "Public presentation vs private reality; selective key distribution",
+          "confidence_score": 0.72
+        },
+        {
+          "target_domain": "Ancient History",
+          "target_concept": "Spartan Scytale",
+          "connection_type": "historical_precedent",
+          "explanation": "Spartans used scytale: strip of leather wrapped around rod of specific diameter to read message. Wrong diameter (wrong key) = gibberish. Physical implementation of symmetric key cryptography, 2500 years ago.",
+          "transferable_principle": "Physical keys controlling information access existed millennia before computers",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C011",
+      "source_concept": "Progressive Overload",
+      "source_domain": "Gymnastics / Fitness",
+      "multi_modal_input": {
+        "text_notes": "Gradually increase stress on body to force adaptation. Increase difficulty, reps, or intensity by ~10% per week. Rest = when adaptation happens. Without progression, no improvement.",
+        "voice_transcript": "Coach: 'If it doesn't challenge you, it doesn't change you. But if it breaks you, we went too far. Small steps, every week.'"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Zone of Proximal Development",
+          "connection_type": "pedagogical_equivalence",
+          "explanation": "Vygotsky's ZPD: learning happens just beyond current ability. Too easy = no growth. Too hard = breakdown. Scaffolded support (like a spotter) enables progression into challenging territory.",
+          "transferable_principle": "Optimal growth happens at the edge of current capability with support",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Stress Inoculation",
+          "connection_type": "psychological_analogy",
+          "explanation": "Exposing people to manageable stress builds resilience (like vaccines). PTSD therapy uses controlled exposure. Each small challenge survived increases capacity for next challenge.",
+          "transferable_principle": "Controlled stress exposure builds capacity; avoid both comfort and overwhelm",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Stretch Goals",
+          "connection_type": "management_analogy",
+          "explanation": "OKRs use ambitious (70% achievable) goals to push teams beyond comfort zone. Like progressive overload, targets should be hard but not impossible. 100% achievement means goals were too easy.",
+          "transferable_principle": "Set goals at 70% achievability for optimal growth without demoralization",
+          "confidence_score": 0.85
+        },
+        {
+          "target_domain": "Skill Acquisition",
+          "target_concept": "Deliberate Practice",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Anders Ericsson's deliberate practice: always work at the edge of ability. Each session targets specific weaknesses. Rest between sessions allows neural myelin formation (adaptation).",
+          "transferable_principle": "Targeted practice at capability edge + rest cycles = expertise",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C012",
+      "source_concept": "Spotting (Visual Fixation)",
+      "source_domain": "Gymnastics",
+      "multi_modal_input": {
+        "text_notes": "During spins and flips, focus eyes on fixed point until head must turn, then snap back to same point. Prevents dizziness (vestibular system confusion) and maintains spatial orientation.",
+        "photo_description": "Sequence of dancer spotting: face front \u2192 head turns with body \u2192 head snaps back to front while body continues turning \u2192 repeat"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Aviation",
+          "target_concept": "Instrument Flying",
+          "connection_type": "direct_analogy",
+          "explanation": "Pilots use instrument panel as 'spotting point' in clouds. Without visual reference to fixed horizon, vestibular system creates spatial disorientation (leans). Instruments = artificial spotting point.",
+          "transferable_principle": "When natural reference is unavailable, create artificial fixed reference points",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "North Star Metric",
+          "connection_type": "metaphorical",
+          "explanation": "Companies lose orientation chasing many metrics. A 'North Star' metric (like spotting point) keeps focus while everything else spins. Snap back to it when dizzy from data overload.",
+          "transferable_principle": "One fixed focal point maintains orientation amid chaos",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Grounding Techniques",
+          "connection_type": "psychological_application",
+          "explanation": "Anxiety spins thoughts out of control. Grounding (5-4-3-2-1 senses technique) is 'spotting' for the mind - returning attention to a fixed sensory point when thoughts are spinning.",
+          "transferable_principle": "Return attention to stable anchor when experiencing internal spin",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C013",
+      "source_concept": "Classical Conditioning (Pavlov)",
+      "source_domain": "Psychology",
+      "multi_modal_input": {
+        "text_notes": "Neutral stimulus paired with unconditioned stimulus until neutral alone triggers response. Bell + food \u2192 salivation. Bell alone \u2192 salivation. Extinction: repeated CS without US weakens response.",
+        "voice_transcript": "Pavlov's dogs learned that bell means food. The bell became a trigger. Your brain does this with everything: notification sound \u2192 dopamine hit, alarm clock \u2192 dread."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Marketing",
+          "target_concept": "Brand Association",
+          "connection_type": "direct_application",
+          "explanation": "Brands pair themselves with positive stimuli: Coca-Cola + Christmas, Nike + athletic excellence. Repeated pairing creates conditioned positive response to logo alone. Jingles are auditory conditioned stimuli.",
+          "transferable_principle": "Pair product with positive emotion repeatedly to create automatic association",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Classroom Triggers",
+          "connection_type": "pedagogical_application",
+          "explanation": "Teacher entering room = conditioned stimulus for 'learning mode.' Bell = class transition. Specific music during study creates context-dependent memory. Classical conditioning structures the entire school experience.",
+          "transferable_principle": "Create consistent environmental triggers for desired mental states",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Habit Formation",
+          "target_concept": "Cue-Routine-Reward Loop",
+          "connection_type": "behavioral_analogy",
+          "explanation": "Habits are self-conditioned responses. Cue (time/location) triggers routine automatically. Charles Duhigg's habit loop IS classical conditioning with a modern framework. Notification \u2192 check phone \u2192 dopamine.",
+          "transferable_principle": "Any consistent stimulus can become a behavior trigger through repetition",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Phobia Treatment",
+          "target_concept": "Systematic Desensitization",
+          "connection_type": "therapeutic_application",
+          "explanation": "Extinction procedure: expose to feared stimulus (CS) without negative outcome (US). Fear response weakens. Flying phobia: look at plane photo \u2192 visit airport \u2192 sit in plane \u2192 short flight. Gradual extinction.",
+          "transferable_principle": "Repeated safe exposure to feared stimulus without harm extinguishes fear",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C014",
+      "source_concept": "Cognitive Dissonance",
+      "source_domain": "Psychology",
+      "multi_modal_input": {
+        "text_notes": "Mental discomfort when holding contradictory beliefs. Resolution: change belief, change behavior, or add new cognition. Festinger 1957. $1 vs $20 experiment: underpaid participants convinced themselves task was actually enjoyable.",
+        "voice_transcript": "When you smoke but know it's unhealthy, that discomfort is cognitive dissonance. You either quit (change behavior), convince yourself it's not that bad (change belief), or say 'it reduces stress' (add justification)."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Sunk Cost Fallacy",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Continuing bad investment because already invested = cognitive dissonance. 'I made a bad decision' conflicts with 'I am competent.' Resolution: convince self the investment will turn around rather than admit error.",
+          "transferable_principle": "Dissonance between self-image and outcomes drives irrational persistence",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Politics",
+          "target_concept": "Partisan Rationalization",
+          "connection_type": "direct_application",
+          "explanation": "Voters rationalize politician's misdeeds to reduce dissonance: 'My party is good + my candidate did bad = discomfort.' Resolution: 'It wasn't that bad,' 'The other side is worse,' or 'Fake news.'",
+          "transferable_principle": "Dissonance reduction drives motivated reasoning in belief systems",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Product Design",
+          "target_concept": "Post-Purchase Rationalization",
+          "connection_type": "consumer_behavior",
+          "explanation": "After buying expensive product, users convince themselves it was worth it. 'I spent $1000 + the product is okay = dissonance.' Resolution: leave glowing review, defend purchase to friends. Apple ecosystem leverage.",
+          "transferable_principle": "High investment creates psychological need to justify through positive evaluation",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Self-Improvement",
+          "target_concept": "Identity-Based Change",
+          "connection_type": "behavioral_strategy",
+          "explanation": "Change behavior by changing identity to reduce dissonance: 'I am a runner' (identity) \u2192 running is automatic (behavior). Not running would create dissonance with identity. James Clear's Atomic Habits principle.",
+          "transferable_principle": "Adopt identity that makes desired behavior congruent with self-concept",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C015",
+      "source_concept": "Flow State (Csikszentmihalyi)",
+      "source_domain": "Psychology",
+      "multi_modal_input": {
+        "text_notes": "Complete absorption in activity. Balance between challenge and skill. Clear goals, immediate feedback, loss of self-consciousness. Time distortion. Channel of flow: challenge = skill level.",
+        "voice_transcript": "Flow is when you're so absorbed that you forget to eat. The challenge perfectly matches your skill - not boring, not terrifying. Video games are engineered for this."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Game Design",
+          "target_concept": "Difficulty Curves",
+          "connection_type": "direct_application",
+          "explanation": "Games engineer flow by dynamically adjusting challenge to match skill. Mario Kart rubber-banding, dynamic difficulty adjustment. Clear goals (objectives), immediate feedback (score), progressive challenge = flow channel.",
+          "transferable_principle": "Match challenge to current skill level in real-time for sustained engagement",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Engaged Learning",
+          "connection_type": "pedagogical_application",
+          "explanation": "Flow in education: challenge slightly above current level + clear objectives + immediate feedback. Montessori method designs for flow. Khan Academy's mastery progression follows flow channel.",
+          "transferable_principle": "Structure learning as progressive challenge with clear goals and instant feedback",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Workplace",
+          "target_concept": "Deep Work (Cal Newport)",
+          "connection_type": "productivity_analogy",
+          "explanation": "Deep work IS professional flow state. Requirements: remove distractions, define clear task, set time block, get immediate output. Shallow work prevents flow. Knowledge workers need 90-min flow blocks.",
+          "transferable_principle": "Eliminate interruptions; match task complexity to skill; create feedback loops",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Sports",
+          "target_concept": "Being In The Zone",
+          "connection_type": "direct_equivalence",
+          "explanation": "'The zone' in sports IS flow state. Basketball player seeing hoop as enormous, time slowing down. Requirements: sufficient skill + appropriate challenge + clear goal (score) + immediate feedback (ball in/out).",
+          "transferable_principle": "Elite performance requires challenge-skill balance and environmental support",
+          "confidence_score": 0.96
+        }
+      ]
+    },
+    {
+      "id": "C016",
+      "source_concept": "Network Effects",
+      "source_domain": "Business",
+      "multi_modal_input": {
+        "text_notes": "Product value increases as more users join. Direct (more users = more value, e.g., telephone), indirect (more users attract complementors, e.g., iOS + app developers). Metcalfe's Law: value \u221d n\u00b2.",
+        "voice_transcript": "The first person with a phone had nobody to call. The millionth person joined a massive network. Each new user makes the network more valuable for EVERYONE else."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Biology",
+          "target_concept": "Ecological Mutualism",
+          "connection_type": "biological_analogy",
+          "explanation": "Pollinators and flowering plants: more flowers attract more pollinators, more pollinators enable more flowers. Same feedback loop. Coral reefs: more coral species attract more fish, more fish sustain more coral.",
+          "transferable_principle": "Positive feedback loops where each participant increases value for all others",
+          "confidence_score": 0.86
+        },
+        {
+          "target_domain": "Language",
+          "target_concept": "Language Adoption",
+          "connection_type": "direct_application",
+          "explanation": "Languages have network effects: English is valuable because so many speak it. More speakers \u2192 more people learn it \u2192 more valuable. Dead languages fail because network size = zero.",
+          "transferable_principle": "Communication protocol value scales with number of adopters",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "City Density Benefits",
+          "connection_type": "urban_analogy",
+          "explanation": "Cities have network effects: more people attract more businesses, more businesses attract more people. Agglomeration economies. Public transit becomes viable at density thresholds.",
+          "transferable_principle": "Urban value increases non-linearly with population density",
+          "confidence_score": 0.84
+        },
+        {
+          "target_domain": "Immunology",
+          "target_concept": "Herd Immunity",
+          "connection_type": "biological_analogy",
+          "explanation": "Vaccines have network effects: each vaccinated person protects others (indirect network effect). Threshold for herd immunity = critical mass where disease cannot spread. Same tipping point dynamics as platform adoption.",
+          "transferable_principle": "Individual participation creates collective protection that benefits even non-participants",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C017",
+      "source_concept": "Flywheel Effect",
+      "source_domain": "Business",
+      "multi_modal_input": {
+        "text_notes": "Amazon's flywheel: lower prices \u2192 more customers \u2192 more sellers \u2192 better selection \u2192 lower costs \u2192 lower prices. Each turn builds momentum. Hard to start, unstoppable once spinning. Compound returns.",
+        "voice_transcript": "A mechanical flywheel is hard to push at first, but each turn makes the next easier. Eventually it spins on its own with minimal input. That's Amazon's business model."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Physics",
+          "target_concept": "Rotational Inertia",
+          "connection_type": "physical_analogy",
+          "explanation": "Flywheels store energy as rotational kinetic energy (\u00bdI\u03c9\u00b2). Once spinning, they resist changes (inertia). Business flywheel: accumulated advantages resist disruption. Hard to start, hard to stop.",
+          "transferable_principle": "Accumulated momentum reduces ongoing effort needed; initial investment is highest",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Habit Formation",
+          "target_concept": "Compound Habits",
+          "connection_type": "behavioral_analogy",
+          "explanation": "Good habits compound like a flywheel: exercise \u2192 better sleep \u2192 more energy \u2192 better work \u2192 more confidence \u2192 more exercise. Each turn reinforces the next. Starting is hardest.",
+          "transferable_principle": "Self-reinforcing loops gain momentum over time; focus on completing first cycles",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Ecology",
+          "target_concept": "Trophic Cascade",
+          "connection_type": "ecological_analogy",
+          "explanation": "Reintroducing wolves to Yellowstone started ecological flywheel: wolves \u2192 fewer deer \u2192 vegetation recovers \u2192 beavers return \u2192 wetlands form \u2192 fish thrive \u2192 bears fed. Self-reinforcing ecosystem restoration.",
+          "transferable_principle": "Small initial intervention can trigger self-sustaining cascading benefits",
+          "confidence_score": 0.85
+        },
+        {
+          "target_domain": "Learning",
+          "target_concept": "Knowledge Compounding",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Learning compounds: read one book \u2192 new concepts \u2192 recognize patterns in second book \u2192 connect ideas \u2192 deeper understanding \u2192 faster learning \u2192 read more books. Each cycle makes next easier.",
+          "transferable_principle": "Knowledge accumulates non-linearly; early base enables exponential growth",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C018",
+      "source_concept": "Moat (Competitive Advantage)",
+      "source_domain": "Business / Investing",
+      "multi_modal_input": {
+        "text_notes": "Warren Buffett: sustainable competitive advantage protecting against competitors. Types: brand, switching costs, network effects, cost advantage, patents/regulatory. Wide moat = durable advantage.",
+        "voice_transcript": "A castle is valuable because of the moat around it. If the moat is wide and full of alligators, invaders can't get in. Same for businesses - what keeps competitors out?"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Evolutionary Biology",
+          "target_concept": "Niche Specialization",
+          "connection_type": "biological_analogy",
+          "explanation": "Species develop specialized adaptations creating ecological moats: no other species can exploit that resource as efficiently. Darwin's finches: each beak shape = moat for specific food source.",
+          "transferable_principle": "Specialized adaptation to specific environment creates defensible position",
+          "confidence_score": 0.86
+        },
+        {
+          "target_domain": "Military History",
+          "target_concept": "Fortress Strategy",
+          "connection_type": "historical_analogy",
+          "explanation": "Castles with moats, mountain passes, island nations (Britain). Geographic moats protected against invasion. Same principle: create barriers that make attack costlier than reward.",
+          "transferable_principle": "Make competitive attack prohibitively expensive relative to potential gain",
+          "confidence_score": 0.83
+        },
+        {
+          "target_domain": "Chemistry",
+          "target_concept": "Activation Energy Barrier",
+          "connection_type": "chemical_analogy",
+          "explanation": "Chemical reactions need activation energy to start. A high activation energy barrier IS a moat: reactions (competitors) cannot proceed without sufficient energy (resources) to overcome it.",
+          "transferable_principle": "Increase the energy/resources competitors need to enter your space",
+          "confidence_score": 0.78
+        },
+        {
+          "target_domain": "Relationships",
+          "target_concept": "Social Bonding",
+          "connection_type": "social_analogy",
+          "explanation": "Deep relationships have 'switching costs' moat: years of shared history make new relationships start from scratch. Trust, inside jokes, mutual friends = accumulated advantage hard to replicate.",
+          "transferable_principle": "Time and emotional investment create barriers to replacement",
+          "confidence_score": 0.8
+        }
+      ]
+    },
+    {
+      "id": "C019",
+      "source_concept": "Harmonic Resonance",
+      "source_domain": "Music / Physics",
+      "multi_modal_input": {
+        "text_notes": "When forced vibration frequency matches natural frequency, amplitude increases dramatically. Opera singer shattering glass. Bridge collapse from wind at resonant frequency (Tacoma Narrows).",
+        "voice_transcript": "Push a swing at exactly the right rhythm and it goes higher and higher. Wrong rhythm and you cancel the motion. That's resonance - matching frequency amplifies effect."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Marketing",
+          "target_concept": "Viral Resonance",
+          "connection_type": "metaphorical",
+          "explanation": "Viral content resonates when frequency (message timing/tone) matches audience's natural frequency (current concerns/emotions). Wrong message at wrong time = no amplification. Right message at right time = exponential spread.",
+          "transferable_principle": "Match message frequency to audience's current emotional/attentional state",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Trigger Matching",
+          "connection_type": "psychological_application",
+          "explanation": "Therapists match client's emotional frequency (validation before challenge). Mismatched frequency (challenging too early) creates resistance. Resonant empathy amplifies therapeutic effect.",
+          "transferable_principle": "Match intervention intensity to recipient's current emotional state",
+          "confidence_score": 0.85
+        },
+        {
+          "target_domain": "Engineering",
+          "target_concept": "Structural Vibration",
+          "connection_type": "direct_application",
+          "explanation": "Engineers must avoid resonant frequencies in buildings and bridges. Dampers and tuned mass dampers (Taipei 101) dissipate resonant energy. Musical instruments deliberately use resonance (guitar body, piano soundboard).",
+          "transferable_principle": "Either exploit resonance for amplification or damp it to prevent destruction",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Team Dynamics",
+          "target_concept": "Group Flow / Synchronization",
+          "connection_type": "social_analogy",
+          "explanation": "Teams enter flow when working rhythms synchronize. Jazz ensemble = harmonic resonance of creative frequencies. Misaligned rhythms create dissonance and conflict.",
+          "transferable_principle": "Synchronized rhythms between individuals amplify collective output",
+          "confidence_score": 0.79
+        }
+      ]
+    },
+    {
+      "id": "C020",
+      "source_concept": "Counterpoint (Voice Independence)",
+      "source_domain": "Music",
+      "multi_modal_input": {
+        "text_notes": "Bach's counterpoint: multiple independent melodic lines that harmonize together. Each voice is complete and interesting alone, but together create emergent harmony. Rules govern acceptable intervals.",
+        "voice_transcript": "Bach's fugues are like conversations where each person speaks independently but together they make perfect sense. No voice dominates; all are essential."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Team Management",
+          "target_concept": "Cross-Functional Teams",
+          "connection_type": "organizational_analogy",
+          "explanation": "High-performing teams work like counterpoint: each function (engineering, design, product) has independent expertise but their work harmonizes toward shared goal. Micromanagement = forcing all voices to same melody.",
+          "transferable_principle": "Independent expertise in each function creates harmonic organizational output",
+          "confidence_score": 0.86
+        },
+        {
+          "target_domain": "Cooking",
+          "target_concept": "Flavor Layering",
+          "connection_type": "culinary_analogy",
+          "explanation": "Great dishes layer independent flavors that harmonize: acid, fat, salt, heat, texture each distinct but complementary. Like counterpoint, removing one layer diminishes the whole.",
+          "transferable_principle": "Multiple distinct elements in balance create emergent complexity",
+          "confidence_score": 0.83
+        },
+        {
+          "target_domain": "Writing",
+          "target_concept": "Multi-Threaded Narrative",
+          "connection_type": "narrative_analogy",
+          "explanation": "Novels with multiple POV characters (Game of Thrones) use narrative counterpoint. Each storyline is independently compelling, but intersections create emergent meaning no single thread achieves alone.",
+          "transferable_principle": "Parallel independent narratives that intersect create depth impossible with single thread",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C021",
+      "source_concept": "Feedback Loop",
+      "source_domain": "Systems Thinking",
+      "multi_modal_input": {
+        "text_notes": "Output of system fed back as input. Positive (reinforcing): amplifies change (virtuous/vicious cycles). Negative (balancing): stabilizes (thermostat). Delayed feedback causes oscillation.",
+        "diagram_description": "Circular diagram: Action \u2192 Result \u2192 Feedback \u2192 Modified Action. Two loops shown: one with '+' signs (reinforcing) and one with '-' signs (balancing)."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Biology",
+          "target_concept": "Homeostasis",
+          "connection_type": "biological_equivalence",
+          "explanation": "Body temperature regulation IS negative feedback: too hot \u2192 sweat \u2192 cool \u2192 stop sweating. Blood sugar, pH, hormone levels all use feedback. Diabetes = broken glucose feedback loop.",
+          "transferable_principle": "Biological systems maintain equilibrium through negative feedback control",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Economics",
+          "target_concept": "Supply and Demand",
+          "connection_type": "economic_equivalence",
+          "explanation": "Price mechanism IS negative feedback: high demand \u2192 price rises \u2192 demand falls \u2192 price stabilizes. Markets are balancing feedback systems. Interventions disrupt the feedback loop.",
+          "transferable_principle": "Price acts as feedback signal balancing supply and demand",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Self-Fulfilling Prophecy",
+          "connection_type": "psychological_application",
+          "explanation": "Belief \u2192 behavior \u2192 outcome confirms belief. Positive feedback loop: 'I am bad at math' \u2192 avoid practice \u2192 don't improve \u2192 confirms belief. Breaking the loop requires intervention at any point.",
+          "transferable_principle": "Beliefs drive behaviors that confirm beliefs; interrupt loop for change",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Audio Engineering",
+          "target_concept": "Microphone Feedback",
+          "connection_type": "direct_application",
+          "explanation": "Audio feedback: mic picks up speaker \u2192 amplified \u2192 speaker \u2192 mic. Positive feedback loop amplifies until system limit (screech). Echoes are delayed feedback. Noise cancellation uses inverted feedback.",
+          "transferable_principle": "Positive feedback amplifies signal exponentially until constrained by system limits",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Climate Science",
+          "target_concept": "Ice-Albedo Feedback",
+          "connection_type": "climate_application",
+          "explanation": "Warming \u2192 ice melts \u2192 less reflection (albedo) \u2192 more heat absorbed \u2192 more melting. Positive feedback amplifies initial change. Same for permafrost methane release.",
+          "transferable_principle": "Initial change triggers self-amplifying cycles that accelerate trend",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C022",
+      "source_concept": "Compound Interest",
+      "source_domain": "Mathematics / Finance",
+      "multi_modal_input": {
+        "text_notes": "A = P(1 + r)^t. Interest earns interest. Exponential growth. Rule of 72: divide 72 by rate to get doubling time. Einstein: 'Most powerful force in universe.'",
+        "voice_transcript": "Compound interest is the snowball effect for money. First year: interest on principal. Second year: interest on principal PLUS last year's interest. Each year the snowball gets bigger."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Biology",
+          "target_concept": "Bacterial Exponential Growth",
+          "connection_type": "mathematical_equivalence",
+          "explanation": "Bacterial growth IS compound interest: each cell divides (100% 'interest rate'), population doubles per generation. Petri dish limit = carrying capacity (market saturation). Same exponential curve.",
+          "transferable_principle": "Reproductive/reinvestment systems grow exponentially until resource limits",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Habit Formation",
+          "target_concept": "Habit Compounding",
+          "connection_type": "behavioral_analogy",
+          "explanation": "Daily 1% improvement compounds to 37x over a year (James Clear). Reading 10 pages/day = 3650 pages/year. Each habit reinforces others (positive feedback). Bad habits compound negatively.",
+          "transferable_principle": "Small consistent gains compound exponentially over time",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Social Media",
+          "target_concept": "Viral Growth",
+          "connection_type": "network_analogy",
+          "explanation": "Viral content grows compound-style: each share creates viewers who share. R0 (reproduction number) > 1 = exponential spread. 'Going viral' = reaching compound growth inflection point.",
+          "transferable_principle": "Content with sharing rate > 1 per viewer grows exponentially",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Learning",
+          "target_concept": "Knowledge Compounding",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Each new concept connects to existing knowledge, making future learning faster. First language = hardest. Each additional = easier (transfer learning). Knowledge graph density increases exponentially.",
+          "transferable_principle": "Knowledge base accelerates future acquisition through connection density",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Nuclear Physics",
+          "target_concept": "Nuclear Chain Reaction",
+          "connection_type": "physical_analogy",
+          "explanation": "Each fission releases neutrons that cause more fissions. Compound interest with rate > 100%. Critical mass = threshold where compound growth becomes self-sustaining. Atomic bomb = runaway compounding.",
+          "transferable_principle": "Self-catalyzing reactions produce exponential growth; critical mass determines sustainability",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C023",
+      "source_concept": "Antifragility",
+      "source_domain": "Risk Management (Taleb)",
+      "multi_modal_input": {
+        "text_notes": "Beyond robust (resists shocks) \u2192 antifragile (gains FROM shocks). Hydra: grows two heads when one cut off. Optionality: limited downside, unlimited upside. Convexity to randomness.",
+        "voice_transcript": "A porcelain cup is fragile - breaks under stress. A plastic cup is robust - doesn't break. But what GAINS from being dropped? Very few things. That's antifragile."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Immunology",
+          "target_concept": "Immune System Training",
+          "connection_type": "biological_equivalence",
+          "explanation": "Immune system IS antifragile: mild infection \u2192 stronger immunity. Vaccines exploit this. No exposure = fragile immune system. Too much exposure = death. Right dose = antifragility.",
+          "transferable_principle": "Controlled stress exposure builds capacity; zero exposure creates fragility",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Muscle Physiology",
+          "target_concept": "Hypertrophy",
+          "connection_type": "biological_equivalence",
+          "explanation": "Muscles are antifragile: exercise (micro-damage) \u2192 rest \u2192 stronger muscle. No exercise = atrophy. Too much = injury. Progressive overload = calibrated antifragility training.",
+          "transferable_principle": "Controlled damage triggers overcompensation; complete rest causes atrophy",
+          "confidence_score": 0.96
+        },
+        {
+          "target_domain": "Startup Ecosystem",
+          "target_concept": "Fail Fast Methodology",
+          "connection_type": "business_application",
+          "explanation": "Startups that fail and learn are antifragile: each failure eliminates a bad approach, leaving survivors stronger. Silicon Valley's tolerance for failure creates antifragile innovation ecosystem.",
+          "transferable_principle": "Small failures with learning create optionality; avoid large catastrophic failures",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Evolution",
+          "target_concept": "Natural Selection",
+          "connection_type": "evolutionary_equivalence",
+          "explanation": "Evolution IS antifragility of species: environmental stress kills weak individuals, leaving stronger genes. Species that survive shocks are better adapted. Mass extinctions enable radiations.",
+          "transferable_principle": "Selective pressure eliminates weak variants, strengthening surviving population",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C024",
+      "source_concept": "Diffusion of Innovation",
+      "source_domain": "Sociology (Rogers)",
+      "multi_modal_input": {
+        "text_notes": "Bell curve adoption: Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), Laggards (16%). Crossing the Chasm: gap between early adopters and early majority.",
+        "voice_transcript": "First people to buy a new tech are risk-takers. Then the cool kids. Then everyone else. Then finally your grandma. Each group needs different marketing."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Epidemiology",
+          "target_concept": "Disease Spread Patterns",
+          "connection_type": "mathematical_equivalence",
+          "explanation": "Disease spread follows SAME S-curve: initial slow growth (few carriers), exponential phase, then saturation (herd immunity). R0 maps to adoption rate. Superspreaders = influential early adopters.",
+          "transferable_principle": "Both ideas and diseases spread through contact networks with threshold dynamics",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Linguistics",
+          "target_concept": "Language Change",
+          "connection_type": "historical_application",
+          "explanation": "Linguistic innovations (new words, pronunciation changes) spread through same curve: youth (innovators) \u2192 trendsetters \u2192 mainstream \u2192 elderly. 'Literally' meaning change = late majority adoption.",
+          "transferable_principle": "Linguistic changes propagate through demographic groups in predictable sequence",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Fashion",
+          "target_concept": "Trend Cycles",
+          "connection_type": "market_analogy",
+          "explanation": "Fashion trends follow identical curve: designers (innovators) \u2192 celebrities (early adopters) \u2192 stores (early majority) \u2192 mass market (late majority) \u2192 discount bins (laggards). Same chasm between hype and mainstream.",
+          "transferable_principle": "Style innovations diffuse through social strata in predictable S-curve pattern",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C025",
+      "source_concept": "Pareto Principle (80/20 Rule)",
+      "source_domain": "Economics / Statistics",
+      "multi_modal_input": {
+        "text_notes": "80% of effects from 20% of causes. Juran: 'vital few and trivial many.' Universal: 80% sales from 20% customers, 80% bugs from 20% code, 80% wealth held by 20% people.",
+        "voice_transcript": "Most of your results come from a small part of your effort. Find that 20% and double down. Ignore the rest."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Software Engineering",
+          "target_concept": "Performance Optimization",
+          "connection_type": "direct_application",
+          "explanation": "Profile code: 80% execution time in 20% of functions. Optimize those only. Amdahl's Law: speedup limited by non-parallelizable portion. Focus on bottlenecks, not average code.",
+          "transferable_principle": "Identify and optimize the critical 20% before touching the trivial 80%",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Time Management",
+          "target_concept": "Priority Setting",
+          "connection_type": "productivity_application",
+          "explanation": "80% of value from 20% of tasks. Eisenhower Matrix identifies the vital few. Deep work on high-value 20% produces more than shallow work on all 100%.",
+          "transferable_principle": " Ruthlessly identify and focus effort on high-leverage activities",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Ecology",
+          "target_concept": "Keystone Species",
+          "connection_type": "ecological_analogy",
+          "explanation": "Small fraction of species (keystone) have disproportionate ecosystem impact. Remove sea otters \u2192 sea urchin explosion \u2192 kelp forest destruction. 1% of species cause 80% of ecosystem stability.",
+          "transferable_principle": "Small number of critical elements disproportionately determine system outcomes",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Customer Service",
+          "target_concept": "VIP Customer Treatment",
+          "connection_type": "business_application",
+          "explanation": "80% revenue from 20% customers. Customer segmentation: treat top 20% exceptionally, next 60% adequately, bottom 20% (unprofitable) may not be worth retaining. CLV (customer lifetime value) identifies the vital few.",
+          "transferable_principle": "Concentrate premium resources on highest-value relationships",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C026",
+      "source_concept": "Anchoring Bias",
+      "source_domain": "Cognitive Psychology",
+      "multi_modal_input": {
+        "text_notes": "First piece of information disproportionately influences decisions. Price negotiation: first offer anchors final price. Even random numbers (last 2 digits of SSN) affect willingness to pay.",
+        "experiment_description": "Tversky & Kahneman spin wheel with random number, then ask if Africa % of UN is higher/lower. People's estimates anchor to random number."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Negotiation",
+          "target_concept": "First Offer Strategy",
+          "connection_type": "direct_application",
+          "explanation": "Make the first offer to set the anchor. Even extreme anchors pull final agreement toward them. Counter-anchor if opponent opens first. Everything else is adjustment from anchor.",
+          "transferable_principle": "First number mentioned becomes psychological reference point for all subsequent negotiation",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Marketing",
+          "target_concept": "Pricing Display",
+          "connection_type": "direct_application",
+          "explanation": "Show highest-priced item first to anchor perception. 'Was $500, now $200' anchors value at $500. Restaurant menus: most expensive items at top make mid-range seem reasonable.",
+          "transferable_principle": "Present highest reference point first to make subsequent prices seem favorable",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Journalism",
+          "target_concept": "Framing",
+          "connection_type": "media_application",
+          "explanation": "First fact in a story anchors interpretation. 'Markets fell 10% on recession fears' anchors narrative as recession. Same data framed as 'correction after record highs' produces different perception.",
+          "transferable_principle": "First frame presented becomes default lens for interpreting subsequent information",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C027",
+      "source_concept": "Survivorship Bias",
+      "source_domain": "Statistics",
+      "multi_modal_input": {
+        "text_notes": "Focusing on survivors while overlooking those who failed. WWII planes: armor where returning planes had bullet holes \u2192 actually armor where they DIDN'T (those got shot down). Abraham Wald.",
+        "voice_transcript": "We study successful startups and think we know the formula. But we never see the thousands that did the SAME things and failed. We're only looking at the survivors."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Success Literature",
+          "connection_type": "critical_analysis",
+          "explanation": "Every business book studies Apple, Amazon, Google. None study the 1000 companies that did similar things and failed. 'Wake up at 4am' advice ignores all early-risers who went bankrupt.",
+          "transferable_principle": "Study failures as intensively as successes to identify actual differentiating factors",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Treatment Efficacy",
+          "connection_type": "clinical_application",
+          "explanation": "Patients who respond to treatment are visible; non-responders drop out of studies. Drug trials must account for dropout rate. Alternative medicine seems effective because failures die quietly.",
+          "transferable_principle": "Track all participants including dropouts to avoid inflated efficacy estimates",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Finance",
+          "target_concept": "Fund Manager Performance",
+          "connection_type": "investment_application",
+          "explanation": "Magazines feature fund managers who beat the market. Failed managers close funds and disappear. Over time, SOME managers will win by chance alone. Past performance is mostly survivorship, not skill.",
+          "transferable_principle": "Account for disappeared/bankrupt entities when evaluating performance patterns",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C028",
+      "source_concept": "Loss Aversion",
+      "source_domain": "Behavioral Economics",
+      "multi_modal_input": {
+        "text_notes": "Kahneman & Tversky: losses feel ~2x as painful as equivalent gains feel good. $100 loss = emotional magnitude of $200 gain. Drives risk-aversion for gains, risk-seeking for losses.",
+        "experiment_description": "People prefer certainty of $3000 over 80% chance of $4000 (expected $3200) for GAINS. But prefer 80% chance of losing $4000 over certainty of losing $3000 for LOSSES."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "User Experience",
+          "target_concept": "Streak Preservation",
+          "connection_type": "design_application",
+          "explanation": "Duolingo streaks exploit loss aversion: losing a 50-day streak feels worse than gaining day 51 feels good. Streak freeze (insurance) monetizes this. Snapchat streaks = same psychology.",
+          "transferable_principle": "Loss of accumulated progress feels disproportionately painful; use sparingly for motivation",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Politics",
+          "target_concept": "Fear-Based Messaging",
+          "connection_type": "political_application",
+          "explanation": "Political campaigns frame opposition as LOSS ('they'll take your X') rather than frame themselves as gain. Loss aversion makes fear 2x more motivating than hope. Negative ads work better.",
+          "transferable_principle": "Framing threats as losses is more motivating than framing benefits as gains",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Retention Strategy",
+          "target_concept": "Cancellation Flows",
+          "connection_type": "business_application",
+          "explanation": "Companies highlight what customers will LOSE by cancelling (data, history, connections) rather than what they'd gain by staying. 'You'll lose 5 years of playlists' > 'Stay for new features.'",
+          "transferable_principle": "Emphasize what will be lost rather than what could be gained to prevent churn",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C029",
+      "source_concept": "Optionality",
+      "source_domain": "Finance / Decision Theory",
+      "multi_modal_input": {
+        "text_notes": "Preserve choices with limited downside and unlimited upside. 'Heads I win, tails I don't lose much.' Convexity: benefit from positive randomness without harm from negative. Keep your options open.",
+        "voice_transcript": "A startup with $1M in the bank has optionality - they can pivot, invest, or wait. A startup with $1K has no options. Optionality is the most valuable asset."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Career Strategy",
+          "target_concept": "Skill Diversification",
+          "connection_type": "strategic_analogy",
+          "explanation": "Learning multiple skills creates career optionality. Engineer who can write + speak + design has more paths than pure engineer. Each skill is a 'call option' on future opportunities.",
+          "transferable_principle": "Diverse capabilities create multiple future paths; specialization reduces optionality",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Biology",
+          "target_concept": "Genetic Diversity",
+          "connection_type": "evolutionary_analogy",
+          "explanation": "Genetic diversity IS optionality: diverse gene pool has variants that might survive unknown future threats. Monoculture = no optionality = extinction from single disease. Sexual reproduction evolved to maximize optionality.",
+          "transferable_principle": "Diversity in population/system creates resilience against unknown future shocks",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Chemistry",
+          "target_concept": "Catalyst Design",
+          "connection_type": "chemical_analogy",
+          "explanation": "Good catalysts lower activation energy for many reactions (optionality), not just one. Platinum catalyzes multiple reactions. Specific catalyst = one option; general catalyst = many options.",
+          "transferable_principle": "Broad applicability creates more value than narrow specialization in uncertain environments",
+          "confidence_score": 0.78
+        }
+      ]
+    },
+    {
+      "id": "C030",
+      "source_concept": "Emergence",
+      "source_domain": "Complexity Science",
+      "multi_modal_input": {
+        "text_notes": "Complex system-level behaviors arise from simple local interactions. Ant colonies, consciousness, markets. Whole > sum of parts. Cannot predict emergence from component analysis alone.",
+        "voice_transcript": "One ant is dumb. A million ants build cathedrals. No ant knows the plan. The intelligence EMERGES from simple rules + many interactions. Your brain is 86 billion neurons doing simple things - consciousness emerges."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Consciousness",
+          "connection_type": "biological_equivalence",
+          "explanation": "Consciousness IS emergence: individual neurons just fire electrically. 86 billion interacting creates subjective experience. No single neuron is conscious; consciousness emerges from connectivity pattern.",
+          "transferable_principle": "System-level properties cannot be found in any individual component; arise from interaction patterns",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Economics",
+          "target_concept": "Market Price Discovery",
+          "connection_type": "economic_equivalence",
+          "explanation": "Market price emerges from millions of individual buy/sell decisions. No central planner sets price. Adam Smith's 'invisible hand' = emergence. Soviet central planning failed because it suppressed emergent price discovery.",
+          "transferable_principle": "Coordinated system behavior can emerge from decentralized local decisions",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "City Dynamics",
+          "connection_type": "urban_equivalence",
+          "explanation": "City character emerges from millions of individual decisions: where to eat, live, work. No planner designed Tokyo's energy or NYC's pace. Top-down planning (Brasilia) often fails to create emergent vitality.",
+          "transferable_principle": "Vibrant urban life emerges from citizen agency, not master planning",
+          "confidence_score": 0.88
+        }
+      ]
+    }
+  ]
+}

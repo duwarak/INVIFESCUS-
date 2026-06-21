@@ -1,0 +1,1026 @@
+{
+  "metadata": {
+    "dataset_name": "Cross-Domain Valid Connections Part 3",
+    "clusters": "C051-C080"
+  },
+  "connection_clusters": [
+    {
+      "id": "C051",
+      "source_concept": "Divergent vs Convergent Thinking",
+      "source_domain": "Creativity / Psychology",
+      "multi_modal_input": {
+        "text_notes": "Divergent: generate many solutions (quantity over quality, brainstorming). Convergent: narrow to best solution (analysis, judgment). Creative process requires both: divergent first, then convergent.",
+        "voice_transcript": "First come up with a hundred ideas, no matter how crazy. THEN pick the best one. If you judge while creating, you kill creativity. Separate the two modes."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Software Development",
+          "target_concept": "Design Sprint (Google)",
+          "connection_type": "process_application",
+          "explanation": "Design Sprints: divergent (day 1-2: many solutions) \u2192 convergent (day 3: vote on best) \u2192 prototype. Same two-phase pattern. Separating ideation from evaluation is the key innovation.",
+          "transferable_principle": "Explicitly separate idea generation from evaluation in any creative process",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Writing",
+          "target_concept": "Drafting vs Editing",
+          "connection_type": "writing_process",
+          "explanation": "Writing: first draft = divergent (get it all out). Editing = convergent (cut, refine). 'Write drunk, edit sober.' Attempting both simultaneously = writer's block. Anne Lamott's 'shitty first draft.'",
+          "transferable_principle": "First drafts should be generative without judgment; refinement comes later",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Venture Capital",
+          "target_concept": "Portfolio Construction",
+          "connection_type": "investment_process",
+          "explanation": "VC: divergent (evaluate hundreds of startups) \u2192 convergent (invest in 10-20). Within portfolio: some bets are moonshots (highly divergent), others are safer (convergent). Balance required.",
+          "transferable_principle": "Broad exploration followed by focused commitment optimizes discovery and returns",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C052",
+      "source_concept": "Signal vs Noise",
+      "source_domain": "Information Theory / Statistics",
+      "multi_modal_input": {
+        "text_notes": "Signal = meaningful pattern. Noise = random variation. SNR (signal-to-noise ratio) measures clarity. Low SNR = can't detect signal. Filtering increases effective SNR.",
+        "voice_transcript": "The useful information is the signal. Everything else is noise. Most data is noise. Your job is to find the weak signal in all that noise. Like finding a whisper at a rock concert."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "News / Media",
+          "target_concept": "Information Diet",
+          "connection_type": "media_literacy",
+          "explanation": "Daily news is mostly noise (events that won't matter in a week). Signal = long-term trends, structural changes. Low-information diet (avoid news, read books) dramatically increases SNR of consumed information.",
+          "transferable_principle": "Reduce consumption of high-frequency low-value information to increase signal detection",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Investing",
+          "target_concept": "Market Timing vs Time in Market",
+          "connection_type": "investment_strategy",
+          "explanation": "Daily price movements = noise. Long-term economic growth = signal. Trying to time market means trading on noise. 'Time in market beats timing the market' = focus on signal, ignore noise.",
+          "transferable_principle": "Short-term fluctuations are noise; long-term trends are signal; optimize for signal detection",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Sensory Filtering",
+          "connection_type": "biological_equivalence",
+          "explanation": "Brain filters sensory input: unconscious processing ignores constant stimuli (habituation). Conscious attention focuses on novel/changing signals. Sensory gating prevents noise overload. ADHD = impaired noise filtering.",
+          "transferable_principle": "Biological attention systems evolved to filter noise and prioritize novel signals",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C053",
+      "source_concept": "Asymmetric Risk / Convexity",
+      "source_domain": "Risk Management (Taleb)",
+      "multi_modal_input": {
+        "text_notes": "Situations with limited downside and unlimited upside. 'Barbell strategy': extreme safety + extreme risk, nothing in middle. Optionality creates convexity. Antifragile systems benefit from volatility.",
+        "voice_transcript": "Bet where if you're wrong you lose a little, if you're right you win a lot. Venture capital works like this: invest in 20 startups, 19 fail but 1 is Facebook. Small bets, huge payoffs."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Evolution",
+          "target_concept": "Sexual Reproduction",
+          "connection_type": "biological_equivalence",
+          "explanation": "Sexual reproduction IS asymmetric risk: cost = small (energy to reproduce). Upside = novel genetic combinations that might be superior. Asexual reproduction = no downside but no upside (fragile to change).",
+          "transferable_principle": "Combining elements with recombination potential creates optionality on superior outcomes",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Career",
+          "target_concept": "Side Projects / Portfolio Career",
+          "connection_type": "career_strategy",
+          "explanation": "Side projects are convex: time cost is limited, but potential upside (new career, startup, skill) is unlimited. Full-time job = no convexity. Portfolio of small bets = barbell strategy.",
+          "transferable_principle": "Small diversified bets with limited downside and open-ended upside optimize career optionality",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Writing",
+          "target_concept": "Blogging / Publishing",
+          "connection_type": "creative_strategy",
+          "explanation": "Writing online is convex: cost = time to write. Upside = unlimited (viral article, book deal, career change). Worst case = no one reads it (zero loss beyond time). Publishing creates optionality.",
+          "transferable_principle": "Content creation has fixed cost and potentially unlimited distribution upside",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C054",
+      "source_concept": "Premortem Analysis",
+      "source_domain": "Decision Making (Gary Klein)",
+      "multi_modal_input": {
+        "text_notes": "Before committing to plan, imagine it failed and work backward to find why. 'It's 6 months from now and this project failed spectacularly. What went wrong?' Prevents overconfidence and groupthink.",
+        "voice_transcript": "Instead of everyone saying why the plan will work, imagine it already failed. Now tell me why. This frees people to criticize without being negative - you're just explaining history."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Engineering",
+          "target_concept": "Failure Mode and Effects Analysis (FMEA)",
+          "connection_type": "engineering_equivalence",
+          "explanation": "FMEA IS structured premortem: for each component, ask 'how could this fail?' Rate severity, occurrence, detection. Address highest-risk modes. Used in NASA, automotive, healthcare.",
+          "transferable_principle": "Systematic prospective failure analysis prevents predictable problems before they occur",
+          "confidence_score": 0.96
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Morbidity and Mortality Conference",
+          "connection_type": "medical_practice",
+          "explanation": "M&M conferences: review patient deaths to learn what went wrong. Premortem in retrospect. Creates learning culture without blame. Aviation 'black box' analysis same principle.",
+          "transferable_principle": "Structured review of failures without blame creates organizational learning and prevention",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Marriage / Relationships",
+          "target_concept": "Relationship Check-ins",
+          "connection_type": "social_application",
+          "explanation": "Couples who imagine their relationship failed and work backward ('what habits would destroy us?') can prevent divorce. John Gottman's ' Four Horsemen' = known failure modes to avoid.",
+          "transferable_principle": "Proactive identification of failure modes in relationships enables preventive maintenance",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C055",
+      "source_concept": "Confirmation Bias",
+      "source_domain": "Cognitive Psychology",
+      "multi_modal_input": {
+        "text_notes": "Seeking evidence that confirms existing beliefs while ignoring disconfirming evidence. Related: motivated reasoning, cherry-picking. Found in everyone regardless of intelligence.",
+        "voice_transcript": "We don't see the world as it is. We see the world as we are. If you believe something, your brain filters out evidence against it. Smart people are BETTER at rationalizing their biases."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Science",
+          "target_concept": "Null Result Publishing Problem",
+          "connection_type": "scientific_criticism",
+          "explanation": "Journals don't publish null results (experiments that failed to confirm hypothesis). Scientists don't submit them. Result: published literature is filtered toward confirmation. Creates systematic bias in meta-analyses.",
+          "transferable_principle": "Selection toward positive results systematically biases collective knowledge toward confirmation",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Social Media",
+          "target_concept": "Filter Bubbles / Echo Chambers",
+          "connection_type": "technology_application",
+          "explanation": "Algorithms show content similar to what you already like. You never see disconfirming views. Over time, beliefs become more extreme. Confirmation bias amplified by technology = polarization.",
+          "transferable_principle": "Information filtering systems amplify pre-existing beliefs by removing exposure to alternatives",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Investing",
+          "target_concept": "Holding Losing Positions",
+          "connection_type": "behavioral_finance",
+          "explanation": "Investors sell winners too early (confirm 'I was right') and hold losers too long (avoid confirming 'I was wrong'). Loss aversion + confirmation bias = portfolio destruction. Sell rules combat this.",
+          "transferable_principle": "Active seeking of disconfirming evidence is required to overcome investment confirmation bias",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C056",
+      "source_concept": "Habit Stacking",
+      "source_domain": "Behavioral Science (Clear)",
+      "multi_modal_input": {
+        "text_notes": "Attach new habit to existing habit. 'After I [CURRENT HABIT], I will [NEW HABIT].' Uses existing neural pathway as trigger. Implementation intention formula.",
+        "voice_transcript": "Don't try to build a habit from scratch. Stack it on something you already do. After I pour my morning coffee, I'll write one sentence. Coffee is the trigger; writing is the new habit."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "UX Design",
+          "target_concept": "Onboarding Flow Design",
+          "connection_type": "design_application",
+          "explanation": "Product onboarding stacks new behaviors on existing habits: 'Import your contacts' (uses existing address book habit), 'Connect your calendar' (uses existing scheduling habit). Each step piggybacks on established behavior.",
+          "transferable_principle": "New product behaviors should attach to existing user habits rather than requiring novel triggers",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Scaffolded Learning",
+          "connection_type": "pedagogical_application",
+          "explanation": "New concepts taught by building on known concepts. Algebra builds on arithmetic. Calculus builds on algebra. Each new skill 'stacked' on mastered skill. Vygotsky's ZPD in practice.",
+          "transferable_principle": "New knowledge should be explicitly connected to and built upon existing knowledge",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Hebbian Learning",
+          "connection_type": "neural_mechanism",
+          "explanation": "'Neurons that fire together, wire together.' Habit stacking creates synaptic coupling between existing behavior neurons and new behavior neurons. Physical manifestation of the psychological technique.",
+          "transferable_principle": "Neural pathways strengthen when activated simultaneously, creating automatic behavioral sequences",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C057",
+      "source_concept": "Temporal Discounting",
+      "source_domain": "Behavioral Economics",
+      "multi_modal_input": {
+        "text_notes": "Humans value immediate rewards more than future rewards. Hyperbolic discounting: preference reversals over time. $100 now preferred over $110 in a month, but $110 in 13 months preferred over $100 in 12 months.",
+        "voice_transcript": "Given a choice between candy now or two candies tomorrow, most kids pick one now. Between one candy in 30 days or two in 31 days, most pick two. Same time gap, different preference. We irrationally prefer NOW."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Health",
+          "target_concept": "Exercise Procrastination",
+          "connection_type": "behavioral_application",
+          "explanation": "People skip exercise because benefit is delayed (months) while cost is immediate (pain). Same for healthy eating, saving money. Temporal discounting explains all self-control failures.",
+          "transferable_principle": "Delayed benefits require present-moment strategies to overcome immediate-cost aversion",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Climate",
+          "target_concept": "Climate Action Delay",
+          "connection_type": "policy_application",
+          "explanation": "Climate mitigation costs are immediate; benefits are decades away. Temporal discounting makes collective action nearly impossible. Carbon pricing tries to make future costs present.",
+          "transferable_principle": "Interventions that bring future consequences into present experience overcome temporal discounting",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Addiction",
+          "target_concept": "Substance Abuse",
+          "connection_type": "clinical_application",
+          "explanation": "Addiction exploits extreme temporal discounting: immediate high vs. delayed harm. Delay discounting rate predicts addiction severity. Interventions that extend time horizon (future self visualization) reduce addictive behavior.",
+          "transferable_principle": "Addiction severity correlates with steepness of temporal discounting curve",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C058",
+      "source_concept": "Metacognition",
+      "source_domain": "Cognitive Psychology",
+      "multi_modal_input": {
+        "text_notes": "Thinking about thinking. Awareness and control of one's own cognitive processes. 'Do I understand this?' 'Is my reasoning sound?' Key to learning and expertise. Dunning-Kruger: low metacognition = overconfidence.",
+        "voice_transcript": "The most important skill is knowing what you don't know. It's not being smart - it's being aware of your own thinking. Expert chess players think about their thinking. Beginners just move pieces."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Self-Assessment / Exam Wrappers",
+          "connection_type": "pedagogical_application",
+          "explanation": "Post-exam reflection: 'What did I think would be hard? What actually was? How did I prepare?' Builds metacognitive awareness. Students who self-assess accurately learn faster. Exam wrappers = structured metacognition.",
+          "transferable_principle": "Explicit reflection on learning process improves future learning efficiency",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Leadership",
+          "target_concept": "Strategic Self-Awareness",
+          "connection_type": "management_application",
+          "explanation": "Leaders with metacognition recognize their own decision biases and compensate. They ask: 'Why am I thinking this? What am I missing? Who disagrees?' Executive coaching builds metacognitive skills.",
+          "transferable_principle": "Self-aware leaders who question their own reasoning make fewer cognitive errors",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "AI / Machine Learning",
+          "target_concept": "Uncertainty Quantification",
+          "connection_type": "AI_analogy",
+          "explanation": "Good ML models output confidence scores (know what they don't know). Bad models are confidently wrong. This IS metacognition for AI. Calibration: aligning confidence with accuracy. Humans need this too.",
+          "transferable_principle": "Accurate confidence calibration (knowing what you don't know) is as important as knowledge",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C059",
+      "source_concept": "OODA Loop",
+      "source_domain": "Military Strategy (Boyd)",
+      "multi_modal_input": {
+        "text_notes": "Observe \u2192 Orient \u2192 Decide \u2192 Act. Fighter pilot decision cycle. Faster OODA loop = competitive advantage. Getting inside opponent's OODA loop = they can't respond effectively.",
+        "voice_transcript": "In a dogfight, you have to see what's happening, understand it, decide what to do, and act - faster than the other guy. If your loop is tighter, he reacts to old information while you're already doing the next thing."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Agile Methodology",
+          "connection_type": "management_equivalence",
+          "explanation": "Agile sprints ARE OODA loops: Observe (sprint review), Orient (retrospective), Decide (planning), Act (sprint execution). 2-week cycle = fast OODA. Waterfall = one slow OODA loop over months.",
+          "transferable_principle": "Rapid iterative cycles of observation and action outperform long planning phases in dynamic environments",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Emergency Medicine",
+          "target_concept": "Resuscitation Protocols",
+          "connection_type": "clinical_application",
+          "explanation": "Code Blue: Observe (vitals), Orient (diagnosis), Decide (intervention), Act (treatment). Repeat every 2 minutes (CPR cycles). Rapid OODA saves lives. ACLS protocols formalize the loop.",
+          "transferable_principle": "High-stakes dynamic environments require rapid structured decision cycles with feedback",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Trading",
+          "target_concept": "Day Trading Framework",
+          "connection_type": "financial_application",
+          "explanation": "Day traders run OODA loops in minutes: Observe (price action), Orient (pattern recognition), Decide (entry/exit), Act (execute trade). Algorithmic trading compresses OODA to milliseconds.",
+          "transferable_principle": "Faster decision cycles in competitive markets create information and execution advantages",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C060",
+      "source_concept": "Chesterton's Fence",
+      "source_domain": "Philosophy / Conservatism",
+      "multi_modal_input": {
+        "text_notes": "GK Chesterton: Don't remove a fence until you understand why it was built. Reforms that eliminate structures without understanding their purpose often cause unintended harm. Respect for evolved wisdom.",
+        "voice_transcript": "Before you tear down a rule or tradition, understand why it exists. Maybe it was built to stop a problem you don't see because the fence is working. This applies to laws, code, and social norms."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Software Engineering",
+          "target_concept": "Legacy Code Refactoring",
+          "connection_type": "engineering_application",
+          "explanation": "Junior developers want to rewrite 'messy' legacy code. Seniors know: that mess handles edge cases you haven't discovered. Refactor only after understanding WHY each line exists. Every 'ugly' hack was a bug fix.",
+          "transferable_principle": "Understand purpose of existing structures before modifying; they may solve invisible problems",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Social Policy",
+          "target_concept": "Regulatory Reform",
+          "connection_type": "policy_application",
+          "explanation": "Deregulation without understanding why regulation existed causes crises. Glass-Steagall repeal (understood as 'unnecessary fence') \u2192 2008 crisis. Each regulation was a response to a past failure.",
+          "transferable_principle": "Regulations exist because of demonstrated failures; removing them requires understanding original problem",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Evolutionary Biology",
+          "target_concept": "Vestigial Structures",
+          "connection_type": "biological_analogy",
+          "explanation": "Appendix, tonsils once thought useless ( Chesterton fences to remove). Now known: appendix stores beneficial bacteria, tonsils are immune organs. Evolution preserved them for reasons we didn't understand.",
+          "transferable_principle": "Biological structures preserved over evolutionary time likely serve unrecognized functions",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C061",
+      "source_concept": "Chesterton's Fence",
+      "source_domain": "Philosophy",
+      "multi_modal_input": {
+        "text_notes": "Before removing a fence, understand why it was put there. Applies to traditions, rules, code, institutions. Reforms often fail because they remove safeguards whose purpose wasn't obvious.",
+        "voice_transcript": "You see a fence across a road and say 'Why is this here? It blocks progress!' Chesterton says: don't remove it until you know why someone built it. Maybe it stops people from falling off a cliff."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Software",
+          "target_concept": "Legacy Code",
+          "connection_type": "direct_application",
+          "explanation": "Every 'ugly' line of legacy code was written to fix a specific bug. Deleting it without understanding why causes regressions. That weird null check? It handles a race condition from 2017 that only happens on Tuesdays.",
+          "transferable_principle": "Every existing mechanism likely addresses a specific problem; understand before removing",
+          "confidence_score": 0.96
+        },
+        {
+          "target_domain": "Policy",
+          "target_concept": "Regulatory Repeal",
+          "connection_type": "policy_application",
+          "explanation": "Glass-Steagall (banking separation) seemed obsolete. Repealed in 1999. 2008 financial crisis showed why it existed. Each regulation is a fence built after someone fell off a cliff.",
+          "transferable_principle": "Regulations exist because past failures demonstrated need; removing requires understanding original harm",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C062",
+      "source_concept": "Chesterton's Fence",
+      "source_domain": "Philosophy",
+      "multi_modal_input": {
+        "text_notes": "Principle of understanding existing structures before changing them. Don't remove a fence until you know why it was built.",
+        "voice_transcript": "Same principle as before - this is a core mental model."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Anatomical Structures",
+          "connection_type": "biological_application",
+          "explanation": "Appendix and tonsils were routinely removed as 'useless.' Now we know appendix stores beneficial gut bacteria and tonsils are first-line immune defense. Vestigial organs weren't vestigial.",
+          "transferable_principle": "Biological structures preserved by evolution likely serve functions not yet understood",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Architecture",
+          "target_concept": "Traditional Building Methods",
+          "connection_type": "design_application",
+          "explanation": "Traditional buildings use overhangs, courtyards, thick walls for climate control. Modern architects removed these 'fences' for aesthetics, then added HVAC to fix the problems. The old fences had climate purposes.",
+          "transferable_principle": "Traditional design elements often encode generations of problem-solving wisdom",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C063",
+      "source_concept": "Via Negativa",
+      "source_domain": "Theology / Philosophy",
+      "multi_modal_input": {
+        "text_notes": "Knowledge through negation. What God is NOT rather than what God IS. Apophatic theology. Knowing by removing false attributes rather than asserting positive ones.",
+        "voice_transcript": "Some things are easier to define by what they're not. What is health? Absence of disease. What is happiness? Absence of suffering. Via negativa: define by subtraction."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Diagnostic Exclusion",
+          "connection_type": "clinical_application",
+          "explanation": "Diagnosis by ruling OUT what it's not. Differential diagnosis: list possible conditions, test to eliminate. What's left is the diagnosis. Via negativa IS the diagnostic method. House M.D.: 'It's not lupus.'",
+          "transferable_principle": "Systematic elimination of alternatives is a powerful inference method when direct identification is difficult",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Sculpture",
+          "target_concept": "Subtractive Method",
+          "connection_type": "artistic_application",
+          "explanation": "Michelangelo: 'I saw the angel in the marble and carved until I set him free.' Sculpture removes what is NOT the figure. Same principle: creation through elimination. Stone \u2192 David by removing everything else.",
+          "transferable_principle": "Some creations are revealed through removal of surrounding material rather than addition",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Investing",
+          "target_concept": "Index Investing",
+          "connection_type": "investment_application",
+          "explanation": "Instead of picking winners (positive approach), index investing removes losers by buying everything. Via negativa in finance. Buffett: 'It's not about being brilliant, it's about avoiding stupidity.'",
+          "transferable_principle": "Avoiding bad decisions often outperforms seeking good ones in complex uncertain domains",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C064",
+      "source_concept": "Via Negativa",
+      "source_domain": "Philosophy",
+      "multi_modal_input": {
+        "text_notes": "Defining by what something is NOT rather than what it IS. Apophatic theology. Understanding through negation and removal.",
+        "voice_transcript": "Via negativa - define by subtraction."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Productivity",
+          "target_concept": "Elimination Over Addition",
+          "connection_type": "productivity_application",
+          "explanation": "Most productivity advice adds systems, apps, habits. Via negativa productivity: remove distractions, eliminate meetings, cut projects, say no. The remaining work naturally expands to fill capacity.",
+          "transferable_principle": "Capacity creation through subtraction often more effective than productivity through addition",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Diet",
+          "target_concept": "Elimination Diets",
+          "connection_type": "health_application",
+          "explanation": "Elimination diet: remove foods, reintroduce one at a time. Identify trigger by what absence improves symptoms. Via negativa in nutrition. Opposite of 'eat this superfood' advice.",
+          "transferable_principle": "Identify beneficial elements by systematic removal and observation of effect",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C065",
+      "source_concept": "Chesterton's Fence",
+      "source_domain": "Philosophy",
+      "multi_modal_input": {
+        "text_notes": "Don't remove a fence until you know why it was built. Understanding existing structures before changing them.",
+        "voice_transcript": "Chesterton's fence principle."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Marriage",
+          "target_concept": "Relationship Traditions",
+          "connection_type": "social_application",
+          "explanation": "Young couples reject marriage traditions as outdated. Anniversary celebrations, meeting families, shared finances are 'fences' built by generations of couples who discovered these prevent relationship failure.",
+          "transferable_principle": "Social traditions often encode collective wisdom about relationship maintenance",
+          "confidence_score": 0.84
+        },
+        {
+          "target_domain": "Code Review",
+          "target_concept": "Why Comments",
+          "connection_type": "software_practice",
+          "explanation": "Comments explaining WHY (not WHAT) are Chesterton fences for future developers. 'This counterintuitive check handles timezone edge case during DST transition.' Without the comment, the fence gets removed.",
+          "transferable_principle": "Document reasoning for non-obvious decisions to prevent future well-intentioned breakage",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C066",
+      "source_concept": "Parkinson's Law",
+      "source_domain": "Management",
+      "multi_modal_input": {
+        "text_notes": "Work expands to fill the time available for its completion. Give someone a month for a week's task, it takes a month. 2-week vacation preparation takes 2 weeks; same trip decided in 2 hours if flight is tonight.",
+        "voice_transcript": "If you have a month to finish a report, you'll take a month. If you have a day, you'll take a day. The work STRETCHES to fill the container. This is why deadlines matter."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Physics",
+          "target_concept": "Gas Expansion",
+          "connection_type": "physical_analogy",
+          "explanation": "Gas expands to fill container volume. Same principle: tasks expand to fill available time. Constrain the container (timebox) and the work compresses. Timeboxing IS a pressure container for tasks.",
+          "transferable_principle": "Constraining available space/time forces compression of content to fit",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Budgeting",
+          "target_concept": "Expense Expansion",
+          "connection_type": "financial_analogy",
+          "explanation": "Expenses expand to fill available income (lifestyle inflation). Raise = spending increase, not savings. Solution: pay yourself first (remove the extra space before Parkinson's law applies to spending).",
+          "transferable_principle": "Remove excess resource availability before expansion occurs to prevent waste",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Productivity",
+          "target_concept": "Time Boxing",
+          "connection_type": "productivity_application",
+          "explanation": "Timeboxing explicitly limits container size: 'You have 25 minutes for this task' (Pomodoro). Forced compression activates focus. Open-ended tasks expand indefinitely.",
+          "transferable_principle": "Explicit time constraints prevent work expansion and activate focused execution",
+          "confidence_score": 0.94
+        }
+      ]
+    },
+    {
+      "id": "C067",
+      "source_concept": "Goodhart's Law",
+      "source_domain": "Economics / Metrics",
+      "multi_modal_input": {
+        "text_notes": "'When a measure becomes a target, it ceases to be a good measure.' People optimize for the metric, not the underlying goal. Teaching to the test, clickbait, fake reviews.",
+        "voice_transcript": "If you measure programmers by lines of code, you'll get a lot of lines of code. Not good code, not working code - just LOTS of code. The metric becomes the goal and the real goal is forgotten."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Standardized Testing",
+          "connection_type": "educational_criticism",
+          "explanation": "Schools teach to the test (optimize for metric) rather than teaching critical thinking (real goal). Test scores rise, actual learning falls. Campbell's Law: same principle in social science.",
+          "transferable_principle": "Measurement systems inevitably distort the behaviors they intend to measure",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Healthcare",
+          "target_concept": "Patient Satisfaction Scores",
+          "connection_type": "medical_criticism",
+          "explanation": "Hospitals optimize for satisfaction scores rather than health outcomes. Opioids prescribed to boost satisfaction (metric) while worsening addiction (real goal). Doctors avoid difficult conversations that lower scores.",
+          "transferable_principle": "Healthcare metrics that don't align with actual health outcomes drive harmful optimization",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Social Media",
+          "target_concept": "Engagement Metrics",
+          "connection_type": "platform_criticism",
+          "explanation": "Platforms optimize for engagement (metric) rather than wellbeing (real goal). Result: outrage, clickbait, doomscrolling. Engagement maximization destroys the user experience it was meant to measure.",
+          "transferable_principle": "Optimizing for engagement metrics systematically degrades platform quality and user wellbeing",
+          "confidence_score": 0.94
+        }
+      ]
+    },
+    {
+      "id": "C068",
+      "source_concept": "Lindy Effect",
+      "source_domain": "Probability",
+      "multi_modal_input": {
+        "text_notes": "Non-perishable things (technologies, ideas) that survived X years will survive another X years. Future life expectancy proportional to past age. Books read for 500 years will be read 500 more.",
+        "voice_transcript": "The Bible has been around 2000 years. It'll probably be around 2000 more. A TikTok trend that's been around 2 days probably has 2 days left. The longer something non-perishable survives, the longer it's likely to last."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Technology",
+          "target_concept": "Tech Stack Selection",
+          "connection_type": "engineering_strategy",
+          "explanation": "Choose technologies with Lindy: C (50 years) over latest framework (2 years). PostgreSQL over new database. Boring tech that works beats exciting tech that might not. 'Nobody ever got fired for buying IBM.'",
+          "transferable_principle": "For infrastructure decisions, prefer proven longevity over novelty or features",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Nutrition",
+          "target_concept": "Traditional Diets",
+          "connection_type": "health_application",
+          "explanation": "Mediterranean diet sustained populations for millennia (Lindy). Keto diet: 100 years. Raw food: 50 years. Traditional food combinations encode nutritional wisdom that short-term studies miss.",
+          "transferable_principle": "Dietary patterns sustaining populations for centuries have passed generational selection",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Finance",
+          "target_concept": "Store of Value Selection",
+          "connection_type": "investment_strategy",
+          "explanation": "Gold: 5000 years as money (Lindy). Bitcoin: 15 years. Real estate: centuries. Choosing store of value by Lindy favors gold and land over crypto. Survived inflation, wars, regime changes.",
+          "transferable_principle": "Wealth preservation vehicles with longer historical survival are more likely to endure future shocks",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C069",
+      "source_concept": "Refactoring",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Restructuring code without changing external behavior. Improves internal quality. Technical debt = cost of not refactoring. Boy Scout rule: leave code cleaner than you found it.",
+        "voice_transcript": "Refactoring is like cleaning your kitchen while cooking. You reorganize, you simplify, but the meal still tastes the same. The kitchen just works better next time."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Writing",
+          "target_concept": "Revision / Editing",
+          "connection_type": "creative_equivalence",
+          "explanation": "Editing IS refactoring: restructure sentences, paragraphs, chapters without changing story. First draft = working code. Revision = refactoring. Both improve internal structure for future maintainers (readers/editors).",
+          "transferable_principle": "Restructuring for clarity and maintainability without changing function is universal quality improvement",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Organizational Design",
+          "target_concept": "Restructuring",
+          "connection_type": "management_analogy",
+          "explanation": "Corporate restructuring without strategy change = organizational refactoring. Simplify reporting lines, remove redundant roles, clarify responsibilities. Same company outputs, better internal function.",
+          "transferable_principle": "Periodic structural simplification maintains organizational efficiency as complexity accumulates",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Habits",
+          "target_concept": "Routine Optimization",
+          "connection_type": "productivity_analogy",
+          "explanation": "Optimizing morning routine without changing goals: reorder tasks, remove friction, batch similar activities. Same outputs (get ready), improved process. Habit refactoring.",
+          "transferable_principle": "Regular optimization of processes maintains effectiveness as circumstances and understanding evolve",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C070",
+      "source_concept": "Premature Optimization",
+      "source_domain": "Software Engineering (Knuth)",
+      "multi_modal_input": {
+        "text_notes": "'Premature optimization is the root of all evil.' Optimize before profiling leads to complex, unreadable code for hypothetical performance gains. Measure first, optimize bottlenecks only.",
+        "voice_transcript": "Don't make your code super complex for speed before you know WHERE it's slow. 97% of your code doesn't matter for speed. Find the 3% that does, optimize only that. Everything else: keep it simple."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Over-Engineering Products",
+          "connection_type": "product_criticism",
+          "explanation": "Building features for hypothetical users before validating demand = premature optimization. MVP philosophy: build the minimum, measure, THEN optimize. Most startups fail from over-optimization, not under-optimization.",
+          "transferable_principle": "Validate and measure before investing in optimization of any system",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Personal Development",
+          "target_concept": "Over-Planning Life",
+          "connection_type": "self_improvement",
+          "explanation": "Planning every detail of career/life before starting is premature optimization. You don't know what matters yet. Start, gather data, THEN optimize. 'No plan survives contact with the enemy.'",
+          "transferable_principle": "Gather experiential data before optimizing direction; early exploration is more valuable than early precision",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Fitness",
+          "target_concept": "Perfect Routine Search",
+          "connection_type": "fitness_criticism",
+          "explanation": "Spending months researching the 'perfect' workout plan instead of just exercising. Any consistent routine beats the theoretical optimal routine done zero times. Start basic, optimize later.",
+          "transferable_principle": "Any consistent execution of adequate plan beats perpetual search for optimal plan",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C071",
+      "source_concept": "Technical Debt",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Cost of additional rework caused by choosing easy solution now instead of better approach. Accumulates interest. Must be paid eventually - either through refactoring or system replacement.",
+        "voice_transcript": "Quick and dirty code today means slow and painful maintenance tomorrow. Like financial debt: you borrow speed now, pay it back with interest later. Eventually the interest kills you."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Health",
+          "target_concept": "Sleep Debt",
+          "connection_type": "biological_equivalence",
+          "explanation": "Sleep debt accumulates: 6 hours instead of 8 = 2 hours borrowed. Must be paid back (weekend catch-up) or health consequences compound (immune suppression, cognitive decline). Same principle.",
+          "transferable_principle": "Borrowing from biological maintenance requirements creates compounding health liabilities",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Relationships",
+          "target_concept": "Emotional Debt",
+          "connection_type": "social_analogy",
+          "explanation": "Avoiding difficult conversations = emotional debt. Accumulates until relationship breaks. Each postponed conversation accrues 'interest' in resentment. Must be paid through eventual confrontation or relationship dissolution.",
+          "transferable_principle": "Postponed necessary interactions accumulate relational cost that compounds over time",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Finance",
+          "target_concept": "Financial Debt",
+          "connection_type": "direct_analogy",
+          "explanation": "Both borrow from the future. Both have interest. Both can be strategic (mortgage, MVP launch) or catastrophic (credit card debt, unmanageable spaghetti code). Refactoring = debt repayment.",
+          "transferable_principle": "Strategic borrowing accelerates progress but requires disciplined repayment schedule",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C072",
+      "source_concept": "Rubber Duck Debugging",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Explain code/problem to inanimate object (rubber duck). Act of verbalizing forces structured thinking and often reveals the solution. Problem often solved before explanation finishes.",
+        "voice_transcript": "Put a rubber duck on your desk. When stuck, explain your code to it. Line by line. You'll find the bug halfway through. Explaining forces you to actually understand what you're doing."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Self-Explanation Effect",
+          "connection_type": "cognitive_science",
+          "explanation": "Explaining material to yourself (or duck) improves understanding and recall. Chi et al. (1994): self-explainers learn 2x more. Feynman Technique: explain simply to identify knowledge gaps.",
+          "transferable_principle": "Verbal or written explanation of reasoning surfaces gaps and deepens understanding",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Teaching",
+          "target_concept": "Learning by Teaching",
+          "connection_type": "pedagogical_principle",
+          "explanation": "Students who teach material learn it better (Prot\u00e9g\u00e9 Effect). Preparing to explain forces deeper processing than passive study. Peer tutoring benefits tutor MORE than tutee.",
+          "transferable_principle": "Teaching is the most effective learning method because it requires complete understanding",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Therapy",
+          "target_concept": "Talk Therapy",
+          "connection_type": "therapeutic_mechanism",
+          "explanation": "Talking through problems (to therapist or duck) forces articulation of fuzzy thoughts into clear statements. Many solutions emerge from the act of verbalization. Therapist mainly facilitates structured self-explanation.",
+          "transferable_principle": "Structured verbalization of problems often generates solutions without external input",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C073",
+      "source_concept": "Worse is Better (New Jersey Style)",
+      "source_domain": "Software Philosophy (Gabriel)",
+      "multi_modal_input": {
+        "text_notes": "Simplicity of implementation beats correctness, consistency, and completeness. UNIX and C succeeded because they were simple and 'good enough,' not because they were theoretically superior.",
+        "voice_transcript": "C is a terrible language by every theoretical measure. It lets you shoot yourself in the foot. But it's simple, portable, and 'good enough.' It won because worse IS often better. Perfect is the enemy of shipped."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Minimum Viable Product",
+          "connection_type": "product_strategy",
+          "explanation": "MVP IS 'worse is better': launch simple, imperfect product that solves core problem. Perfect product launched late = failure. Simple product launched early = market entry, learning, iteration.",
+          "transferable_principle": "Sufficient simplicity with speed to market often outcompetes superior complexity delayed",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Evolution",
+          "target_concept": "Satisficing (Good Enough)",
+          "connection_type": "biological_analogy",
+          "explanation": "Evolution doesn't optimize; it satisfices. Eyes are poorly designed (blind spot, backward retina) but good enough for survival. Perfect design would take too long; 'worse' arrives faster and wins.",
+          "transferable_principle": "Evolution selects for adequate solutions arrived at quickly, not optimal solutions arrived at slowly",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Language",
+          "target_concept": "English as Lingua Franca",
+          "connection_type": "linguistic_example",
+          "explanation": "English grammar is inconsistent, spelling is absurd, pronunciation makes no sense. But it's simple to learn 'good enough' level, and widely adopted. Esperanto was theoretically better; English was practically adopted.",
+          "transferable_principle": "Widespread adoption of adequate solutions creates network effects that lock out superior alternatives",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C074",
+      "source_concept": "Leaky Abstraction",
+      "source_domain": "Software Engineering (Spolsky)",
+      "multi_modal_input": {
+        "text_notes": "'All non-trivial abstractions, to some degree, are leaky.' Abstractions hide complexity but fail at edges. SQL abstracts databases until you need query optimization. Network abstractions leak when packets drop.",
+        "voice_transcript": "You think you're just sending a message, but underneath there's TCP, IP, Ethernet, WiFi. And sometimes those layers fail and the abstraction leaks. You HAVE to understand the layers below to debug the leak."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Simplified Models",
+          "connection_type": "pedagogical_criticism",
+          "explanation": "Simplified physics models leak: Newtonian mechanics works until near light speed. Bohr model works until quantum effects. Every educational abstraction eventually leaks. Students need to know WHEN models break.",
+          "transferable_principle": "All simplified models fail at boundaries; expertise requires knowing model limitations",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Management",
+          "target_concept": "Management by Metrics",
+          "connection_type": "organizational_criticism",
+          "explanation": "'Just optimize the metric' is a leaky abstraction. Metrics abstract complex reality. They leak when gamed (Goodhart's Law). Managers who don't understand the work beneath the metric make bad decisions.",
+          "transferable_principle": "Abstract representations of complex systems inevitably fail at edge cases and gaming attempts",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Cooking",
+          "target_concept": "Recipe Following",
+          "connection_type": "culinary_analogy",
+          "explanation": "Recipes abstract cooking knowledge. But they leak: altitude affects baking, humidity affects frying, oven variations affect timing. Expert cooks understand WHY behind recipe, not just WHAT.",
+          "transferable_principle": "Procedural abstractions fail without underlying causal understanding for adaptation",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C075",
+      "source_concept": "Law of Demeter",
+      "source_domain": "Software Design",
+      "multi_modal_input": {
+        "text_notes": "'Don't talk to strangers.' Object should only call methods on: itself, its parameters, objects it creates, its direct components. Reduces coupling. 'Only one dot' rule of thumb.",
+        "voice_transcript": "Your object shouldn't reach deep into another object's internals. Ask your friend, not your friend's friend. This keeps systems modular and prevents fragile dependencies."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Social Networks",
+          "target_concept": "Dunbar's Layers",
+          "connection_type": "social_analogy",
+          "explanation": "Dunbar's layers: 5 intimate, 15 best friends, 50 good friends, 150 acquaintances. We maintain direct relationships with limited set. 'Talking to strangers' beyond 150 exceeds cognitive capacity.",
+          "transferable_principle": "Cognitive capacity limits the number of direct relationships that can be actively maintained",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Organization",
+          "target_concept": "Span of Control",
+          "connection_type": "management_principle",
+          "explanation": "Managers effectively direct 5-10 people. Exceeding this = reaching through layers (breaking Demeter). Flat organizations work when teams are small; large orgs need hierarchy to maintain manageable direct connections.",
+          "transferable_principle": "Direct management capacity is limited; exceeding limits requires delegation through intermediaries",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Supply Chain",
+          "target_concept": "Direct Relationships",
+          "connection_type": "logistics_analogy",
+          "explanation": "Toyota's direct supplier relationships (~200) vs GM's thousands. Direct relationships = better quality control, faster communication. Too many direct relationships = management overload. Optimize span.",
+          "transferable_principle": "Limiting direct relationships enables deeper management but requires hierarchical delegation at scale",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C076",
+      "source_concept": "Circuit Breaker Pattern",
+      "source_domain": "Software Architecture",
+      "multi_modal_input": {
+        "text_notes": "When service fails repeatedly, 'trip' circuit breaker to stop requests. Prevents cascading failure. States: Closed (normal), Open (failing, reject requests), Half-Open (test recovery). Auto-reset after timeout.",
+        "voice_transcript": "If a service keeps failing, stop asking it for help. Give it time to recover. It's like a circuit breaker in your house: too much current, it trips to prevent fire. After a while, it tries again."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Medical Quarantine",
+          "connection_type": "public_health",
+          "explanation": "Circuit breaker IS quarantine: isolate failing component (infected person) to prevent system failure (outbreak). 'Trip' = quarantine order. 'Half-open' = monitored release after recovery period.",
+          "transferable_principle": "Isolation of failing components prevents cascade failure while allowing time for recovery",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Time-Out",
+          "connection_type": "therapeutic_application",
+          "explanation": "When person is emotionally overwhelmed (circuit open), continuing interaction causes damage. Time-out = circuit breaker. Resume communication (half-open) only when both parties have cooled down.",
+          "transferable_principle": "Pause interaction when emotional state prevents productive communication; resume only after recovery",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Economics",
+          "target_concept": "Trading Halts",
+          "connection_type": "market_mechanism",
+          "explanation": "Stock exchanges halt trading when prices drop too fast (circuit breaker). Prevents panic selling cascade. Short halt allows information processing and order rebalancing. Then reopen (half-open state).",
+          "transferable_principle": "Temporary system suspension during extreme stress prevents catastrophic feedback loops",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C077",
+      "source_concept": "Event Sourcing",
+      "source_domain": "Software Architecture",
+      "multi_modal_input": {
+        "text_notes": "Store complete history of events rather than just current state. State can be reconstructed by replaying events. Audit trail built in. Git uses event sourcing (commit history reconstructs current code).",
+        "voice_transcript": "Instead of just saving the current bank balance, save every deposit and withdrawal. You can always reconstruct the balance. Plus you have complete history. This is how Git works - every change is saved, not just the final code."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Accounting",
+          "target_concept": "Double-Entry Bookkeeping",
+          "connection_type": "financial_equivalence",
+          "explanation": "Double-entry bookkeeping IS event sourcing: every transaction recorded as debits and credits. Ledger = event log. Balance sheet = current state reconstructed from complete transaction history. Invented 1400s.",
+          "transferable_principle": "Complete immutable transaction history enables state reconstruction and auditability",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "History",
+          "target_concept": "Primary Source Records",
+          "connection_type": "historical_analogy",
+          "explanation": "Historians prefer primary sources (events) over secondary summaries (state). Original documents reconstruct what happened better than someone else's interpretation. Event sourcing = primary source methodology.",
+          "transferable_principle": "Original event records provide more reliable reconstruction than derived summaries",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Episodic Memory",
+          "connection_type": "cognitive_analogy",
+          "explanation": "Human memory has episodic (event) and semantic (state) forms. Event memory reconstructs experiences from specific instances. Semantic = summary that loses detail. Eyewitness testimony = event sourcing.",
+          "transferable_principle": "Event-based memory storage preserves detail for reconstruction but requires more storage capacity",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C078",
+      "source_concept": "CQRS (Command Query Responsibility Segregation)",
+      "source_domain": "Software Architecture",
+      "multi_modal_input": {
+        "text_notes": "Separate read and write operations into different models. Writes optimized for consistency; reads optimized for speed. Different databases can handle each. Scales better than single-model approach.",
+        "voice_transcript": "Instead of one database doing everything, have one system for writing data and a separate system for reading it. The write system makes sure data is correct. The read system makes it fast to access. They stay in sync."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Media",
+          "target_concept": "Newsroom Separation",
+          "connection_type": "journalism_analogy",
+          "explanation": "Newsrooms separate reporting (writing) from publication (reading). Reporters gather facts carefully. Publication team optimizes for reader speed and format. Same content, different optimized paths.",
+          "transferable_principle": "Separating creation and consumption paths allows optimization of each for their distinct requirements",
+          "confidence_score": 0.86
+        },
+        {
+          "target_domain": "Retail",
+          "target_concept": "Warehouse vs Storefront",
+          "connection_type": "logistics_analogy",
+          "explanation": "Warehouse optimized for receiving/storing (writes). Storefront optimized for browsing/purchasing (reads). Different layouts, staffing, systems. Inventory syncs between them.",
+          "transferable_principle": "Physically separating write-optimized and read-optimized operations improves both",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Research vs Teaching",
+          "connection_type": "academic_analogy",
+          "explanation": "Universities separate research (knowledge creation/writes) from teaching (knowledge dissemination/reads). Different skills, different optimization. Some excel at both; separation allows specialization.",
+          "transferable_principle": "Knowledge creation and knowledge transmission benefit from different optimizations and specializations",
+          "confidence_score": 0.84
+        }
+      ]
+    },
+    {
+      "id": "C079",
+      "source_concept": "Saga Pattern",
+      "source_domain": "Distributed Systems",
+      "multi_modal_input": {
+        "text_notes": "Manage long-running transactions across multiple services. If one step fails, execute compensating transactions to undo previous steps. Maintains consistency without locks. Airbnb booking: reserve \u2192 payment \u2192 confirmation; failure triggers refund.",
+        "voice_transcript": "When a process spans multiple services and one fails, you need a way to undo the previous steps. Booked the hotel but payment failed? Release the booking. Each step has an 'undo' button."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Travel",
+          "target_concept": "Trip Cancellation Insurance",
+          "connection_type": "real_world_analogy",
+          "explanation": "Book flight \u2192 book hotel \u2192 rent car. If flight cancelled, need to cancel hotel and car too. Travel insurance provides compensating transactions: each booking has cancellation policy (undo operation).",
+          "transferable_principle": "Multi-step processes require defined rollback procedures for each step to enable safe failure recovery",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Reversal Agents",
+          "connection_type": "clinical_analogy",
+          "explanation": "Administer morphine \u2192 need reversal (naloxone) if overdose. Blood thinner \u2192 need reversal (vitamin K) if bleeding. Every intervention that can go wrong needs a compensating transaction (antidote).",
+          "transferable_principle": "Every medical intervention should have a defined reversal procedure before administration",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Law",
+          "target_concept": "Appeals Process",
+          "connection_type": "legal_analogy",
+          "explanation": "Legal conviction is a multi-step saga. Appeal process = compensating transaction for wrongful conviction. Each legal step has defined undo procedures. Expungement = saga compensation.",
+          "transferable_principle": "Justice systems require formalized reversal mechanisms for every determination",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C080",
+      "source_concept": "Strangler Fig Pattern",
+      "source_domain": "Software Architecture",
+      "multi_modal_input": {
+        "text_notes": "Gradually replace legacy system by routing increasing traffic to new system. Legacy 'strangled' as new system takes over. Low-risk migration vs big-bang replacement. Incremental, reversible.",
+        "voice_transcript": "Instead of shutting down the old system and praying the new one works, route a little traffic to the new one. Then a little more. The old system gets 'strangled' as the new one grows around it. If something breaks, route back."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Organizational Change",
+          "target_concept": "Gradual Transformation",
+          "connection_type": "change_management",
+          "explanation": "Replace old department gradually: new team takes on one function at a time. Old department shrinks as new grows. Less disruptive than firing everyone and starting over. Reversible at each stage.",
+          "transferable_principle": "Incremental replacement with rollback capability at each stage minimizes transformation risk",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Habit Change",
+          "target_concept": "Replacement Not Elimination",
+          "connection_type": "behavioral_science",
+          "explanation": "Don't just stop a bad habit (creates void). Strangle it by growing a replacement habit: smoke less by vaping some, then more. Old habit dies as new one takes its energy/time slot.",
+          "transferable_principle": "New behaviors more effectively displace old ones when they occupy the same contextual triggers",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Urban Renewal",
+          "target_concept": "Incremental Gentrification",
+          "connection_type": "urban_planning",
+          "explanation": "Neighborhoods transform gradually: new businesses alongside old. Complete demolition (big-bang) destroys social fabric. Incremental change allows community adaptation and feedback at each stage.",
+          "transferable_principle": "Gradual neighborhood evolution preserves social cohesion better than wholesale replacement",
+          "confidence_score": 0.85
+        }
+      ]
+    }
+  ]
+}

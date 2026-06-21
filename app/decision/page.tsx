@@ -63,7 +63,7 @@ export default function DecisionPage() {
   return (
     <div className="max-w-3xl">
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-white">Decision lab</h2>
+        <h2 className="text-xl font-semibold text-white">Empiricum</h2>
         <p className="text-sm text-polymath-muted mt-1">
           Type a decision you&apos;re wrestling with. The CriticAgent attacks it from four perspectives, while the ScenarioAgent simulates three futures using your life-variable graph.
         </p>

@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "description": "Maps each scenario to app features that would activate",
+    "features_tracked": [
+      "Multi-Modal Capture",
+      "Knowledge Graph Construction",
+      "Cross-Domain Synthesis",
+      "Research Agent Enrichment",
+      "Socratic Coach Prompts",
+      "Mental Model Matching",
+      "Pre-Mortem Analysis",
+      "Steelmanning Exercise",
+      "Daily Priority Engine",
+      "Evening Reflection",
+      "Community Matchmaking",
+      "Study Pod Connection",
+      "Gamification XP",
+      "Knowledge Streak",
+      "Universal Mind Map"
+    ]
+  },
+  "mappings": [
+    {
+      "scenario_id": "S001",
+      "scenario_title": "The Burning Building Presentation",
+      "primary_domains": [
+        "Technology",
+        "Psychology",
+        "Communication"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Inversion",
+        "Second-Order Thinking",
+        "Lollapalooza Tendency"
+      ]
+    },
+    {
+      "scenario_id": "S002",
+      "scenario_title": "The Surgeon's Game Night",
+      "primary_domains": [
+        "Medicine",
+        "Game Theory",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Circle of Competence",
+        "Transfer Learning",
+        "Checklist Manifesto"
+      ]
+    },
+    {
+      "scenario_id": "S003",
+      "scenario_title": "The Chef's Code Bug",
+      "primary_domains": [
+        "Technology",
+        "Cooking",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Analogy Transfer",
+        "First Principles",
+        "Inversion"
+      ]
+    },
+    {
+      "scenario_id": "S004",
+      "scenario_title": "The Dancer's Data Center Disaster",
+      "primary_domains": [
+        "Technology",
+        "Dance",
+        "Physics"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "OODA Loop",
+        "Inversion",
+        "Margin of Safety"
+      ]
+    },
+    {
+      "scenario_id": "S005",
+      "scenario_title": "The Photographer's Hostage Negotiation",
+      "primary_domains": [
+        "Human Resources",
+        "Photography",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Steelmanning Exercise",
+        "Mental Model Matching",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Tactical Empathy",
+        "Reframing",
+        "Social Proof"
+      ]
+    },
+    {
+      "scenario_id": "S006",
+      "scenario_title": "The Jazz Musician's Investment Portfolio",
+      "primary_domains": [
+        "Music",
+        "Finance",
+        "Mathematics"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Analogy Transfer",
+        "Diversification",
+        "Systems Thinking"
+      ]
+    },
+    {
+      "scenario_id": "S007",
+      "scenario_title": "The Beekeeper's Team Management",
+      "primary_domains": [
+        "Biology",
+        "Technology",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Emergence",
+        "Self-Organization",
+        "Incentive Superresponse"
+      ]
+    },
+    {
+      "scenario_id": "S008",
+      "scenario_title": "The Gardener's Product Launch",
+      "primary_domains": [
+        "Product Management",
+        "Gardening",
+        "Biology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Seasonal Thinking",
+        "Minimum Viable Product",
+        "Pruning"
+      ]
+    },
+    {
+      "scenario_id": "S009",
+      "scenario_title": "The Skateboarder's Boardroom Pitch",
+      "primary_domains": [
+        "Skateboarding",
+        "Education",
+        "Physics"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Reframing",
+        "Incentive Superresponse",
+        "Second-Order Thinking"
+      ]
+    },
+    {
+      "scenario_id": "S010",
+      "scenario_title": "The Mortician's Wedding Planner",
+      "primary_domains": [
+        "Event Planning",
+        "Thanatology",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Both/And Thinking",
+        "Ritual Design",
+        "Emotional Intelligence"
+      ]
+    },
+    {
+      "scenario_id": "S011",
+      "scenario_title": "The Fisherman's Cybersecurity Breach",
+      "primary_domains": [
+        "Cybersecurity",
+        "Fishing",
+        "Military"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Asymmetric Warfare",
+        "Patience",
+        "Incentive Design"
+      ]
+    },
+    {
+      "scenario_id": "S012",
+      "scenario_title": "The Origami Artist's Architecture Crisis",
+      "primary_domains": [
+        "Architecture",
+        "Origami",
+        "Mathematics"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Biomimicry",
+        "Modularity",
+        "First Principles"
+      ]
+    },
+    {
+      "scenario_id": "S013",
+      "scenario_title": "The Comedian's Depression Therapy",
+      "primary_domains": [
+        "Comedy",
+        "Psychology",
+        "Writing"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Reframing",
+        "Shadow Work",
+        "Flow State"
+      ]
+    },
+    {
+      "scenario_id": "S014",
+      "scenario_title": "The Grandmaster's Startup",
+      "primary_domains": [
+        "Chess",
+        "Business",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Game Theory",
+        "Team Composition",
+        "Long-term Thinking"
+      ]
+    },
+    {
+      "scenario_id": "S015",
+      "scenario_title": "The Translator's Code Refactor",
+      "primary_domains": [
+        "Technology",
+        "Linguistics",
+        "Writing"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Multi-Modal Capture",
+        "Knowledge Streak",
+        "Knowledge Graph Construction",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Linguistic Relativity",
+        "Pattern Recognition",
+        "Gradual Migration"
+      ]
+    },
+    {
+      "scenario_id": "S016",
+      "scenario_title": "The Climber's Supply Chain Disaster",
+      "primary_domains": [
+        "Supply Chain",
+        "Rock Climbing",
+        "Military"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Redundancy",
+        "Optionality",
+        "Systems Thinking"
+      ]
+    },
+    {
+      "scenario_id": "S017",
+      "scenario_title": "The Pilot's Parenting Crisis",
+      "primary_domains": [
+        "Aviation",
+        "Parenting",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Checklist Manifesto",
+        "Quality over Quantity",
+        "Crew Resource Management"
+      ]
+    },
+    {
+      "scenario_id": "S018",
+      "scenario_title": "The Archaeologist's Market Research",
+      "primary_domains": [
+        "Market Research",
+        "Archaeology",
+        "Anthropology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Contextual Inquiry",
+        "Temporal Analysis",
+        "Embodied Cognition"
+      ]
+    },
+    {
+      "scenario_id": "S019",
+      "scenario_title": "The Bartender's UX Redesign",
+      "primary_domains": [
+        "UX Design",
+        "Bartending",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Affordances",
+        "Progressive Disclosure",
+        "Spatial Memory"
+      ]
+    },
+    {
+      "scenario_id": "S020",
+      "scenario_title": "The Astronomer's Dating Problem",
+      "primary_domains": [
+        "Astronomy",
+        "Psychology",
+        "Communication"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Storytelling",
+        "Curiosity Gap",
+        "Emotional Contagion"
+      ]
+    },
+    {
+      "scenario_id": "S021",
+      "scenario_title": "The Tattoo Artist's Brand Strategy",
+      "primary_domains": [
+        "Branding",
+        "Tattoo Art",
+        "Luxury Marketing"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Permanence Bias",
+        "Effort Heuristic",
+        "Restraint"
+      ]
+    },
+    {
+      "scenario_id": "S022",
+      "scenario_title": "The Locksmith's Privacy Framework",
+      "primary_domains": [
+        "Privacy Engineering",
+        "Locksmithing",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Usability-Security Tradeoff",
+        "Threat Modeling",
+        "Zero-Knowledge Proof"
+      ]
+    },
+    {
+      "scenario_id": "S023",
+      "scenario_title": "The Kindergarten Teacher's AI Ethics",
+      "primary_domains": [
+        "AI Ethics",
+        "Early Childhood Education",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Holistic Thinking",
+        "Developmental Psychology",
+        "Ethics of Care"
+      ]
+    },
+    {
+      "scenario_id": "S024",
+      "scenario_title": "The Pro Gamer's Executive Coaching",
+      "primary_domains": [
+        "Esports",
+        "Executive Coaching",
+        "Business Strategy"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Study Pod Connection",
+        "Community Matchmaking",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Meta-Strategy",
+        "Decision Velocity",
+        "Emotional Regulation"
+      ]
+    },
+    {
+      "scenario_id": "S025",
+      "scenario_title": "The Veterinarian's Customer Success",
+      "primary_domains": [
+        "Customer Success",
+        "Veterinary Medicine",
+        "Psychology"
+      ],
+      "activated_features": [
+        "Evening Reflection",
+        "Knowledge Streak",
+        "Universal Mind Map",
+        "Gamification XP",
+        "Cross-Domain Synthesis"
+      ],
+      "key_mental_models": [
+        "Preventive Care",
+        "Triage",
+        "Empathy Mapping"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1098 @@
+{
+  "metadata": {
+    "dataset_name": "Invalid / Non-Possible Cross-Domain Connections",
+    "description": "Spurious connections that look plausible but are actually wrong or misleading. Training model to recognize false analogies.",
+    "total_entries": 120,
+    "invalidation_types": [
+      "false_analogy",
+      "correlation_not_causation",
+      "superficial_similarity",
+      "scale_mismatch",
+      "directionality_error",
+      "missing_mechanism",
+      "category_error"
+    ]
+  },
+  "invalid_entries": [
+    {
+      "id": "I001",
+      "proposed_connection": "The heart is like a pump, so heart disease can be fixed by plumbing techniques (snaking, hydro-jetting)",
+      "source_domain": "Cardiology",
+      "target_domain": "Plumbing",
+      "why_invalid": "Arterial plaque is NOT like pipe clogging. Plaque forms within vessel walls (atherosclerosis), not on inner surface like scale. Mechanical scraping damages endothelium causing more plaque formation. Stents work by compressing plaque, not removing it. The biological response to injury makes plumbing analogies actively dangerous.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I002",
+      "proposed_connection": "The brain is like a computer, so we can 'delete' traumatic memories like deleting files",
+      "source_domain": "Neuroscience",
+      "target_domain": "Computer Science",
+      "why_invalid": "Memories are distributed, associative, and reconstructed - not stored as discrete files. Traumatic memories are encoded with strong emotional markers across multiple brain regions. 'Deleting' one memory would damage connected associative networks. EMDR and CBT work by reconsolidation (updating), not deletion. The storage mechanism is fundamentally different from digital files.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I003",
+      "proposed_connection": "Evolution optimizes organisms for their environment, so companies should copy nature's 'designs' exactly",
+      "source_domain": "Evolution",
+      "target_domain": "Business",
+      "why_invalid": "Evolution does NOT optimize - it satisfices (good enough). Organisms carry evolutionary baggage (appendix, blind spot in eye). Timescales differ: evolution operates over millennia, business over quarters. Evolution has no foresight; business strategy requires planning. 'Blind watchmaker' produces adequate, not optimal, solutions. Copying nature literally leads to carrying unnecessary legacy features.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I004",
+      "proposed_connection": "Quantum entanglement means particles communicate faster than light, so we can build FTL communication devices",
+      "source_domain": "Quantum Physics",
+      "target_domain": "Communication Technology",
+      "why_invalid": "While entangled particles correlate instantaneously, no usable information can be transmitted. Measuring one particle determines the other's state, but the measurement result is random - you can't control what the other party sees. The no-communication theorem proves FTL information transfer is impossible. Bell's inequalities only show correlation, not communication.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I005",
+      "proposed_connection": "The butterfly effect means a butterfly in Brazil can cause a hurricane in Texas, so individual actions always have huge consequences",
+      "source_domain": "Chaos Theory",
+      "target_domain": "Self-Help",
+      "why_invalid": "While sensitive dependence on initial conditions is real, most perturbations dampen out. The atmosphere has dissipation - not every butterfly wing matters. The 'butterfly' metaphor is pedagogical, not literal. Additionally, predicting WHICH small action has large effects is impossible; claiming your specific action caused a specific outcome is hindsight bias. Most small actions have small effects.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.88
+    },
+    {
+      "id": "I006",
+      "proposed_connection": "Music harmonies follow mathematical ratios, so playing the right frequencies can heal diseases",
+      "source_domain": "Music Theory",
+      "target_domain": "Medicine",
+      "why_invalid": "While musical intervals are frequency ratios, there is zero clinical evidence that specific frequencies cure diseases. 'Sound healing' claims conflate acoustic resonance (real, affects materials) with biological healing (no demonstrated mechanism). Medical resonance imaging uses very different frequency ranges and mechanisms. This is a category error: acoustic harmony \u2260 biological healing.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I007",
+      "proposed_connection": "Trees communicate through mycelial networks, so forests are conscious superorganisms we should treat as people",
+      "source_domain": "Mycology",
+      "target_domain": "Philosophy of Mind",
+      "why_invalid": "While trees share nutrients through mycelia, this is chemical signaling, not consciousness. Sharing resources via gradients \u2260 subjective experience. 'Wood Wide Web' is a metaphor, not evidence of forest cognition. Nutrient exchange is an evolved mechanism for mutual benefit, not communication in the intentional sense. This is anthropomorphism of chemical processes.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I008",
+      "proposed_connection": "Because the universe is mathematical, learning more math lets you control reality through manifestation",
+      "source_domain": "Mathematical Physics",
+      "target_domain": "Spirituality / Manifestation",
+      "why_invalid": "That mathematics describes physical patterns doesn't mean mathematical thinking creates physical reality. The map-territory distinction: math models reality, it doesn't constitute it. 'Manifestation' claims reverse causality: models describe what IS, not create what WILL BE. This is like claiming understanding gravity lets you fly.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I009",
+      "proposed_connection": "Nuclear fusion powers the sun, so if we master fusion we'll have unlimited free energy with no downsides",
+      "source_domain": "Astrophysics",
+      "target_domain": "Energy Policy",
+      "why_invalid": "While fusion fuel is abundant, 'unlimited free energy' ignores: (1) reactor construction/maintenance costs, (2) radioactive waste from neutron-activated materials, (3) water consumption for cooling, (4) centralized grid infrastructure needs, (5) Jevons Paradox (cheaper energy increases total consumption). The sun works because it's 1.3 million km across with gravity confinement - not scalable to Earth.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I010",
+      "proposed_connection": "Neural networks are modeled on the brain, so advanced AI will naturally develop consciousness like humans",
+      "source_domain": "AI / Neuroscience",
+      "target_domain": "Philosophy of Mind",
+      "why_invalid": "Neural networks are INSPIRED by brain architecture but are mathematically very different: no neurotransmitters, no glial cells, no embodied sensory experience, no evolutionary development, no survival drives. 'Neural' is a historical name, not a biological equivalence. Current AI has no substrate for subjective experience. This is like saying flight simulators will naturally develop hunger because they're 'modeled on' airplanes.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I011",
+      "proposed_connection": "DNA is like computer code, so we can 'program' organisms by simply editing the right genes",
+      "source_domain": "Genetics",
+      "target_domain": "Software Engineering",
+      "why_invalid": "DNA is NOT like code: (1) no central processor - expression is contextual and environment-dependent, (2) genes interact polygenically (one trait = many genes, one gene = many effects), (3) epigenetics modifies expression without changing sequence, (4) junk DNA has regulatory functions not yet understood, (5) no clear input/output specification. CRISPR works but with massive unintended consequences because biological systems are not modular like code.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I012",
+      "proposed_connection": "Ant colonies use swarm intelligence to solve problems, so if we eliminate leaders society will self-organize better",
+      "source_domain": "Entomology / Complexity Science",
+      "target_domain": "Political Philosophy",
+      "why_invalid": "Ants have evolved specific pheromone signaling mechanisms and role specialization over 100 million years. Humans lack these evolved coordination mechanisms. Ant colonies have extreme genetic relatedness (high cooperation incentive). Human anarchy historically produces violence and power vacuums, not emergent order. Scale mismatch: ant colonies = thousands; human societies = millions. This commits the naturalistic fallacy (what IS in nature \u2260 what OUGHT to be in society).",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.9
+    },
+    {
+      "id": "I013",
+      "proposed_connection": "The laws of thermodynamics say energy can't be created, so perpetual motion machines must be possible somewhere in the universe",
+      "source_domain": "Thermodynamics",
+      "target_domain": "Free Energy Claims",
+      "why_invalid": "Thermodynamics is a statistical law that applies everywhere in the known universe. There are no exceptions at macro scale. Zero-point energy, vacuum fluctuations, and quantum effects don't violate thermodynamics - they don't produce net usable work. Every 'free energy' claim has been debunked. The second law (entropy increase) is one of physics' most verified principles.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I014",
+      "proposed_connection": "Because Schr\u00f6dinger's cat is both alive and dead until observed, your business is both succeeding and failing until you check the metrics",
+      "source_domain": "Quantum Mechanics",
+      "target_domain": "Business Strategy",
+      "why_invalid": "Quantum superposition applies to subatomic particles under carefully isolated conditions, not macroscopic objects (decoherence). A cat is FAR too large to maintain superposition. Business states are classical - they have definite states regardless of observation. This is quantum mysticism: misapplying physics terminology to unrelated domains for false profundity.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I015",
+      "proposed_connection": "E=mc\u00b2 means mass and energy are equivalent, so we can turn thought energy into physical mass through concentration",
+      "source_domain": "Relativity Physics",
+      "target_domain": "Spirituality / Pseudoscience",
+      "why_invalid": "E=mc\u00b2 describes nuclear reactions where binding energy is released as mass converts to energy. It requires ACTUAL nuclear processes (fission, fusion, annihilation). 'Thought energy' has no measurable mass equivalent. The energy of brain electrical activity is ~20 watts - converting this to mass would produce immeasurably tiny amounts (via m=E/c\u00b2). No mechanism exists for 'concentrating' thought into mass.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I016",
+      "proposed_connection": "Ice cream sales correlate with drowning deaths, so ice cream causes drowning",
+      "source_domain": "Statistics",
+      "target_domain": "Public Health",
+      "why_invalid": "Confounding variable: hot weather increases BOTH ice cream consumption AND swimming (which leads to drowning). Correlation = 0.85, causation = 0. This is the classic example of spurious correlation taught in every statistics class. Both variables are effects of temperature.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I017",
+      "proposed_connection": "Countries with more Nobel prizes consume more chocolate, so eating chocolate makes you smarter",
+      "source_domain": "Nutrition / Economics",
+      "target_domain": "Cognitive Science",
+      "why_invalid": "Wealthy countries can afford both chocolate consumption and research infrastructure. Wealth is the confounding variable. Also, chocolate consumption is cultural (Europe) and Nobel allocation has geographic bias. No RCT shows chocolate improves Nobel-level cognition. Dark chocolate flavanols show mild short-term cognitive effects in controlled studies, nothing approaching Nobel laureate intelligence.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I018",
+      "proposed_connection": "Pirates decreased as global warming increased, so pirates prevent climate change - we need more pirates",
+      "source_domain": "History / Climate Science",
+      "target_domain": "Climate Policy",
+      "why_invalid": "This is a deliberate example of spurious correlation (from Pastafarianism). Both trends have independent causes: piracy declined due to naval policing and economic changes; warming increased due to greenhouse gas emissions. No mechanism connects the two. Used to demonstrate how easy it is to find correlations between unrelated trending variables.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 1.0
+    },
+    {
+      "id": "I019",
+      "proposed_connection": "Divorce rate in Maine correlates with per capita margarine consumption, so margarine prevents divorce (or causes it)",
+      "source_domain": "Sociology / Nutrition",
+      "target_domain": "Marriage Counseling",
+      "why_invalid": "Both trends happened to decline similarly between 2000-2009. No causal mechanism exists. This is a pure coincidence found by data mining thousands of variable pairs. With enough variables, spurious correlations are guaranteed. The correlation coefficient (0.99) is real but meaningless.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 1.0
+    },
+    {
+      "id": "I020",
+      "proposed_connection": "Autism diagnosis rates increased as vaccine coverage increased, so vaccines cause autism",
+      "source_domain": "Epidemiology",
+      "target_domain": "Medicine",
+      "why_invalid": "(1) Correlation is temporal, not causal. (2) Autism diagnostic criteria broadened significantly (DSM changes). (3) Better awareness and screening increased detection. (4) Original 1998 Wakefield study was fraudulent and retracted. (5) Dozens of large-scale studies (millions of children) found zero link. (6) Thimerosal was removed from childhood vaccines in 2001; autism rates continued rising. This is the most damaging medical false correlation in modern history.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I021",
+      "proposed_connection": "Both airplanes and birds have wings, so we should flap airplane wings to generate lift like birds do",
+      "source_domain": "Ornithology",
+      "target_domain": "Aeronautical Engineering",
+      "why_invalid": "Airplane wings generate lift via Bernoulli's principle (pressure differential) and Newton's third law (deflecting air downward). Bird wings use flapping to generate both lift AND thrust in a single motion. Early aviation pioneers who tried flapping (ornithopters) failed. Fixed wings with separate propulsion proved superior at human scale. Scale matters: Reynolds number effects make flapping efficient at bird scale but not airplane scale.",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I022",
+      "proposed_connection": "Both the brain and the internet are networks of connected nodes, so the internet will naturally become conscious",
+      "source_domain": "Neuroscience",
+      "target_domain": "Technology",
+      "why_invalid": "The internet lacks: (1) sensory embodiment, (2) homeostatic drives (survival, hunger), (3) evolutionary pressure for integration, (4) neurotransmitter-mediated plasticity, (5) developmental trajectory from embryo. Network structure alone doesn't create consciousness - the ORGANIZATION and FUNCTION matter. A map of roads is also a network of nodes; it doesn't drive. Network topology is necessary but not sufficient.",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I023",
+      "proposed_connection": "Both crystals and organisms grow, so crystals are a primitive form of life",
+      "source_domain": "Crystallography",
+      "target_domain": "Biology",
+      "why_invalid": "Crystal growth is accretion of identical units by electrostatic forces - purely physical. Life requires: metabolism, reproduction with variation, homeostasis, response to stimuli, evolution. Crystals have none of these. Crystal 'growth' is pattern extension; biological growth is regulated development. This confusion dates to 19th-century vitalism and has been thoroughly debunked.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I024",
+      "proposed_connection": "Both fire and life consume fuel and produce waste, so fire is alive",
+      "source_domain": "Chemistry",
+      "target_domain": "Biology",
+      "why_invalid": "Life has additional properties fire lacks: reproduction with heredity, homeostasis, adaptation through natural selection, cellular organization. Fire is an oxidation reaction, not an organism. This was a genuine historical debate (Heraclitus, 500 BCE) resolved by modern understanding of biochemistry. Aristotle's 'fire as animate' was wrong.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I025",
+      "proposed_connection": "Both economies and ecosystems have 'predators' and 'prey' (competitors and suppliers), so we should let economies evolve without regulation like ecosystems",
+      "source_domain": "Ecology",
+      "target_domain": "Economics",
+      "why_invalid": "Ecosystems have had millions of years to reach dynamic equilibrium with massive extinction along the way. Markets operate on human timescales where 'extinction' means unemployment and social collapse. Ecosystems don't have moral considerations; societies do. Natural selection is cruel - species don't care about fairness. Additionally, unregulated markets historically produce monopolies (ecosystems produce dominant species), externalities (pollution), and crashes (population booms and busts).",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.89
+    },
+    {
+      "id": "I026",
+      "proposed_connection": "Both computers and brains process information, so adding more RAM to a computer is like getting smarter",
+      "source_domain": "Computer Science",
+      "target_domain": "Cognitive Science",
+      "why_invalid": "Human working memory is fixed (~7\u00b12 items) and cannot be expanded like RAM. 'Intelligence' is about pattern recognition, abstraction, and transfer - not storage capacity. Adding RAM improves data processing but not algorithm quality. Brain 'intelligence' is about connection patterns and myelination, not capacity. People with eidetic memory aren't necessarily more intelligent.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I027",
+      "proposed_connection": "Water flows from high to low pressure, and electricity flows from high to low voltage, so water and electricity behave identically",
+      "source_domain": "Fluid Dynamics",
+      "target_domain": "Electrical Engineering",
+      "why_invalid": "While Ohm's Law (V=IR) is mathematically analogous to fluid flow (pressure = flow \u00d7 resistance), the analogy breaks at many points: (1) water is conserved, charge is conserved but current isn't 'used up', (2) electricity travels near light speed, water much slower, (3) electrical effects are field-based, water is contact-based, (4) AC has no fluid equivalent. Hydraulic analogy is pedagogically useful but technically misleading beyond basic concepts.",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.88
+    },
+    {
+      "id": "I028",
+      "proposed_connection": "Both governments and operating systems manage resources and enforce rules, so we should run countries like Linux kernels",
+      "source_domain": "Computer Science",
+      "target_domain": "Political Science",
+      "why_invalid": "Linux kernels handle: deterministic processes, clear hierarchies, exact specifications. Governments handle: stochastic human behavior, conflicting values, incomplete information, emotional irrationality. Kernels crash on ambiguity; governments must function amid ambiguity. Open-source governance (no central authority) works for code but produces gridlock for national decisions. Technical systems are designed; political systems evolved. The 'code is law' approach has repeatedly failed.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I029",
+      "proposed_connection": "Both vaccines and homeopathy use small doses to trigger healing responses, so homeopathy is scientifically valid like vaccination",
+      "source_domain": "Immunology",
+      "target_domain": "Alternative Medicine",
+      "why_invalid": "Vaccines contain measurable antigens that trigger measurable immune responses (antibody production, T-cell activation). Homeopathic remedies are diluted beyond Avogadro's limit - zero active molecules remain. 'Like cures like' is not how the immune system works. No RCT has shown homeopathy superior to placebo. This analogy exploits superficial similarity (small dose) while ignoring the actual mechanism (immune response requires actual antigens).",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I030",
+      "proposed_connection": "Both meditation and defragmentation reorganize scattered elements into coherent structure, so meditation works by 'defragmenting' the brain",
+      "source_domain": "Computer Science",
+      "target_domain": "Neuroscience",
+      "why_invalid": "Brain doesn't store memories as files that can be 'defragmented.' Meditation's benefits come from: attention regulation, default mode network modulation, stress hormone reduction, and neuroplasticity. There's no 'fragmentation' in neural storage. Memories are associative networks, not sequential files. This analogy sounds technical but has no neuroscientific basis. fMRI studies show meditation changes brain activity patterns, not storage organization.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I031",
+      "proposed_connection": "Because depressed people have low serotonin, taking serotonin supplements cures depression",
+      "source_domain": "Neurochemistry",
+      "target_domain": "Psychiatry",
+      "why_invalid": "Correlation \u2260 causation AND directionality unknown. Low serotonin may be a RESULT of depression, not a cause. SSRIs increase serotonin but take weeks to work (immediate increase doesn't immediately cure). Recent research questions serotonin hypothesis entirely (Moncrieff et al., 2022). Serotonin system is complex with 14 receptor subtypes; blanket 'increase serotonin' is crude. This reasoning also ignores: neuroplasticity, inflammation, psychosocial factors, genetics.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I032",
+      "proposed_connection": "Because successful entrepreneurs wake up early, waking up early makes you a successful entrepreneur",
+      "source_domain": "Biography / Self-Help",
+      "target_domain": "Entrepreneurship",
+      "why_invalid": "Selection bias: we study successful entrepreneurs and notice they wake early. We don't study failed entrepreneurs who also wake early. Correlation doesn't imply causation: discipline causes BOTH early waking AND business success; early waking doesn't cause success. Many successful entrepreneurs don't wake early (Mark Zuckerberg). Night owls can be equally successful. This is survivorship bias + mistaking correlation for causation.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I033",
+      "proposed_connection": "Because Finland has great education outcomes and short school days, short school days cause great education",
+      "source_domain": "Education Policy",
+      "target_domain": "Education Reform",
+      "why_invalid": "Finland's success is multi-factorial: highly educated teachers (master's required), strong social safety net (poverty <5%), homogenous population, high parental education, culture valuing education. Short school days are a RESULT of trust in system, not a cause. Short days WITHOUT other factors would likely hurt outcomes. Singapore has long school days AND great outcomes. This is cherry-picking one variable from a complex system.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I034",
+      "proposed_connection": "Because people buy more when music plays in stores, any music increases sales",
+      "source_domain": "Consumer Psychology",
+      "target_domain": "Retail Strategy",
+      "why_invalid": "Music type matters: slow tempo increases time spent (more purchases), fast tempo decreases it. Familiar vs. unfamiliar music has different effects. Volume, genre, and cultural appropriateness all moderate the effect. Death metal in a jewelry store would decrease sales. The claim 'any music helps' ignores crucial moderating variables. Also: loud music can drive customers away.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.89
+    },
+    {
+      "id": "I035",
+      "proposed_connection": "Because CEOs who exercise regularly outperform those who don't, exercise causes CEO performance",
+      "source_domain": "Health / Business",
+      "target_domain": "Executive Coaching",
+      "why_invalid": "Discipline and self-regulation cause both exercise habit AND CEO performance. Exercise is a marker, not a cause. Also: CEOs have resources (time, money, trainers) that enable exercise - performance enables exercise, not vice versa. Third variable problem: conscientiousness drives both. No RCT has randomly assigned exercise to CEOs and measured performance improvement.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.9
+    },
+    {
+      "id": "I036",
+      "proposed_connection": "The Earth has a magnetic field that protects us, so wearing magnets on your body improves health by aligning your biofield",
+      "source_domain": "Geophysics",
+      "target_domain": "Alternative Medicine",
+      "why_invalid": "Earth's magnetic field deflects charged particles (solar wind). Human body is not affected by weak static magnets at cellular level. 'Biofield' is not a scientifically recognized concept. Iron in blood is in hemoglobin, not ferromagnetic. Clinical trials of magnetic therapy show no effect beyond placebo. Magnets CAN affect pacemakers (electromagnetic interference) - this is a real risk, not a benefit.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I037",
+      "proposed_connection": "Sharks don't get cancer, so eating shark cartilage prevents cancer in humans",
+      "source_domain": "Marine Biology",
+      "target_domain": "Oncology",
+      "why_invalid": "Sharks DO get cancer (myth). Even if they didn't, cancer mechanisms differ across species. Mouse models don't perfectly translate to humans, let alone fish. Shark cartilage contains no demonstrated anti-cancer compounds. Clinical trials found zero benefit. This is naturalistic fallacy (natural = good) combined with false premise (sharks don't get cancer) and false analogy (interspecies translation).",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I038",
+      "proposed_connection": "Dolphins are intelligent and use sonar, so we can learn telepathy from dolphins",
+      "source_domain": "Marine Mammalogy",
+      "target_domain": "Parapsychology",
+      "why_invalid": "Dolphin 'sonar' (echolocation) is acoustic sensing, not telepathy. No non-human animal has demonstrated telepathic abilities. 'Dolphin-assisted therapy' has no clinical evidence. Claims of dolphin intelligence are often overstated - they're smart but not mystical. This is wishful anthropomorphism projected onto charismatic megafauna.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I039",
+      "proposed_connection": "Ancient civilizations aligned pyramids with stars, so pyramid shapes concentrate cosmic energy that preserves food and heals",
+      "source_domain": "Archaeoastronomy",
+      "target_domain": "Pseudoscience",
+      "why_invalid": "Pyramid power has been thoroughly debunked. Blades don't stay sharper, food doesn't preserve better, and nothing heals. Pyramid shape has no special properties beyond geometry. Alignment with stars reflects ancient astronomical knowledge and religious symbolism, not energy engineering. The Great Pyramid was a tomb, not a power plant. No physicist has detected 'pyramid energy.'",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I040",
+      "proposed_connection": "Because placebos work (patients improve when given sugar pills), all medicine is just placebo and disease is imaginary",
+      "source_domain": "Clinical Trials",
+      "target_domain": "Medical Skepticism",
+      "why_invalid": "Placebo effect is real but limited: (1) doesn't cure diseases (cancer doesn't shrink), (2) mainly affects subjective symptoms (pain, nausea), not objective outcomes (tumor size, blood sugar), (3) effect size typically small (Cohen's d = 0.2-0.3), (4) antibiotics cure infections that placebos can't, (5) vaccines prevent diseases that placebo can't. Denying all medicine because placebo exists is throwing out the cure with the control group.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I041",
+      "proposed_connection": "Both lightning and nerve impulses are electrical, so getting struck by lightning can cure nerve disorders",
+      "source_domain": "Electrophysiology",
+      "target_domain": "Neurology",
+      "why_invalid": "Lightning delivers ~30,000 amps for microseconds, destroying tissue. Nerve impulses are millivolt-level signals carefully regulated by ion channels. Lightning doesn't 'reset' nerves - it fries them. Survivors typically have permanent nerve damage, not cures. This is like saying a forest fire can 'prune' your garden. Scale and mechanism are catastrophically mismatched.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I042",
+      "proposed_connection": "The double helix structure of DNA stores information spirally, so our galaxy's spiral shape means the universe stores information in DNA-like patterns",
+      "source_domain": "Genetics / Cosmology",
+      "target_domain": "Pseudoscience",
+      "why_invalid": "Spiral patterns emerge from completely different mechanisms: DNA from chemical bond angles and base-pairing; galaxies from differential rotation and density waves. 'Spiral = information storage' is pattern matching without mechanism. Hurricanes are spiral too - are they storing cosmic information? This is pareidolia: seeing meaningful patterns in unrelated phenomena.",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I043",
+      "proposed_connection": "Trees live longest when pruned regularly, so humans should have regular surgeries to remove 'unnecessary' parts to live longer",
+      "source_domain": "Arboriculture",
+      "target_domain": "Medicine",
+      "why_invalid": "Tree pruning removes dead/diseased branches to redirect energy. Human organs aren't 'unnecessary' - even appendix and tonsils have immune functions. Preventive surgery (prophylactic mastectomy) is for HIGH genetic risk, not general population. Routine surgery has risks (anesthesia, infection, complications). Organ removal weakens, not strengthens, the body. This is dangerous naturalistic fallacy.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I044",
+      "proposed_connection": "Because we only use 10% of our brain, we can unlock the other 90% through special techniques to gain superpowers",
+      "source_domain": "Neuroscience Myth",
+      "target_domain": "Self-Help",
+      "why_invalid": "We use virtually 100% of our brain, just not all at once. fMRI shows all brain regions active over 24 hours. '10% myth' originated from misinterpreted early neuroscience and was popularized by self-help gurus. Brain lesions in 'unused' areas cause deficits. If 90% were unused, brain damage to those areas would have no effect - but it does. Metabolic cost of unused brain tissue would make it evolutionarily selected against.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I045",
+      "proposed_connection": "Because geese fly in V-formation for aerodynamic efficiency, human teams should physically arrange in V-shapes for better productivity",
+      "source_domain": "Ornithology",
+      "target_domain": "Team Management",
+      "why_invalid": "V-formation works because geese benefit from upwash vortices of leading birds' wings. Humans don't generate aerodynamic lift. Physical V-formation has no effect on cognitive productivity. Geese rotate leadership because flying first is tiring - the rotation mechanic IS transferable (shared leadership), but the V-shape itself is not. This confuses the mechanism (rotation) with the implementation (V-shape).",
+      "invalidation_type": "superficial_similarity",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I046",
+      "proposed_connection": "Because plants grow toward light (phototropism), students learn better when classrooms face south for maximum sunlight",
+      "source_domain": "Botany",
+      "target_domain": "Education",
+      "why_invalid": "Phototropism involves auxin redistribution in response to blue light wavelengths - mechanism specific to plant cell biology. Human learning is not photosynthetic. While daylight affects circadian rhythms and mood (SAD), direct sunlight isn't required for learning and can cause glare on screens. Optimal learning environment involves lighting control, not maximum exposure. This is false analogy based on 'light = good' oversimplification.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I047",
+      "proposed_connection": "Bees make perfect hexagons because hexagons are the most efficient shape, so human architects should build only hexagonal buildings",
+      "source_domain": "Entomology / Geometry",
+      "target_domain": "Architecture",
+      "why_invalid": "Hexagonal comb emerges from physical process (warm wax + bee body spacing), not mathematical optimization. Bees don't 'choose' hexagons - the shape emerges from how they work. Human buildings serve different functions: right angles maximize usable interior space, rectangular rooms fit furniture, construction is standardized for rectangles. Hexagonal buildings have construction challenges and wasted space at joints. 'Natural = optimal' is the naturalistic fallacy.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.89
+    },
+    {
+      "id": "I048",
+      "proposed_connection": "Because the Wright brothers studied birds to invent the airplane, we should study fish to invent better swimming pools",
+      "source_domain": "Engineering History",
+      "target_domain": "Pool Design",
+      "why_invalid": "Wright brothers studied bird FLIGHT mechanics (wing shape, lift generation) which translated to aerodynamics. Swimming pools are static containers, not dynamic propulsion systems. Fish swimming mechanics (undulation, fin use) don't apply to human recreational swimming. Olympic pools are already optimized for human swimming (lane design, depth, current reduction). This takes a valid cross-domain method (bio-inspiration) and applies it where no relevant mechanism exists.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I049",
+      "proposed_connection": "Because crowd wisdom (prediction markets) forecasts accurately, asking a large crowd for medical advice is better than seeing one doctor",
+      "source_domain": "Collective Intelligence",
+      "target_domain": "Healthcare",
+      "why_invalid": "Prediction markets work for OBJECTIVE, observable outcomes (elections, sports). Medical diagnosis requires: physical examination, medical history, test interpretation, and years of training. Crowds lack: (1) access to your symptoms, (2) clinical training, (3) liability/accountability, (4) ability to order tests. 'Wisdom of crowds' fails for specialized technical domains requiring deep expertise. Doctor > crowd for your specific medical condition.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I050",
+      "proposed_connection": "Because going viral on social media makes unknown people famous, any product that goes viral will be successful",
+      "source_domain": "Social Media Marketing",
+      "target_domain": "Product Strategy",
+      "why_invalid": "Viral fame \u2260 business success. 'Damn Daniel' got billions of views; Daniel didn't build a business. Fidget Spinners went viral then died. Viral products often lack: retention mechanism, business model, competitive moat, and sustainable demand. Virality can actually kill products (server costs exceed revenue, quality can't scale). Sustainable businesses require unit economics, not just attention.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I051",
+      "proposed_connection": "Because chaos theory shows small changes have big effects, your specific positive affirmations will change the world",
+      "source_domain": "Chaos Theory",
+      "target_domain": "Self-Help",
+      "why_invalid": "Chaotic systems are deterministic but UNPREDICTABLE. You can't control WHICH small change has which effect. Butterfly effect doesn't mean YOUR butterfly matters - most butterflies change nothing significant. Additionally, social systems are more stable than weather (damping effects, institutions). Attributing world events to your affirmations is grandiose magical thinking, not chaos theory.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I052",
+      "proposed_connection": "Because nuclear reactors contain chain reactions, managing anger is like controlling nuclear fission - you need to contain it before explosion",
+      "source_domain": "Nuclear Physics",
+      "target_domain": "Psychology",
+      "why_invalid": "Nuclear chain reactions are exponential with neutrons splitting atoms. Anger doesn't multiply exponentially - it escalates through feedback loops but is controllable at each step. Control rods absorb neutrons; no equivalent exists for anger. 'Nuclear meltdown' metaphor for anger is catastrophizing, not a useful operational model. Better analogy: thermostat (negative feedback) than reactor.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.87
+    },
+    {
+      "id": "I053",
+      "proposed_connection": "Because dark matter affects galaxy rotation but we can't see it, dark matter is actually consciousness or spiritual energy",
+      "source_domain": "Astrophysics",
+      "target_domain": "Spirituality",
+      "why_invalid": "Dark matter has measurable gravitational effects and spatial distribution predictable by cosmological models. 'Consciousness' doesn't predict galaxy rotation curves. Dark matter behaves as collisionless particles (passes through ordinary matter), which consciousness/spirit doesn't. This is quantum mysticism applied to cosmology - rebraking the incomprehensible as spiritual to exploit knowledge gaps.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I054",
+      "proposed_connection": "Because the immune system attacks invaders, autoimmune disease means your body is attacking you because you hate yourself",
+      "source_domain": "Immunology",
+      "target_domain": "Psychology",
+      "why_invalid": "Autoimmune disease is molecular (T-cells recognizing self-antigens due to molecular mimicry or failed tolerance mechanisms), not psychological. No evidence that self-hatred triggers autoimmunity. This causes blame/guilt in patients already suffering. Psychosomatic effects are real but limited; claiming lupus is caused by self-hatred is medically false and psychologically harmful.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I055",
+      "proposed_connection": "Because companies have 'DNA' (culture/values), changing a company is as impossible as changing your genetic DNA",
+      "source_domain": "Genetics",
+      "target_domain": "Business",
+      "why_invalid": "Corporate 'DNA' is a metaphor, not actual genetics. Culture CAN be changed: IBM transformed under Gerstner, Microsoft under Nadella, Apple under Jobs. While culture change is hard, it's not biologically fixed. Employee turnover, leadership change, and crisis can all shift culture within years. Genetic determinism doesn't apply to organizations.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I056",
+      "proposed_connection": "Because photosynthesis converts sunlight to energy, humans can become photosynthetic by eating more chlorophyll",
+      "source_domain": "Plant Biology",
+      "target_domain": "Nutrition",
+      "why_invalid": "Photosynthesis requires chloroplasts (organelles humans don't have), thylakoid membranes, and RuBisCO enzyme system. Eating chlorophyll doesn't give you chloroplasts. Human cells lack the entire photosynthetic apparatus. Even if they didn't, skin surface area is insufficient to meet energy needs (would need ~10x body surface in full sun). This is biologically impossible, not just difficult.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I057",
+      "proposed_connection": "Because superconductors have zero resistance, achieving 'zero resistance' to change in organizations will make them super-efficient",
+      "source_domain": "Condensed Matter Physics",
+      "target_domain": "Change Management",
+      "why_invalid": "Superconductivity requires extreme conditions (-234\u00b0C for high-temp superconductors) and applies to electron flow, not human behavior. Zero resistance to change would mean no critical evaluation of new ideas, leading to fad adoption and chaos. SOME resistance is necessary for stability and quality control. This is metaphor abuse: taking a physical property and applying it to social systems without considering mechanism or desirability.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I058",
+      "proposed_connection": "Because fruit flies share 60% of human genes, studying fruit fly behavior tells us everything about human behavior",
+      "source_domain": "Genetics",
+      "target_domain": "Psychology",
+      "why_invalid": "Gene similarity measures protein-coding sequences, not behavioral complexity. Humans have ~20,000 genes but vastly more regulatory elements, epigenetic controls, and neural connections. The 60% similarity is in basic cellular functions (metabolism, cell division), not behavior. Fruit flies don't have language, culture, or complex social structures. This extrapolates far beyond what gene homology can support.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I059",
+      "proposed_connection": "Because red light preserves night vision, red-light districts are designed to preserve customer's 'vision' for entertainment",
+      "source_domain": "Optics",
+      "target_domain": "Urban Planning / Etymology",
+      "why_invalid": "This is folk etymology. 'Red-light district' comes from railroad workers carrying red lanterns to indicate they were visiting brothels. The red light had nothing to do with preserving vision - it was a status signal. Applying physics of rhodopsin preservation to etymology is absurd. Even if it were true, it's post-hoc rationalization of a coincidental color choice.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I060",
+      "proposed_connection": "Because black holes have immense gravity that nothing escapes, a really good product with 'gravity' will attract all customers inevitably",
+      "source_domain": "Astrophysics",
+      "target_domain": "Marketing",
+      "why_invalid": "Black hole gravity works at astronomical scales across empty space. Product 'gravity' doesn't exist as a physical force. Customer acquisition requires: awareness, value proposition, distribution, pricing, timing. Even excellent products fail without marketing (Betamax, OS/2, Google Glass). 'Build it and they will come' is the field of dreams fallacy, not astrophysics.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I061",
+      "proposed_connection": "Because the universe is expanding, your personal consciousness also expands as you age and learn",
+      "source_domain": "Cosmology",
+      "target_domain": "Psychology",
+      "why_invalid": "Cosmic expansion is metric expansion of space itself, occurring at large scales (galaxies). It doesn't affect atoms, humans, or solar systems (gravity overcomes expansion). Consciousness 'expansion' is a metaphor with no physical connection to cosmic expansion. This is poetic language mistaken for physical law. Also, consciousness can contract (dementia, brain injury) while cosmic expansion continues.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I062",
+      "proposed_connection": "Because mirrors reflect light, mirrors also reflect energy including 'negative energy' from people, so broken mirrors cause bad luck",
+      "source_domain": "Optics",
+      "target_domain": "Superstition",
+      "why_invalid": "Mirrors reflect electromagnetic radiation in the visible spectrum. They don't reflect 'energy' in the vague New Age sense. No instrument detects 'negative energy' from people. Broken mirrors are physically identical to unbroken ones (same reflective material). The '7 years bad luck' superstition originated from expensive mirrors in ancient times - economic loss, not metaphysical effect.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I063",
+      "proposed_connection": "Because the placebo effect shows belief can heal, all diseases can be cured by belief alone if you believe strongly enough",
+      "source_domain": "Psychology / Medicine",
+      "target_domain": "Faith Healing",
+      "why_invalid": "Placebo primarily affects subjective symptoms (pain perception, nausea) through expectation and endogenous opioid release. It does NOT cure: infections (need antibiotics), cancer (need medical treatment), diabetes (need insulin), broken bones (need setting). Objective pathologies are unaffected by belief. 'Miracle cure' claims for serious disease are dangerous when they delay evidence-based treatment. Steve Jobs died attempting this with pancreatic cancer.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I064",
+      "proposed_connection": "Because bacteria developed antibiotic resistance through evolution, humans can develop 'cancer resistance' through natural selection if we stop treating cancer",
+      "source_domain": "Evolutionary Biology",
+      "target_domain": "Oncology",
+      "why_invalid": "Bacterial resistance evolves because: (1) generation time is 20 minutes (human = 25 years), (2) population sizes are trillions, (3) horizontal gene transfer spreads resistance. Humans with cancer typically die before reproducing, so no selection pressure for 'cancer resistance genes' can operate. Also, cancer is primarily post-reproductive (accumulated mutations with age). Not treating cancer = millions of preventable deaths, not evolutionary progress.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I065",
+      "proposed_connection": "Because we terraform Mars in science fiction, we can terraform Earth's deserts to solve climate change using the same technology",
+      "source_domain": "Science Fiction",
+      "target_domain": "Climate Science",
+      "why_invalid": "Mars terraforming is fictional - no technology exists to do this, and estimates require millennia and impossible energy inputs. Earth deserts are complex ecosystems; 'greening' them would disrupt local climates (Sahara dust feeds Amazon rainforest). Climate change requires emission reduction, not terraforming. This confuses fictional technology with real engineering and ignores unintended ecological consequences.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I066",
+      "proposed_connection": "Because Schr\u00f6dinger's equation describes electron probability clouds, human consciousness exists as a probability cloud until observed by another person",
+      "source_domain": "Quantum Mechanics",
+      "target_domain": "Consciousness Studies",
+      "why_invalid": "Quantum wavefunctions describe subatomic particles in isolated systems, not macroscopic objects like brains. Decoherence destroys superposition at brain scale within femtoseconds. Consciousness is a neurochemical process involving 86 billion neurons, not a quantum wavefunction. No neuroscientist uses quantum mechanics to describe consciousness. This is quantum mysticism - using physics terminology to sound profound about unrelated topics.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I067",
+      "proposed_connection": "Because computers use binary (0/1), the universe is fundamentally digital and all continuous phenomena are illusions",
+      "source_domain": "Computer Science",
+      "target_domain": "Physics",
+      "why_invalid": "Digital computation is a human invention for information processing. Physical quantities (position, momentum, energy) are continuous in classical physics and quantized in quantum physics - neither is 'binary.' The universe doesn't 'compute' in any meaningful sense. This is digital physics speculation (Fredkin, Wolfram) that remains unproven and is a minority philosophical position, not established science.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I068",
+      "proposed_connection": "Because holograms store 3D information on 2D surfaces, the universe is a hologram projected from a 2D boundary and our 3D world is an illusion",
+      "source_domain": "Theoretical Physics (Holographic Principle)",
+      "target_domain": "Philosophy / Pop Science",
+      "why_invalid": "The holographic principle is a mathematical duality in string theory - it doesn't mean the universe is literally a hologram like in Star Wars. It's a tool for calculation, not an ontological claim about reality. The 'boundary' in question is at the cosmological event horizon, not something we can observe or interact with. Pop science dramatizes this into 'reality is an illusion' for clicks.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I069",
+      "proposed_connection": "Because we can 3D print organs, we can 3D print food to solve world hunger",
+      "source_domain": "Biomedical Engineering",
+      "target_domain": "Food Security",
+      "why_invalid": "3D organ printing uses living cells in sterile bioreactors - extremely expensive and slow. Food 3D printing exists but produces small decorative items, not calories at scale. World hunger is a DISTRIBUTION and POLITICAL problem, not a production technology problem. We already produce enough food for 10 billion people. 3D printing food would be vastly more expensive than conventional agriculture.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I070",
+      "proposed_connection": "Because genetic algorithms evolve solutions computationally, we can evolve better government policies by simulating them in computers",
+      "source_domain": "Computer Science",
+      "target_domain": "Political Science",
+      "why_invalid": "Genetic algorithms require: (1) clear fitness function, (2) heritable traits, (3) many generations. Policy 'fitness' is subjective and multidimensional (GDP vs. happiness vs. equity). Political evolution would require decades per generation and real human suffering as 'failed mutations.' Additionally, GA solutions are often incomprehensible (black box) - democratic governance requires explainable decisions.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I071",
+      "proposed_connection": "Because meditation changes brain waves (alpha, theta), specific brain wave frequencies can be externally applied to induce enlightenment",
+      "source_domain": "Neuroscience",
+      "target_domain": "Neurotechnology",
+      "why_invalid": "Correlation between meditation and brain waves doesn't mean causing those waves produces meditation effects. Brain waves are epiphenomena (effects), not causes. External entrainment (binaural beats, neurofeedback) shows limited effects on cognition and no demonstrated 'enlightenment' induction. The neural correlates of consciousness are not the causes of consciousness. This reverses cause and effect.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I072",
+      "proposed_connection": "Because LSD was discovered from a fungus and produces mind-altering effects, all natural fungi have hidden wisdom we should consume for spiritual growth",
+      "source_domain": "Mycology / Pharmacology",
+      "target_domain": "Spirituality",
+      "why_invalid": "Most fungi are non-psychoactive or toxic. Consuming random mushrooms kills hundreds annually (amatoxin liver failure). LSD's effects come from specific 5-HT2A receptor agonism, not 'fungal wisdom.' Spiritual insights on psychedelics may be neurochemically-induced pattern recognition, not actual cosmic truth. 'Natural' doesn't mean safe - botulism, tetanus, and Ebola are natural.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I073",
+      "proposed_connection": "Because entropy always increases in closed systems, social systems naturally progress from order to disorder so trying to improve society is futile",
+      "source_domain": "Thermodynamics",
+      "target_domain": "Social Philosophy",
+      "why_invalid": "Social systems are OPEN systems with energy input (food, sunlight, fossil fuels) and can locally decrease entropy (build cities, create order). Life itself decreases local entropy using solar energy. Thermodynamic entropy doesn't prevent local organization. This is nihilistic physics - misapplying a law about isolated heat systems to social organization.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I074",
+      "proposed_connection": "Because language models predict next words based on probability, human consciousness is just statistical next-token prediction",
+      "source_domain": "AI",
+      "target_domain": "Philosophy of Mind",
+      "why_invalid": "LLMs predict tokens without understanding, embodiment, goals, or subjective experience. Humans have: sensory grounding, emotional valence, survival drives, social bonds, and phenomenal consciousness. Predicting 'what word comes next' is a small component of human cognition. This is like saying a calculator IS mathematics because it performs arithmetic - it confuses a tool with the phenomenon it models.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I075",
+      "proposed_connection": "Because blockchain creates immutable records, all records should be on blockchain to prevent fraud",
+      "source_domain": "Blockchain / Computer Science",
+      "target_domain": "Records Management",
+      "why_invalid": "Blockchain is expensive (energy, computation), slow, and overkill for most record-keeping. A signed database with audit trails achieves immutability for 99% of use cases at 1% of the cost. 'Immutable' is also problematic: GDPR requires right to be forgotten; blockchain is designed to prevent forgetting. Blockchain solves trustless consensus between untrusted parties - most organizations have trusted parties.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.9
+    },
+    {
+      "id": "I076",
+      "proposed_connection": "Because ketamine works for depression by affecting glutamate, any glutamate-affecting substance (MSG, monosodium glutamate) will improve mood",
+      "source_domain": "Psychopharmacology",
+      "target_domain": "Nutrition",
+      "why_invalid": "Ketamine affects NMDA receptors in specific brain regions at precise concentrations. Dietary glutamate doesn't cross the blood-brain barrier in significant amounts. MSG in food is metabolized differently than pharmaceutical ketamine. The mechanism (NMDA antagonism vs. dietary amino acid) is completely different. This is like saying 'morphine works for pain, so eating poppy seeds cures headaches.'",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I077",
+      "proposed_connection": "Because G\u00f6del's incompleteness theorem shows math has limits, all human knowledge is fundamentally limited and science can never know anything for certain",
+      "source_domain": "Mathematical Logic",
+      "target_domain": "Epistemology / Science Skepticism",
+      "why_invalid": "G\u00f6del's theorem applies to formal axiomatic systems capable of arithmetic. It doesn't limit: empirical science (which isn't a formal system), practical knowledge, or observable truths. 'We can't prove everything' \u2260 'we can't know anything.' Science doesn't deal in certainty but in confidence levels. This is science denial draped in mathematical sophistication.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I078",
+      "proposed_connection": "Because relativity shows time is relative, time management is pointless because time doesn't really exist",
+      "source_domain": "Physics",
+      "target_domain": "Productivity",
+      "why_invalid": "Relativistic time dilation requires speeds approaching light or extreme gravity - neither applies to human experience. At human scales, time is effectively absolute. 'Time is relative' doesn't mean 'deadlines are optional' - it means clocks on GPS satellites need correction. This is physics tourism: picking up terminology to justify pre-existing behavior (procrastination).",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I079",
+      "proposed_connection": "Because Turing proved some problems are undecidable, AI will never be able to make moral decisions",
+      "source_domain": "Computer Science",
+      "target_domain": "AI Ethics",
+      "why_invalid": "Turing's halting problem is about abstract computation, not moral reasoning. Humans make moral decisions without solving the halting problem. AI moral reasoning is about pattern matching on human moral intuitions, not proving mathematical theorems. 'Undecidable' in computation doesn't mean 'impossible to approximate well enough for practical purposes.' This confuses theoretical limits with practical capabilities.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I080",
+      "proposed_connection": "Because Heisenberg uncertainty means we can't know position and momentum simultaneously, we can never really know anything about anything with certainty",
+      "source_domain": "Quantum Mechanics",
+      "target_domain": "Philosophy / Epistemology",
+      "why_invalid": "Heisenberg uncertainty applies to conjugate quantum variables at subatomic scales. It doesn't apply to: macroscopic objects, historical facts, mathematical truths, or everyday knowledge. We CAN know position and momentum of a baseball simultaneously with extreme precision. This is quantum mechanics mystification - taking a specific physical law and universalizing it beyond all applicability.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I081",
+      "proposed_connection": "Because the observer effect in quantum mechanics shows observation changes reality, positive thinking literally changes physical reality through observation",
+      "source_domain": "Physics",
+      "target_domain": "Law of Attraction",
+      "why_invalid": "Quantum observation requires specific physical interaction (photon scattering, measurement apparatus). 'Positive thinking' doesn't constitute a quantum measurement. Observer effect in physics is about physical detection, not human attention. No experiment shows that wanting something affects quantum outcomes. The Secret's 'law of attraction' has zero physics basis.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I082",
+      "proposed_connection": "Because Maxwell's equations describe electromagnetic waves, and brain activity is electrical, we can read thoughts using radio receivers tuned to brain frequencies",
+      "source_domain": "Electromagnetism",
+      "target_domain": "Neurotechnology",
+      "why_invalid": "Brain electrical activity is ~millivolt range, detectable only with electrodes on or near the scalp (EEG). It doesn't broadcast as radio waves detectable at distance. 'Brain frequencies' (alpha, beta, gamma) are local field potentials, not transmissible signals. Remote thought reading is physically impossible with known physics. This is pseudoscience dressed in Maxwell's equations.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.99
+    },
+    {
+      "id": "I083",
+      "proposed_connection": "Because P=NP would mean easy verification implies easy solving, finding the right partner should be easy because verifying a good partner is easy",
+      "source_domain": "Computational Complexity",
+      "target_domain": "Relationships",
+      "why_invalid": "P=NP is an unsolved mathematical problem about computational complexity classes. Even if true, it applies to computational problems with verifiable solutions, not social optimization. 'Verifying' a good partner takes years (compatibility emerges over time), so verification isn't actually easy. Also, P=NP doesn't mean 'instant' - polynomial time can still be very slow. Math humor \u2260 relationship advice.",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I084",
+      "proposed_connection": "Because the Many-Worlds interpretation says all possibilities occur in parallel universes, every choice you make creates a universe where you made the opposite choice",
+      "source_domain": "Quantum Mechanics",
+      "target_domain": "Decision Theory",
+      "why_invalid": "Many-Worlds applies to quantum superposition (subatomic particles in multiple states), not macroscopic human decisions. Branching occurs at quantum measurement events, not every time you choose coffee vs tea. 'Parallel universes' in pop culture is dramatic interpretation of mathematical formalism. Your decision to skip the gym doesn't create a universe where you went.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I085",
+      "proposed_connection": "Because vaccines train the immune system with weakened viruses, we should train the economy by intentionally causing small recessions to prevent big ones",
+      "source_domain": "Immunology",
+      "target_domain": "Macroeconomics",
+      "why_invalid": "Immune system has specific memory cells that retain information for decades. Economy has no memory mechanism - each recession causes permanent damage (business closures, skill atrophy, psychological scarring). 'Economic vaccines' (minor recessions) were tried in 19th century; produced devastating boom-bust cycles. Immune system is biological; economy is social. False analogy with dangerous policy implications.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I086",
+      "proposed_connection": "Because some lizards can regrow tails, humans should be able to regrow limbs if we just activate the right genes",
+      "source_domain": "Regenerative Biology",
+      "target_domain": "Medicine",
+      "why_invalid": "Limb regeneration in salamanders involves blastema formation - a capability mammals lost 300+ million years ago. The developmental pathways for limb regrowth don't exist in adult mammals. While research on gene reactivation progresses, 'just activate the right genes' ignores the massive complexity of mammalian limb development. We're decades from clinical application, not one gene switch away.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I087",
+      "proposed_connection": "Because tardigrades survive extreme conditions (space, radiation, dehydration), studying them will let humans survive anything",
+      "source_domain": "Extremophile Biology",
+      "target_domain": "Space Colonization",
+      "why_invalid": "Tardigrade survival involves: cryptobiosis (reversible suspended animation), trehalose sugar replacement of water, and DNA protection proteins. These are evolved adaptations specific to their biology. Humans can't enter cryptobiosis. Trehalose doesn't protect human cells the same way. 'Extreme survival' in tardigrades means surviving as dehydrated specks, not functioning organisms. Direct translation to human space survival is not straightforward.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.9
+    },
+    {
+      "id": "I088",
+      "proposed_connection": "Because the Dunning-Kruger effect shows unskilled people overestimate themselves, anyone confident must be incompetent and anyone doubtful must be skilled",
+      "source_domain": "Psychology",
+      "target_domain": "Talent Assessment",
+      "why_invalid": "Dunning-Kruger shows a STATISTICAL TREND, not an individual rule. Many highly skilled people are also confident (expert confidence). The effect is about relative self-assessment accuracy, not absolute confidence levels. Using Dunning-Kruger to dismiss confident people or automatically trust doubtful people is itself a Dunning-Kruger misunderstanding. Actual competence requires domain-specific assessment.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I089",
+      "proposed_connection": "Because birds evolved from dinosaurs and birds sing, dinosaurs must have sung too, and we can reconstruct dinosaur songs from fossils",
+      "source_domain": "Paleontology / Ornithology",
+      "target_domain": "Music",
+      "why_invalid": "While some dinosaurs (theropods) evolved into birds, T. rex didn't sing. Syrinx (bird voice box) evolved AFTER the dinosaur-bird split. Fossilized syrinxes are extremely rare (only 3 known). Claims about 'dinosaur sounds' in documentaries are speculative. Non-avian dinosaurs likely hissed, boomed, or rumbled - not sang. This extrapolates bird features to all dinosaurs.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I090",
+      "proposed_connection": "Because spinach has iron (making Popeye strong), eating large quantities of spinach will make you superhumanly strong",
+      "source_domain": "Nutrition / Popular Culture",
+      "target_domain": "Physiology",
+      "why_invalid": "The spinach-iron connection originated from a decimal point error (1890s study misplaced the decimal, making iron content seem 10x higher). Spinach has moderate iron (2.7mg/100g), less than many meats. Iron doesn't cause immediate strength anyway - it prevents anemia over weeks. Popeye was a cartoon, not a nutrition guide. This is persistent misinformation from a typo + fiction.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I091",
+      "proposed_connection": "Because children learn languages effortlessly, adults can learn languages the same way by just 'immersing' without study",
+      "source_domain": "Developmental Psychology",
+      "target_domain": "Language Learning",
+      "why_invalid": "Children learn languages via: (1) critical period brain plasticity (adults don't have), (2) 10,000+ hours of exposure over years, (3) full-time focus (no job), (4) error correction from caregivers, (5) motivation (survival/social). Adults have: (1) established L1 interference, (2) limited time, (3) different cognitive architecture. Adult immersion without study produces pidgin, not proficiency. Adults need deliberate practice + input.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I092",
+      "proposed_connection": "Because savants have extraordinary abilities in specific domains, everyone has hidden savant abilities that can be unlocked",
+      "source_domain": "Neuropsychology",
+      "target_domain": "Self-Help",
+      "why_invalid": "Savant syndrome is associated with neurodevelopmental conditions (autism) or acquired brain injury. It often comes with significant deficits in other areas. There's no evidence that 'hidden savant abilities' exist in typical brains. 'Unlocking' claims are commercial self-help without scientific basis. Peak performance requires practice, not unlocking.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I093",
+      "proposed_connection": "Because the amygdala processes fear, people with anxiety just have 'overactive amygdalae' and can fix it by calming that brain region",
+      "source_domain": "Neuroscience",
+      "target_domain": "Mental Health",
+      "why_invalid": "While amygdala hyperactivity is associated with anxiety, the relationship is correlational, not necessarily causal. Anxiety disorders involve: genetics, early experiences, cognition, environment, and multiple brain regions (prefrontal cortex, hippocampus, insula). 'Calming the amygdala' oversimplifies a complex condition. Effective treatment requires CBT (cognitive), medication (biochemical), AND lifestyle changes - not just targeting one brain region.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I094",
+      "proposed_connection": "Because some octopuses edit their RNA extensively, we can learn to edit our own RNA for superhuman abilities",
+      "source_domain": "Molecular Biology",
+      "target_domain": "Transhumanism",
+      "why_invalid": "Octopus RNA editing is an evolved adaptation for cold-water neural function. Humans have limited RNA editing capability by design (evolution traded editing fidelity for genomic flexibility). Attempting to 'learn' from octopuses ignores 500 million years of divergent evolution. RNA editing in humans wouldn't grant octopus-like abilities any more than studying bird flight lets us grow wings.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I095",
+      "proposed_connection": "Because mitochondria were once independent bacteria, taking antibiotics will improve mitochondrial function",
+      "source_domain": "Endosymbiotic Theory",
+      "target_domain": "Medicine",
+      "why_invalid": "Mitochondria evolved from bacteria ~2 billion years ago and are now fully integrated organelles. They lack bacterial cell walls (antibiotic targets). Antibiotics that target mitochondria (tetracyclines, fluoroquinolones) cause mitochondrial dysfunction as a SIDE EFFECT, not benefit. This is like saying 'humans evolved from fish, so drinking seawater is healthy.'",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I096",
+      "proposed_connection": "Because photosynthesis is 90%+ efficient at energy transfer (quantum coherence), solar panels should mimic photosynthesis for 90% efficiency",
+      "source_domain": "Quantum Biology",
+      "target_domain": "Energy Engineering",
+      "why_invalid": "The 90%+ efficiency claim applies ONLY to energy transfer between chlorophyll molecules in the FMO complex (picosecond timescale), not total photosynthesis efficiency (~3-6% for converting sunlight to biomass). Quantum coherence effects exist only at ultracold temperatures and short timescales in isolated protein complexes. Mimicking this for macroscopic solar panels is not currently feasible and wouldn't achieve 90% total system efficiency.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I097",
+      "proposed_connection": "Because we can decode simple images from brain activity (fMRI), we'll soon be able to read anyone's detailed thoughts from brain scans",
+      "source_domain": "Neurotechnology",
+      "target_domain": "Privacy / Security",
+      "why_invalid": "Current 'mind reading' reconstructs blurry, low-resolution images from fMRI by matching patterns to a pre-existing image database. It cannot decode novel thoughts, abstract concepts, or language. Spatial resolution of fMRI is millimeters (millions of neurons per voxel). Temporal resolution is seconds. Detailed thought decoding would require understanding the neural code, which we don't have. This extrapolates from primitive tech to sci-fi capability.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I098",
+      "proposed_connection": "Because CRISPR can edit genes, we can use it to give adults new abilities (night vision, super-strength) by editing their somatic cells",
+      "source_domain": "Genetic Engineering",
+      "target_domain": "Transhumanism",
+      "why_invalid": "Adult gene editing affects only targeted cells, not the whole organism. Editing muscle cells for 'strength' requires changing billions of cells. Eye cells for night vision would need rhodopsin modifications in specific retinal cell types. Gene editing doesn't create new anatomical structures. 'Superpowers' require complex physiological changes far beyond single-gene edits. Adult enhancement via CRISPR remains extremely limited.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I099",
+      "proposed_connection": "Because some people remember past lives under hypnosis, hypnosis unlocks access to reincarnated memories",
+      "source_domain": "Psychology",
+      "target_domain": "Spirituality",
+      "why_invalid": "Past-life memories under hypnosis are: (1) confabulations created by suggestible states, (2) cultural contamination (people 'remember' lives matching their cultural expectations), (3) cryptomnesia (forgotten memories resurfacing), (4) fantasy-prone personality expression. No verified case has provided historically accurate information unknowable to the subject. Hypnosis increases false memory creation, not accurate recall.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I100",
+      "proposed_connection": "Because the universe has fine-tuned constants for life, the universe was designed for humans to exist",
+      "source_domain": "Cosmology",
+      "target_domain": "Theology",
+      "why_invalid": "Fine-tuning is an observation selection effect: we observe constants compatible with life BECAUSE life requires those constants. If constants were different, different life forms (or no life) might exist - we wouldn't be here to observe it. This is the anthropic principle, not design evidence. Also, 99.9999...% of the universe is immediately lethal to humans - poorly 'designed' for us.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.9
+    },
+    {
+      "id": "I101",
+      "proposed_connection": "Because jet streams affect weather patterns, human mood swings follow the same patterns as atmospheric jet streams",
+      "source_domain": "Meteorology",
+      "target_domain": "Psychology",
+      "why_invalid": "Jet streams are high-altitude wind currents driven by temperature gradients and Coriolis effect. Human mood is driven by neurochemistry, life events, sleep, social factors, and individual psychology. There is no atmospheric mechanism that affects individual mood. Seasonal Affective Disorder is linked to daylight hours (photoperiod), not jet stream position. This is astrological thinking dressed in meteorology.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I102",
+      "proposed_connection": "Because the golden ratio (1.618) appears in nature, using it in business pricing will make products more appealing",
+      "source_domain": "Mathematics / Biology",
+      "target_domain": "Marketing",
+      "why_invalid": "Golden ratio appearances in nature are often overstated or coincidental (measurement bias). Where it does appear (phylotaxis), it's an emergent packing optimization, not a universal aesthetic law. Psychological studies show no consistent preference for golden ratio pricing. $16.18 is not demonstrably more appealing than $15.99 or $16.00. This is numerology with mathematical branding.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I103",
+      "proposed_connection": "Because some animals use magnetic fields for navigation, humans have a 'sixth sense' for magnetic fields that we can train",
+      "source_domain": "Animal Behavior",
+      "target_domain": "Human Sensory Enhancement",
+      "why_invalid": "Humans have no demonstrated magnetoreception ability. The 'sixth sense' claim is based on a 2019 study showing brain responses to magnetic field changes - but participants couldn't consciously detect fields and behavioral effects were absent. Birds and sea turtles have specialized cryptochrome proteins in retinas; humans lack these. Training a non-existent sense is impossible.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I104",
+      "proposed_connection": "Because dopamine is the 'pleasure chemical,' anything that increases dopamine is good and anything that decreases it is bad",
+      "source_domain": "Neurochemistry",
+      "target_domain": "Wellness",
+      "why_invalid": "Dopamine is a learning/salience signal, not just pleasure. It increases with BOTH rewarding AND aversive stimuli. Addiction involves dopamine dysregulation (high dopamine, negative outcome). Parkinson's treatment increases dopamine but can cause compulsive gambling. Dopamine has 5 receptor subtypes with different functions. 'Dopamine = good' oversimplification leads to harmful behavior (chasing dopamine hits via social media, gambling, drugs).",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.93
+    },
+    {
+      "id": "I105",
+      "proposed_connection": "Because forests have more biodiversity than farms, we should stop all agriculture and return to foraging",
+      "source_domain": "Ecology",
+      "target_domain": "Agricultural Policy",
+      "why_invalid": "Global population (8 billion) cannot be sustained by foraging. Agriculture feeds the world; forests don't produce enough calories per hectare. The proposal would cause mass starvation. 'Natural' doesn't mean 'sufficient for human needs.' Sustainable agriculture exists (permaculture, agroforestry) that balances biodiversity and food production. False dichotomy between agriculture and ecology.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I106",
+      "proposed_connection": "Because some people survive terminal cancer diagnoses through 'will to live,' positive thinking cures cancer",
+      "source_domain": "Oncology / Psychology",
+      "target_domain": "Alternative Medicine",
+      "why_invalid": "Terminal cancer 'miracle survivors' typically had: (1) misdiagnosis, (2) rare spontaneous remission (documented but unexplained, <0.01%), (3) concurrent treatment effect. No study shows positive thinking alone cures cancer. 'Will to live' doesn't affect tumor biology. This claim causes harm when patients abandon treatment for positive thinking. Steve Jobs is a documented case.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I107",
+      "proposed_connection": "Because some people function well on 4 hours of sleep, everyone can train themselves to need less sleep",
+      "source_domain": "Sleep Science",
+      "target_domain": "Productivity",
+      "why_invalid": "Short sleepers (natural 4-6 hour need) have DEC2 gene mutation (<1% of population). For 99% of people, chronic sleep restriction causes: cognitive impairment equivalent to drunkenness, immune suppression, cardiovascular disease, and early mortality. Claiming 'you can train yourself to need less sleep' contradicts all sleep science. This is survivorship bias from a genetic outlier.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I108",
+      "proposed_connection": "Because Einstein was a patent clerk when he developed relativity, you don't need formal education to do groundbreaking science",
+      "source_domain": "History of Science",
+      "target_domain": "Education Policy",
+      "why_invalid": "Einstein had: (1) PhD-level physics education (self-studied at doctoral level), (2) access to cutting-edge physics journals at the patent office, (3) worked in a highly technical field (electromagnetic patents), (4) was a rare outlier. 'Drop out and succeed' ignores the thousands who dropped out and failed. Education correlates strongly with scientific contribution. This is survivorship bias from the most famous counterexample.",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I109",
+      "proposed_connection": "Because some autistics have savant abilities, autism is actually an evolutionary advantage and shouldn't be treated",
+      "source_domain": "Neurodiversity",
+      "target_domain": "Medical Ethics",
+      "why_invalid": "While neurodiversity has value, autism is a disability when it causes: inability to communicate, self-harm, inability to live independently, or severe sensory distress. Most autistic people are NOT savants. 'Shouldn't be treated' ignores the majority who need support for daily functioning. This is selection bias focusing on high-functioning outliers while ignoring those with severe support needs. Neurodiversity acceptance \u2260 medical neglect.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.91
+    },
+    {
+      "id": "I110",
+      "proposed_connection": "Because we only detect 5% of the universe (dark matter/energy is 95%), our science is wrong and we should use ancient wisdom instead",
+      "source_domain": "Cosmology",
+      "target_domain": "Epistemology",
+      "why_invalid": "Dark matter/energy are PREDICTIONS of our scientific models (general relativity), not failures. They demonstrate science WORKS by identifying gaps and quantifying them. 'Ancient wisdom' didn't predict dark matter or explain galaxy rotation curves. Science progresses by acknowledging what we don't know - that's a strength, not weakness. This is false equivalence between identified unknowns and pre-scientific speculation.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I111",
+      "proposed_connection": "Because epigenetics shows environment affects gene expression, your thoughts directly change your DNA and you can think your way to genetic health",
+      "source_domain": "Epigenetics",
+      "target_domain": "Wellness / Pseudoscience",
+      "why_invalid": "Epigenetic changes require specific molecular triggers: diet, toxins, stress hormones, exercise. 'Thoughts' don't directly methylate DNA - they might affect stress hormones which affect expression, but this is indirect, limited, and reversible. You cannot 'think' cystic fibrosis away or 'positively visualize' diabetes into remission. This conflates limited psychosomatic effects with magical thinking about genetic control.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.95
+    },
+    {
+      "id": "I112",
+      "proposed_connection": "Because some cancers spontaneously regress, refusing treatment and 'letting the body heal itself' is a valid strategy",
+      "source_domain": "Oncology",
+      "target_domain": "Medical Decision Making",
+      "why_invalid": "Spontaneous cancer regression occurs in <0.01% of cases and is poorly understood. For 99.99% of cancers, no treatment = progression and death. Evidence-based treatment (surgery, chemotherapy, immunotherapy) has documented survival benefits. Choosing regression hope over treatment is statistically suicidal. This is selection bias (hearing about the one regression, not the 10,000 deaths).",
+      "invalidation_type": "correlation_not_causation",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I113",
+      "proposed_connection": "Because humans share 98.8% of DNA with chimpanzees, chimps are basically humans and should have human rights",
+      "source_domain": "Genetics",
+      "target_domain": "Law / Ethics",
+      "why_invalid": "DNA similarity measures protein-coding genes, not the regulatory elements that make humans distinct. The 1.2% difference includes language genes (FOXP2), brain development genes, and regulatory networks. Human rights are based on personhood, moral agency, and social contract - not genetic similarity. By this logic, bananas (50% DNA similarity) should have half human rights. This confuses genetic similarity with moral equivalence.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.92
+    },
+    {
+      "id": "I114",
+      "proposed_connection": "Because the universe is 13.8 billion years old and life started quickly, life must be common everywhere in the universe",
+      "source_domain": "Astrobiology",
+      "target_domain": "SETI",
+      "why_invalid": "Early life on Earth doesn't mean life is common elsewhere. We have N=1 (Earth). Selection bias: we can't observe planets without life because we wouldn't be on them to observe. The 'quick start' argument ignores: (1) how long intelligent life took (4 billion years), (2) the Great Filter may be ahead of us, (3) most of the universe is hostile to life. 'Life is common' is speculation, not scientific conclusion.",
+      "invalidation_type": "directionality_error",
+      "confidence_of_wrongness": 0.88
+    },
+    {
+      "id": "I115",
+      "proposed_connection": "Because deep learning models can generate images, they understand visual concepts the same way humans do",
+      "source_domain": "AI",
+      "target_domain": "Cognitive Science",
+      "why_invalid": "Image generation models (DALL-E, Stable Diffusion) learn statistical correlations between text and pixel patterns. They don't have: visual experience, object permanence, physical intuition, or semantic understanding. They generate 'a chair' by reproducing pixel patterns correlated with that text, not by understanding what a chair IS. Mistakes reveal lack of understanding (wrong number of limbs, physically impossible structures).",
+      "invalidation_type": "category_error",
+      "confidence_of_wrongness": 0.94
+    },
+    {
+      "id": "I116",
+      "proposed_connection": "Because WiFi uses radio waves and microwaves heat food, WiFi routers are slowly cooking us",
+      "source_domain": "Electromagnetism",
+      "target_domain": "Public Health",
+      "why_invalid": "WiFi operates at milliwatts; microwaves at hundreds of watts - 100,000x difference. WiFi is non-ionizing radiation (cannot break chemical bonds or cause cancer). Extensive epidemiological studies find no health effects from WiFi-level exposure. 'Heating' claim ignores that human body sheds heat constantly; WiFi contribution is undetectable against metabolic heat. This exploits fear of 'radiation' without distinguishing types.",
+      "invalidation_type": "scale_mismatch",
+      "confidence_of_wrongness": 0.98
+    },
+    {
+      "id": "I117",
+      "proposed_connection": "Because some people are 'left-brained' (logical) and 'right-brained' (creative), you should match your career to your brain dominance",
+      "source_domain": "Neuroscience Myth",
+      "target_domain": "Career Counseling",
+      "why_invalid": "The left-brain/right-brain dichotomy is a myth. Both hemispheres collaborate on all tasks. Lateralization exists (language left, spatial right) but doesn't create personality types. fMRI shows both hemispheres active during 'logical' and 'creative' tasks. The concept originated from split-brain patient studies (corpus callosum cut) and was overgeneralized to normal brains by pop psychology.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I118",
+      "proposed_connection": "Because learning styles (visual/auditory/kinesthetic) exist, teaching to a child's learning style improves their education",
+      "source_domain": "Educational Psychology Myth",
+      "target_domain": "Education Policy",
+      "why_invalid": "Learning styles theory has been thoroughly debunked. Multiple large-scale studies (Pashler et al., 2008; Willingham et al.) found zero evidence that matching teaching to preferred style improves learning. People have preferences but not neurologically distinct 'styles.' Content determines optimal modality: geography = visual, music = auditory, sports = kinesthetic. Teaching to 'styles' wastes resources and may harm by limiting exposure to other modalities.",
+      "invalidation_type": "missing_mechanism",
+      "confidence_of_wrongness": 0.96
+    },
+    {
+      "id": "I119",
+      "proposed_connection": "Because bumblebees shouldn't be able to fly according to physics (myth), they succeed by defying physics, and humans can defy limits through belief",
+      "source_domain": "Physics / Entomology",
+      "target_domain": "Self-Help",
+      "why_invalid": "The 'bumblebees can't fly' myth originated from a 1930s engineer applying fixed-wing aerodynamics to flapping wings. Bumblebees fly via unsteady aerodynamics, vortex shedding, and wing rotation - all well-understood physics. They don't defy anything. Using this myth as inspiration for 'believing beyond limits' is based on a false premise. Actual limits exist and aren't overcome by belief.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.97
+    },
+    {
+      "id": "I120",
+      "proposed_connection": "Because some near-death experiences show similar features across cultures, consciousness survives death and NDEs prove an afterlife",
+      "source_domain": "Neuroscience",
+      "target_domain": "Spirituality",
+      "why_invalid": "NDE features (tunnel, light, life review) correlate with: oxygen deprivation (hypoxia), endorphin release, temporal lobe stimulation, and REM intrusion. Similar features across cultures reflect similar brain physiology, not shared afterlife. No NDE has provided verifiable information unknown to the person while clinically dead. Out-of-body experiences are reproducible by brain stimulation. This is biological explanation vs. supernatural interpretation.",
+      "invalidation_type": "false_analogy",
+      "confidence_of_wrongness": 0.93
+    }
+  ]
+}

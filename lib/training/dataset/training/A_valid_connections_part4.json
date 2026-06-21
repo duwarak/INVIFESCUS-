@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "dataset_name": "Cross-Domain Valid Connections Part 4",
+    "clusters": "C081-C100"
+  },
+  "connection_clusters": [
+    {
+      "id": "C081",
+      "source_concept": "Dead Letter Queue",
+      "source_domain": "Message Systems",
+      "multi_modal_input": {
+        "text_notes": "When message processing fails after retries, route to dead letter queue for later inspection. Prevents blocking main queue. Analysts can examine failed messages, fix issues, and replay.",
+        "voice_transcript": "When a message keeps failing, don't let it clog up the system. Put it in a special 'dead letter' pile. Someone can look at it later, figure out what went wrong, and fix it."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Hospital",
+          "target_concept": "Triage Overflow Area",
+          "connection_type": "healthcare_analogy",
+          "explanation": "When ER is overwhelmed, non-critical patients go to overflow area for later treatment. Not abandoned - just deferred. Prevents critical care gridlock. Dead letter queue for humans.",
+          "transferable_principle": "Deferring non-critical cases to overflow preserves capacity for critical immediate needs",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Remediation Class",
+          "connection_type": "educational_analogy",
+          "explanation": "Students who fail standard curriculum go to remediation - not expelled, just placed in specialized stream. Original class continues. Remediation addresses specific failure modes and can return students to main stream.",
+          "transferable_principle": "Separate processing stream for cases that fail standard handling preserves main flow",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C082",
+      "source_concept": "Blue-Green Deployment",
+      "source_domain": "DevOps",
+      "multi_modal_input": {
+        "text_notes": "Run two identical production environments. Route traffic to Blue (live). Deploy to Green. Test Green. Switch traffic to Green instantly. Blue remains as instant rollback. Zero-downtime deployment.",
+        "voice_transcript": "You have two identical systems - blue and green. Blue is live. You update green while blue serves users. Test green. Flick the switch - now green is live. If something breaks, flick back to blue. No downtime."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Aviation",
+          "target_concept": "Flight Crew Rotation",
+          "connection_type": "aviation_analogy",
+          "explanation": "Long flights have backup crew resting while primary crew works. If primary crew fatigued (failure), rested crew takes over (green deployment). Resting crew = blue environment on standby.",
+          "transferable_principle": "Maintaining ready standby capacity enables instant swap without service interruption",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Organ Transplant Backup",
+          "connection_type": "healthcare_analogy",
+          "explanation": "Transplant teams prepare backup organ (green) in case primary organ (blue) fails during transport. Instant switch if primary organ unsuitable upon arrival. Zero-downtime organ replacement.",
+          "transferable_principle": "Prepared backup enables instant replacement if primary option fails validation",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C083",
+      "source_concept": "Feature Flagging",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Deploy code to production but hide behind feature flag. Enable for subset of users. Test. Gradually roll out. Can disable instantly if problems. Decouples deployment from release.",
+        "voice_transcript": "Push the new feature to production but keep it hidden behind a switch. Turn it on for 1% of users. Watch. Then 5%. Then 20%. If something breaks, turn it off instantly without redeploying."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Drug Trial Phases",
+          "connection_type": "clinical_analogy",
+          "explanation": "Phase 1: small group (1% rollout). Phase 2: larger group (5% rollout). Phase 3: widespread (100% rollout). Can halt any phase if adverse effects detected. Same gradual exposure pattern.",
+          "transferable_principle": "Gradual exposure to new interventions with monitoring gates at each expansion level",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Retail",
+          "target_concept": "Soft Opening",
+          "connection_type": "business_analogy",
+          "explanation": "Restaurant opens to limited guests (friends/family) before public launch. Test operations. Fix issues. Full opening = 100% rollout. Soft opening = feature flag for restaurants.",
+          "transferable_principle": "Limited launch to friendly audience enables issue detection before full public exposure",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C084",
+      "source_concept": "Health Check / Heartbeat",
+      "source_domain": "Distributed Systems",
+      "multi_modal_input": {
+        "text_notes": "Services periodically report health status. If heartbeat stops, system considers service dead and routes around it. Load balancers use health checks to determine which instances receive traffic.",
+        "voice_transcript": "Every few seconds, each server says 'I'm alive!' If it stops saying that, the system marks it as dead and stops sending it work. Like checking someone's pulse."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Vital Signs Monitoring",
+          "connection_type": "healthcare_equivalence",
+          "explanation": "ICU monitors: heartbeat (ECG), blood pressure, oxygen = health checks for humans. Alarm if vitals stop or go out of range. Nurses route attention (load balance) to patients with worst vitals.",
+          "transferable_principle": "Continuous monitoring of critical parameters with automated alerts enables rapid intervention",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Relationships",
+          "target_concept": "Relationship Check-ins",
+          "connection_type": "social_application",
+          "explanation": "Regular 'how are we doing?' conversations = health checks for relationships. Without periodic check-ins, problems fester until catastrophic failure (breakup). Weekly date night = heartbeat signal.",
+          "transferable_principle": "Regular status communication prevents undetected degradation in ongoing partnerships",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C085",
+      "source_concept": "Write-Ahead Log (WAL)",
+      "source_domain": "Database Systems",
+      "multi_modal_input": {
+        "text_notes": "Before changing data, write intended change to durable log. If crash occurs during change, replay log to recover. Guarantees durability. Used in PostgreSQL, SQLite, and most databases.",
+        "voice_transcript": "Before making any change, write down what you're about to do in a special notebook. If the power goes out mid-change, you can look at the notebook and finish what you started. That's a write-ahead log."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Aviation",
+          "target_concept": "Pre-Flight Checklist Log",
+          "connection_type": "aviation_analogy",
+          "explanation": "Pilots write/check each pre-flight item before executing. If interrupted, checklist log (WAL) shows exactly where they were. Can resume without starting over. Also used for post-incident reconstruction.",
+          "transferable_principle": "Recording intended actions before execution enables recovery from interruption without data loss",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Construction",
+          "target_concept": "Building Permits",
+          "connection_type": "regulatory_analogy",
+          "explanation": "Permit application = WAL for construction: planned changes documented and approved BEFORE execution. If dispute arises, permit log shows what was authorized. Inspector verifies log matches reality.",
+          "transferable_principle": "Documenting planned changes before execution creates accountability and enables recovery from disputes",
+          "confidence_score": 0.84
+        }
+      ]
+    },
+    {
+      "id": "C086",
+      "source_concept": "Pagination",
+      "source_domain": "Software / Information Design",
+      "multi_modal_input": {
+        "text_notes": "Break large dataset into smaller chunks (pages). User navigates between pages. Reduces initial load time and cognitive overload. Offset-based or cursor-based.",
+        "voice_transcript": "Don't show someone 10,000 results at once. Show 20 at a time. Let them click 'next' to see more. It's like turning pages in a book instead of reading a giant scroll."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Spaced Learning",
+          "connection_type": "pedagogical_analogy",
+          "explanation": "Teaching 20 concepts at once = cognitive overload. Pagination for education: teach small chunks, let student process, then next page. Chunking aligns with working memory capacity (7\u00b12 items).",
+          "transferable_principle": "Presenting information in processable chunks prevents cognitive overload and improves retention",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Retail",
+          "target_concept": "Store Aisles",
+          "connection_type": "spatial_analogy",
+          "explanation": "Stores organize products into aisles (pages) rather than one giant pile. Customers navigate aisle by aisle. Aisle markers = pagination controls. End caps = featured results (promoted content).",
+          "transferable_principle": "Physical or logical partitioning of large collections enables manageable browsing",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C087",
+      "source_concept": "Lazy Loading",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Defer loading resources until they're needed. Images load as user scrolls. Code splits load on demand. Reduces initial load time and resource consumption.",
+        "voice_transcript": "Don't load everything when the page opens. Load images only when the user scrolls to them. Load features only when the user clicks on them. Start fast, load as needed."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Education",
+          "target_concept": "Just-in-Time Learning",
+          "connection_type": "pedagogical_analogy",
+          "explanation": "Learn concepts only when needed for current project. Don't study entire subject upfront. As you encounter problems, learn solutions. Reduces cognitive load and increases relevance. Autodidact method.",
+          "transferable_principle": "Acquiring knowledge at moment of need maximizes relevance and minimizes upfront investment",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Supply Chain",
+          "target_concept": "Just-in-Time Manufacturing",
+          "connection_type": "logistics_analogy",
+          "explanation": "Toyota: parts arrive at assembly line exactly when needed. Don't stockpile everything upfront. Reduces inventory costs and waste. Lazy loading for physical manufacturing.",
+          "transferable_principle": "Delivering resources exactly at moment of need minimizes storage costs and waste",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C088",
+      "source_concept": "Sharding",
+      "source_domain": "Database Architecture",
+      "multi_modal_input": {
+        "text_notes": "Split large database into smaller pieces (shards) distributed across servers. Each shard contains subset of data. Enables horizontal scaling. Routing layer directs queries to appropriate shard.",
+        "voice_transcript": "One database can't handle all the data? Split it up. Put users A-M on one server, N-Z on another. Each piece is manageable. The routing layer sends your query to the right server."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "City Districts / Boroughs",
+          "connection_type": "urban_analogy",
+          "explanation": "Cities split into boroughs/districts for manageability. NYC: 5 boroughs, each with local government. Same principle: decentralize administration to handle scale. Mayor's office = routing layer.",
+          "transferable_principle": "Administrative partitioning enables scaling of governance to population size",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Library Science",
+          "target_concept": "Library Branch System",
+          "connection_type": "information_analogy",
+          "explanation": "Central library splits into neighborhood branches (shards). Each serves local community. Inter-library loan = cross-shard query. Catalog system = routing layer directing patrons to correct branch.",
+          "transferable_principle": "Distributing collections across locations improves access and reduces central bottleneck",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C089",
+      "source_concept": "Webhook / Callback",
+      "source_domain": "API Design",
+      "multi_modal_input": {
+        "text_notes": "Instead of polling (repeatedly asking), system registers callback URL and gets notified when event occurs. Push vs pull model. More efficient for real-time updates. Used by Stripe, GitHub, Slack.",
+        "voice_transcript": "Instead of asking every minute 'is it done yet?' you say 'call me when it's done.' The system pushes the result to you when ready. Much more efficient than constantly checking."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Restaurant",
+          "target_concept": "Pager System",
+          "connection_type": "real_world_analogy",
+          "explanation": "Restaurant gives you pager instead of having you check counter every minute. Pager buzzes (webhook fires) when table ready. Push notification vs polling. Same pattern, physical device.",
+          "transferable_principle": "Notification on event completion is more efficient than repeated status checking",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "On-Call System",
+          "connection_type": "healthcare_analogy",
+          "explanation": "Doctor on-call registers as callback. Instead of hospital calling every doctor to check availability, only on-call doctor gets notified (webhook). Emergency dispatch = event-driven callback system.",
+          "transferable_principle": "Registering designated responders for specific events eliminates broadcast search overhead",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C090",
+      "source_concept": "Rate Limiting / Throttling",
+      "source_domain": "API Design",
+      "multi_modal_input": {
+        "text_notes": "Control how many requests a client can make in a time window. Prevents abuse and ensures fair resource distribution. Algorithms: token bucket, sliding window, leaky bucket.",
+        "voice_transcript": "You get 100 API calls per minute. Use them wisely. If you go over, you get blocked until the window resets. It's like rationing - everyone gets a fair share."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Traffic Engineering",
+          "target_concept": "Ramp Metering",
+          "connection_type": "infrastructure_analogy",
+          "explanation": "Highway on-ramps use traffic lights to meter entry rate. Prevents freeway overload during rush hour. Same principle: control inflow to maintain system performance. Ramp meters = token bucket algorithm.",
+          "transferable_principle": "Controlling entry rate prevents system congestion and maintains throughput for admitted traffic",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Triage Rate Limiting",
+          "connection_type": "healthcare_analogy",
+          "explanation": "ER admission rate-limits: only N patients per doctor per hour. Exceeding capacity = quality drop and errors. Wait room = request queue. Discharge rate must match admission rate for equilibrium.",
+          "transferable_principle": "Healthcare quality requires limiting patient load to match provider processing capacity",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C091",
+      "source_concept": "Polling vs Push",
+      "source_domain": "Communication Architecture",
+      "multi_modal_input": {
+        "text_notes": "Polling: client repeatedly asks server for updates (pull). Push: server sends updates when available (WebSocket, SSE). Push more efficient for real-time; polling simpler but wasteful.",
+        "voice_transcript": "Polling is like a kid asking 'are we there yet?' every minute. Push is like the parent saying 'we're here' when you actually arrive. Push is better for everyone."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Parenting",
+          "target_concept": "Nagging vs Communication",
+          "connection_type": "social_analogy",
+          "explanation": "Child polling parent: 'can I have a snack? can I? can I?' (inefficient). Parent pushing info: 'snack time is at 3pm' (efficient). Good parenting uses push model with scheduled predictable updates.",
+          "transferable_principle": "Push communication with predictable schedules reduces need for repeated status requests",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Journalism",
+          "target_concept": "Newsletters vs News Checking",
+          "connection_type": "media_analogy",
+          "explanation": "Checking news site repeatedly = polling (wastes time, finds nothing most visits). Newsletter subscription = push (content arrives when published). Curated push (editor) higher signal than random pull (algorithm).",
+          "transferable_principle": "Scheduled push delivery of curated content outperforms random pull browsing for information efficiency",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C092",
+      "source_concept": "Two-Phase Commit",
+      "source_domain": "Distributed Transactions",
+      "multi_modal_input": {
+        "text_notes": "Consensus protocol: Phase 1 (prepare) - all participants vote commit/abort. Phase 2 - if all vote commit, coordinator sends commit; otherwise abort. Guarantees atomicity across distributed systems.",
+        "voice_transcript": "Everyone agrees to the plan before anyone acts. First, we all say 'yes, I can do my part.' Then, and only then, we all do it together. If anyone says no, nobody does anything."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Marriage",
+          "target_concept": "Mutual Decision Making",
+          "connection_type": "social_analogy",
+          "explanation": "Big decisions (moving, having kids): both partners must commit before action. Phase 1: discussion and agreement. Phase 2: joint execution. If either aborts, transaction doesn't proceed.",
+          "transferable_principle": "Both parties must commit before irreversible joint action proceeds",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Military",
+          "target_concept": "Coordinated Attack Timing",
+          "connection_type": "military_analogy",
+          "explanation": "D-Day: all forces commit at agreed time. Phase 1: confirm readiness (prepare). Phase 2: execute simultaneously (commit). If weather aborts, all units stand down together. Distributed two-phase commit.",
+          "transferable_principle": "Coordinated multi-party actions require readiness confirmation before synchronized execution",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C093",
+      "source_concept": "Backpressure",
+      "source_domain": "Stream Processing",
+      "multi_modal_input": {
+        "text_notes": "When downstream system can't keep up, signal upstream to slow down. Prevents memory overflow and cascading failure. NATS, Kafka, reactive streams implement backpressure.",
+        "voice_transcript": "If the kitchen can't cook orders fast enough, they tell the waiters to stop taking more orders. The pressure flows backward from the bottleneck. That's backpressure. It prevents the whole system from crashing."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Hospital",
+          "target_concept": "Diversion Status",
+          "connection_type": "healthcare_analogy",
+          "explanation": "When ER at capacity, hospital goes on 'diversion' - ambulances routed to other hospitals. Backpressure signal to EMS system. Prevents ER collapse from patient overflow. Lifesaving backpressure.",
+          "transferable_principle": "Signaling upstream capacity constraints prevents catastrophic downstream overload",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Traffic",
+          "target_concept": "Congestion Propagation",
+          "connection_type": "transport_analogy",
+          "explanation": "Traffic jam creates backpressure: cars slow down upstream of bottleneck. Wave propagates backward. Same principle as stream backpressure. Traffic signals can implement explicit backpressure (red lights upstream of jam).",
+          "transferable_principle": "Bottleneck effects propagate upstream, requiring upstream flow reduction to prevent system lockup",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C094",
+      "source_concept": "DNS (Domain Name System)",
+      "source_domain": "Internet Infrastructure",
+      "multi_modal_input": {
+        "text_notes": "Distributed hierarchical naming system. Maps human-readable names (google.com) to IP addresses. Recursive resolution: browser \u2192 ISP DNS \u2192 root \u2192 TLD \u2192 authoritative. Caching at each level.",
+        "voice_transcript": "DNS is like a phone book for the internet. You type google.com, DNS looks up the actual number address. It's distributed across millions of servers so no single point controls everything."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Language",
+          "target_concept": "Human Proper Names",
+          "connection_type": "linguistic_analogy",
+          "explanation": "Human names ARE DNS: 'John Smith' maps to a specific person (IP address). Multiple John Smiths require additional context (domain qualifiers). Nicknames = CNAME records. Legal names = canonical records.",
+          "transferable_principle": "Human naming systems use hierarchical disambiguation identical to DNS resolution",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Postal System",
+          "target_concept": "Mail Routing",
+          "connection_type": "logistics_analogy",
+          "explanation": "Mail routing: name \u2192 local post office \u2192 regional center \u2192 destination city \u2192 local office \u2192 address. Hierarchical resolution with caching (local post office remembers common routes). Physical DNS.",
+          "transferable_principle": "Hierarchical routing with local caching optimizes delivery path resolution for named destinations",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C095",
+      "source_concept": "CAP Theorem",
+      "source_domain": "Distributed Systems",
+      "multi_modal_input": {
+        "text_notes": "Consistency, Availability, Partition tolerance - pick two. In network partition, must choose between consistent data (refuse writes) or available service (accept divergent writes). No distributed system can guarantee all three.",
+        "voice_transcript": "In a distributed system, when the network breaks, you have a choice: keep everyone's data the same but stop working, or keep working but let data diverge. You can't have both. This is why distributed systems are hard."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Emergency Management",
+          "target_concept": "Crisis Communication",
+          "connection_type": "crisis_analogy",
+          "explanation": "During disaster (network partition), choose: consistent messaging (centralized control, slower) or available response (local units act independently, may conflict). FEMA vs local first responders = CAP tradeoff.",
+          "transferable_principle": "During communication breakdowns, centralized consistency and local availability are mutually exclusive",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Organizational Design",
+          "target_concept": "Centralization vs Decentralization",
+          "connection_type": "management_analogy",
+          "explanation": "Centralized org: consistent decisions (sacrifice local availability for consistency). Decentralized org: local availability (sacrifice consistency). Matrix orgs try to balance CAP. No org achieves all three perfectly.",
+          "transferable_principle": "Organizational tradeoffs between unified policy and local responsiveness are structurally inevitable",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C096",
+      "source_concept": "Garbage Collection",
+      "source_domain": "Programming Languages",
+      "multi_modal_input": {
+        "text_notes": "Automatic memory management. System identifies unused objects and reclaims memory. Types: mark-and-sweep, reference counting, generational. Prevents memory leaks and dangling pointers.",
+        "voice_transcript": "In managed languages, the system automatically cleans up memory you're not using anymore. Like having a robot that picks up your trash. In C++, you have to take out your own garbage or it piles up."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "Waste Management Systems",
+          "connection_type": "infrastructure_analogy",
+          "explanation": "Municipal garbage collection IS GC for cities: automatically reclaim unused space. Without it, waste accumulates (memory leak). Landfills = old generation. Recycling = object reuse. Illegal dumping = memory leak.",
+          "transferable_principle": "Automated reclamation of unused resources prevents accumulation and enables efficient space reuse",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Processing / Grief",
+          "connection_type": "psychological_analogy",
+          "explanation": "Emotional GC: processing experiences and releasing emotional 'memory.' Unprocessed trauma = memory leak (accumulates, degrades function). Therapy = manual garbage collection for emotions.",
+          "transferable_principle": "Regular processing and release of accumulated emotional experiences maintains psychological function",
+          "confidence_score": 0.84
+        }
+      ]
+    },
+    {
+      "id": "C097",
+      "source_concept": "Memoization / Dynamic Programming",
+      "source_domain": "Algorithm Design",
+      "multi_modal_input": {
+        "text_notes": "Store results of expensive function calls and return cached result when same inputs occur again. Dynamic programming: solve subproblems once, store solutions, build up to final solution.",
+        "voice_transcript": "If you're calculating the same thing over and over, write it down the first time. Next time someone asks, just read your note instead of calculating again. That's memoization. Fibonacci with memoization goes from exponential to linear."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Reusable Components / Templates",
+          "connection_type": "business_analogy",
+          "explanation": "Create proposal template once (compute), reuse for every client (cache). McKinsey decks use reusable slides. Legal firms use precedents (memoized solutions). Don't rebuild from scratch each time.",
+          "transferable_principle": "Capturing and reusing solutions to recurring problems eliminates redundant effort",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Education",
+          "target_concept": "Worked Examples",
+          "connection_type": "pedagogical_application",
+          "explanation": "Students solve problem types once with guidance, then apply the pattern (memoized solution) to similar problems. Math education: master template problem, then recognize variants. Expertise = large memoized pattern library.",
+          "transferable_principle": "Storing solved problem patterns enables rapid recognition and application to similar future problems",
+          "confidence_score": 0.92
+        }
+      ]
+    },
+    {
+      "id": "C098",
+      "source_concept": "Deterministic vs Stochastic",
+      "source_domain": "Mathematics / Modeling",
+      "multi_modal_input": {
+        "text_notes": "Deterministic: same input always produces same output. Stochastic: involves randomness, same input produces different outputs. Weather is stochastic; planetary orbits are deterministic (approximately).",
+        "voice_transcript": "Deterministic: drop a ball, it falls. Every time. Stochastic: flip a coin, could be heads or tails. Even knowing everything about the flip, you can't predict it perfectly. Real world is mostly stochastic."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Free Will vs Determinism",
+          "connection_type": "philosophical_analogy",
+          "explanation": "Determinism: brain states follow physical laws (deterministic model). Free will: human choice introduces stochastic element. Neuroscience suggests mostly deterministic with quantum stochastic 'noise' at margins.",
+          "transferable_principle": "Human behavior is predominantly predictable (deterministic) with irreducible variation at individual decision level",
+          "confidence_score": 0.78
+        },
+        {
+          "target_domain": "Finance",
+          "target_concept": "Monte Carlo Simulation",
+          "connection_type": "modeling_application",
+          "explanation": "Portfolio modeling: instead of one deterministic forecast, run thousands of stochastic simulations with random market variations. Produces probability distribution of outcomes. Accounts for inherent market stochasticity.",
+          "transferable_principle": "When systems are inherently unpredictable, stochastic simulation produces more useful forecasts than deterministic models",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C099",
+      "source_concept": "Satisficing",
+      "source_domain": "Decision Theory (Simon)",
+      "multi_modal_input": {
+        "text_notes": "Choosing option that meets threshold requirements rather than optimal option. 'Good enough' decision making. Humans satisfice because optimal search is too costly. Bounded rationality.",
+        "voice_transcript": "You don't need the PERFECT restaurant. You need one that's good enough, close enough, available now. Searching for the absolute best wastes more time than the improvement is worth. Satisfice."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Evolution",
+          "target_concept": "Evolutionary Design",
+          "connection_type": "biological_analogy",
+          "explanation": "Evolution doesn't find optimal designs; it finds 'good enough' solutions. The eye has a blind spot (bad design) but works well enough for survival. Optimal design would take too long; satisficing arrives faster.",
+          "transferable_principle": "Evolutionary processes produce adequate solutions quickly rather than optimal solutions slowly",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Marriage",
+          "target_concept": "Partner Selection",
+          "connection_type": "social_application",
+          "explanation": "Optimal partner search is impossible (secretary problem). People satisfice: find someone who meets core criteria rather than the theoretical best match. 'Good enough' marriages often happier than those still searching for perfect.",
+          "transferable_principle": "Searching for optimal choices in infinite option spaces leads to dissatisfaction; satisficing enables commitment",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C100",
+      "source_concept": "Zipf's Law",
+      "source_domain": "Statistics / Linguistics",
+      "multi_modal_input": {
+        "text_notes": "Frequency of any word is inversely proportional to its rank in frequency table. #1 word occurs ~2x as often as #2, ~3x as often as #3. Applies to cities, companies, website traffic, book sales.",
+        "voice_transcript": "The most common English word ('the') appears about twice as often as the second most common ('of'), three times as often as the third ('and'). This pattern shows up EVERYWHERE - cities, wealth, web traffic."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Urban Economics",
+          "target_concept": "City Size Distribution",
+          "connection_type": "economic_application",
+          "explanation": "City populations follow Zipf's Law: largest city ~2x second largest, ~3x third largest. True for almost every country. Powerful empirical regularity suggesting common underlying mechanism for urban aggregation.",
+          "transferable_principle": "Urban concentration follows power-law distribution consistent across cultures and time periods",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Market Share Distribution",
+          "connection_type": "market_analogy",
+          "explanation": "Market shares often follow Zipf: leader has ~2x #2's share. Amazon ~2x eBay, Google ~2x Bing. Power law in competition. Winner-take-most dynamics. Not winner-take-all (that's monopoly), but close.",
+          "transferable_principle": "Competitive markets tend toward power-law concentration where leader has roughly double next competitor's share",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Web Analytics",
+          "target_concept": "Website Traffic Distribution",
+          "connection_type": "internet_application",
+          "explanation": "Website traffic follows Zipf: top page gets ~2x traffic of #2 page, ~3x #3. Content strategy: few pages drive most traffic. SEO focus should be on top performers (vital few) not long tail.",
+          "transferable_principle": "Traffic/concentration follows power-law; focus optimization efforts on top-performing elements",
+          "confidence_score": 0.9
+        }
+      ]
+    }
+  ]
+}

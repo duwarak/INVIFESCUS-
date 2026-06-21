@@ -72,3 +72,38 @@ export function colorFor(group: string): string {
 export function softFor(group: string): string {
   return GROUP_BG[group] ?? GROUP_BG.unknown;
 }
+
+function hashHue(id: string): number {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
+  return ((h % 200) - 100) / 100;
+}
+
+function hexToHsl(hex: string): { h: number; s: number; l: number } {
+  const c = hex.replace("#", "");
+  const r = parseInt(c.slice(0, 2), 16) / 255;
+  const g = parseInt(c.slice(2, 4), 16) / 255;
+  const b = parseInt(c.slice(4, 6), 16) / 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const d = max - min;
+  let h = 0;
+  if (d !== 0) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+  }
+  h = (h * 60 + 360) % 360;
+  const l = (max + min) / 2;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  return { h, s, l };
+}
+
+export function vibrantFor(group: string, id: string): string {
+  const base = colorFor(group);
+  const { h, s, l } = hexToHsl(base);
+  const dh = hashHue(id) * 28;
+  const ds = Math.min(1, s * (0.85 + ((id.length * 13) % 30) / 100));
+  const dl = Math.max(0.45, Math.min(0.78, l + (hashHue(id + "l") * 0.12)));
+  return `hsl(${((h + dh + 360) % 360).toFixed(0)}, ${Math.round(ds * 100)}%, ${Math.round(dl * 100)}%)`;
+}

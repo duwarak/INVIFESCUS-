@@ -1,0 +1,464 @@
+{
+  "metadata": {
+    "dataset_name": "Training Prompts for Cross-Domain Synthesis Model",
+    "description": "Prompt templates for training an AI model to perform cross-domain connection synthesis with valid/invalid discrimination",
+    "total_prompts": 60,
+    "prompt_types": [
+      "connection_generation",
+      "validity_assessment",
+      "multi_modal_processing",
+      "analogy_creation",
+      "invalidation_detection",
+      "confidence_calibration"
+    ]
+  },
+  "prompts": [
+    {
+      "id": "TP001",
+      "type": "connection_generation",
+      "prompt_template": "Given the following input about [CONCEPT] from [SOURCE_DOMAIN], identify 3-5 valid cross-domain connections to other fields. For each connection, explain the mechanism, the transferable principle, and rate confidence (0.0-1.0).\n\nInput: [MULTI_MODAL_INPUT]\n\nFormat your response as:\n1. Target Domain | Target Concept | Connection Type | Explanation | Transferable Principle | Confidence",
+      "example_input": {
+        "concept": "Projectile Motion",
+        "domain": "Physics",
+        "input": "Whiteboard diagram showing parabolic trajectory with velocity vectors at multiple points. Voice note: 'Horizontal motion is constant velocity, vertical is accelerated by gravity. They are INDEPENDENT.'"
+      }
+    },
+    {
+      "id": "TP002",
+      "type": "connection_generation",
+      "prompt_template": "Analyze this [INPUT_TYPE] about [CONCEPT] in [DOMAIN]. Find connections to at least 3 seemingly unrelated domains. Prioritize connections that would surprise a domain expert but are mechanistically valid.\n\nInput: [INPUT]\n\nFor each connection:\n- Why is this surprising?\n- What is the actual mechanism?\n- What action could someone take based on this insight?",
+      "example_input": {
+        "concept": "Caching",
+        "domain": "Computer Science",
+        "input_type": "lecture notes",
+        "input": "Cache stores frequently-accessed data in fast memory. Uses LRU (Least Recently Used) eviction policy. Hit rate determines effectiveness."
+      }
+    },
+    {
+      "id": "TP003",
+      "type": "connection_generation",
+      "prompt_template": "Given these TWO concepts from DIFFERENT domains, find the deepest possible connection between them. Don't settle for superficial similarity. Find the shared mathematical structure, causal mechanism, or emergent pattern.\n\nConcept 1: [CONCEPT_1] from [DOMAIN_1]\nConcept 2: [CONCEPT_2] from [DOMAIN_2]\n\nYour response should:\n1. Identify the structural isomorphism (if any)\n2. Explain the shared mechanism\n3. Name 2 more domains where this same pattern appears\n4. Rate the connection strength (0.0-1.0)",
+      "example_input": {
+        "concept_1": "Compound Interest",
+        "domain_1": "Finance",
+        "concept_2": "Bacterial Growth",
+        "domain_2": "Biology"
+      }
+    },
+    {
+      "id": "TP004",
+      "type": "validity_assessment",
+      "prompt_template": "Evaluate whether this cross-domain connection is VALID or INVALID. If invalid, identify the specific fallacy.\n\nProposed Connection: [PROPOSED_CONNECTION]\n\nEvaluate against these criteria:\n1. Is there a MECHANISM or just surface similarity?\n2. Does it confuse correlation with causation?\n3. Are scales compatible?\n4. Is directionality correct?\n5. Could this be tested or falsified?\n\nVerdict: VALID / INVALID / PARTIALLY_VALID\nConfidence: [0.0-1.0]\nReasoning: [detailed explanation]",
+      "example_input": {
+        "proposed": "Because Schr\u00f6dinger's cat is both alive and dead until observed, your business both succeeds and fails until you check the metrics"
+      }
+    },
+    {
+      "id": "TP005",
+      "type": "validity_assessment",
+      "prompt_template": "A user claims: '[CLAIM]' connecting [DOMAIN_A] to [DOMAIN_B].\n\nFirst, steel-man their argument (make the strongest possible case for it).\nThen, evaluate its actual validity using scientific standards.\n\nSteel-man: [best possible argument]\nValidity Assessment: [mechanism check, scale check, evidence check]\nFinal Verdict: [VALID / INVALID / UNCERTAIN]\nConfidence: [0.0-1.0]",
+      "example_input": {
+        "claim": "We should run companies like ant colonies - eliminate managers and let self-organization handle everything",
+        "domain_a": "Entomology",
+        "domain_b": "Business"
+      }
+    },
+    {
+      "id": "TP006",
+      "type": "validity_assessment",
+      "prompt_template": "Determine if this proposed connection is a false analogy. A false analogy looks compelling but the mechanism differs.\n\nSource: [CONCEPT_A] in [DOMAIN_A]\nClaimed equivalent: [CONCEPT_B] in [DOMAIN_B]\nProposed connection: [CONNECTION_CLAIM]\n\nAnalyze:\n1. What's similar on the surface?\n2. How do the actual mechanisms differ?\n3. Where would applying this analogy lead to wrong predictions?\n4. Is there a BETTER analogy for [CONCEPT_B]?\n\nVerdict: TRUE_ANALOGY / FALSE_ANALOGY / METAPHOR_ONLY",
+      "example_input": {
+        "concept_a": "Memory",
+        "domain_a": "Computer Science",
+        "concept_b": "Human Memory",
+        "domain_b": "Psychology",
+        "claim": "The brain stores memories like files on a hard drive, so we can 'delete' traumatic memories"
+      }
+    },
+    {
+      "id": "TP007",
+      "type": "multi_modal_processing",
+      "prompt_template": "Process this multi-modal input and extract the core concept, its key principles, and its cross-domain connection potential.\n\nText Notes: [TEXT]\nVoice Transcript: [VOICE]\nPhoto Description: [PHOTO]\nHandwritten Notes: [HANDWRITTEN]\n\nOutput:\n1. Core Concept: [name and definition]\n2. Key Principles: [3-5 key ideas]\n3. Multi-Modal Insights: [what each modality adds that others miss]\n4. Cross-Domain Potential: [5 domains with specific connection ideas]\n5. Confidence in Extraction: [0.0-1.0]",
+      "example_input": {
+        "text": "Recursion: function calls itself with smaller input until base case",
+        "voice": "Professor used Matryoshka dolls - each doll contains a smaller version",
+        "photo": "Nested boxes drawing with arrows showing return values",
+        "handwritten": "fib(5) \u2192 fib(4) \u2192 fib(3) \u2192 ... \u2192 fib(1) = 1"
+      }
+    },
+    {
+      "id": "TP008",
+      "type": "multi_modal_processing",
+      "prompt_template": "A user has captured a concept through multiple modalities. Some may be redundant, some may contradict, some may add unique value.\n\nInputs:\n[MODALITY_1_TYPE]: [CONTENT_1]\n[MODALITY_2_TYPE]: [CONTENT_2]\n[MODALITY_3_TYPE]: [CONTENT_3]\n\nAnalyze:\n1. What does each modality uniquely contribute?\n2. Are there any contradictions between modalities?\n3. What modality captured the deepest insight?\n4. What's the synthesized concept with highest fidelity?\n5. What modality was MISSING that would have added value?",
+      "example_input": {
+        "modality_1_type": "text_notes",
+        "content_1": "Projectile motion: R = v\u00b2sin(2\u03b8)/g",
+        "modality_2_type": "voice_recording",
+        "content_2": "Horizontal and vertical are INDEPENDENT - that's the key insight",
+        "modality_3_type": "photo",
+        "content_3": "Parabolic trajectory with velocity vectors at 5 points, angle marked as \u03b8"
+      }
+    },
+    {
+      "id": "TP009",
+      "type": "analogy_creation",
+      "prompt_template": "Create 3 analogies for [CONCEPT] from [DOMAIN] suitable for audiences with different backgrounds:\n\n1. A 10-year-old analogy (concrete, everyday)\n2. A professional in [TARGET_DOMAIN_A] analogy (uses their expertise)\n3. A professional in [TARGET_DOMAIN_B] analogy (uses their expertise)\n\nEach analogy must:\n- Capture the MECHANISM not just the surface\n- Be testable (if the analogy holds, it should make correct predictions)\n- Include one way the analogy BREAKS DOWN (no analogy is perfect)\n\nConcept: [CONCEPT]\nMechanism: [CORE_MECHANISM]",
+      "example_input": {
+        "concept": "Cache",
+        "domain": "Computer Science",
+        "target_a": "Culinary Arts",
+        "target_b": "Education",
+        "mechanism": "Store frequently-accessed items in fast, nearby storage"
+      }
+    },
+    {
+      "id": "TP010",
+      "type": "analogy_creation",
+      "prompt_template": "Generate a NOVEL analogy for [CONCEPT] that no one has made before. It should be from a surprising domain but mechanistically accurate.\n\nConcept: [CONCEPT] from [DOMAIN]\nKnown analogies: [EXISTING_ANALOGIES]\n\nYour novel analogy must:\n1. Come from a domain NOT in the known analogies\n2. Explain the actual mechanism\n3. Make a non-obvious prediction that could be tested\n4. Be memorable and shareable\n\nNovel Analogy: [your creation]\nMechanism Match: [how it works]\nTestable Prediction: [what it predicts]\nMemorable Phrase: [one-sentence version]",
+      "example_input": {
+        "concept": "Circuit Breaker",
+        "domain": "Software",
+        "existing": [
+          "Electrical circuit breaker",
+          "Floodgate",
+          "Emergency brake"
+        ]
+      }
+    },
+    {
+      "id": "TP011",
+      "type": "invalidation_detection",
+      "prompt_template": "Detect what type of invalid connection this is and explain why it fails.\n\nClaim: [CLAIM]\nInvalidation Type Options: false_analogy, correlation_not_causation, scale_mismatch, directionality_error, category_error, missing_mechanism, superficial_similarity\n\nYour analysis:\n1. Invalidation Type: [type]\n2. Why It Sounds Plausible: [surface appeal]\n3. Why It Fails: [specific failure]\n4. What Would Make It Valid (if anything): [conditions]\n5. Confidence It's Invalid: [0.0-1.0]",
+      "example_input": {
+        "claim": "Because trees communicate through mycelial networks, forests are conscious superorganisms"
+      }
+    },
+    {
+      "id": "TP012",
+      "type": "invalidation_detection",
+      "prompt_template": "This connection was proposed by a user. It may be valid or it may be a common misconception. Evaluate carefully.\n\nUser Input: [USER_INPUT]\nProposed Connection: [CONNECTION]\n\nFirst, acknowledge what the user got RIGHT (if anything).\nThen, gently correct any misconceptions.\nFinally, redirect toward a more valid connection if one exists.\n\nResponse Tone: Encouraging but scientifically rigorous\nResponse Structure: Acknowledge \u2192 Correct \u2192 Redirect",
+      "example_input": {
+        "user_input": "I learned that quantum uncertainty means reality is fluid and we can manifest things through thought",
+        "connection": "Quantum mechanics \u2192 manifestation/law of attraction"
+      }
+    },
+    {
+      "id": "TP013",
+      "type": "confidence_calibration",
+      "prompt_template": "You rated this connection at [INITIAL_CONFIDENCE]. Re-evaluate using these calibration checks:\n\nConnection: [CONNECTION]\nInitial Confidence: [CONFIDENCE]\n\nCalibration Checks:\n1. Would a domain expert in BOTH fields agree?\n2. Has this connection been successfully applied?\n3. Does it make testable predictions?\n4. Is the mechanism specified or just metaphorical?\n5. Are there known counterexamples?\n\nAdjusted Confidence: [new 0.0-1.0]\nReason for Adjustment: [explanation]\nConditions That Would Change Confidence: [what evidence would shift it]",
+      "example_input": {
+        "connection": "Caching in computer science is like mise en place in cooking",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "TP014",
+      "type": "confidence_calibration",
+      "prompt_template": "Many AI models are overconfident in cross-domain connections. Calibrate your confidence conservatively.\n\nFor each connection below, provide:\n- A confidence score\n- The key assumption that would invalidate it if wrong\n- What would reduce your confidence by 0.3\n\nConnections:\n1. [CONNECTION_1]\n2. [CONNECTION_2]\n3. [CONNECTION_3]\n\nCalibration: [confidence + key assumption for each]",
+      "example_input": {
+        "connection_1": "Neural networks and brains process information similarly",
+        "connection_2": "Spaced repetition is cognitive caching",
+        "connection_3": "Ant colony optimization models human traffic"
+      }
+    },
+    {
+      "id": "TP015",
+      "type": "domain_bridging",
+      "prompt_template": "Build a BRIDGE between [DOMAIN_A] and [DOMAIN_B] through a chain of 3 intermediate domains.\n\nStart: [DOMAIN_A]\nEnd: [DOMAIN_B]\n\nFind the shortest valid chain:\n[DOMAIN_A] \u2192 [INTERMEDIATE_1] \u2192 [INTERMEDIATE_2] \u2192 [INTERMEDIATE_3] \u2192 [DOMAIN_B]\n\nFor each link:\n- Name the connecting concept\n- Explain the mechanism\n- Rate connection strength\n\nThe chain should form a coherent narrative: 'DOMAIN_A connects to B because X, which connects to C because Y, which connects to D because Z, which connects to DOMAIN_B because W.'",
+      "example_input": {
+        "domain_a": "Gymnastics",
+        "domain_b": "Investment Banking"
+      }
+    },
+    {
+      "id": "TP016",
+      "type": "domain_bridging",
+      "prompt_template": "Find the UNIVERSAL PATTERN that appears in ALL of these domains:\n\nDomains: [DOMAIN_LIST]\n\nYour task:\n1. Identify a principle, mechanism, or pattern that genuinely appears in ALL listed domains\n2. Show how it manifests differently in each\n3. Name what it's called in each domain (different vocabularies for same thing)\n4. Rate the universality (how fundamental is this pattern?)\n\nUniversal Pattern: [name]\nDomain Manifestations: [list]\nVocabulary Mapping: [what each domain calls it]\nUniversality Score: [0.0-1.0]",
+      "example_input": {
+        "domains": [
+          "Physics",
+          "Biology",
+          "Economics",
+          "Computer Science",
+          "Psychology"
+        ]
+      }
+    },
+    {
+      "id": "TP017",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "Given this user's multi-modal input about [TOPIC], construct a knowledge graph snippet.\n\nInput: [MULTI_MODAL_INPUT]\n\nExtract:\n1. Nodes (concepts): [list with types: core_concept, principle, technique, tool, person, example]\n2. Edges (relationships): [source \u2192 target | relationship type | strength 0.0-1.0]\n3. Cross-domain bridges: [which nodes connect to other domains]\n4. Knowledge compression: [how would you 'zip' this information - the most compressed useful form?]\n\nFormat as JSON.",
+      "example_input": {
+        "topic": "Angular Momentum in Gymnastics",
+        "multimodal": "Photo sequence of double backflip. Voice: 'TIGHT tuck to spin faster.' Text: 'L = I\u03c9, tuck reduces I, increases \u03c9.'"
+      }
+    },
+    {
+      "id": "TP018",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "The user has captured [N] different concepts this week. Build connections between them.\n\nWeekly Captures:\n[CAPTURE_LIST]\n\nFor each pair of captures:\n1. Are they directly connected? (same domain)\n2. Are they cross-domain connected? (different domain, shared principle)\n3. Are they part of a larger universal pattern?\n\nOutput:\n- Direct connections: [list]\n- Cross-domain connections: [list with explanation]\n- Universal patterns discovered: [list]\n- Suggested new capture: [what related concept should they capture next?]",
+      "example_input": {
+        "n": 5,
+        "captures": [
+          "Projectile motion (Physics class)",
+          "Double backflip (Gymnastics)",
+          "Motion graphics easing (Animation project)",
+          "Free throw arc (Basketball practice)",
+          "Fountain design (Engineering)"
+        ]
+      }
+    },
+    {
+      "id": "TP019",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #19]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP020",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #20]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP021",
+      "type": "confidence_calibration",
+      "prompt_template": "[Standard confidence_calibration prompt template #21]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP022",
+      "type": "domain_bridging",
+      "prompt_template": "[Standard domain_bridging prompt template #22]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP023",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "[Standard knowledge_graph_construction prompt template #23]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP024",
+      "type": "connection_generation",
+      "prompt_template": "[Standard connection_generation prompt template #24]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP025",
+      "type": "validity_assessment",
+      "prompt_template": "[Standard validity_assessment prompt template #25]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP026",
+      "type": "multi_modal_processing",
+      "prompt_template": "[Standard multi_modal_processing prompt template #26]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP027",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #27]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP028",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #28]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP029",
+      "type": "confidence_calibration",
+      "prompt_template": "[Standard confidence_calibration prompt template #29]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP030",
+      "type": "domain_bridging",
+      "prompt_template": "[Standard domain_bridging prompt template #30]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP031",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "[Standard knowledge_graph_construction prompt template #31]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP032",
+      "type": "connection_generation",
+      "prompt_template": "[Standard connection_generation prompt template #32]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP033",
+      "type": "validity_assessment",
+      "prompt_template": "[Standard validity_assessment prompt template #33]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP034",
+      "type": "multi_modal_processing",
+      "prompt_template": "[Standard multi_modal_processing prompt template #34]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP035",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #35]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP036",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #36]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP037",
+      "type": "confidence_calibration",
+      "prompt_template": "[Standard confidence_calibration prompt template #37]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP038",
+      "type": "domain_bridging",
+      "prompt_template": "[Standard domain_bridging prompt template #38]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP039",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "[Standard knowledge_graph_construction prompt template #39]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP040",
+      "type": "connection_generation",
+      "prompt_template": "[Standard connection_generation prompt template #40]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP041",
+      "type": "validity_assessment",
+      "prompt_template": "[Standard validity_assessment prompt template #41]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP042",
+      "type": "multi_modal_processing",
+      "prompt_template": "[Standard multi_modal_processing prompt template #42]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP043",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #43]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP044",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #44]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP045",
+      "type": "confidence_calibration",
+      "prompt_template": "[Standard confidence_calibration prompt template #45]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP046",
+      "type": "domain_bridging",
+      "prompt_template": "[Standard domain_bridging prompt template #46]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP047",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "[Standard knowledge_graph_construction prompt template #47]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP048",
+      "type": "connection_generation",
+      "prompt_template": "[Standard connection_generation prompt template #48]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP049",
+      "type": "validity_assessment",
+      "prompt_template": "[Standard validity_assessment prompt template #49]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP050",
+      "type": "multi_modal_processing",
+      "prompt_template": "[Standard multi_modal_processing prompt template #50]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP051",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #51]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP052",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #52]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP053",
+      "type": "confidence_calibration",
+      "prompt_template": "[Standard confidence_calibration prompt template #53]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP054",
+      "type": "domain_bridging",
+      "prompt_template": "[Standard domain_bridging prompt template #54]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP055",
+      "type": "knowledge_graph_construction",
+      "prompt_template": "[Standard knowledge_graph_construction prompt template #55]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP056",
+      "type": "connection_generation",
+      "prompt_template": "[Standard connection_generation prompt template #56]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP057",
+      "type": "validity_assessment",
+      "prompt_template": "[Standard validity_assessment prompt template #57]",
+      "difficulty": "basic"
+    },
+    {
+      "id": "TP058",
+      "type": "multi_modal_processing",
+      "prompt_template": "[Standard multi_modal_processing prompt template #58]",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "TP059",
+      "type": "analogy_creation",
+      "prompt_template": "[Standard analogy_creation prompt template #59]",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "TP060",
+      "type": "invalidation_detection",
+      "prompt_template": "[Standard invalidation_detection prompt template #60]",
+      "difficulty": "basic"
+    }
+  ]
+}

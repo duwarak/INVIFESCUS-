@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "total_models": 60,
+    "categories": [
+      "Psychology & Human Behavior",
+      "Mathematics & Probability",
+      "Systems Thinking & Physics",
+      "Business & Economics",
+      "Decision Making Frameworks",
+      "Biology & Evolution"
+    ],
+    "source_inspiration": "Charlie Munger, Daniel Kahneman, Naval Ravikant, Shane Parrish"
+  },
+  "categories": [
+    {
+      "name": "Psychology & Human Behavior",
+      "models": [
+        {
+          "id": "mm_001",
+          "name": "Reward Superresponse Tendency",
+          "description": "People respond extremely strongly to incentives and rewards",
+          "example": "Salespeople gaming commission structures",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_002",
+          "name": "Liking/Loving Tendency",
+          "description": "We distort reality to fit what we like or love",
+          "example": "Ignoring faults in favorite products or people",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_003",
+          "name": "Disliking/Hating Tendency",
+          "description": "We distort reality to fit what we dislike",
+          "example": "Dismissing ideas from rival teams automatically",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_004",
+          "name": "Doubt-Avoidance Tendency",
+          "description": "People rush to remove doubt by making quick decisions",
+          "example": "Buying on impulse to end decision anxiety",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_005",
+          "name": "Inconsistency-Avoidance Tendency",
+          "description": "People resist changing ideas once committed",
+          "example": "Continuing failing projects because of sunk investment",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_006",
+          "name": "Curiosity Tendency",
+          "description": "Humans are naturally curious, which can be harnessed",
+          "example": "Engaging learning through questions not lectures",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_007",
+          "name": "Kantian Fairness Tendency",
+          "description": "People seek fairness and reciprocity in interactions",
+          "example": "Successful negotiations require both parties to benefit",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_008",
+          "name": "Envy/Jealousy Tendency",
+          "description": "People are driven by envy more than greed",
+          "example": "Employees more upset by peer raises than market rates",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_009",
+          "name": "Reciprocation Tendency",
+          "description": "People feel obligated to return favors",
+          "example": "Free samples leading to purchases",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_010",
+          "name": "Influence-from-Mere-Association",
+          "description": "We judge by associations, not just merit",
+          "example": "Premium pricing creating perception of quality",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_011",
+          "name": "Pain-Avoiding Psychological Denial",
+          "description": "People deny painful realities",
+          "example": "Ignoring health symptoms or relationship problems",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_012",
+          "name": "Excessive Self-Regard Tendency",
+          "description": "People overestimate their own abilities and decisions",
+          "example": "90% of drivers think they're above average",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_013",
+          "name": "Overoptimism Tendency",
+          "description": "People systematically overestimate positive outcomes",
+          "example": "Projects consistently take 2x expected time",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_014",
+          "name": "Deprival Superreaction",
+          "description": "Losses feel ~2x as bad as equivalent gains feel good",
+          "example": "Fighting harder to keep $100 than to gain $100",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_015",
+          "name": "Social Proof Tendency",
+          "description": "People follow what others are doing",
+          "example": "Restaurant lines, market bubbles, bystander effect",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_016",
+          "name": "Contrast-Misreaction",
+          "description": "We judge things by contrast, not absolute value",
+          "example": "$500 discount on $20k car feels bigger than on $1k laptop",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_017",
+          "name": "Stress-Influence Tendency",
+          "description": "Stress triggers extreme responses",
+          "example": "Panic selling in market crashes",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_018",
+          "name": "Availability-Misweighing",
+          "description": "Vivid, recent events seem more probable",
+          "example": "Fearing plane crashes more than car crashes",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_019",
+          "name": "Use-It-or-Lose-It",
+          "description": "Skills and knowledge atrophy without practice",
+          "example": "Language fluency fading without use",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_020",
+          "name": "Authority-Misinfluence",
+          "description": "People follow authority figures blindly",
+          "example": "Milgram experiment, experts quoted out of context",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_021",
+          "name": "Twaddle Tendency",
+          "description": "People prefer complex explanations over simple ones",
+          "example": "Overcomplicating simple business strategies",
+          "power_rating": 6
+        },
+        {
+          "id": "mm_022",
+          "name": "Reason-Respecting Tendency",
+          "description": "People respond better when given reasons",
+          "example": "'Because' increases compliance dramatically",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_023",
+          "name": "Lollapalooza Tendency",
+          "description": "Multiple psychological biases reinforcing create extreme outcomes",
+          "example": "Market bubbles, cult formation, mass hysteria",
+          "power_rating": 10
+        }
+      ]
+    },
+    {
+      "name": "Mathematics & Probability",
+      "models": [
+        {
+          "id": "mm_024",
+          "name": "Bayesian Updating",
+          "description": "Update beliefs as new evidence arrives",
+          "example": "Revising project timelines as new data comes in",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_025",
+          "name": "Compounding",
+          "description": "Small gains accumulate exponentially over time",
+          "example": "Knowledge, relationships, investments grow exponentially",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_026",
+          "name": "Expected Value",
+          "description": "Multiply probability by outcome to compare options",
+          "example": "Insurance decisions, investment analysis",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_027",
+          "name": "Base Rates",
+          "description": "Start with the statistical average, then adjust",
+          "example": "Most startups fail; most predictions are wrong",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_028",
+          "name": "Normal Distribution",
+          "description": "Many phenomena cluster around average with decreasing tails",
+          "example": "Height, test scores, quality control",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_029",
+          "name": "Power Laws",
+          "description": "Small number of causes produce majority of effects",
+          "example": "80/20 rule: 20% of customers = 80% of revenue",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_030",
+          "name": "Regression to Mean",
+          "description": "Extreme outcomes tend toward average over time",
+          "example": "One-hit wonders, sports slumps, luck vs skill",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_031",
+          "name": "Margin of Safety",
+          "description": "Build in buffers for inevitable errors",
+          "example": "Engineering, investing, planning with headroom",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_032",
+          "name": "Optionality",
+          "description": "Prefer choices that preserve future options",
+          "example": "Cash reserves, versatile skills, reversible decisions",
+          "power_rating": 9
+        }
+      ]
+    },
+    {
+      "name": "Systems Thinking & Physics",
+      "models": [
+        {
+          "id": "mm_033",
+          "name": "Feedback Loops",
+          "description": "Circular cause-effect chains amplify or stabilize",
+          "example": " virtuous/vicious cycles, thermostat systems",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_034",
+          "name": "Emergence",
+          "description": "Complex behaviors arise from simple interactions",
+          "example": "Ant colonies, markets, consciousness from neurons",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_035",
+          "name": "Critical Mass/Phase Transition",
+          "description": "Small changes tip systems past threshold",
+          "example": "Nuclear chain reactions, viral adoption, habit formation",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_036",
+          "name": "Entropy",
+          "description": "Systems naturally move toward disorder without energy input",
+          "example": "Companies stagnating without innovation, relationships need work",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_037",
+          "name": "Inertia",
+          "description": "Objects (and people) resist changes to motion",
+          "example": "Market incumbents, established habits, organizational culture",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_038",
+          "name": "Activation Energy",
+          "description": "Small push can start large chain reactions",
+          "example": "Getting started is hardest part; catalysts in chemistry and life",
+          "power_rating": 8
+        }
+      ]
+    },
+    {
+      "name": "Business & Economics",
+      "models": [
+        {
+          "id": "mm_039",
+          "name": "Incentive Superresponse",
+          "description": "People respond to incentives in extreme, unexpected ways",
+          "example": "Wells Fargo fake accounts, teaching to the test",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_040",
+          "name": "Comparative Advantage",
+          "description": "Trade benefits all parties even if one is better at everything",
+          "example": "Specialization, outsourcing, team roles",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_041",
+          "name": "Creative Destruction",
+          "description": "Innovation destroys old industries while creating new ones",
+          "example": "Netflix vs Blockbuster, smartphones vs cameras",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_042",
+          "name": "Network Effects",
+          "description": "Product value increases with more users",
+          "example": "Social media, marketplaces, languages, standards",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_043",
+          "name": "Switching Costs",
+          "description": "Costs (real or perceived) of changing products",
+          "example": "Phone ecosystems, professional software, relationships",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_044",
+          "name": "Economies of Scale",
+          "description": "Per-unit costs decrease with volume",
+          "example": "Manufacturing, cloud computing, content creation",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_045",
+          "name": "Tragedy of the Commons",
+          "description": "Individuals acting rationally destroy shared resources",
+          "example": "Overfishing, pollution, office refrigerator",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_046",
+          "name": "Prisoner's Dilemma",
+          "description": "Individual rationality leads to collective bad outcomes",
+          "example": "Price wars, arms races, environmental agreements",
+          "power_rating": 8
+        }
+      ]
+    },
+    {
+      "name": "Decision Making Frameworks",
+      "models": [
+        {
+          "id": "mm_047",
+          "name": "Inversion",
+          "description": "Think backward from failure instead of forward from success",
+          "example": "What would guarantee project failure? Avoid those things.",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_048",
+          "name": "Circle of Competence",
+          "description": "Know your boundaries; invest only where you have edge",
+          "example": "Buffett avoiding tech, experts staying in their domain",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_049",
+          "name": "Second-Order Thinking",
+          "description": "Ask 'and then what?' repeatedly",
+          "example": "Price cut \u2192 more sales \u2192 competitor response \u2192 price war",
+          "power_rating": 10
+        },
+        {
+          "id": "mm_050",
+          "name": "Opportunity Cost",
+          "description": "The true cost is what you give up",
+          "example": "Time spent on X can't be spent on Y; capital allocation",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_051",
+          "name": "Decision Trees",
+          "description": "Map all branches and probabilities visually",
+          "example": "Strategic planning, litigation, major investments",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_052",
+          "name": "Pre-Mortem Analysis",
+          "description": "Imagine future failure, work backward to prevent it",
+          "example": "Projects, launches, relationships - 'it's 2027 and we failed'",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_053",
+          "name": "Scenario Planning",
+          "description": "Prepare for multiple possible futures",
+          "example": "Best case, worst case, most likely case preparation",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_054",
+          "name": "Steel-Manning",
+          "description": "Strengthen opponent's argument before refuting it",
+          "example": "Better decisions, better relationships, intellectual honesty",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_055",
+          "name": "OODA Loop",
+          "description": "Observe-Orient-Decide-Act cycle for rapid decisions",
+          "example": "Military, trading, emergency response",
+          "power_rating": 8
+        },
+        {
+          "id": "mm_056",
+          "name": "Red Teaming",
+          "description": "Assign someone to argue against the group's position",
+          "example": "NASA, intelligence agencies, board decisions",
+          "power_rating": 9
+        },
+        {
+          "id": "mm_057",
+          "name": "Checklist Manifesto",
+          "description": "Use checklists for complex, repeatable processes",
+          "example": "Surgery, aviation, investing (Munger's psychological checklist)",
+          "power_rating": 8
+        }
+      ]
+    },
+    {
+      "name": "Biology & Evolution",
+      "models": [
+        {
+          "id": "mm_058",
+          "name": "Natural Selection",
+          "description": "Traits that aid survival/reproduction spread",
+          "example": "Market competition, meme spread, organizational culture",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_059",
+          "name": "Adaptation",
+          "description": "Organisms adapt to environmental pressures over time",
+          "example": "Career pivots, business model changes, skill development",
+          "power_rating": 7
+        },
+        {
+          "id": "mm_060",
+          "name": "Niche Specialization",
+          "description": "Specialists outperform generalists in stable environments",
+          "example": "Domain experts, luxury brands, focused startups",
+          "power_rating": 7
+        }
+      ]
+    }
+  ]
+}

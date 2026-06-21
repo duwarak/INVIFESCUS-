@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "regions": ["bom1"],
+  "functions": {
+    "app/api/power-brain/research/route.ts": { "maxDuration": 30 },
+    "app/api/power-brain/expand/route.ts":   { "maxDuration": 30 },
+    "app/api/decision/run/route.ts":         { "maxDuration": 30 }
+  }
+}

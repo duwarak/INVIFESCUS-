@@ -1,0 +1,262 @@
+{
+  "user": "Alex Chen (usr_001)",
+  "week": "2024-01-22 to 2024-01-28",
+  "description": "Complete week showing all app features in action",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2024-01-22",
+      "events": [
+        {
+          "time": "08:00",
+          "type": "morning_routine",
+          "ai_action": "Coach Agent generates priority list",
+          "output": {
+            "priorities": [
+              "1. Review decomposition notes (quiz today at 10am)",
+              "2. Violin practice: focus on chord progression from last lesson",
+              "3. Respond to coach about gymnastics schedule"
+            ],
+            "socratic_prompt": "You have a CS quiz today. If you were to fail it, what would be the most likely cause? [Inversion Framework]",
+            "user_response": "Probably forgot edge cases in recursive decomposition. I'll review those specifically.",
+            "ai_feedback": "Edge case identified. Connecting to your gymnastics training: just as you check landing surface before a flip, check base cases before recursion. Cross-domain link created! +50 XP"
+          }
+        },
+        {
+          "time": "10:30",
+          "type": "knowledge_capture",
+          "input": {
+            "format": "class_notes_photo",
+            "subject": "Computational Thinking",
+            "content": "Professor explained recursion using Russian Matryoshka dolls - each doll contains a smaller version of itself until you reach the base case (smallest doll)"
+          },
+          "ai_processing": [
+            "Personal Agent: Extracted core concept - Recursion as self-similarity",
+            "Research Agent: Enriched with examples from nature (fractals, trees, coastlines)",
+            "Synthesis Agent: Connected to Music (self-similar melodies), Art (fractals), Biology (cell division)",
+            "Evaluation Agent: Verified understanding with quick check"
+          ],
+          "output": {
+            "knowledge_graph_additions": [
+              {
+                "node": "Recursion",
+                "domain": "Technology",
+                "linked_to": [
+                  "Decomposition",
+                  "Pattern Recognition",
+                  "Fractals"
+                ]
+              },
+              {
+                "cross_domain_analogy": "Recursion is like a song that contains a shorter version of its own chorus"
+              }
+            ],
+            "xp_earned": {
+              "capture": 25,
+              "cross_domain_link": 100,
+              "novel_analogy": 50
+            }
+          }
+        },
+        {
+          "time": "14:00",
+          "type": "cross_domain_insight",
+          "trigger": "User observation during walk",
+          "content": "Saw tree branches splitting - exactly like recursion! Each branch splits into smaller versions.",
+          "ai_response": {
+            "action": "Universal Mind Map updated with Nature\u2192CS connection",
+            "socratic_prompt": "If recursion happens in trees (nature), music (canons), and code, where ELSE might you find it? Think about your gymnastics routines...",
+            "user_response": "Combo moves! A flip contains a smaller rotation within it, and you repeat with variations. The base case is the landing!",
+            "xp_awarded": 200,
+            "achievement": "Bridge Builder Badge progress: 3/10 connections"
+          }
+        },
+        {
+          "time": "20:00",
+          "type": "evening_reflection",
+          "coach_questions": [
+            "Best decision today? Connecting recursion to gymnastics - helped me understand both better.",
+            "Mental model used? Pattern Recognition + Transfer Learning.",
+            "Cross-domain insight of the day? Recursion appears in CS, Nature, Music, Gymnastics - it's a UNIVERSAL pattern."
+          ],
+          "ai_summary": "Today you discovered recursion as a universal pattern across 4 domains. Your knowledge graph has grown by 5 nodes and 8 connections. You've practiced Transfer Learning actively. +150 XP for reflection."
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "date": "2024-01-23",
+      "events": [
+        {
+          "time": "09:00",
+          "type": "business_class_capture",
+          "input": {
+            "format": "voice_note",
+            "content": "Skittles trading game - teacher took 1 skittle per trade as commission. Nobody asked why we were doing this. Teacher revealed: He's the trade commissioner, benefits without competing. This is how credit card companies work!"
+          },
+          "ai_processing": {
+            "concepts_extracted": [
+              "Transaction fees",
+              "Middleman economics",
+              "Incentive structures",
+              "Critical questioning"
+            ],
+            "research_enrichment": "Credit card interchange fees: 1.5-3.5% per transaction. Visa/Mastercard revenue: $30B+ annually from fees alone.",
+            "mental_model_applied": "Inversion: 'Why didn't anyone ask WHY we were doing this?' \u2192 Authority bias prevented questioning",
+            "synthesis_agent": "Connect to CS: APIs are middlemen between services. They extract value (data, fees) from transactions. Same pattern!"
+          },
+          "xp_earned": 325
+        },
+        {
+          "time": "19:00",
+          "type": "real_world_application",
+          "scenario": "Buying gift for girlfriend. Remembered credit card fees from class.",
+          "decision": "Use cash instead of card to avoid transaction fees",
+          "ai_response": {
+            "praise": "Excellent transfer! You applied Business class learning to personal finance.",
+            "mental_model": "Circle of Competence (you understood fees) + Opportunity Cost (cash vs card benefits)",
+            "xp": 150,
+            "achievement": "Mental Model Apprentice: Inversion (1/5 uses)"
+          }
+        },
+        {
+          "time": "20:30",
+          "type": "preemptive_coaching",
+          "ai_detection": "User has argument-related note from yesterday",
+          "coach_prompt": "You have a group project meeting tomorrow. Yesterday you noted tension with a teammate. Want to do a quick pre-mortem? [5 min]",
+          "user_engagement": "Yes",
+          "pre_mortem_output": {
+            " imagined_failure": "Project failed because we couldn't agree on approach",
+            "prevention_actions": [
+              "Use audience adaptation framework: understand teammate's perspective first",
+              "Apply steelmanning: strengthen their argument before presenting yours",
+              "Propose small test rather than big commitment"
+            ],
+            "xp": 100
+          }
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "date": "2024-01-24",
+      "events": [
+        {
+          "time": "08:30",
+          "type": "argument_application",
+          "context": "Group project discussion became heated",
+          "user_action": "Used English class audience adaptation + steelmanning from last night",
+          "outcome": "Teammate felt heard, compromise reached, positive outcome",
+          "ai_response": {
+            "analysis": "You combined Communication skill (audience adaptation) with Business framework (negotiation) and Mental Model (steelmanning). Triple cross-domain application!",
+            "universal_map_update": "Created 'Conflict Resolution Protocol' combining 3 domains",
+            "xp": 400,
+            "badge": "First successful steelmanning in real life!"
+          }
+        },
+        {
+          "time": "14:00",
+          "type": "community_feature",
+          "action": "Opened Knowledge Map, saw Elena (Psychology PhD) 200m away studying cognitive load",
+          "interaction": "Sent knowledge collision request: 'Your cognitive load research + my CS learning = ?'",
+          "outcome": "5-minute voice chat. Elena explained chunking in working memory. Connected to Alex's decomposition concept!",
+          "ai_synthesis": "New insight: Decomposition (CS) = Chunking (Psychology) = Breaking information into manageable units. Same principle, different domain!",
+          "xp": 250,
+          "new_connection": "Met Elena, added to study pod candidates"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "date": "2024-01-25",
+      "events": [
+        {
+          "time": "16:00",
+          "type": "music_lesson_capture",
+          "input": {
+            "format": "drawing_with_notes",
+            "content": "Chord progression diagram showing emotional journey. Major = happy/resolved, Minor = sad/tension, Suspended = anticipation"
+          },
+          "ai_processing": {
+            "concept_extracted": "Musical emotion mapping",
+            "synthesis": "Connect to Communication class: tone modulation creates emotional response. Music IS communication without words.",
+            "deeper_connection": "Connect to Business: Customer journey has emotional arc like music. Tension \u2192 Resolution = Problem \u2192 Solution in sales.",
+            "universal_principle": "Arc structures: Setup \u2192 Tension \u2192 Resolution appears in Music, Stories, Business pitches, Gymnastics routines"
+          },
+          "xp": 375
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "date": "2024-01-26",
+      "events": [
+        {
+          "time": "18:00",
+          "type": "weekly_review",
+          "ai_generated_summary": {
+            "knowledge_gained": "15 new concepts, 28 cross-domain connections",
+            "domains_active": [
+              "Technology",
+              "Business",
+              "Communication",
+              "Music",
+              "Psychology"
+            ],
+            "mental_models_used": [
+              "Inversion",
+              "Steelmanning",
+              "Pattern Recognition",
+              "Transfer Learning",
+              "Circle of Competence"
+            ],
+            "real_world_applications": 3,
+            "community_interactions": 1,
+            "reasoning_exercises_completed": 12,
+            "total_xp_this_week": 2847,
+            "level_progress": "Level 4 (Active Learner) \u2192 45% toward Level 5",
+            "key_insight": "Recursion/Decomposition/Chunking is a UNIVERSAL pattern across nature, CS, psychology, and music. You've discovered a fundamental principle!",
+            "recommended_next_week": "Explore Sports/Physics domain to complete your 'universal pattern' with angular momentum in gymnastics"
+          }
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "date": "2024-01-27",
+      "events": [
+        {
+          "time": "10:00",
+          "type": "community_event",
+          "event": "Polymath Picnic in Central Park",
+          "attendees": 15,
+          "activity": "Each person taught one concept in 5 minutes",
+          "alex_taught": "Recursion as universal pattern (using tree branches as demo)",
+          "learned_from_others": [
+            "Biologist: Fractal patterns in leaf veins",
+            "Chef: Recipe decomposition (mise en place)",
+            "Dancer: Choreography as recursive movement building"
+          ],
+          "ai_post_processing": {
+            "new_connections_added": 6,
+            "community_validated_insight": "Recursion universality confirmed by 3 independent domains!",
+            "xp": 500,
+            "badge": "Polymath Picnic Speaker"
+          }
+        }
+      ]
+    }
+  ],
+  "week_summary_stats": {
+    "total_xp_earned": 3347,
+    "new_concepts": 15,
+    "cross_domain_connections": 34,
+    "domains_activated": 5,
+    "mental_models_practiced": 5,
+    "real_world_applications": 3,
+    "community_interactions": 2,
+    "reasoning_exercises": 14,
+    "knowledge_graph_growth": "+15 nodes, +34 edges",
+    "current_level": "Level 4 (Active Learner) - 67% toward Level 5"
+  }
+}

@@ -1,0 +1,1854 @@
+{
+  "metadata": {
+    "dataset_name": "Domain Concept Encyclopedia with Multi-Modal Inputs",
+    "description": "Core concepts across domains with their typical multi-modal capture formats and cross-domain connection potential",
+    "total_concepts": 80,
+    "domains_covered": 25
+  },
+  "concepts": [
+    {
+      "id": "EC001",
+      "concept": "Projectile Motion",
+      "domain": "Physics",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "whiteboard_diagram_photo",
+        "lecture_voice_recording",
+        "equation_notes",
+        "slow_motion_video",
+        "lab_report"
+      ],
+      "cross_domain_potential": [
+        "Gymnastics",
+        "Basketball",
+        "Military",
+        "Animation",
+        "Diving"
+      ],
+      "key_transferable_principle": "Decomposing motion into independent horizontal/vertical components",
+      "common_misconceptions": [
+        "Horizontal motion affects vertical fall time",
+        "Heavier objects fall faster"
+      ]
+    },
+    {
+      "id": "EC002",
+      "concept": "Conservation of Energy",
+      "domain": "Physics",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "roller_coaster_diagram",
+        "experiment_video",
+        "equation_sheet",
+        "analogy_drawing"
+      ],
+      "cross_domain_potential": [
+        "Finance",
+        "Productivity",
+        "Nutrition",
+        "Ecology"
+      ],
+      "key_transferable_principle": "Total quantity conserved while transforming between forms",
+      "common_misconceptions": [
+        "Energy disappears when used",
+        "Perpetual motion is possible"
+      ]
+    },
+    {
+      "id": "EC003",
+      "concept": "Angular Momentum",
+      "domain": "Physics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "figure_skater_video",
+        "spinning_top_demo",
+        "equation_derivation",
+        "lab_gyroscope"
+      ],
+      "cross_domain_potential": [
+        "Gymnastics",
+        "Aerospace",
+        "Biology",
+        "Engineering"
+      ],
+      "key_transferable_principle": "Reducing moment of inertia increases angular velocity",
+      "common_misconceptions": [
+        "Angular momentum is the same as linear momentum",
+        "Rotation stops without external torque"
+      ]
+    },
+    {
+      "id": "EC004",
+      "concept": "Wave-Particle Duality",
+      "domain": "Physics",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "double_slit_animation",
+        "lecture_transcript",
+        "math_derivation",
+        "analogy_drawing"
+      ],
+      "cross_domain_potential": [
+        "Psychology",
+        "Creativity",
+        "Marketing"
+      ],
+      "key_transferable_principle": "Observation method determines which properties manifest",
+      "common_misconceptions": [
+        "Particles literally become waves",
+        "Consciousness causes wavefunction collapse"
+      ]
+    },
+    {
+      "id": "EC005",
+      "concept": "Entropy / Second Law",
+      "domain": "Physics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "ice_melting_video",
+        "statistical_mechanics_notes",
+        "thermodynamics_diagram",
+        "podcast_transcript"
+      ],
+      "cross_domain_potential": [
+        "Organization",
+        "Information Theory",
+        "Economics",
+        "Aging"
+      ],
+      "key_transferable_principle": "Systems naturally move toward disorder without energy input",
+      "common_misconceptions": [
+        "Entropy means chaos",
+        "Evolution violates second law"
+      ]
+    },
+    {
+      "id": "EC006",
+      "concept": "Newton's Laws",
+      "domain": "Physics",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "car_crash_video",
+        "experiment_notes",
+        "free_body_diagram_photo",
+        "lecture_recording"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Communication",
+        "Sports",
+        "Management"
+      ],
+      "key_transferable_principle": "Force = mass \u00d7 acceleration; action-reaction pairs",
+      "common_misconceptions": [
+        "Force is required to maintain motion",
+        "Heavier objects fall faster"
+      ]
+    },
+    {
+      "id": "EC007",
+      "concept": "Electromagnetic Induction",
+      "domain": "Physics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "magnet_through_coil_video",
+        "Faraday_law_notes",
+        "generator_diagram",
+        "demo_photo"
+      ],
+      "cross_domain_potential": [
+        "Engineering",
+        "Medicine",
+        "Wireless Charging"
+      ],
+      "key_transferable_principle": "Changing magnetic field induces electric current",
+      "common_misconceptions": [
+        "Static magnets generate electricity",
+        "Induction requires physical contact"
+      ]
+    },
+    {
+      "id": "EC008",
+      "concept": "Resonance",
+      "domain": "Physics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "tacoma_narrows_video",
+        "singer_shatters_glass",
+        "tuning_fork_demo",
+        "bridge_wind_tunnel"
+      ],
+      "cross_domain_potential": [
+        "Music",
+        "Marketing",
+        "Engineering",
+        "Psychology"
+      ],
+      "key_transferable_principle": "Matching driving frequency to natural frequency amplifies response",
+      "common_misconceptions": [
+        "Resonance always causes destruction",
+        "Any frequency can cause resonance"
+      ]
+    },
+    {
+      "id": "EC009",
+      "concept": "Recursion",
+      "domain": "Computer Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "code_screenshot",
+        "stack_trace_handwriting",
+        "matryoshka_drawing",
+        "debugger_video"
+      ],
+      "cross_domain_potential": [
+        "Mathematics",
+        "Music",
+        "Biology",
+        "Storytelling",
+        "Art"
+      ],
+      "key_transferable_principle": "Self-similar decomposition with base case termination",
+      "common_misconceptions": [
+        "Recursion is always inefficient",
+        "Iteration is always better"
+      ]
+    },
+    {
+      "id": "EC010",
+      "concept": "Graph Traversal (BFS/DFS)",
+      "domain": "Computer Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "graph_drawing",
+        "animation_video",
+        "pseudocode_notes",
+        "whiteboard_photo"
+      ],
+      "cross_domain_potential": [
+        "Psychology",
+        "Social Networks",
+        "Education",
+        "Emergency Response"
+      ],
+      "key_transferable_principle": "Systematic exploration strategy matched to problem structure",
+      "common_misconceptions": [
+        "DFS is always better",
+        "BFS uses less memory"
+      ]
+    },
+    {
+      "id": "EC011",
+      "concept": "Caching",
+      "domain": "Computer Science",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "architecture_diagram",
+        "LRU_explanation_voice",
+        "cache_hit_ratio_screenshot",
+        "analogy_drawing"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Retail",
+        "Cooking",
+        "Neuroscience"
+      ],
+      "key_transferable_principle": "Store frequently-accessed items in fast, nearby storage",
+      "common_misconceptions": [
+        "More cache is always better",
+        "Cache never needs invalidation"
+      ]
+    },
+    {
+      "id": "EC012",
+      "concept": "Load Balancing",
+      "domain": "Computer Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "server_rack_photo",
+        "architecture_diagram",
+        "algorithm_pseudocode",
+        "dashboard_screenshot"
+      ],
+      "cross_domain_potential": [
+        "Urban Planning",
+        "Workforce Management",
+        "Healthcare",
+        "Traffic"
+      ],
+      "key_transferable_principle": "Distribute load to prevent any single node from being overwhelmed",
+      "common_misconceptions": [
+        "Round-robin is always optimal",
+        "Load balancing eliminates the need for scaling"
+      ]
+    },
+    {
+      "id": "EC013",
+      "concept": "Encryption",
+      "domain": "Computer Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "SSL_handshake_diagram",
+        "public_key_math",
+        "lock_analogy_drawing",
+        "security_presentation"
+      ],
+      "cross_domain_potential": [
+        "Biology",
+        "Linguistics",
+        "Diplomacy",
+        "History"
+      ],
+      "key_transferable_principle": "Mathematical transformation making information accessible only to authorized parties",
+      "common_misconceptions": [
+        "Encryption means something is illegal",
+        "Breaking encryption is impossible"
+      ]
+    },
+    {
+      "id": "EC014",
+      "concept": "API (Application Programming Interface)",
+      "domain": "Computer Science",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "documentation_screenshot",
+        "request_response_diagram",
+        "postman_screenshot",
+        "restaurant_analogy_voice"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Diplomacy",
+        "Service Design",
+        "Manufacturing"
+      ],
+      "key_transferable_principle": "Standardized contract enabling interoperability between systems",
+      "common_misconceptions": [
+        "APIs are only for tech companies",
+        "APIs are the same as databases"
+      ]
+    },
+    {
+      "id": "EC015",
+      "concept": "Circuit Breaker Pattern",
+      "domain": "Computer Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "state_machine_diagram",
+        "architecture_slide",
+        "code_screenshot",
+        "electrical_analogy_drawing"
+      ],
+      "cross_domain_potential": [
+        "Medicine",
+        "Psychology",
+        "Economics",
+        "Engineering"
+      ],
+      "key_transferable_principle": "Fail fast and isolate to prevent cascading failures",
+      "common_misconceptions": [
+        "Circuit breakers prevent all failures",
+        "Circuit breakers are only for electrical systems"
+      ]
+    },
+    {
+      "id": "EC016",
+      "concept": "Event Sourcing",
+      "domain": "Computer Science",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "event_stream_diagram",
+        "git_log_analogy",
+        "architecture_whiteboard",
+        "code_example"
+      ],
+      "cross_domain_potential": [
+        "Accounting",
+        "History",
+        "Neuroscience",
+        "Law"
+      ],
+      "key_transferable_principle": "Store complete history of events to reconstruct state and enable audit",
+      "common_misconceptions": [
+        "Event sourcing is the same as event-driven",
+        "Event sourcing is too complex for all systems"
+      ]
+    },
+    {
+      "id": "EC017",
+      "concept": "Compound Interest / Exponential Growth",
+      "domain": "Mathematics",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "spreadsheet_screenshot",
+        "graph_drawing",
+        "snowball_analogy_voice",
+        "formula_notes"
+      ],
+      "cross_domain_potential": [
+        "Biology",
+        "Habits",
+        "Marketing",
+        "Nuclear Physics",
+        "Learning"
+      ],
+      "key_transferable_principle": "Constant rate of increase produces accelerating growth",
+      "common_misconceptions": [
+        "Linear growth with constant addition",
+        "Doubling time is constant in percentage terms"
+      ]
+    },
+    {
+      "id": "EC018",
+      "concept": "Game Theory / Nash Equilibrium",
+      "domain": "Mathematics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "payoff_matrix",
+        "prisoners_dilemma_diagram",
+        "lecture_video",
+        "strategy_notes"
+      ],
+      "cross_domain_potential": [
+        "Economics",
+        "Biology",
+        "Politics",
+        "Negotiation"
+      ],
+      "key_transferable_principle": "No player benefits by unilaterally changing strategy at equilibrium",
+      "common_misconceptions": [
+        "Nash equilibrium is always optimal for all",
+        "Game theory requires rational actors"
+      ]
+    },
+    {
+      "id": "EC019",
+      "concept": "Bayesian Updating",
+      "domain": "Mathematics",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "Bayes_formula_whiteboard",
+        "medical_test_example",
+        " Nate_Silver_explanation",
+        "visual_aid_drawing"
+      ],
+      "cross_domain_potential": [
+        "Medicine",
+        "Investing",
+        "Machine Learning",
+        "Intelligence Analysis"
+      ],
+      "key_transferable_principle": "Update belief incrementally as new evidence arrives",
+      "common_misconceptions": [
+        "Prior doesn't matter with enough data",
+        "Bayesian methods are subjective"
+      ]
+    },
+    {
+      "id": "EC020",
+      "concept": "Network Effects (Metcalfe's Law)",
+      "domain": "Mathematics / Business",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "network_graph_drawing",
+        "value_vs_users_chart",
+        "telephone_example_voice",
+        "platform_analogy"
+      ],
+      "cross_domain_potential": [
+        "Biology",
+        "Language",
+        "Cities",
+        "Immunology"
+      ],
+      "key_transferable_principle": "Value increases super-linearly with number of participants",
+      "common_misconceptions": [
+        "All networks have strong network effects",
+        "Network effects create permanent monopolies"
+      ]
+    },
+    {
+      "id": "EC021",
+      "concept": "Pareto Distribution / Power Law",
+      "domain": "Mathematics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "long_tail_chart",
+        "wealth_distribution_graph",
+        "80_20_diagram",
+        "comparison_notes"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Software",
+        "Urban Planning",
+        "Ecology"
+      ],
+      "key_transferable_principle": "Small fraction produces majority of outcomes",
+      "common_misconceptions": [
+        "80/20 is exact not approximate",
+        "All distributions are Pareto"
+      ]
+    },
+    {
+      "id": "EC022",
+      "concept": "Feedback Loops",
+      "domain": "Systems / Mathematics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "circular_diagram",
+        "thermostat_example",
+        "voice_recording_explanation",
+        "stock_flow_drawing"
+      ],
+      "cross_domain_potential": [
+        "Biology",
+        "Economics",
+        "Psychology",
+        "Climate",
+        "Audio"
+      ],
+      "key_transferable_principle": "Output fed back as input amplifies (positive) or stabilizes (negative) system",
+      "common_misconceptions": [
+        "Positive feedback is always good",
+        "Negative feedback is always bad"
+      ]
+    },
+    {
+      "id": "EC023",
+      "concept": "Satisficing",
+      "domain": "Decision Theory",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "decision_tree_drawing",
+        "restaurant_example_voice",
+        "optimization_comparison",
+        "bounded_rationality_notes"
+      ],
+      "cross_domain_potential": [
+        "Evolution",
+        "Marriage",
+        "Hiring",
+        "Product Design"
+      ],
+      "key_transferable_principle": "Choose first option meeting threshold rather than seeking optimal",
+      "common_misconceptions": [
+        "Satisficing is laziness",
+        "Optimal search is always better"
+      ]
+    },
+    {
+      "id": "EC024",
+      "concept": "Convexity / Optionality",
+      "domain": "Mathematics / Finance",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "option_payoff_diagram",
+        "barbell_strategy_drawing",
+        "venture_capital_example",
+        "Taleb_explanation_voice"
+      ],
+      "cross_domain_potential": [
+        "Career",
+        "Biology",
+        "Writing",
+        "Investing"
+      ],
+      "key_transferable_principle": "Asymmetric payoff: limited downside, unlimited upside",
+      "common_misconceptions": [
+        "Optionality is free",
+        "More options are always better"
+      ]
+    },
+    {
+      "id": "EC025",
+      "concept": "Natural Selection",
+      "domain": "Biology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Darwin_finch_drawing",
+        "peppered_moth_example",
+        "lecture_recording",
+        "evolution_tree_diagram"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Immunology",
+        "Language",
+        "Technology"
+      ],
+      "key_transferable_principle": "Differential survival and reproduction of variants best adapted to environment",
+      "common_misconceptions": [
+        "Evolution is random",
+        "Evolution has a goal",
+        "Survival of the fittest means strongest"
+      ]
+    },
+    {
+      "id": "EC026",
+      "concept": "Homeostasis",
+      "domain": "Biology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "thermoregulation_diagram",
+        "feedback_loop_drawing",
+        "sweating_photo",
+        "hormone_chart"
+      ],
+      "cross_domain_potential": [
+        "Economics",
+        "Psychology",
+        "Engineering",
+        "Urban Systems"
+      ],
+      "key_transferable_principle": "Self-regulating maintenance of stable internal state through negative feedback",
+      "common_misconceptions": [
+        "Homeostasis means no change",
+        "Only warm-blooded animals have homeostasis"
+      ]
+    },
+    {
+      "id": "EC027",
+      "concept": "Mycelial Networks",
+      "domain": "Biology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "underground_network_diagram",
+        "tree_communication_video",
+        "TED_talk_transcript",
+        "forest_photo_with_overlay"
+      ],
+      "cross_domain_potential": [
+        "Internet",
+        "Economics",
+        "Neuroscience",
+        "Urban Planning"
+      ],
+      "key_transferable_principle": "Distributed resource-sharing networks create mutual benefit and resilience",
+      "common_misconceptions": [
+        "Forests are conscious",
+        "Trees intentionally communicate"
+      ]
+    },
+    {
+      "id": "EC028",
+      "concept": "Antifragility",
+      "domain": "Biology / Systems",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "hydra_drawing",
+        "muscle_hypertrophy_photo",
+        "Taleb_excerpt_voice",
+        "stress_response_chart"
+      ],
+      "cross_domain_potential": [
+        "Immunology",
+        "Startups",
+        "Fitness",
+        "Evolution"
+      ],
+      "key_transferable_principle": "Systems that gain from shocks and volatility",
+      "common_misconceptions": [
+        "Antifragile means unbreakable",
+        "All stress is beneficial"
+      ]
+    },
+    {
+      "id": "EC029",
+      "concept": "Swarm Intelligence",
+      "domain": "Biology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "ant_trail_video",
+        "bird_murmuration",
+        "particle_swarm_animation",
+        "simple_rules_notes"
+      ],
+      "cross_domain_potential": [
+        "AI",
+        "Urban Planning",
+        "Open Source",
+        "Robotics"
+      ],
+      "key_transferable_principle": "Decentralized agents following simple local rules produce complex global behavior",
+      "common_misconceptions": [
+        "Swarms have a leader",
+        "Swarm intelligence is always optimal"
+      ]
+    },
+    {
+      "id": "EC030",
+      "concept": "Epigenetics",
+      "domain": "Biology",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "methylation_diagram",
+        "twin_study_chart",
+        "gene_expression_video",
+        "research_paper_excerpt"
+      ],
+      "cross_domain_potential": [
+        "Psychology",
+        "Nutrition",
+        "Aging",
+        "Development"
+      ],
+      "key_transferable_principle": "Environment affects gene expression without changing DNA sequence",
+      "common_misconceptions": [
+        "Epigenetic changes are always inherited",
+        "Lamarck was right about acquired traits"
+      ]
+    },
+    {
+      "id": "EC031",
+      "concept": "Cognitive Dissonance",
+      "domain": "Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "smoking_example_voice",
+        "Fox_and_grapes_drawing",
+        "Festinger_experiment_notes",
+        "internal_conflict_diagram"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Politics",
+        "Marketing",
+        "Self-Improvement"
+      ],
+      "key_transferable_principle": "Mental discomfort from holding contradictory beliefs drives belief/behavior change",
+      "common_misconceptions": [
+        "People always change beliefs to match behavior",
+        "Dissonance is always conscious"
+      ]
+    },
+    {
+      "id": "EC032",
+      "concept": "Flow State",
+      "domain": "Psychology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "challenge_skill_chart",
+        "Csikszentmihalyi_lecture_video",
+        "athlete_interview_transcript",
+        "focus_description_voice"
+      ],
+      "cross_domain_potential": [
+        "Game Design",
+        "Education",
+        "Workplace",
+        "Sports"
+      ],
+      "key_transferable_principle": "Complete absorption when challenge matches skill level",
+      "common_misconceptions": [
+        "Flow requires enjoyment",
+        "Flow is the same as relaxation"
+      ]
+    },
+    {
+      "id": "EC033",
+      "concept": "Anchoring Bias",
+      "domain": "Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "negotiation_example_voice",
+        "spinning_wheel_experiment",
+        "price_tag_photo",
+        "Tversky_Kahneman_notes"
+      ],
+      "cross_domain_potential": [
+        "Negotiation",
+        "Marketing",
+        "Journalism",
+        "Law"
+      ],
+      "key_transferable_principle": "First piece of information disproportionately influences subsequent judgments",
+      "common_misconceptions": [
+        "Anchoring only affects prices",
+        "Awareness of anchoring eliminates it"
+      ]
+    },
+    {
+      "id": "EC034",
+      "concept": "Temporal Discounting",
+      "domain": "Psychology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "marshmallow_test_video",
+        "now_vs_later_money_chart",
+        "brain_scan_image",
+        "impulse_vs_delay_voice"
+      ],
+      "cross_domain_potential": [
+        "Health",
+        "Finance",
+        "Climate",
+        "Addiction"
+      ],
+      "key_transferable_principle": "Humans disproportionately value immediate over future rewards",
+      "common_misconceptions": [
+        "Discounting is always irrational",
+        "Everyone discounts at the same rate"
+      ]
+    },
+    {
+      "id": "EC035",
+      "concept": "Metacognition",
+      "domain": "Psychology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "thinking_about_thinking_diagram",
+        "self_assessment_example",
+        "exam_wrapper_photo",
+        "expert_vs_novice_comparison"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Leadership",
+        "AI",
+        "Medicine"
+      ],
+      "key_transferable_principle": "Awareness and control of one's own cognitive processes",
+      "common_misconceptions": [
+        "Metacognition is the same as intelligence",
+        "Metacognition cannot be taught"
+      ]
+    },
+    {
+      "id": "EC036",
+      "concept": "Classical Conditioning",
+      "domain": "Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Pavlov_dog_drawing",
+        "bell_experiment_video",
+        "association_diagram",
+        "real_life_examples_voice"
+      ],
+      "cross_domain_potential": [
+        "Marketing",
+        "Education",
+        "Habit Formation",
+        "Phobia Treatment"
+      ],
+      "key_transferable_principle": "Learned association between neutral stimulus and reflexive response",
+      "common_misconceptions": [
+        "Conditioning only works on animals",
+        "Conditioning is permanent"
+      ]
+    },
+    {
+      "id": "EC037",
+      "concept": "Confirmation Bias",
+      "domain": "Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "echo_chamber_diagram",
+        "filter_bubble_screenshot",
+        "political_example_voice",
+        "information_diet_notes"
+      ],
+      "cross_domain_potential": [
+        "Science",
+        "Social Media",
+        "Investing",
+        "Medicine"
+      ],
+      "key_transferable_principle": "Seeking confirming evidence while ignoring disconfirming evidence",
+      "common_misconceptions": [
+        "Smart people don't have confirmation bias",
+        "Awareness eliminates bias"
+      ]
+    },
+    {
+      "id": "EC038",
+      "concept": "Loss Aversion",
+      "domain": "Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "prospect_theory_chart",
+        " gamble_experiment_notes",
+        "endowment_effect_demo",
+        "Kahneman_explanation_voice"
+      ],
+      "cross_domain_potential": [
+        "UX Design",
+        "Politics",
+        "Retention",
+        "Negotiation"
+      ],
+      "key_transferable_principle": "Losses feel ~2x as painful as equivalent gains feel good",
+      "common_misconceptions": [
+        "Loss aversion applies to everyone equally",
+        "Loss aversion is always irrational"
+      ]
+    },
+    {
+      "id": "EC039",
+      "concept": "Flywheel Effect",
+      "domain": "Business",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Amazon_flywheel_diagram",
+        "mechanical_flywheel_video",
+        "self_reinforcing_loop_drawing",
+        "Bezos_explanation_voice"
+      ],
+      "cross_domain_potential": [
+        "Physics",
+        "Habit Formation",
+        "Ecology",
+        "Learning"
+      ],
+      "key_transferable_principle": "Self-reinforcing loop where each iteration makes the next easier",
+      "common_misconceptions": [
+        "Flywheels spin forever without energy",
+        "Any positive loop is a flywheel"
+      ]
+    },
+    {
+      "id": "EC040",
+      "concept": "Network Effects",
+      "domain": "Business",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "telephone_network_graph",
+        "platform_growth_chart",
+        "Metcalfe_law_equation",
+        "marketplace_example_voice"
+      ],
+      "cross_domain_potential": [
+        "Biology",
+        "Language",
+        "Urban Planning",
+        "Immunology"
+      ],
+      "key_transferable_principle": "Value to each user increases with total number of users",
+      "common_misconceptions": [
+        "All products benefit from network effects",
+        "Network effects guarantee success"
+      ]
+    },
+    {
+      "id": "EC041",
+      "concept": "Moat (Competitive Advantage)",
+      "domain": "Business",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "castle_moat_drawing",
+        "Berkshire_Hathaway_analysis",
+        "5_forces_diagram",
+        "brand_value_chart"
+      ],
+      "cross_domain_potential": [
+        "Evolution",
+        "Military",
+        "Chemistry",
+        "Relationships"
+      ],
+      "key_transferable_principle": "Sustainable barrier protecting against competition",
+      "common_misconceptions": [
+        "First-mover advantage is a moat",
+        "Technology alone creates moats"
+      ]
+    },
+    {
+      "id": "EC042",
+      "concept": "Sunk Cost Fallacy",
+      "domain": "Business / Psychology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "movie_ticket_example_voice",
+        "concorde_fallacy_notes",
+        "investment_chart",
+        "relationship_example"
+      ],
+      "cross_domain_potential": [
+        "Investing",
+        "Relationships",
+        "Projects",
+        "Government"
+      ],
+      "key_transferable_principle": "Past unrecoverable costs should not influence future decisions",
+      "common_misconceptions": [
+        "Considering past investment is always wrong",
+        "Sunk costs are only about money"
+      ]
+    },
+    {
+      "id": "EC043",
+      "concept": "Diffusion of Innovation",
+      "domain": "Business",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "bell_curve_diagram",
+        "crossing_the_chasm_chart",
+        "product_lifecycle_drawing",
+        "Rogers_explanation_voice"
+      ],
+      "cross_domain_potential": [
+        "Epidemiology",
+        "Linguistics",
+        "Fashion",
+        "Technology"
+      ],
+      "key_transferable_principle": "Adoption follows predictable S-curve through distinct psychographic segments",
+      "common_misconceptions": [
+        "Innovators are the most profitable segment",
+        "Late adopters don't matter"
+      ]
+    },
+    {
+      "id": "EC044",
+      "concept": "Goodhart's Law",
+      "domain": "Business / Economics",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "teaching_to_test_example",
+        "metric_target_chart",
+        "Cobra_effect_story",
+        "Wells Fargo_scandal_notes"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Healthcare",
+        "Science",
+        "Government"
+      ],
+      "key_transferable_principle": "When a measure becomes a target, it ceases to be a good measure",
+      "common_misconceptions": [
+        "Goodhart's law means all metrics are bad",
+        "The problem is the metric, not the target"
+      ]
+    },
+    {
+      "id": "EC045",
+      "concept": "Parkinson's Law",
+      "domain": "Business / Management",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "bureaucracy_growth_chart",
+        "time_expansion_example_voice",
+        "committee_story",
+        "work_fills_time_drawing"
+      ],
+      "cross_domain_potential": [
+        "Physics",
+        "Finance",
+        "Habit Formation",
+        "Urban Planning"
+      ],
+      "key_transferable_principle": "Work expands to fill the time available for its completion",
+      "common_misconceptions": [
+        "Always true for all people",
+        "Can be eliminated with willpower"
+      ]
+    },
+    {
+      "id": "EC046",
+      "concept": "First Principles Thinking",
+      "domain": "Business / Engineering",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "Musk_battery_example_voice",
+        "Socratic_questioning_notes",
+        "decomposition_tree_drawing",
+        "physics_to_economics_bridge"
+      ],
+      "cross_domain_potential": [
+        "Physics",
+        "Chemistry",
+        "Education",
+        "Problem Solving"
+      ],
+      "key_transferable_principle": "Deconstruct problems to fundamental truths and build up from there",
+      "common_misconceptions": [
+        "First principles is always better",
+        "It's the same as root cause analysis"
+      ]
+    },
+    {
+      "id": "EC047",
+      "concept": "Inversion Thinking",
+      "domain": "Decision Making",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "Munger_inversion_voice",
+        "avoid_stupidity_list",
+        "failure_prevention_diagram",
+        "regret_minimization_chart"
+      ],
+      "cross_domain_potential": [
+        "Safety Engineering",
+        "Health",
+        "Relationships",
+        "Investing"
+      ],
+      "key_transferable_principle": "Solve backward from failure rather than forward from success",
+      "common_misconceptions": [
+        "Inversion is pessimistic",
+        "Only works for avoiding bad outcomes"
+      ]
+    },
+    {
+      "id": "EC048",
+      "concept": "Second-Order Thinking",
+      "domain": "Decision Making",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "consequence_tree_drawing",
+        "Munger_explanation_voice",
+        "drug_legalization_example",
+        "price_war_analysis"
+      ],
+      "cross_domain_potential": [
+        "Ecology",
+        "Medicine",
+        "Urban Planning",
+        "Economics"
+      ],
+      "key_transferable_principle": "Consider consequences of consequences",
+      "common_misconceptions": [
+        "Second-order effects are always negative",
+        "More orders of thinking are always better"
+      ]
+    },
+    {
+      "id": "EC049",
+      "concept": "Chesterton's Fence",
+      "domain": "Philosophy",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "fence_parable_voice",
+        "regulation_reform_example",
+        "legacy_code_story",
+        "tradition_analysis_notes"
+      ],
+      "cross_domain_potential": [
+        "Software",
+        "Policy",
+        "Marriage",
+        "Biology"
+      ],
+      "key_transferable_principle": "Understand purpose of existing structures before changing them",
+      "common_misconceptions": [
+        "All existing structures are good",
+        "Understanding is impossible so change is always risky"
+      ]
+    },
+    {
+      "id": "EC050",
+      "concept": "Skin in the Game",
+      "domain": "Risk Ethics",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Taleb_explanation_voice",
+        "architect_sleeps_in_building_story",
+        "CEO_stock_ownership_chart",
+        "financial_advisor_conflict"
+      ],
+      "cross_domain_potential": [
+        "Finance",
+        "Medicine",
+        "Food Safety",
+        "Politics"
+      ],
+      "key_transferable_principle": "Decision-makers should bear consequences of their decisions",
+      "common_misconceptions": [
+        "Skin in game means high investment only",
+        "No skin in game is always bad"
+      ]
+    },
+    {
+      "id": "EC051",
+      "concept": "Map is Not the Territory",
+      "domain": "Epistemology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "Korzybski_quote",
+        "model_risk_example",
+        "financial_crisis_analogy",
+        "navigation_metaphor_drawing"
+      ],
+      "cross_domain_potential": [
+        "Finance",
+        "AI",
+        "Science",
+        "Military"
+      ],
+      "key_transferable_principle": "Models are simplifications, not the reality they represent",
+      "common_misconceptions": [
+        "Better models perfectly represent reality",
+        "All models are useless"
+      ]
+    },
+    {
+      "id": "EC052",
+      "concept": "Emergence",
+      "domain": "Complexity Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "ant_colony_video",
+        "consciousness_explanation_voice",
+        "stock_market_example",
+        "simulation_screenshot"
+      ],
+      "cross_domain_potential": [
+        "Neuroscience",
+        "Economics",
+        "Urban Planning",
+        "Biology"
+      ],
+      "key_transferable_principle": "Complex system-level behaviors arise from simple local interactions",
+      "common_misconceptions": [
+        "Emergence is magical",
+        "Emergent properties can be predicted from components"
+      ]
+    },
+    {
+      "id": "EC053",
+      "concept": "Asymmetric Risk",
+      "domain": "Risk Management",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "option_payoff_diagram",
+        "venture_portfolio_example",
+        "barbell_strategy_drawing",
+        "Taleb_black_swan_voice"
+      ],
+      "cross_domain_potential": [
+        "Career",
+        "Writing",
+        "Evolution",
+        "Investing"
+      ],
+      "key_transferable_principle": "Limited downside, unlimited upside creates favorable expected value",
+      "common_misconceptions": [
+        "Asymmetric risk is risk-free",
+        "Easy to identify in advance"
+      ]
+    },
+    {
+      "id": "EC054",
+      "concept": "Lindy Effect",
+      "domain": "Probability",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "book_longevity_chart",
+        "technology_lifespan_example",
+        "Taleb_explanation_voice",
+        "perishable_vs_nonperishable_drawing"
+      ],
+      "cross_domain_potential": [
+        "Technology",
+        "Nutrition",
+        "Investing",
+        "Fashion"
+      ],
+      "key_transferable_principle": "Non-perishable things that survived X years will survive another X years",
+      "common_misconceptions": [
+        "Applies to everything",
+        "Older is always better"
+      ]
+    },
+    {
+      "id": "EC055",
+      "concept": "OODA Loop",
+      "domain": "Military Strategy",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "fighter_pilot_video",
+        "Boyd_explanation_voice",
+        "four_quadrant_diagram",
+        "business_agile_bridge"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Medicine",
+        "Sports",
+        "Trading"
+      ],
+      "key_transferable_principle": "Faster decision cycles create competitive advantage",
+      "common_misconceptions": [
+        "OODA is only for combat",
+        "Speed always beats accuracy"
+      ]
+    },
+    {
+      "id": "EC056",
+      "concept": "Premortem Analysis",
+      "domain": "Decision Making",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Klein_explanation_voice",
+        "imagine_failure_exercise",
+        "risk_register_template",
+        "FMEA_comparison"
+      ],
+      "cross_domain_potential": [
+        "Engineering",
+        "Medicine",
+        "Marriage",
+        "Projects"
+      ],
+      "key_transferable_principle": "Imagine failure and work backward to identify preventable causes",
+      "common_misconceptions": [
+        "Premortem is pessimistic",
+        "Same as risk assessment"
+      ]
+    },
+    {
+      "id": "EC057",
+      "concept": "Red Teaming",
+      "domain": "Military / Security",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "adversary_simulation_video",
+        "devils_advocate_exercise",
+        "NASA_example",
+        "debate_format_drawing"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Science",
+        "Policy",
+        "Writing"
+      ],
+      "key_transferable_principle": "Assign someone to argue against the group's position to find weaknesses",
+      "common_misconceptions": [
+        "Red teaming is negative",
+        "Only for military/security"
+      ]
+    },
+    {
+      "id": "EC058",
+      "concept": "Backpropagation of Error",
+      "domain": "AI / Neuroscience",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "gradient_descent_animation",
+        "chain_rule_derivation",
+        "neural_network_diagram",
+        "learning_visualization"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Teaching",
+        "Habit Formation",
+        "Feedback Systems"
+      ],
+      "key_transferable_principle": "Error signal flows backward to adjust all contributing parameters",
+      "common_misconceptions": [
+        "Same as how brains learn",
+        "Only works in neural networks"
+      ]
+    },
+    {
+      "id": "EC059",
+      "concept": "Attention Mechanism",
+      "domain": "AI / Psychology",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "transformer_architecture_diagram",
+        "query_key_value_explanation",
+        "visual_attention_heatmap",
+        "Bert_example"
+      ],
+      "cross_domain_potential": [
+        "Psychology",
+        "Education",
+        "Design",
+        "Communication"
+      ],
+      "key_transferable_principle": "Focus processing on most relevant parts of input",
+      "common_misconceptions": [
+        "Same as human attention",
+        "Always improves performance"
+      ]
+    },
+    {
+      "id": "EC060",
+      "concept": "Transfer Learning",
+      "domain": "AI / Education",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "pretrained_model_diagram",
+        "fine_tuning_explanation",
+        "layer_freezing_example",
+        "domain_adaptation_chart"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Skill Acquisition",
+        "Sports",
+        "Language Learning"
+      ],
+      "key_transferable_principle": "Knowledge from one task accelerates learning on related tasks",
+      "common_misconceptions": [
+        "Transfer is always positive",
+        "Any two tasks can transfer"
+      ]
+    },
+    {
+      "id": "EC061",
+      "concept": "Double-Entry Bookkeeping",
+      "domain": "Accounting",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "T_account_diagram",
+        "ledger_photo",
+        "debit_credit_rules_voice",
+        "balance_sheet_example"
+      ],
+      "cross_domain_potential": [
+        "Physics",
+        "Conservation Laws",
+        "Event Sourcing",
+        "Error Detection"
+      ],
+      "key_transferable_principle": "Every transaction recorded as equal and opposite entries",
+      "common_misconceptions": [
+        "Debits are bad, credits are good",
+        "Only for accountants"
+      ]
+    },
+    {
+      "id": "EC062",
+      "concept": "Socratic Method",
+      "domain": "Philosophy / Education",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "elenchus_diagram",
+        "Plato_dialogue_excerpt",
+        "question_sequence_voice",
+        "classroom_example_video"
+      ],
+      "cross_domain_potential": [
+        "Law",
+        "Therapy",
+        "Science",
+        "Leadership"
+      ],
+      "key_transferable_principle": "Learning through guided questioning rather than direct instruction",
+      "common_misconceptions": [
+        "Same as asking questions",
+        "Always the best teaching method"
+      ]
+    },
+    {
+      "id": "EC063",
+      "concept": "Fermi Estimation",
+      "domain": "Physics / Problem Solving",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "piano_tuner_example_voice",
+        "order_of_magnitude_calculation",
+        "estimation_worksheet",
+        "interview_question_notes"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Investing",
+        "Urban Planning",
+        "Science"
+      ],
+      "key_transferable_principle": "Approximate unknown quantities using known quantities and logical decomposition",
+      "common_misconceptions": [
+        "Guesswork",
+        "Requires expert knowledge"
+      ]
+    },
+    {
+      "id": "EC064",
+      "concept": "Margin of Safety",
+      "domain": "Engineering / Investing",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "bridge_design_example",
+        "Graham_investing_voice",
+        "stress_test_diagram",
+        "buffer_zone_drawing"
+      ],
+      "cross_domain_potential": [
+        "Medicine",
+        "Project Management",
+        "Nutrition",
+        "Decision Making"
+      ],
+      "key_transferable_principle": "Build in buffer for inevitable uncertainty and error",
+      "common_misconceptions": [
+        "Margin of safety is wasted capacity",
+        "Only for engineering"
+      ]
+    },
+    {
+      "id": "EC065",
+      "concept": "Redundancy",
+      "domain": "Engineering",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "triple_modular_diagram",
+        "airplane_engine_photo",
+        "backup_generator_example",
+        "RAID_storage_explanation"
+      ],
+      "cross_domain_potential": [
+        "Ecology",
+        "Finance",
+        "Information",
+        "Aviation"
+      ],
+      "key_transferable_principle": "Multiple systems performing same function prevent single-point failure",
+      "common_misconceptions": [
+        "Redundancy is wasteful",
+        "Two backups are always enough"
+      ]
+    },
+    {
+      "id": "EC066",
+      "concept": "Fail Fast",
+      "domain": "Software / Lean",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "startup_experiment_voice",
+        "A/B_test_example",
+        "pivot_story",
+        "minimum_viable_product_diagram"
+      ],
+      "cross_domain_potential": [
+        "Science",
+        "Dating",
+        "Career",
+        "Cooking"
+      ],
+      "key_transferable_principle": "Test assumptions quickly with minimal investment",
+      "common_misconceptions": [
+        "Fail fast means give up quickly",
+        "Only applies to startups"
+      ]
+    },
+    {
+      "id": "EC067",
+      "concept": "Positive Deviance",
+      "domain": "Social Science",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "vietnam_malnutrition_story",
+        "outlier_analysis_chart",
+        "community_health_example",
+        "Sternin_explanation_voice"
+      ],
+      "cross_domain_potential": [
+        "Education",
+        "Business",
+        "Development",
+        "Medicine"
+      ],
+      "key_transferable_principle": "Successful outliers in same resource-constrained environment reveal actionable solutions",
+      "common_misconceptions": [
+        "Outliers are just lucky",
+        "Solutions don't transfer"
+      ]
+    },
+    {
+      "id": "EC068",
+      "concept": "Thinking in Bets",
+      "domain": "Decision Making",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "Duke_explanation_voice",
+        "poker_analogy",
+        "probabilistic_outcome_tree",
+        "resulting_vs_decision_quality"
+      ],
+      "cross_domain_potential": [
+        "Investing",
+        "Leadership",
+        "Sports",
+        "Medicine"
+      ],
+      "key_transferable_principle": "Separate decision quality from outcome quality; think probabilistically",
+      "common_misconceptions": [
+        "It's about gambling",
+        "Uncertainty means anything goes"
+      ]
+    },
+    {
+      "id": "EC069",
+      "concept": "Regret Minimization Framework",
+      "domain": "Decision Making",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Bezos_explanation_voice",
+        "project_yourself_forward_exercise",
+        "80th_birthday_visualization",
+        "career_decision_example"
+      ],
+      "cross_domain_potential": [
+        "Career",
+        "Relationships",
+        "Life Planning",
+        "Risk Taking"
+      ],
+      "key_transferable_principle": "Choose to minimize regret at end of life, not maximize short-term comfort",
+      "common_misconceptions": [
+        "Always choose the risky option",
+        "Ignore present circumstances"
+      ]
+    },
+    {
+      "id": "EC070",
+      "concept": "Mise en Place",
+      "domain": "Culinary Arts",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "kitchen_prep_photo",
+        "chef_explanation_voice",
+        "ingredient_arrangement_video",
+        "preparation_checklist"
+      ],
+      "cross_domain_potential": [
+        "Software",
+        "Surgery",
+        "Project Management",
+        "Programming"
+      ],
+      "key_transferable_principle": "Prepare all resources before execution begins",
+      "common_misconceptions": [
+        "Only applies to cooking",
+        "Prep takes too much time"
+      ]
+    },
+    {
+      "id": "EC071",
+      "concept": "Occam's Razor",
+      "domain": "Philosophy / Science",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "simplest_explanation_voice",
+        "conspiracy_theory_counterexample",
+        "diagnostic_example",
+        "entities_not_multiply"
+      ],
+      "cross_domain_potential": [
+        "Medicine",
+        "Investigation",
+        "Debugging",
+        "Science"
+      ],
+      "key_transferable_principle": "Among competing hypotheses, prefer the one with fewest assumptions",
+      "common_misconceptions": [
+        "Simplest answer is always correct",
+        "Complex explanations are wrong"
+      ]
+    },
+    {
+      "id": "EC072",
+      "concept": "Hysteresis",
+      "domain": "Physics / Systems",
+      "difficulty": "advanced",
+      "typical_multi_modal_inputs": [
+        "magnetization_curve",
+        "thermostat_example_voice",
+        "lag_effect_diagram",
+        "irreversible_process_video"
+      ],
+      "cross_domain_potential": [
+        "Economics",
+        "Psychology",
+        "Climate",
+        "Labor Markets"
+      ],
+      "key_transferable_principle": "State depends on history, not just current conditions; path matters",
+      "common_misconceptions": [
+        "Same as delay",
+        "System returns to same state"
+      ]
+    },
+    {
+      "id": "EC073",
+      "concept": "Critical Mass",
+      "domain": "Physics / Sociology",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "nuclear_chain_reaction_animation",
+        "tipping_point_example_voice",
+        "adoption_curve_chart",
+        "viral_threshold_diagram"
+      ],
+      "cross_domain_potential": [
+        "Marketing",
+        "Social Movements",
+        "Nuclear Engineering",
+        "Epidemics"
+      ],
+      "key_transferable_principle": "Threshold where self-sustaining process begins",
+      "common_misconceptions": [
+        "Critical mass is a fixed number",
+        "Reaching it guarantees success"
+      ]
+    },
+    {
+      "id": "EC074",
+      "concept": "Phase Transition",
+      "domain": "Physics / Systems",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "water_boiling_video",
+        "percolation_diagram",
+        "social_phase_transition",
+        "Tipping_point_Gladwell_voice"
+      ],
+      "cross_domain_potential": [
+        "Sociology",
+        "Markets",
+        "Ecosystems",
+        "Materials"
+      ],
+      "key_transferable_principle": "Small continuous changes produce sudden discontinuous state change",
+      "common_misconceptions": [
+        "Phase transitions are only physical",
+        "Predictable in advance"
+      ]
+    },
+    {
+      "id": "EC075",
+      "concept": "Circle of Competence",
+      "domain": "Investing / Decision Making",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "Buffett_explanation_voice",
+        "Dunning_Kruger_chart",
+        "boundary_acknowledgment_example",
+        "expertise_assessment_tool"
+      ],
+      "cross_domain_potential": [
+        "Medicine",
+        "Aviation",
+        "Sports",
+        "Consulting"
+      ],
+      "key_transferable_principle": "Operate only where you have genuine expertise",
+      "common_misconceptions": [
+        "Never leave your circle",
+        "Your circle is fixed"
+      ]
+    },
+    {
+      "id": "EC076",
+      "concept": "Refactoring",
+      "domain": "Software",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "before_after_code_screenshot",
+        "technical_debt_chart",
+        "clean_code_example",
+        "Martin_Fowler_explanation"
+      ],
+      "cross_domain_potential": [
+        "Writing",
+        "Organization",
+        "Habits",
+        "Architecture"
+      ],
+      "key_transferable_principle": "Improve internal structure without changing external behavior",
+      "common_misconceptions": [
+        "Refactoring is rewriting",
+        "Only needed when something is broken"
+      ]
+    },
+    {
+      "id": "EC077",
+      "concept": "Scenius",
+      "domain": "Creativity / Sociology",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "Brian_Eno_explanation",
+        "Florence_Renaissance_example",
+        "Silicon_Valley_story",
+        "Bloomsbury_group_analysis"
+      ],
+      "cross_domain_potential": [
+        "Urban Planning",
+        "Education",
+        "Business",
+        "Art"
+      ],
+      "key_transferable_principle": "Creative genius emerges from collaborative scene, not isolated individuals",
+      "common_misconceptions": [
+        "Individual talent doesn't matter",
+        "Any group can create scenius"
+      ]
+    },
+    {
+      "id": "EC078",
+      "concept": "Procedural Knowledge vs Declarative Knowledge",
+      "domain": "Cognitive Science / Education",
+      "difficulty": "intermediate",
+      "typical_multi_modal_inputs": [
+        "bike_riding_example_voice",
+        "explanation_vs_demonstration_video",
+        "knowing_that_vs_knowing_how_diagram",
+        "expert_blindness_example"
+      ],
+      "cross_domain_potential": [
+        "Sports",
+        "Music",
+        "Teaching",
+        "AI"
+      ],
+      "key_transferable_principle": "Knowing how is different from knowing that; different neural systems",
+      "common_misconceptions": [
+        "Reading about it is the same as doing it",
+        "Experts can easily explain their skills"
+      ]
+    },
+    {
+      "id": "EC079",
+      "concept": "Signal vs Noise",
+      "domain": "Information Theory",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "radio_static_analogy",
+        "data_filtering_example",
+        "Shannon_explanation",
+        "information_diet_voice"
+      ],
+      "cross_domain_potential": [
+        "Investing",
+        "Science",
+        "Media",
+        "Neuroscience"
+      ],
+      "key_transferable_principle": "Distinguish meaningful pattern from random variation",
+      "common_misconceptions": [
+        "Signal is always obvious",
+        "More data always helps"
+      ]
+    },
+    {
+      "id": "EC080",
+      "concept": "Constraint as Creative Catalyst",
+      "domain": "Creativity / Design",
+      "difficulty": "basic",
+      "typical_multi_modal_inputs": [
+        "haiku_form_example",
+        "sonnet_structure_explanation",
+        "Dr_Seuss_bet_story",
+        "minimalist_design_voice"
+      ],
+      "cross_domain_potential": [
+        "Business",
+        "Engineering",
+        "Cooking",
+        "Writing"
+      ],
+      "key_transferable_principle": "Limitations force novel solutions that abundance wouldn't discover",
+      "common_misconceptions": [
+        "Constraints always limit creativity",
+        "Unlimited resources produce best results"
+      ]
+    }
+  ]
+}

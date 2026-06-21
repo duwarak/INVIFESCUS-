@@ -1,0 +1,332 @@
+{
+  "metadata": {
+    "architecture": "Multi-Agent Collaboration System (MACS)",
+    "framework_reference": "LangGraph + CrewAI inspired",
+    "inspiration": "Perplexity AI, MetaGPT, AutoGen, IBM Bee Agent",
+    "core_principle": "Specialized agents collaborating with shared memory and explicit handoffs"
+  },
+  "agent_roles": [
+    {
+      "id": "agent_personal",
+      "name": "Personal Knowledge Agent",
+      "icon": "\ud83e\udde0",
+      "description": "Embodies user's knowledge state, preferences, and goals",
+      "capabilities": [
+        "Maintain real-time knowledge graph of user's learning",
+        "Track confidence levels per concept",
+        "Identify knowledge gaps and recommend fills",
+        "Personalize all interactions based on user's cognitive profile",
+        "Predict when user is about to forget a concept (spaced repetition)"
+      ],
+      "memory": {
+        "short_term": "Current session context (last 10 messages)",
+        "long_term": "Full knowledge graph + user history",
+        "episodic": "Specific learning moments and their outcomes",
+        "semantic": "Concept mastery levels and connections"
+      },
+      "triggers": [
+        "Every user interaction",
+        "Daily summary generation"
+      ]
+    },
+    {
+      "id": "agent_research",
+      "name": "Research Synthesis Agent",
+      "icon": "\ud83d\udd2c",
+      "description": "Perplexity-style web research and fact synthesis",
+      "capabilities": [
+        "Query multiple sources simultaneously",
+        "Cross-reference user notes with authoritative sources",
+        "Generate cited summaries of any topic",
+        "Identify cutting-edge developments in user's domains",
+        "Fact-check user captures and suggest corrections"
+      ],
+      "research_pipeline": [
+        "1. Receive concept/topic from user or Personal Agent",
+        "2. Decompose into sub-queries (using decomposition mental model)",
+        "3. Parallel search across web, academic DBs, books",
+        "4. Source ranking by credibility and relevance",
+        "5. Synthesis with inline citations",
+        "6. Cross-link to user's existing knowledge",
+        "7. Deliver enriched, verified content"
+      ],
+      "triggers": [
+        "New concept captured",
+        "User asks question",
+        "Daily enrichment sweep"
+      ]
+    },
+    {
+      "id": "agent_synthesis",
+      "name": "Cross-Domain Synthesis Agent",
+      "icon": "\ud83d\udd17",
+      "description": "Finds unexpected connections between different knowledge domains",
+      "capabilities": [
+        "Pattern matching across unrelated domains",
+        "Analogy generation (explain X using Y)",
+        "Transfer opportunity identification",
+        "Novel insight generation",
+        "Universal Mind Map construction"
+      ],
+      "synthesis_types": [
+        {
+          "type": "Direct Analogy",
+          "description": "Explicit parallel between concepts",
+          "example": "Neural networks \u2190\u2192 Social networks (nodes, edges, activation)"
+        },
+        {
+          "type": "Structural Mapping",
+          "description": "Same underlying pattern, different surface",
+          "example": "Evolution (biology) \u2190\u2192 Market competition (economics) \u2190\u2192 ML optimization"
+        },
+        {
+          "type": "Method Transfer",
+          "description": "Technique from one domain applied to another",
+          "example": "A/B testing (tech) \u2192 Education (testing teaching methods)"
+        },
+        {
+          "type": "Conceptual Blending",
+          "description": "Two concepts merge to create new understanding",
+          "example": "Decomposition (CS) + Emotional Regulation (Psych) = Breaking down anxiety triggers"
+        }
+      ],
+      "triggers": [
+        "New concept added",
+        "Daily synthesis sweep",
+        "User requests connection"
+      ]
+    },
+    {
+      "id": "agent_coach",
+      "name": "Socratic Coach Agent",
+      "icon": "\ud83c\udfaf",
+      "description": "Daily prompting using C-suite and scientific frameworks",
+      "capabilities": [
+        "Generate morning priority lists with reasoning",
+        "Ask Socratic questions at optimal times",
+        "Guide pre-mortem and scenario planning",
+        "Force cross-domain thinking exercises",
+        "Track mental model adoption over time",
+        "Adapt questioning based on user's decision history"
+      ],
+      "questioning_frameworks": [
+        "Charlie Munger's Inversion",
+        "Jeff Bezos's Regret Minimization",
+        "Ray Dalio's Radical Transparency",
+        "FBI Critical Thinking Checklist",
+        "NASA Risk Assessment Protocol",
+        "Socratic Method (elenchus)",
+        "OODA Loop (Boyd)"
+      ],
+      "adaptation": {
+        "if_user_avoids_questions": "Switch to micro-prompts (1-tap responses)",
+        "if_user_overconfident": "Increase devil's advocate prompts",
+        "if_user_anxious": "Increase inversion and pre-mortem (control-giving frameworks)",
+        "if_user_stuck": "Trigger Cross-Domain Synthesis Agent for novel perspectives"
+      },
+      "triggers": [
+        "Morning",
+        "Before decisions",
+        "Weekly planning",
+        "Detected cognitive bias"
+      ]
+    },
+    {
+      "id": "agent_evaluation",
+      "name": "Evaluation & Calibration Agent",
+      "icon": "\u2696\ufe0f",
+      "description": "Quality control for reasoning and knowledge building",
+      "capabilities": [
+        "Steelman user arguments",
+        "Identify logical fallacies",
+        "Calibrate confidence levels",
+        "Track prediction accuracy over time",
+        "Generate counter-evidence for user's positions",
+        "Ensure diversity of perspectives in knowledge graph"
+      ],
+      "evaluation_methods": [
+        {
+          "method": "Red Team Analysis",
+          "description": "Systematic attack on user's reasoning",
+          "frequency": "Weekly or on major decisions"
+        },
+        {
+          "method": "Confidence Calibration",
+          "description": "Compare predicted vs actual outcomes",
+          "frequency": "After each prediction"
+        },
+        {
+          "method": "Bias Audit",
+          "description": "Check for confirmation bias, availability bias, etc.",
+          "frequency": "Daily on captured content"
+        }
+      ],
+      "triggers": [
+        "Major decision logged",
+        "Weekly review",
+        "High-confidence claim detected"
+      ]
+    },
+    {
+      "id": "agent_community",
+      "name": "Community Matchmaker Agent",
+      "icon": "\ud83c\udf10",
+      "description": "Connects users with complementary knowledge profiles",
+      "capabilities": [
+        "Calculate knowledge complementarity scores",
+        "Suggest optimal study pods (3-5 people)",
+        "Recommend local events based on learning goals",
+        "Facilitate knowledge exchanges",
+        "Match mentors and mentees"
+      ],
+      "matching_factors": [
+        "Knowledge domain overlap (not too much, not too little)",
+        "Learning style compatibility",
+        "Schedule alignment",
+        "Proximity (for in-person)",
+        "Personality compatibility (introvert/extrovert balance)",
+        "Current learning goals alignment"
+      ],
+      "triggers": [
+        "User opts into community",
+        "Weekly matchmaking sweep",
+        "User requests connection"
+      ]
+    }
+  ],
+  "agent_collaboration_flows": [
+    {
+      "flow_name": "New Knowledge Capture",
+      "description": "User captures new concept \u2192 Full processing pipeline",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "Personal Agent",
+          "action": "Receive and parse multi-modal input (text/photo/voice)"
+        },
+        {
+          "step": 2,
+          "agent": "Research Agent",
+          "action": "Enrich with authoritative sources and citations"
+        },
+        {
+          "step": 3,
+          "agent": "Personal Agent",
+          "action": "Add to knowledge graph with confidence score"
+        },
+        {
+          "step": 4,
+          "agent": "Synthesis Agent",
+          "action": "Find cross-domain connections, suggest analogies"
+        },
+        {
+          "step": 5,
+          "agent": "Evaluation Agent",
+          "action": "Check for bias, verify claims, steelman if needed"
+        },
+        {
+          "step": 6,
+          "agent": "Personal Agent",
+          "action": "Update universal mind map, notify user of connections"
+        },
+        {
+          "step": 7,
+          "agent": "Coach Agent",
+          "action": "Generate follow-up Socratic prompt if high-value connection found"
+        }
+      ]
+    },
+    {
+      "flow_name": "Daily Morning Routine",
+      "description": "Morning priority synthesis for user",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "Personal Agent",
+          "action": "Review knowledge graph state, identify due-for-review concepts"
+        },
+        {
+          "step": 2,
+          "agent": "Coach Agent",
+          "action": "Generate priority list with mental model application"
+        },
+        {
+          "step": 3,
+          "agent": "Synthesis Agent",
+          "action": "Identify potential cross-domain opportunities for the day"
+        },
+        {
+          "step": 4,
+          "agent": "Evaluation Agent",
+          "action": "Run pre-mortem on top priority: what could go wrong?"
+        },
+        {
+          "step": 5,
+          "agent": "Personal Agent",
+          "action": "Deliver personalized morning briefing to user"
+        }
+      ]
+    },
+    {
+      "flow_name": "Community Matchmaking",
+      "description": "Weekly study pod formation",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "Personal Agent",
+          "action": "Update user's knowledge profile and goals"
+        },
+        {
+          "step": 2,
+          "agent": "Community Agent",
+          "action": "Calculate complementarity scores with nearby users"
+        },
+        {
+          "step": 3,
+          "agent": "Community Agent",
+          "action": "Form pods optimizing for diverse knowledge + shared curiosity"
+        },
+        {
+          "step": 4,
+          "agent": "Synthesis Agent",
+          "action": "Generate potential discussion topics for each pod"
+        },
+        {
+          "step": 5,
+          "agent": "Coach Agent",
+          "action": "Prepare icebreaker questions based on pod composition"
+        }
+      ]
+    }
+  ],
+  "shared_memory_architecture": {
+    "description": "All agents share access to structured memory stores",
+    "memory_layers": [
+      {
+        "layer": "User Profile Store",
+        "content": "Goals, preferences, cognitive style, schedule",
+        "access": "All agents"
+      },
+      {
+        "layer": "Knowledge Graph DB",
+        "content": "All concepts, connections, confidence levels",
+        "access": "All agents (read), Personal Agent (write primary)"
+      },
+      {
+        "layer": "Reasoning Log",
+        "content": "All decisions, predictions, outcomes",
+        "access": "Coach + Evaluation agents"
+      },
+      {
+        "layer": "Research Cache",
+        "content": "Recent web research results with citations",
+        "access": "Research + Synthesis agents"
+      },
+      {
+        "layer": "Community Directory",
+        "content": "User profiles, availability, location (privacy-controlled)",
+        "access": "Community Agent only"
+      }
+    ]
+  }
+}

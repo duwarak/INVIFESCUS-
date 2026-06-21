@@ -3,17 +3,17 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Polymath Engine — Second Brain for Real Life",
+  title: "Invifescus — Second Brain for Real Life",
   description: "AI-powered knowledge synthesis that transforms scattered daily inputs into connected visual mind maps, sharper decisions, and the right support exactly when needed.",
 };
 
 const NAV_ITEMS = [
   { href: "/", label: "Dashboard", icon: "🧠" },
-  { href: "/power-brain", label: "Power Brain", icon: "⚡" },
+  { href: "/power-brain", label: "Omnilattice", icon: "⚡" },
   { href: "/ingest", label: "Feed input", icon: "📥" },
   { href: "/sketch", label: "Sketch first", icon: "✏️" },
-  { href: "/decision", label: "Decision lab", icon: "⚖️" },
-  { href: "/community", label: "Community", icon: "🗺️" },
+  { href: "/decision", label: "Empiricum", icon: "⚖️" },
+  { href: "/community", label: "Community Syndicate", icon: "🗺️" },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* Sidebar */}
           <nav className="w-56 bg-polymath-surface border-r border-polymath-border p-4 flex flex-col shrink-0">
             <div className="mb-8">
-              <h1 className="text-lg font-semibold text-white">Polymath</h1>
+              <h1 className="text-lg font-semibold text-white tracking-tight">Invifescus</h1>
               <p className="text-xs text-polymath-muted mt-1">Second Brain Engine</p>
             </div>
 

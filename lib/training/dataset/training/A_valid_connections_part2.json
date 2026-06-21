@@ -1,0 +1,708 @@
+{
+  "metadata": {
+    "dataset_name": "Cross-Domain Valid Connections Part 2",
+    "clusters": "C031-C50"
+  },
+  "connection_clusters": [
+    {
+      "id": "C031",
+      "source_concept": "Supply and Demand",
+      "source_domain": "Economics",
+      "multi_modal_input": {
+        "text_notes": "Price determined by intersection of supply and demand curves. Surplus pushes price down, shortage pushes up. Elasticity measures sensitivity.",
+        "voice_transcript": "If everyone wants something scarce, price goes up. If nobody wants something abundant, price goes down. That's it. Everything else is details."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Biology",
+          "target_concept": "Predator-Prey Dynamics",
+          "connection_type": "ecological_equivalence",
+          "explanation": "Lotka-Volterra equations: prey population (supply) and predator population (demand) oscillate like price. More prey \u2192 more predators \u2192 fewer prey \u2192 fewer predators. Ecological supply-demand.",
+          "transferable_principle": "Population equilibrium emerges from consumer-resource interaction dynamics",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Dating",
+          "target_concept": "Dating Market Value",
+          "connection_type": "social_analogy",
+          "explanation": "Dating markets follow supply-demand: high demand + low supply = high selectivity. Dating apps increased supply (options), reducing 'price' (commitment). 'League' = market value in dating economy.",
+          "transferable_principle": "Market dynamics apply to social matching when scarcity and preference exist",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Traffic",
+          "target_concept": "Congestion Pricing",
+          "connection_type": "policy_application",
+          "explanation": "Road space = scarce resource. Rush hour = high demand. Congestion pricing (London, Singapore) reduces demand during peak, shifting to off-peak. Price signal allocates scarce road capacity.",
+          "transferable_principle": "Pricing scarce shared resources rations demand to sustainable levels",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C032",
+      "source_concept": "Opportunity Cost",
+      "source_domain": "Economics",
+      "multi_modal_input": {
+        "text_notes": "True cost of choice = value of next best alternative foregone. Not just money spent, but what you gave up. Attending college = foregone salary + tuition.",
+        "voice_transcript": "The cost of watching Netflix isn't $0 - it's the workout, the book, the sleep you didn't get. Every choice costs all other choices."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Time Management",
+          "target_concept": "Time Allocation",
+          "connection_type": "direct_analogy",
+          "explanation": "Time spent on X is time not spent on Y. Saying yes to one meeting means saying no to deep work. The 'cost' of a 1-hour meeting isn't 1 hour - it's the most valuable thing you could have done.",
+          "transferable_principle": "Every time commitment has invisible cost of best alternative use of that time",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Relationships",
+          "target_concept": "Commitment Tradeoffs",
+          "connection_type": "social_analogy",
+          "explanation": "Committing to one partner = opportunity cost of all other potential partners. This isn't cynical - it's why commitment signals value. Staying = 'you're worth more than my options.'",
+          "transferable_principle": "Commitment signals that current choice exceeds perceived value of alternatives",
+          "confidence_score": 0.8
+        },
+        {
+          "target_domain": "Ecology",
+          "target_concept": "Resource Allocation",
+          "connection_type": "biological_analogy",
+          "explanation": "Plants allocating carbon to roots vs leaves: more roots = less leaves and vice versa. Every resource allocation decision has opportunity cost in plant biology. No free growth.",
+          "transferable_principle": "Limited resources force tradeoffs between competing allocations",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C033",
+      "source_concept": "Game Theory (Nash Equilibrium)",
+      "source_domain": "Mathematics",
+      "multi_modal_input": {
+        "text_notes": "No player can benefit by unilaterally changing strategy. Prisoner's Dilemma: both defect even though mutual cooperation is better. Tragedy of the Commons.",
+        "voice_transcript": "Two prisoners separately interrogated. If both stay silent, 1 year each. If one rats, he goes free, other gets 10 years. Both rat \u2192 5 years each. Rational choice leads to worse outcome."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Climate Policy",
+          "target_concept": "International Agreements",
+          "connection_type": "policy_application",
+          "explanation": "Climate action = Prisoner's Dilemma at global scale: all countries benefit from cooperation, but each has incentive to defect (free-ride). Paris Agreement tries to change payoff structure.",
+          "transferable_principle": "Collective action problems require changing incentive structures, not just asking for cooperation",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Business",
+          "target_concept": "Price Wars",
+          "connection_type": "market_application",
+          "explanation": "Two competitors in price war: both would profit from maintaining prices, but each has incentive to undercut. Nash Equilibrium = both pricing at cost (zero profit). OPEC cartel tries to enforce cooperation.",
+          "transferable_principle": "Competitive markets drive outcomes where no individual can improve position without coordination",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Evolutionary Biology",
+          "target_concept": "Evolutionarily Stable Strategy",
+          "connection_type": "biological_equivalence",
+          "explanation": "ESS = Nash Equilibrium in biology. Hawk-Dove game: species adopt mixed strategies that cannot be invaded by alternative strategies. Population proportions reach stable equilibrium.",
+          "transferable_principle": "Biological populations reach stable strategy mixtures analogous to game equilibria",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C034",
+      "source_concept": "Natural Selection",
+      "source_domain": "Biology",
+      "multi_modal_input": {
+        "text_notes": "Variation + inheritance + differential survival = adaptation. 'Survival of the fittest' (fittest = best adapted, not strongest). Gradual change over generations.",
+        "voice_transcript": "Organisms vary. Some variations help survival. Those organisms have more babies. Over thousands of generations, helpful traits spread. That's it."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Business",
+          "target_concept": "Market Competition",
+          "connection_type": "economic_analogy",
+          "explanation": "Markets select for best-adapted companies. Variation = different business models. Selection = customer choice. Adaptation = product-market fit. Bankruptcy = extinction. VC ecosystem accelerates evolution.",
+          "transferable_principle": "Competitive environments select variants best adapted to current conditions",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Immunology",
+          "target_concept": "Antibody Affinity Maturation",
+          "connection_type": "biological_application",
+          "explanation": "Immune system evolves antibodies in real-time: B cells with better antigen binding survive and multiply. Somatic hypermutation = random variation. Selection = affinity for pathogen. Evolution in weeks, not millennia.",
+          "transferable_principle": "Selection pressure on variable population drives rapid adaptation",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Language",
+          "target_concept": "Linguistic Evolution",
+          "connection_type": "cultural_analogy",
+          "explanation": "Languages evolve by selection: useful words survive ('google' as verb), confusing ones die. Dialects adapt to local environments. Pidgins emerge from contact between language groups. Linguistic speciation.",
+          "transferable_principle": "Communication forms evolve through differential adoption based on utility and clarity",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C035",
+      "source_concept": "Homeostasis",
+      "source_domain": "Biology",
+      "multi_modal_input": {
+        "text_notes": "Maintenance of stable internal environment despite external changes. Temperature, pH, glucose, blood pressure all regulated. Negative feedback systems.",
+        "voice_transcript": "Your body keeps temperature at 37C whether it's hot or cold outside. Sweat when hot, shiver when cold. Automatic regulation without thinking."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Economics",
+          "target_concept": "Market Self-Correction",
+          "connection_type": "economic_analogy",
+          "explanation": "Free markets self-correct through price signals: shortages raise prices (reducing demand), surpluses lower prices (increasing demand). Central planning disrupts homeostatic feedback loops.",
+          "transferable_principle": "Self-regulating systems use feedback to maintain equilibrium without central control",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Regulation",
+          "connection_type": "psychological_analogy",
+          "explanation": "Emotionally healthy people maintain psychological homeostasis: stress \u2192 coping \u2192 recovery. Chronic stress = inability to return to baseline. PTSD = broken homeostatic system.",
+          "transferable_principle": "Healthy systems have robust recovery mechanisms that return to baseline after perturbation",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Engineering",
+          "target_concept": "PID Controller",
+          "connection_type": "engineering_equivalence",
+          "explanation": "PID controller (thermostat, cruise control) IS artificial homeostasis: measures current state, compares to setpoint, applies correction. Proportional-Integral-Derivative = three types of feedback correction.",
+          "transferable_principle": "Control systems maintain setpoints through continuous measurement and corrective action",
+          "confidence_score": 0.93
+        }
+      ]
+    },
+    {
+      "id": "C036",
+      "source_concept": "Mutation",
+      "source_domain": "Genetics",
+      "multi_modal_input": {
+        "text_notes": "Random change in DNA sequence. Most neutral or harmful. Rarely beneficial. Source of all variation. Rate: ~1 per 10^9 bases per generation in humans.",
+        "voice_transcript": "DNA copies aren't perfect. Mistakes happen. Usually bad, sometimes does nothing, rarely creates something better. All evolution depends on these copying errors."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Innovation",
+          "target_concept": "Serendipitous Discovery",
+          "connection_type": "creative_analogy",
+          "explanation": "Penicillin (mold contamination), Post-it notes (failed adhesive), Viagra (heart drug side effect). Most 'mistakes' fail, but rare beneficial 'mutations' change everything. Innovation requires tolerating many failures.",
+          "transferable_principle": "Random variation produces mostly failures; rare successes more than compensate",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Art",
+          "target_concept": "Creative Error",
+          "connection_type": "artistic_analogy",
+          "explanation": "Bob Ross: 'We don't make mistakes, just happy little accidents.' Jazz improvisation: 'wrong' notes lead to new phrases. Many artistic movements born from technical errors (discoveries).",
+          "transferable_principle": "Unintended outcomes can surpass intentional results; preserve optionality in creative process",
+          "confidence_score": 0.82
+        },
+        {
+          "target_domain": "Startup Ecosystem",
+          "target_concept": "Venture Capital Portfolio",
+          "connection_type": "investment_analogy",
+          "explanation": "VC portfolios expect 90% of startups to fail (harmful mutations), 9% to return capital (neutral), 1% to be unicorns (beneficial mutations). Portfolio returns depend on rare extreme successes.",
+          "transferable_principle": "High-variance strategies with power-law returns require many attempts for rare wins",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C037",
+      "source_concept": "Mycelial Networks",
+      "source_domain": "Mycology",
+      "multi_modal_input": {
+        "text_notes": "Underground fungal networks connect trees, sharing nutrients and information. 'Wood Wide Web.' Mycorrhizal symbiosis. Largest organism on Earth: honey fungus in Oregon (2.4 miles across).",
+        "voice_transcript": "Trees talk to each other through fungal networks underground. A mother tree will send nutrients to her seedlings through this network. It's like an internet for plants."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Internet",
+          "target_concept": "Packet-Switched Networks",
+          "connection_type": "technological_analogy",
+          "explanation": "Mycelial networks route nutrients through most efficient paths, like internet packet routing. Nodes (trees) share resources through distributed network. Failure-tolerant: if one path is blocked, route around it.",
+          "transferable_principle": "Distributed mesh networks route resources efficiently and tolerate node failures",
+          "confidence_score": 0.88
+        },
+        {
+          "target_domain": "Economics",
+          "target_concept": "Gift Economy / Mutual Aid",
+          "connection_type": "economic_analogy",
+          "explanation": "Trees share nutrients without direct reciprocation (altruism). Defectors (non-mycorrhizal plants) are excluded over time. Mutual aid networks in human societies follow similar cooperative dynamics.",
+          "transferable_principle": "Cooperative resource sharing networks outperform isolated individuals but require exclusion of defectors",
+          "confidence_score": 0.83
+        },
+        {
+          "target_domain": "Neuroscience",
+          "target_concept": "Neural Networks",
+          "connection_type": "biological_analogy",
+          "explanation": "Mycelial networks structurally resemble neural networks: nodes with branching connections, electrical signaling, learning (strengthening used paths). 'Intelligence' emerging from network structure, not individual components.",
+          "transferable_principle": "Networked distributed systems exhibit emergent intelligence from connectivity patterns",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C038",
+      "source_concept": "Swarm Intelligence",
+      "source_domain": "Biology",
+      "multi_modal_input": {
+        "text_notes": "Decentralized, self-organized collective behavior. No leader. Simple local rules create complex global patterns. Ant colonies, bird flocks, fish schools. Particle swarm optimization.",
+        "voice_transcript": "No ant tells other ants what to do. Each ant follows simple rules: follow pheromone trail, pick up food, drop pheromone. Together they solve complex optimization problems better than any individual could."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "AI / Optimization",
+          "target_concept": "Particle Swarm Optimization",
+          "connection_type": "computational_application",
+          "explanation": "PSO algorithms directly model swarm intelligence: each 'particle' explores solution space, sharing best finds with neighbors. No central controller. Used for engineering optimization, neural network training.",
+          "transferable_principle": "Decentralized agents following simple local rules can solve complex global optimization problems",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "Unplanned Order (Favelas)",
+          "connection_type": "urban_analogy",
+          "explanation": "Favelas and organic cities emerge from individual decisions without master planning. Each resident builds based on local conditions. Global order emerges from local rules. Often more functional than top-down planned neighborhoods.",
+          "transferable_principle": "Complex functional order can emerge from decentralized local decision-making",
+          "confidence_score": 0.84
+        },
+        {
+          "target_domain": "Open Source",
+          "target_concept": "Distributed Development",
+          "connection_type": "technological_analogy",
+          "explanation": "Linux, Wikipedia: thousands of independent contributors following simple rules (code standards, citation requirements). No central command. Quality emerges from collective intelligence and peer review.",
+          "transferable_principle": "Large-scale quality production possible through decentralized contribution with simple coordination rules",
+          "confidence_score": 0.89
+        }
+      ]
+    },
+    {
+      "id": "C039",
+      "source_concept": "Inversion (Avoiding Failure)",
+      "source_domain": "Decision Making (Munger)",
+      "multi_modal_input": {
+        "text_notes": "Instead of asking 'how to succeed?', ask 'how to guarantee failure?' Then avoid those things. Munger: 'Invert, always invert.' Avoiding stupidity is easier than seeking brilliance.",
+        "voice_transcript": "Instead of 'how do I get rich?' ask 'how do I guarantee poverty?' Spend more than you earn, get into debt, don't invest, don't learn. Now avoid those things. That's inversion."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Safety Engineering",
+          "target_concept": "Failure Mode Analysis (FMEA)",
+          "connection_type": "engineering_application",
+          "explanation": "Engineers ask 'how can this fail?' for every component. Each failure mode gets severity/probability ratings. Prevention prioritized by risk. NASA, aviation, nuclear all use inversion-based safety.",
+          "transferable_principle": "Systematically identify and mitigate failure modes rather than assuming success",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Health",
+          "target_concept": "Preventive Medicine",
+          "connection_type": "medical_application",
+          "explanation": "Instead of 'how to live to 100?' ask 'how to die early?' Smoke, drink excessively, eat poorly, don't exercise, avoid doctors. Avoid those = longevity. Inversion is basis of preventive medicine.",
+          "transferable_principle": "Identify and eliminate behaviors causing negative outcomes rather than seeking positive interventions",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Relationships",
+          "target_concept": "Relationship Maintenance",
+          "connection_type": "social_application",
+          "explanation": "Instead of 'how to be happy together?' ask 'how to destroy a relationship?' Lie, stop communicating, take for granted, refuse to compromise. Avoid those = relationship health. Gottman's 'Four Horsemen' = inversion framework.",
+          "transferable_principle": "Eliminating destructive behaviors is more effective than adding constructive ones",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C040",
+      "source_concept": "Second-Order Thinking",
+      "source_domain": "Decision Making (Munger)",
+      "multi_modal_input": {
+        "text_notes": "Ask 'and then what?' repeatedly. First-order: price cut increases sales. Second-order: competitors match cuts, price war, margin destruction. Third-order: weaker competitors go bankrupt, survivor gains market share.",
+        "voice_transcript": "First order thinking: 'Let's lower prices to increase sales.' Second order: 'If we lower prices, competitors will too, and everyone makes less money.' Third order: 'Unless we're the low-cost producer, in which case we win the price war.'"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Ecology",
+          "target_concept": "Trophic Cascades",
+          "connection_type": "ecological_application",
+          "explanation": "Remove wolves \u2192 more deer \u2192 less vegetation \u2192 beavers starve \u2192 wetlands dry \u2192 fish die \u2192 bears hungry. Each second-order effect triggers third-order effects. Yellowstone reintroduction demonstrated this.",
+          "transferable_principle": "Every intervention in a complex system triggers cascading consequences through multiple levels",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Drug Side Effects",
+          "connection_type": "clinical_application",
+          "explanation": "First-order: drug treats condition. Second-order: side effects on other systems. Third-order: body compensates creating new problems. Opioids: pain relief \u2192 dependence \u2192 withdrawal \u2192 illegal substitution \u2192 overdose.",
+          "transferable_principle": "Medical interventions have multi-level physiological consequences beyond intended effect",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Urban Planning",
+          "target_concept": "Highway Expansion Paradox",
+          "connection_type": "urban_application",
+          "explanation": "First-order: more highway lanes reduce congestion. Second-order: easier driving encourages more car use (induced demand). Third-order: congestion returns worse than before. Braess's Paradox in traffic networks.",
+          "transferable_principle": "System-level responses to interventions often negate intended first-order benefits",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C041",
+      "source_concept": "Circle of Competence",
+      "source_domain": "Decision Making (Buffett/Munger)",
+      "multi_modal_input": {
+        "text_notes": "Know the boundaries of your expertise. Invest/play only where you have edge. It's okay to not know everything. Dunning-Kruger: incompetent people overestimate; competent people doubt.",
+        "voice_transcript": "Buffett doesn't invest in tech because he doesn't understand it. He stays in his circle - insurance, consumer goods, banking. He knows what he knows and more importantly, what he doesn't know."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Specialist Referral",
+          "connection_type": "clinical_application",
+          "explanation": "GP refers to specialist when condition exceeds their competence. Ethical duty to acknowledge limits. Medical malpractice often from operating outside circle of competence.",
+          "transferable_principle": "Acknowledge expertise boundaries and defer to those with deeper domain knowledge",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Aviation",
+          "target_concept": "Instrument Rating / Type Certification",
+          "connection_type": "aviation_application",
+          "explanation": "Pilots only fly aircraft they're certified for. Flying outside certification = crash risk. Type ratings explicitly define circle of competence. Recency requirements ensure edge maintained.",
+          "transferable_principle": "Operate only in domains with current demonstrated competence and appropriate certification",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Sports",
+          "target_concept": "Position Specialization",
+          "connection_type": "athletic_analogy",
+          "explanation": "NBA players specialize by position: centers don't handle the ball, guards don't post up. Attempting outside position = turnover. Team success from each player staying in their competence circle.",
+          "transferable_principle": "Specialization within team context maximizes collective performance",
+          "confidence_score": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C042",
+      "source_concept": "Bayesian Updating",
+      "source_domain": "Statistics / Decision Theory",
+      "multi_modal_input": {
+        "text_notes": "Update belief as new evidence arrives. Prior \u2192 Likelihood \u2192 Posterior. Nate Silver's election models. Don't discard prior entirely; weight by evidence strength.",
+        "voice_transcript": "Start with what you think is true. Get new evidence. Update your belief - but don't throw out everything you knew before. Strong evidence shifts belief a lot, weak evidence a little."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Diagnostic Reasoning",
+          "connection_type": "clinical_application",
+          "explanation": "Doctors update diagnosis as test results arrive: initial impression (prior) + test result (evidence) = revised diagnosis (posterior). Good doctors don't ignore new evidence; bad doctors don't ignore prior probability.",
+          "transferable_principle": "Diagnostic confidence should update incrementally with each new piece of evidence",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "Investing",
+          "target_concept": "Position Sizing",
+          "connection_type": "investment_application",
+          "explanation": "Kelly Criterion for bet sizing = Bayesian. Start with thesis (prior), new earnings data (evidence), adjust position size (posterior conviction). High conviction = large position; low conviction = small/no position.",
+          "transferable_principle": "Adjust commitment level proportionally to strength of supporting evidence",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Law",
+          "target_concept": "Jury Deliberation",
+          "connection_type": "legal_analogy",
+          "explanation": "Jurors start with presumption (prior). Each witness/testimony = evidence. Bayesian juror updates guilt probability incrementally rather than waiting for all evidence. Final verdict = posterior after all evidence.",
+          "transferable_principle": "Evaluate evidence sequentially while maintaining running probability assessment",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C043",
+      "source_concept": "Skin in the Game",
+      "source_domain": "Risk Ethics (Taleb)",
+      "multi_modal_input": {
+        "text_notes": "Those making decisions should bear consequences. Symmetry of risk and reward. Architects should sleep in buildings they design. No downside = irresponsible decisions.",
+        "voice_transcript": "Don't trust advice from someone who doesn't suffer if they're wrong. A pilot who doesn't fly the plane designs it badly. A chef who doesn't eat the food makes it poorly."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Finance",
+          "target_concept": "CEO Stock Ownership",
+          "connection_type": "corporate_application",
+          "explanation": "CEOs with significant personal stock ownership make better long-term decisions (skin in game). Hedge fund managers with personal capital in fund outperform. Golden parachutes REMOVE skin in game.",
+          "transferable_principle": "Decision-makers with personal exposure to outcomes make more responsible choices",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Fee-for-Service vs Capitation",
+          "connection_type": "healthcare_application",
+          "explanation": "Fee-for-service: doctor profits from more procedures (no skin in outcome). Capitation: doctor bears cost of overtreatment (skin in game). Single-payer systems align incentives better.",
+          "transferable_principle": "Payment models that expose providers to cost of overtreatment reduce unnecessary care",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Ancient History",
+          "target_concept": "Hammurabi's Code",
+          "connection_type": "historical_precedent",
+          "explanation": "Code of Hammurabi: if a builder's house collapses killing the owner, builder is put to death. Maximum skin in game. Bridge engineers in medieval times had to stand under their bridges during first use.",
+          "transferable_principle": "Ancient civilizations recognized that consequence-bearing produces higher quality outcomes",
+          "confidence_score": 0.86
+        }
+      ]
+    },
+    {
+      "id": "C044",
+      "source_concept": "Map is Not the Territory",
+      "source_domain": "Epistemology (Korzybski)",
+      "multi_modal_input": {
+        "text_notes": "Models and representations are simplifications of reality, not reality itself. All models are wrong, some are useful (Box). Over-reliance on models = abstraction error.",
+        "voice_transcript": "A map of California doesn't have traffic jams, heat waves, or earthquakes. It's useful for navigation but useless for knowing what it's actually like to drive through LA at rush hour."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Finance",
+          "target_concept": "Model Risk",
+          "connection_type": "quantitative_application",
+          "explanation": "2008 financial crisis: models assumed housing prices wouldn't fall nationally simultaneously. Model said AAA-rated; reality was junk. LTCM failure: Nobel Prize-winning models ignored liquidity risk.",
+          "transferable_principle": "All financial models fail at extremes because they cannot capture full reality complexity",
+          "confidence_score": 0.95
+        },
+        {
+          "target_domain": "AI / Machine Learning",
+          "target_concept": "Training vs Real-World Distribution",
+          "connection_type": "ML_application",
+          "explanation": "Models trained on curated datasets fail in real world (distribution shift). Self-driving cars trained on sunny California fail in snow. Adversarial examples exploit model-reality mismatch.",
+          "transferable_principle": "Models fail when deployment environment differs from training conditions",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Military Strategy",
+          "target_concept": "The Fog of War",
+          "connection_type": "strategic_application",
+          "explanation": "No battle plan survives contact with enemy (von Moltke). Maps show terrain, not morale, weather, confusion. Over-planning based on maps without ground intelligence = disaster.",
+          "transferable_principle": "Tactical adaptation to ground reality supersedes strategic planning based on abstraction",
+          "confidence_score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "C045",
+      "source_concept": "Lindy Effect",
+      "source_domain": "Probability Theory (Taleb)",
+      "multi_modal_input": {
+        "text_notes": "Non-perishable things (ideas, technologies) that have survived X years are likely to survive another X years. Future life expectancy proportional to past age. Books that have been read for 500 years will be read for 500 more.",
+        "voice_transcript": "Shakespeare has been around 400 years. He'll probably be around 400 more. A TikTok trend that's been around 2 weeks probably has 2 weeks left. The older something non-perishable is, the longer it's likely to last."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Technology",
+          "target_concept": "Technology Selection",
+          "connection_type": "tech_strategy",
+          "explanation": "Choose technologies with Lindy (proven longevity). Python (30 years) over latest framework (2 years). Books over blogs. Core principles over trends. 'Boring' tech that works beats exciting tech that might not.",
+          "transferable_principle": "For foundational choices, prefer proven longevity over recency or novelty",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Diet / Health",
+          "target_concept": "Traditional Diets",
+          "connection_type": "nutritional_application",
+          "explanation": "Traditional cuisines (Mediterranean, Japanese, Indian) that have sustained populations for millennia likely to be healthier than modern fad diets. Lindy applies to food wisdom.",
+          "transferable_principle": "Dietary patterns sustaining populations for centuries have passed evolutionary selection",
+          "confidence_score": 0.86
+        },
+        {
+          "target_domain": "Investing",
+          "target_concept": "Asset Class Durability",
+          "connection_type": "investment_application",
+          "explanation": "Gold has been money for 5000 years (Lindy). Bitcoin has been around 15 years. Real estate has stored wealth for centuries. Meme stocks have been around 3 years. Lindy favors gold and real estate over memes.",
+          "transferable_principle": "Store-of-value assets with longer history of durability are more likely to maintain value",
+          "confidence_score": 0.87
+        }
+      ]
+    },
+    {
+      "id": "C046",
+      "source_concept": "Redundancy",
+      "source_domain": "Engineering / Safety",
+      "multi_modal_input": {
+        "text_notes": "Multiple systems performing same function so single failure doesn't cause catastrophe. Triple modular redundancy. Airplane engines (can fly on one). Backup generators.",
+        "voice_transcript": "Airplanes have multiple engines, multiple hydraulic systems, multiple electrical systems. Not because any one is likely to fail, but because IF one fails, you're not dead. Redundancy buys survival."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Ecology",
+          "target_concept": "Biodiversity",
+          "connection_type": "ecological_equivalence",
+          "explanation": "Ecosystem resilience = redundancy: multiple species performing similar functions (pollination, nitrogen fixation). Lose one species \u2192 others compensate. Monoculture = single point of failure.",
+          "transferable_principle": "Functional redundancy in systems ensures continuity despite component failures",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Personal Finance",
+          "target_concept": "Emergency Fund + Multiple Income",
+          "connection_type": "financial_application",
+          "explanation": "Emergency fund = financial redundancy. Multiple income streams = career redundancy. Insurance = catastrophic redundancy. Each layer protects against different failure mode.",
+          "transferable_principle": "Multiple independent safety layers prevent single-failure catastrophes",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Information",
+          "target_concept": "3-2-1 Backup Strategy",
+          "connection_type": "IT_application",
+          "explanation": "3 copies of data, 2 different media, 1 offsite. Redundancy across dimensions: count, type, and location. Prevents single failure mode (theft, fire, disk failure, ransomware) from destroying data.",
+          "transferable_principle": "Diversify redundancy across failure dimensions (count, type, location, time)",
+          "confidence_score": 0.94
+        }
+      ]
+    },
+    {
+      "id": "C047",
+      "source_concept": "Rate Limiting",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "Control rate of operations to prevent overload. API rate limits, traffic shaping, leaky bucket algorithm. Protects system from being overwhelmed by too many requests too fast.",
+        "voice_transcript": "A bar with a good bouncer doesn't let everyone in at once. Rate limiting is the bouncer for your API - 'Whoa, slow down buddy, come back in a second.'"
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Decision Fatigue Prevention",
+          "connection_type": "cognitive_application",
+          "explanation": "Humans have daily decision budget (~200 quality decisions). Rate-limit important decisions: Obama wore same suit daily, Zuckerberg same hoodie. Reduce trivial decisions to preserve capacity for important ones.",
+          "transferable_principle": "Conserve cognitive capacity by limiting low-value decisions to preserve quality for high-value ones",
+          "confidence_score": 0.89
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Titration of Dosage",
+          "connection_type": "clinical_analogy",
+          "explanation": "Start medication at low dose, increase gradually. Too much too fast = side effects (system overload). Rate-limiting biological exposure. Chemotherapy scheduling is rate-limiting toxicity.",
+          "transferable_principle": "Introduce changes gradually to allow system adaptation and prevent overload",
+          "confidence_score": 0.9
+        },
+        {
+          "target_domain": "Habit Formation",
+          "target_concept": "Tiny Habits (BJ Fogg)",
+          "connection_type": "behavioral_application",
+          "explanation": "Start habits below motivation threshold: 1 pushup, 1 page, 1 minute meditation. Rate-limiting behavioral change prevents willpower depletion and habit rejection. Gradually increase capacity.",
+          "transferable_principle": "Start new behaviors below resistance threshold and scale gradually",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C048",
+      "source_concept": "Graceful Degradation",
+      "source_domain": "Software Engineering",
+      "multi_modal_input": {
+        "text_notes": "System continues operating at reduced capacity when components fail. Progressive enhancement opposite. HTML pages work without CSS/JS. Video calls continue audio-only when bandwidth drops.",
+        "voice_transcript": "When your internet slows down, Netflix doesn't crash - it just lowers video quality. The service degrades gracefully instead of failing completely. That's good design."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Aviation",
+          "target_concept": "MEL (Minimum Equipment List)",
+          "connection_type": "aviation_application",
+          "explanation": "Airplanes can fly with certain equipment inoperative (within MEL). Redundant systems allow graceful degradation: one generator fails \u2192 reduce non-essential electrical load \u2192 continue flight safely.",
+          "transferable_principle": "Define minimum functional subset that maintains core capability during component failures",
+          "confidence_score": 0.94
+        },
+        {
+          "target_domain": "Human Physiology",
+          "target_concept": "Compensatory Mechanisms",
+          "connection_type": "biological_analogy",
+          "explanation": "Body degrades gracefully: one kidney can handle 70% of function. Lung removal \u2192 remaining lung expands. Brain plasticity reroutes around damage. Aging IS gradual graceful degradation.",
+          "transferable_principle": "Biological systems maintain function through compensatory mechanisms when components fail",
+          "confidence_score": 0.93
+        },
+        {
+          "target_domain": "Business Continuity",
+          "target_concept": "Disaster Recovery Tiers",
+          "connection_type": "business_application",
+          "explanation": "Tiered DR: full capacity \u2192 degraded mode (essential only) \u2192 minimal survival \u2192 recovery. Each tier defined in advance. Pandemic forced businesses into graceful degradation (remote work, reduced hours).",
+          "transferable_principle": "Pre-defined degradation levels maintain essential functions during progressively worse failures",
+          "confidence_score": 0.91
+        }
+      ]
+    },
+    {
+      "id": "C049",
+      "source_concept": "Idempotency",
+      "source_domain": "Computer Science / Mathematics",
+      "multi_modal_input": {
+        "text_notes": "Operation that produces same result whether executed once or multiple times. f(f(x)) = f(x). Important for distributed systems where requests may be retried.",
+        "voice_transcript": "Setting a light switch to ON is idempotent - doing it once or ten times, the light is still ON. Toggling is NOT idempotent - each press changes state unpredictably."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Daily Life",
+          "target_concept": "Habit Consistency",
+          "connection_type": "behavioral_analogy",
+          "explanation": "Brushing teeth is idempotent: doing it once or twice gives clean teeth (second time redundant but safe). Taking medicine: idempotent within safe window. Some habits tolerate repetition without harm.",
+          "transferable_principle": "Design behaviors that are safe to repeat without cumulative negative effects",
+          "confidence_score": 0.78
+        },
+        {
+          "target_domain": "Finance",
+          "target_concept": "Idempotent Transactions",
+          "connection_type": "fintech_application",
+          "explanation": "Payment processing: duplicate charge requests should not double-charge. Unique transaction IDs make operations idempotent. Bank transfers use idempotency keys to prevent double-payment on retry.",
+          "transferable_principle": "Financial operations must produce same outcome on repetition to prevent duplicate losses",
+          "confidence_score": 0.92
+        },
+        {
+          "target_domain": "Manufacturing",
+          "target_concept": "Poka-Yoke (Mistake-Proofing)",
+          "connection_type": "lean_manufacturing",
+          "explanation": "Design processes so repeated or wrong actions don't cause harm. USB-C connector: reversible, so orientation doesn't matter. Car keys: can't start in gear. Idempotent by design.",
+          "transferable_principle": "Design systems where incorrect/repeated actions produce safe default state",
+          "confidence_score": 0.88
+        }
+      ]
+    },
+    {
+      "id": "C050",
+      "source_concept": "Debouncing / Throttling",
+      "source_domain": "Electrical Engineering / UX",
+      "multi_modal_input": {
+        "text_notes": "Debounce: ignore rapid successive signals, process only after stable state. Throttle: limit rate of processing. Both prevent excessive triggering from noisy/rapid inputs.",
+        "voice_transcript": "When you press an elevator button multiple times, it doesn't make the elevator come faster. The system debounces your input - it only registers the press once. Same for keyboard keys."
+      },
+      "valid_connections": [
+        {
+          "target_domain": "Psychology",
+          "target_concept": "Emotional Regulation (Pause)",
+          "connection_type": "psychological_application",
+          "explanation": "Anger debouncing: wait before responding to emotional trigger. The 24-hour rule for emails. First emotional reaction is 'noise'; second thought is stable signal. Throttle emotional responses.",
+          "transferable_principle": "Introduce deliberate delay between stimulus and response to filter reactive noise",
+          "confidence_score": 0.91
+        },
+        {
+          "target_domain": "Politics / Governance",
+          "target_concept": "Cooling-Off Periods",
+          "connection_type": "policy_application",
+          "explanation": "Gun purchase waiting periods = debouncing: prevent impulsive violent acts. Divorce waiting periods. Legislation requiring reading time before vote. All prevent hasty decisions on 'noisy' emotional input.",
+          "transferable_principle": "Mandatory delays on consequential decisions filter out impulsive reactions",
+          "confidence_score": 0.87
+        },
+        {
+          "target_domain": "Medicine",
+          "target_concept": "Seizure Threshold / Refractory Period",
+          "connection_type": "neurological_analogy",
+          "explanation": "Neurons have refractory period after firing: cannot fire again immediately. This debounces neural signals, preventing runaway excitation (seizures). Anti-epileptic drugs extend refractory period.",
+          "transferable_principle": "Biological systems have built-in rate limiting to prevent runaway activation",
+          "confidence_score": 0.89
+        }
+      ]
+    }
+  ]
+}

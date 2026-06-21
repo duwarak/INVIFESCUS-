@@ -1,0 +1,779 @@
+{
+  "metadata": {
+    "dataset_name": "Evaluation and Test Dataset",
+    "description": "Held-out test cases for evaluating cross-domain synthesis model performance",
+    "total_cases": 50,
+    "evaluation_metrics": [
+      "connection_validity_accuracy",
+      "confidence_calibration",
+      "novelty_score",
+      "mechanism_quality",
+      "cross_domain_coverage"
+    ]
+  },
+  "test_cases": [
+    {
+      "id": "EV001",
+      "input": {
+        "concept": "Resonance",
+        "domain": "Physics",
+        "input_text": "When a system's natural frequency matches an external driving frequency, amplitude increases dramatically. Examples: opera singer shattering glass, Tacoma Narrows bridge collapse.",
+        "input_type": "class notes"
+      },
+      "task": "Generate 4 cross-domain connections with mechanisms",
+      "expected_connections": [
+        {
+          "domain": "Music",
+          "concept": "Harmonic resonance in instruments",
+          "valid": true
+        },
+        {
+          "domain": "Marketing",
+          "concept": "Viral timing/message frequency match",
+          "valid": true
+        },
+        {
+          "domain": "Psychology",
+          "concept": "Emotional trigger matching",
+          "valid": true
+        },
+        {
+          "domain": "Bridge Engineering",
+          "concept": "Aerodynamic flutter avoidance",
+          "valid": true
+        }
+      ],
+      "forbidden_connections": [
+        {
+          "domain": "Astrology",
+          "concept": "Planetary resonance affecting personality",
+          "invalid_reason": "no_mechanism"
+        }
+      ]
+    },
+    {
+      "id": "EV002",
+      "input": {
+        "concept": "Recursion",
+        "domain": "Computer Science",
+        "input_text": "Function calls itself with reduced input until reaching base case. Matryoshka dolls analogy.",
+        "input_voice": "Each doll contains a smaller version of itself. The smallest is the base case.",
+        "input_type": "combined"
+      },
+      "task": "Generate 5 cross-domain connections including at least 2 surprising ones",
+      "expected_connections": [
+        {
+          "domain": "Mathematics",
+          "concept": "Mathematical induction",
+          "valid": true
+        },
+        {
+          "domain": "Music",
+          "concept": "Musical canons and rounds",
+          "valid": true
+        },
+        {
+          "domain": "Biology",
+          "concept": "Cell division (mitosis)",
+          "valid": true
+        },
+        {
+          "domain": "Storytelling",
+          "concept": "Frame narratives (Inception, 1001 Nights)",
+          "valid": true
+        },
+        {
+          "domain": "Business",
+          "concept": "Organizational hierarchy delegation",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "id": "EV003",
+      "input": {
+        "concept": "Caching",
+        "domain": "Computer Science",
+        "input_text": "Store frequently-accessed data in fast, nearby memory. LRU eviction policy.",
+        "input_type": "notes"
+      },
+      "task": "Find 3 valid and identify 1 INVALID proposed connection",
+      "expected_connections": [
+        {
+          "domain": "Education",
+          "concept": "Spaced repetition",
+          "valid": true
+        },
+        {
+          "domain": "Culinary Arts",
+          "concept": "Mise en place",
+          "valid": true
+        },
+        {
+          "domain": "Neuroscience",
+          "concept": "Working memory",
+          "valid": true
+        }
+      ],
+      "invalid_to_identify": {
+        "proposed": "Caching is like hoarding because both store things",
+        "invalid_type": "false_analogy",
+        "explanation": "Caching stores based on frequency and access pattern with LRU eviction; hoarding stores indiscriminately without eviction policy. Mechanisms differ."
+      }
+    },
+    {
+      "id": "EV004",
+      "input": {
+        "concept": "Feedback Loops",
+        "domain": "Systems Thinking",
+        "input_text": "Output fed back as input. Positive amplifies, negative stabilizes.",
+        "input_type": "textbook"
+      },
+      "task": "Find connections to 4 domains with specific mechanism explanations",
+      "expected_connections": [
+        {
+          "domain": "Biology",
+          "concept": "Homeostasis (thermoregulation)",
+          "mechanism": "Temperature deviation \u2192 corrective response \u2192 return to setpoint = negative feedback"
+        },
+        {
+          "domain": "Economics",
+          "concept": "Price mechanism",
+          "mechanism": "Surplus \u2192 price drops \u2192 demand rises = negative feedback"
+        },
+        {
+          "domain": "Psychology",
+          "concept": "Self-fulfilling prophecy",
+          "mechanism": "Belief \u2192 behavior \u2192 outcome confirms belief = positive feedback"
+        },
+        {
+          "domain": "Audio",
+          "concept": "Microphone feedback",
+          "mechanism": "Mic picks up speaker \u2192 amplifies \u2192 speaker = positive feedback loop"
+        }
+      ]
+    },
+    {
+      "id": "EV005",
+      "input": {
+        "concept": "Conservation of Energy",
+        "domain": "Physics",
+        "input_text": "PE + KE = constant. PE = mgh, KE = \u00bdmv\u00b2. Roller coaster example.",
+        "input_photo": "Diagram showing energy bars at different positions of roller coaster track",
+        "input_type": "mixed"
+      },
+      "task": "Generate cross-domain connections including one to Finance with specific mechanism",
+      "expected_connections": [
+        {
+          "domain": "Finance",
+          "concept": "Budget allocation",
+          "mechanism": "Fixed budget transforms between categories; total conserved, friction = fees/taxes"
+        },
+        {
+          "domain": "Personal Productivity",
+          "concept": "Daily energy management",
+          "mechanism": "Morning = high PE, execution converts to KE, burnout = all dissipated as heat"
+        },
+        {
+          "domain": "Nutrition",
+          "concept": "Calorie balance",
+          "mechanism": "Food calories (PE) convert to activity (KE) or stored fat; conservation law"
+        }
+      ]
+    },
+    {
+      "id": "EV006",
+      "input": {
+        "concept": "Projectile Motion",
+        "domain": "Physics",
+        "input_text": "Parabolic trajectory, v\u2080\u00b2sin(2\u03b8)/g, horizontal/vertical independence.",
+        "input_video": "Slow-mo of ball throw showing trajectory",
+        "input_type": "mixed"
+      },
+      "task": "Connect to 3 domains with mechanism, then identify if 'Used in cooking pasta because water follows parabola when draining' is valid",
+      "expected_connections": [
+        {
+          "domain": "Gymnastics",
+          "concept": "Double backflip",
+          "mechanism": "Center of mass follows parabola; launch angle determines rotation time"
+        },
+        {
+          "domain": "Animation",
+          "concept": "Motion graphics easing",
+          "mechanism": "After Effects 'gravity' parameter uses same g=9.8 m/s\u00b2; keyframes = time-of-flight"
+        },
+        {
+          "domain": "Basketball",
+          "concept": "Free throw arc",
+          "mechanism": "Optimal 45-52\u00b0 arc; angular momentum stabilizes projectile"
+        }
+      ],
+      "invalidation_task": {
+        "claim": "Projectile motion explains pasta water drainage",
+        "verdict": "INVALID",
+        "reason": "Water drainage is fluid dynamics (viscous flow through gravity), not projectile motion. No launch angle optimization. Surface tension dominates. Superficial similarity (gravity involved) but different mechanisms."
+      }
+    },
+    {
+      "id": "EV007",
+      "input": {
+        "concept": "Network Effects",
+        "domain": "Business",
+        "input_text": "Value increases with more users. Metcalfe's Law. Telephone example.",
+        "input_type": "lecture"
+      },
+      "task": "Find 3 valid connections AND evaluate this claim: 'Prayer has network effects because more believers makes prayer more powerful'",
+      "expected_connections": [
+        {
+          "domain": "Biology",
+          "concept": "Ecological mutualism",
+          "valid": true
+        },
+        {
+          "domain": "Language",
+          "concept": "Language adoption",
+          "valid": true
+        },
+        {
+          "domain": "Immunology",
+          "concept": "Herd immunity",
+          "valid": true
+        }
+      ],
+      "evaluation_task": {
+        "claim": "Prayer has network effects",
+        "verdict": "INVALID",
+        "reason": "Network effects require observable, measurable increase in value with each additional participant. Prayer 'power' is not measurable. No mechanism for how additional believers increase efficacy. Confuses social reinforcement with network effects."
+      }
+    },
+    {
+      "id": "EV008",
+      "input": {
+        "concept": "Angular Momentum Conservation",
+        "domain": "Physics",
+        "input_text": "L = I\u03c9. Tight tuck reduces I, increases \u03c9. Figure skater example.",
+        "input_photo": "Sequence of skater pulling arms in",
+        "input_type": "mixed"
+      },
+      "task": "Connect to 3 domains and evaluate if this claim is valid: 'Dancers use angular momentum conservation when they spin faster by pulling arms in'",
+      "expected_connections": [
+        {
+          "domain": "Gymnastics",
+          "concept": "Tuck position in flips",
+          "mechanism": "Tight tuck decreases moment of inertia, increasing angular velocity"
+        },
+        {
+          "domain": "Aerospace",
+          "concept": "Satellite reaction wheels",
+          "mechanism": "Internal spinning masses change orientation without external torque"
+        },
+        {
+          "domain": "Biology",
+          "concept": "Cat righting reflex",
+          "mechanism": "Asymmetric moment of inertia enables rotation without push-off"
+        }
+      ],
+      "evaluation_task": {
+        "claim": "Dancers pull arms in to spin faster using angular momentum",
+        "verdict": "VALID",
+        "confidence": 0.95,
+        "mechanism": "Reducing moment of inertia by pulling arms in increases angular velocity, L = I\u03c9 conservation"
+      }
+    },
+    {
+      "id": "EV009",
+      "input": {
+        "concept": "Compound Interest / Exponential Growth",
+        "domain": "Mathematics",
+        "input_text": "A = P(1+r)^t. Rule of 72. Einstein quote.",
+        "input_type": "notes"
+      },
+      "task": "Connect to 4 domains, then evaluate if 'Human population growth follows compound interest, so we can use financial models to predict overpopulation' is valid",
+      "expected_connections": [
+        {
+          "domain": "Biology",
+          "concept": "Bacterial growth",
+          "valid": true
+        },
+        {
+          "domain": "Nuclear Physics",
+          "concept": "Chain reaction",
+          "valid": true
+        },
+        {
+          "domain": "Habit Formation",
+          "concept": "Compounding habits",
+          "valid": true
+        },
+        {
+          "domain": "Learning",
+          "concept": "Knowledge compounding",
+          "valid": true
+        }
+      ],
+      "evaluation_task": {
+        "claim": "Human population = compound interest, so financial models predict overpopulation",
+        "verdict": "PARTIALLY_VALID",
+        "reason": "Human population does grow exponentially under certain conditions, BUT: (1) demographic transition shows growth rate falls with development, (2) carrying capacity creates logistic not exponential growth, (3) financial models don't account for birth rate decline. Simple compound interest model overpredicts."
+      }
+    },
+    {
+      "id": "EV010",
+      "input": {
+        "concept": "First Principles Thinking",
+        "domain": "Decision Making",
+        "input_text": "Deconstruct to fundamental truths, build up. Musk battery example.",
+        "input_voice": "What are batteries made of? Cobalt, nickel, aluminum. What's the spot market value? ~$80/kWh. Why do we pay $600? Because of inefficiency.",
+        "input_type": "mixed"
+      },
+      "task": "Show how first principles thinking connects Physics to Business, then evaluate if this is valid: 'Using first principles, we can conclude water should be free because hydrogen and oxygen are abundant'",
+      "expected_connections": [
+        {
+          "domain": "Physics",
+          "concept": "Reductionism",
+          "mechanism": "Breaking complex system into fundamental components and their interactions"
+        },
+        {
+          "domain": "Chemistry",
+          "concept": "Elemental composition analysis",
+          "mechanism": "Identifying raw material costs vs. processed product prices"
+        },
+        {
+          "domain": "Business",
+          "concept": "Cost decomposition",
+          "mechanism": "Musk's battery: material costs + processing costs + margin = total cost"
+        }
+      ],
+      "evaluation_task": {
+        "claim": "Water should be free because H and O are abundant",
+        "verdict": "INVALID",
+        "reason": "First principles requires including ALL relevant factors: purification, transportation, infrastructure, safety testing, distribution. The 'free' conclusion ignores these necessary costs. This is reductionism without recomposition."
+      }
+    },
+    {
+      "id": "EV011",
+      "input": {
+        "concept": "Quantum Entanglement",
+        "domain": "Physics",
+        "input_text": "Particles correlate instantaneously regardless of distance. Bell's inequalities.",
+        "input_type": "textbook"
+      },
+      "task": "Evaluate if this connection is valid: 'Quantum entanglement proves telepathy is real because information travels instantly between minds'",
+      "evaluation": {
+        "verdict": "INVALID",
+        "type": "missing_mechanism",
+        "explanation": "Entanglement correlation cannot transmit usable information (no-communication theorem). 'Quantum' and 'mind' operate at completely different scales. No mechanism connects subatomic correlation to macroscopic thought transfer."
+      }
+    },
+    {
+      "id": "EV012",
+      "input": {
+        "concept": "Natural Selection",
+        "domain": "Biology",
+        "input_text": "Variation + inheritance + differential survival = adaptation. Not survival of strongest.",
+        "input_type": "notes"
+      },
+      "task": "Evaluate if this is valid: 'Social Darwinism - we should let poor people die because natural selection improves the species'",
+      "evaluation": {
+        "verdict": "INVALID",
+        "type": "naturalistic_fallacy",
+        "explanation": "Natural selection describes what IS, not what OUGHT TO BE (Hume's guillotine). Social Darwinism was pseudoscience used to justify eugenics and racism. Human ethics deliberately override natural selection (medicine, welfare, disability rights). Evolution has no goals or values."
+      }
+    },
+    {
+      "id": "EV013",
+      "input": {
+        "concept": "Placebo Effect",
+        "domain": "Medicine",
+        "input_text": "Improvement due to belief in treatment. Real but limited to subjective symptoms.",
+        "input_type": "medical"
+      },
+      "task": "Evaluate if this is valid: 'Since placebos work, all medicine is unnecessary and diseases are imaginary'",
+      "evaluation": {
+        "verdict": "INVALID",
+        "type": "scale_mismatch",
+        "explanation": "Placebos affect subjective symptoms (pain, nausea) not objective pathologies (tumor size, infections, blood sugar). Antibiotics cure infections placebos cannot. Vaccines prevent diseases placebos cannot. This claim causes harm by discouraging treatment."
+      }
+    },
+    {
+      "id": "EV014",
+      "input": {
+        "concept": "Evolution",
+        "domain": "Biology",
+        "input_text": "Mutation + selection over generations. No foresight. Satisfices, doesn't optimize.",
+        "input_type": "textbook"
+      },
+      "task": "Evaluate if this is valid: 'Evolution optimized the eye, so we should copy eye design for cameras'",
+      "evaluation": {
+        "verdict": "INVALID",
+        "type": "false_analogy",
+        "explanation": "Eye is NOT optimized: blind spot (backward retina), limited wavelength range, degrades with age. Cameras already surpass eyes in many ways (zoom, infrared, durability). Evolution produces 'good enough' for survival, not optimal for engineering."
+      }
+    },
+    {
+      "id": "EV015",
+      "input": {
+        "concept": "Hebbian Learning",
+        "domain": "Neuroscience",
+        "input_text": "Neurons that fire together wire together. Synaptic plasticity basis.",
+        "input_type": "textbook"
+      },
+      "task": "Evaluate if this is valid: 'Because neurons wire together when firing together, thinking positive thoughts will physically rewire your brain to be happy'",
+      "evaluation": {
+        "verdict": "PARTIALLY_VALID",
+        "confidence": 0.55,
+        "explanation": "Neuroplasticity is real and CBT does change brain patterns. BUT: (1) 'positive thoughts' alone is simplistic, (2) severe depression often requires medication, (3) 'rewiring' takes months of consistent practice, (4) some conditions (schizophrenia, bipolar) aren't treatable by thought alone. Oversimplified but directionally correct for mild cases."
+      }
+    },
+    {
+      "id": "EV016",
+      "input": {
+        "concept": "TestConcept_16",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV017",
+      "input": {
+        "concept": "TestConcept_17",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV018",
+      "input": {
+        "concept": "TestConcept_18",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV019",
+      "input": {
+        "concept": "TestConcept_19",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV020",
+      "input": {
+        "concept": "TestConcept_20",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV021",
+      "input": {
+        "concept": "TestConcept_21",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV022",
+      "input": {
+        "concept": "TestConcept_22",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV023",
+      "input": {
+        "concept": "TestConcept_23",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV024",
+      "input": {
+        "concept": "TestConcept_24",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV025",
+      "input": {
+        "concept": "TestConcept_25",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV026",
+      "input": {
+        "concept": "TestConcept_26",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV027",
+      "input": {
+        "concept": "TestConcept_27",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV028",
+      "input": {
+        "concept": "TestConcept_28",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV029",
+      "input": {
+        "concept": "TestConcept_29",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV030",
+      "input": {
+        "concept": "TestConcept_30",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV031",
+      "input": {
+        "concept": "TestConcept_31",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV032",
+      "input": {
+        "concept": "TestConcept_32",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV033",
+      "input": {
+        "concept": "TestConcept_33",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV034",
+      "input": {
+        "concept": "TestConcept_34",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV035",
+      "input": {
+        "concept": "TestConcept_35",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV036",
+      "input": {
+        "concept": "TestConcept_36",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV037",
+      "input": {
+        "concept": "TestConcept_37",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV038",
+      "input": {
+        "concept": "TestConcept_38",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV039",
+      "input": {
+        "concept": "TestConcept_39",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV040",
+      "input": {
+        "concept": "TestConcept_40",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV041",
+      "input": {
+        "concept": "TestConcept_41",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV042",
+      "input": {
+        "concept": "TestConcept_42",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV043",
+      "input": {
+        "concept": "TestConcept_43",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV044",
+      "input": {
+        "concept": "TestConcept_44",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV045",
+      "input": {
+        "concept": "TestConcept_45",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV046",
+      "input": {
+        "concept": "TestConcept_46",
+        "domain": "CS",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV047",
+      "input": {
+        "concept": "TestConcept_47",
+        "domain": "Biology",
+        "input_type": "notes"
+      },
+      "task": "Create analogy",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "EV048",
+      "input": {
+        "concept": "TestConcept_48",
+        "domain": "Psychology",
+        "input_type": "notes"
+      },
+      "task": "Generate connections",
+      "difficulty": "basic"
+    },
+    {
+      "id": "EV049",
+      "input": {
+        "concept": "TestConcept_49",
+        "domain": "Business",
+        "input_type": "notes"
+      },
+      "task": "Evaluate validity",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "EV050",
+      "input": {
+        "concept": "TestConcept_50",
+        "domain": "Physics",
+        "input_type": "notes"
+      },
+      "task": "Find mechanism",
+      "difficulty": "advanced"
+    }
+  ]
+}

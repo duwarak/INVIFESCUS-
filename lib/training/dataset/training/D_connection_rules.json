@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "dataset_name": "Cross-Domain Connection Rules and Heuristics",
+    "description": "Rules that determine whether a cross-domain connection is valid, strong, weak, or invalid",
+    "total_rules": 40
+  },
+  "validity_rules": [
+    {
+      "rule_id": "R001",
+      "category": "structural_validity",
+      "rule": "The connection must have a MECHANISM, not just surface similarity",
+      "explanation": "Valid connections explain HOW the principle transfers. 'Both use waves' is superficial. 'Both use wave interference to extract signal from noise' is mechanistic.",
+      "examples": {
+        "valid": "Spaced repetition is caching for memory because both store frequently-accessed items for faster retrieval",
+        "invalid": "The brain is like a computer because both process information"
+      }
+    },
+    {
+      "rule_id": "R002",
+      "category": "structural_validity",
+      "rule": "Mathematical isomorphism = strongest connection type",
+      "explanation": "If two phenomena are described by the same equations, the connection is highly valid. Compound interest and bacterial growth both follow dN/dt = rN.",
+      "examples": {
+        "valid": "Compound interest and bacterial growth both follow exponential equations N(t) = N\u2080e^rt",
+        "invalid": "Both money and bacteria grow, so finance and biology are the same"
+      }
+    },
+    {
+      "rule_id": "R003",
+      "category": "structural_validity",
+      "rule": "Process homology > structural similarity",
+      "explanation": "Two things that WORK the same way are more connected than two things that LOOK the same way. Convergent evolution in biology: wings look different but solve the same problem.",
+      "examples": {
+        "valid": "Both evolutionary selection and market competition select best-adapted variants from random variation",
+        "invalid": "Both birds and airplanes have wings, so flight mechanics are identical"
+      }
+    },
+    {
+      "rule_id": "R004",
+      "category": "structural_validity",
+      "rule": "Causal chain must be specified",
+      "explanation": "Valid connections trace a causal path: A causes B which causes C in both domains. Not just 'A in domain 1 is like A in domain 2.'",
+      "examples": {
+        "valid": "Tight tuck in gymnastics \u2192 reduced moment of inertia \u2192 increased angular velocity \u2192 more rotations in same time",
+        "invalid": "Gymnastics is like physics because both involve spinning"
+      }
+    },
+    {
+      "rule_id": "R005",
+      "category": "structural_validity",
+      "rule": "Bidirectional transfer potential strengthens connection",
+      "explanation": "Can domain A learn from domain B AND domain B learn from domain A? Bidirectional = strong. Unidirectional = weaker.",
+      "examples": {
+        "valid": "Engineering learns from biology (biomimicry) AND biology learns from engineering (synthetic biology)",
+        "invalid": "We can learn about the brain from computers, but computers don't learn from the brain"
+      }
+    },
+    {
+      "rule_id": "R006",
+      "category": "invalidation",
+      "rule": "Correlation \u2260 Causation",
+      "explanation": "Two things happening together doesn't mean one causes the other. Check for: confounding variables, coincidence, reverse causality.",
+      "red_flags": [
+        "X increased as Y increased, so X causes Y",
+        "Countries with more X have more Y",
+        "Before X happened, Y happened"
+      ]
+    },
+    {
+      "rule_id": "R007",
+      "category": "invalidation",
+      "rule": "Scale matters - principles often don't transfer across orders of magnitude",
+      "explanation": "Quantum effects work at atomic scale, not human scale. Aerodynamics differ at insect vs. airplane scale (Reynolds number).",
+      "red_flags": [
+        "Quantum mechanics explains consciousness",
+        "Ant behavior predicts stock market",
+        "Bacterial evolution models human culture"
+      ]
+    },
+    {
+      "rule_id": "R008",
+      "category": "invalidation",
+      "rule": "Biological systems are not optimal designs - they're evolved compromises",
+      "explanation": "Evolution produces 'good enough' not 'optimal.' The eye has a blind spot. The recurrent laryngeal nerve takes a ridiculous route. Don't copy nature uncritically.",
+      "red_flags": [
+        "Nature does it best so we should copy exactly",
+        "If it evolved, it must be optimal",
+        "Ancient practices are better because they survived"
+      ]
+    },
+    {
+      "rule_id": "R009",
+      "category": "invalidation",
+      "rule": "Metaphors are not mechanisms",
+      "explanation": "Saying 'the economy is a machine' is a metaphor, not a finding. Metaphors illuminate but also hide. The economy might be more like an ecosystem than a machine.",
+      "red_flags": [
+        "X is a Y, so all Y properties apply to X",
+        "This domain IS this other domain",
+        "The metaphor proves the connection"
+      ]
+    },
+    {
+      "rule_id": "R010",
+      "category": "invalidation",
+      "rule": "Beware of physics envy and quantum mysticism",
+      "explanation": "Terms from physics (entropy, relativity, uncertainty) are often misapplied to social/psychological domains where they don't apply.",
+      "red_flags": [
+        "Quantum uncertainty means anything is possible",
+        "Entropy explains social decline",
+        "Relativity means truth is relative"
+      ]
+    },
+    {
+      "rule_id": "R011",
+      "category": "strength_assessment",
+      "rule": "Mathematical equivalence = highest confidence (0.95-1.0)",
+      "explanation": "If both domains use the same equations, the connection is extremely strong. Exponential growth in finance, biology, and nuclear physics all follow N = N\u2080e^\u03bbt.",
+      "confidence_range": [
+        0.95,
+        1.0
+      ]
+    },
+    {
+      "rule_id": "R012",
+      "category": "strength_assessment",
+      "rule": "Direct application with verified mechanism = high confidence (0.85-0.95)",
+      "explanation": "The principle from domain A is directly used in domain B with established scientific/engineering basis.",
+      "confidence_range": [
+        0.85,
+        0.95
+      ]
+    },
+    {
+      "rule_id": "R013",
+      "category": "strength_assessment",
+      "rule": "Structural analogy with clear mechanism = medium-high confidence (0.75-0.85)",
+      "explanation": "Different implementations of the same underlying structure with explainable mechanism.",
+      "confidence_range": [
+        0.75,
+        0.85
+      ]
+    },
+    {
+      "rule_id": "R014",
+      "category": "strength_assessment",
+      "rule": "Metaphorical insight = medium confidence (0.60-0.75)",
+      "explanation": "Illuminating perspective shift but not a mechanistic equivalence. Useful for generating hypotheses, not proving them.",
+      "confidence_range": [
+        0.6,
+        0.75
+      ]
+    },
+    {
+      "rule_id": "R015",
+      "category": "strength_assessment",
+      "rule": "Speculative connection = low confidence (0.40-0.60)",
+      "explanation": "Interesting possibility but lacks established mechanism or evidence. Treat as hypothesis generator, not fact.",
+      "confidence_range": [
+        0.4,
+        0.6
+      ]
+    },
+    {
+      "rule_id": "R016",
+      "category": "transfer_direction",
+      "rule": "Physical \u2192 Social is more reliable than Social \u2192 Physical",
+      "explanation": "Physical laws are well-quantified and constrain social systems (conservation laws apply to economies). Social constructs don't constrain physics.",
+      "examples": {
+        "reliable": "Physics conservation laws apply to economic systems",
+        "unreliable": "Social contracts explain quantum behavior"
+      }
+    },
+    {
+      "rule_id": "R017",
+      "category": "transfer_direction",
+      "rule": "Engineering \u2192 Biology is harder than Biology \u2192 Engineering",
+      "explanation": "Biomimicry (copying biology) has many successes (Velcro, shark skin). Reverse-engineering biology from first principles is much harder (we still can't build a cell).",
+      "examples": {
+        "reliable": "Studying gecko feet to create adhesive (biology \u2192 engineering)",
+        "unreliable": "Using circuit theory to fully explain neural signaling"
+      }
+    },
+    {
+      "rule_id": "R018",
+      "category": "transfer_direction",
+      "rule": "Mathematics \u2192 Any domain is bidirectionally strong",
+      "explanation": "Math models reality, but reality also inspires new math. This is one of the most reliable transfer directions.",
+      "examples": {
+        "reliable": "Physical symmetries inspiring group theory"
+      }
+    },
+    {
+      "rule_id": "R019",
+      "category": "transfer_direction",
+      "rule": "Individual psychology \u2192 Collective behavior is weak transfer",
+      "explanation": "Emergence means collective behavior often differs from individual psychology. Crowds behave differently than the individuals in them.",
+      "examples": {
+        "weak": "Understanding individual decision-making predicts market behavior",
+        "strong": "Market incentives shape individual decisions"
+      }
+    },
+    {
+      "rule_id": "R020",
+      "category": "transfer_direction",
+      "rule": "Historical \u2192 Modern transfer requires checking for changed conditions",
+      "explanation": "What worked in past eras may not work now due to changed technology, social norms, or scale.",
+      "examples": {
+        "needs_check": "Pre-industrial diet advice for modern sedentary lifestyles"
+      }
+    },
+    {
+      "rule_id": "R021",
+      "category": "multi_modal_relevance",
+      "rule": "Visual inputs (diagrams, photos) capture spatial relationships best",
+      "explanation": "Mind maps, concept diagrams, and whiteboard photos encode spatial and relational information that text alone misses.",
+      "optimal_for": [
+        "Graph structures",
+        "Hierarchies",
+        "Flows",
+        "Geometric relationships"
+      ]
+    },
+    {
+      "rule_id": "R022",
+      "category": "multi_modal_relevance",
+      "rule": "Voice recordings capture nuance, emphasis, and emotional context",
+      "explanation": "How something is said often matters as much as what is said. Tone, emphasis, and hesitation carry meaning.",
+      "optimal_for": [
+        "Lectures",
+        "Interviews",
+        "Brainstorming sessions",
+        "Emotional reflections"
+      ]
+    },
+    {
+      "rule_id": "R023",
+      "category": "multi_modal_relevance",
+      "rule": "Handwritten notes encode personal processing and emphasis",
+      "explanation": "What the person chose to write, underline, or draw reflects their understanding and what they found important.",
+      "optimal_for": [
+        "Personal synthesis",
+        "Key concept emphasis",
+        "Spontaneous connections",
+        "Questions and confusions"
+      ]
+    },
+    {
+      "rule_id": "R024",
+      "category": "multi_modal_relevance",
+      "rule": "Video captures temporal sequences and dynamic processes",
+      "explanation": "Processes that unfold over time (procedures, performances, experiments) are best captured in video.",
+      "optimal_for": [
+        "Procedures",
+        "Physical techniques",
+        "Time-based phenomena",
+        "Dynamic demonstrations"
+      ]
+    },
+    {
+      "rule_id": "R025",
+      "category": "multi_modal_relevance",
+      "rule": "Screenshots capture exact interface states and data representations",
+      "explanation": "Software interfaces, data dashboards, and digital artifacts are best captured as screenshots with annotations.",
+      "optimal_for": [
+        "Software interfaces",
+        "Data visualizations",
+        "Error states",
+        "Before/after comparisons"
+      ]
+    },
+    {
+      "rule_id": "R026",
+      "category": "domain_distance",
+      "rule": "Adjacent domains (same field) = obvious connections, low novelty",
+      "explanation": "Connections between CS and software engineering, or biology and medicine, are expected. The real value is in distant connections.",
+      "novelty_score": "low",
+      "value_for_polymath": "low"
+    },
+    {
+      "rule_id": "R027",
+      "category": "domain_distance",
+      "rule": "Near domains (different fields, shared methods) = good connections, medium novelty",
+      "explanation": "Physics and engineering share mathematical methods. Biology and ecology share evolutionary theory. These connections are valuable but somewhat expected.",
+      "novelty_score": "medium",
+      "value_for_polymath": "medium"
+    },
+    {
+      "rule_id": "R028",
+      "category": "domain_distance",
+      "rule": "Distant domains (unrelated fields) = high novelty, highest value",
+      "explanation": "The most powerful insights come from connecting distant domains: immunology + computer security, mycology + urban planning, gymnastics + project management.",
+      "novelty_score": "high",
+      "value_for_polymath": "high"
+    },
+    {
+      "rule_id": "R029",
+      "category": "domain_distance",
+      "rule": "Cross-domain novelty bonus: rate connections by domain distance",
+      "explanation": "A valid connection between distant domains scores higher novelty than the same connection between adjacent domains.",
+      "scoring": {
+        "adjacent": 1.0,
+        "near": 1.5,
+        "distant": 3.0
+      }
+    },
+    {
+      "rule_id": "R030",
+      "category": "domain_distance",
+      "rule": "Domain distance doesn't guarantee quality - mechanism still required",
+      "explanation": "Distant but wrong connections are worse than adjacent correct ones. Don't prioritize novelty over validity.",
+      "warning": "Novelty without validity = pseudoscience"
+    },
+    {
+      "rule_id": "R031",
+      "category": "confidence_calibration",
+      "rule": "High confidence requires evidence, not just elegance",
+      "explanation": "A beautiful analogy that lacks empirical support should have medium confidence. Elegance correlates with truth but doesn't guarantee it.",
+      "adjustment": "Reduce confidence by 0.15 if connection is elegant but unverified"
+    },
+    {
+      "rule_id": "R032",
+      "category": "confidence_calibration",
+      "rule": "Domain expert consensus increases confidence",
+      "explanation": "If practitioners in both domains independently made the connection, it's more valid than if only outsiders see it.",
+      "adjustment": "Increase confidence by 0.10 if both domains' practitioners recognize the connection"
+    },
+    {
+      "rule_id": "R033",
+      "category": "confidence_calibration",
+      "rule": "Successful application history increases confidence",
+      "explanation": "If the connection has been successfully applied multiple times, it's more valid than a novel connection.",
+      "adjustment": "Increase confidence by 0.05 for each documented successful application"
+    },
+    {
+      "rule_id": "R034",
+      "category": "confidence_calibration",
+      "rule": "Falsifiability requirement",
+      "explanation": "A connection that can't be tested or falsified should have low confidence. Vague connections that explain everything explain nothing.",
+      "adjustment": "Reduce confidence by 0.20 if connection is unfalsifiable"
+    },
+    {
+      "rule_id": "R035",
+      "category": "confidence_calibration",
+      "rule": "Predictive power is the gold standard",
+      "explanation": "If the connection successfully predicts novel outcomes, it's highly valid. Retrospective pattern matching is weak.",
+      "adjustment": "Increase confidence by 0.20 if connection has made successful predictions"
+    },
+    {
+      "rule_id": "R036",
+      "category": "common_pitfalls",
+      "rule": "Beware of domain-specific vocabulary masking the same concept",
+      "explanation": "Different fields often have the same concept with different names. Identifying these is high-value synthesis.",
+      "examples": [
+        "Gradient descent (ML) = Hill climbing (optimization) = Natural selection (biology)",
+        "Feedback loop (engineering) = Homeostasis (biology) = Supply and demand (economics)",
+        "Caching (CS) = Mise en place (cooking) = Working memory (psychology)"
+      ]
+    },
+    {
+      "rule_id": "R037",
+      "category": "common_pitfalls",
+      "rule": "Beware of false friends - same word, different meaning",
+      "explanation": "Domain-specific terms can have different meanings. 'Work' in physics \u2260 'work' in HR. 'Force' in physics \u2260 'force' in diplomacy.",
+      "examples": [
+        "Work: physics (energy transfer) vs. employment",
+        "Force: F=ma vs. military coercion",
+        "Field: physics (electromagnetic) vs. expertise domain",
+        "Memory: computer (storage) vs. cognitive (recall)"
+      ]
+    },
+    {
+      "rule_id": "R038",
+      "category": "common_pitfalls",
+      "rule": "Beware of presentism - judging past by present knowledge",
+      "explanation": "Ideas that seem wrong now may have been reasonable given past evidence. Conversely, some past 'wisdom' is now known to be wrong.",
+      "adjustment": "Contextualize historical connections within their evidentiary framework"
+    },
+    {
+      "rule_id": "R039",
+      "category": "common_pitfalls",
+      "rule": "Beware of confirmation bias in cross-domain search",
+      "explanation": "Once you have a hypothesis, you'll find confirming evidence everywhere. Actively seek disconfirming evidence.",
+      "practice": "For every connection found, explicitly ask: 'What would disprove this?'"
+    },
+    {
+      "rule_id": "R040",
+      "category": "common_pitfalls",
+      "rule": "Beware of excessive abstraction - concrete > abstract for application",
+      "explanation": "High-level abstract connections are intellectually satisfying but hard to apply. The most useful connections are specific and actionable.",
+      "heuristic": "If you can't describe a specific action the connection enables, it may be too abstract"
+    }
+  ]
+}

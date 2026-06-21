@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "description": "Universal Knowledge Graph showing cross-domain connections for polymath thinking",
+    "version": "1.0",
+    "total_nodes": 30,
+    "total_edges": 26,
+    "domains_covered": [
+      "Mental_Models",
+      "Technology",
+      "Business",
+      "Communication",
+      "Music",
+      "Psychology",
+      "Sports"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "node_001",
+      "label": "Decomposition",
+      "domain": "Technology",
+      "type": "core_concept",
+      "description": "Breaking complex problems into smaller, manageable parts",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_002",
+      "label": "Modularity",
+      "domain": "Technology",
+      "type": "core_concept",
+      "description": "Designing systems as independent, interchangeable modules",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_003",
+      "label": "API",
+      "domain": "Technology",
+      "type": "tool",
+      "description": "Interface for communication between systems",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_004",
+      "label": "Abstraction",
+      "domain": "Technology",
+      "type": "core_concept",
+      "description": "Hiding complex details behind simple interfaces",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_005",
+      "label": "Audience Analysis",
+      "domain": "Communication",
+      "type": "skill",
+      "description": "Understanding who you're speaking to and adapting accordingly",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_006",
+      "label": "Tone Modulation",
+      "domain": "Communication",
+      "type": "skill",
+      "description": "Adjusting tone based on audience size and context",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_007",
+      "label": "Slang & Colloquialism",
+      "domain": "Communication",
+      "type": "skill",
+      "description": "Using appropriate informal language for connection",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "node_008",
+      "label": "Conflict Resolution",
+      "domain": "Communication",
+      "type": "skill",
+      "description": "Navigating disagreements to positive outcomes",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_009",
+      "label": "Transaction Cost",
+      "domain": "Business",
+      "type": "core_concept",
+      "description": "Cost incurred in making an economic exchange",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_010",
+      "label": "Middleman Economics",
+      "domain": "Business",
+      "type": "core_concept",
+      "description": "Value extraction by intermediaries in transactions",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_011",
+      "label": "Game Theory",
+      "domain": "Business",
+      "type": "framework",
+      "description": "Mathematical models of strategic interaction",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_012",
+      "label": "Trust Networks",
+      "domain": "Business",
+      "type": "core_concept",
+      "description": "Systems of reliability and reputation in commerce",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_013",
+      "label": "Chord Progression",
+      "domain": "Music",
+      "type": "technique",
+      "description": "Sequence of musical chords creating harmonic movement",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_014",
+      "label": "Repetition Mastery",
+      "domain": "Music",
+      "type": "method",
+      "description": "Learning through deliberate, spaced repetition",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "node_015",
+      "label": "Emotional Resonance",
+      "domain": "Music",
+      "type": "concept",
+      "description": "How sound frequencies trigger emotional responses",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_016",
+      "label": "Pattern Recognition",
+      "domain": "Music",
+      "type": "skill",
+      "description": "Identifying recurring musical structures",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_017",
+      "label": "Progressive Overload",
+      "domain": "Sports",
+      "type": "method",
+      "description": "Gradually increasing stress on the body for adaptation",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_018",
+      "label": "Spatial Awareness",
+      "domain": "Sports",
+      "type": "skill",
+      "description": "Understanding body position in space",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_019",
+      "label": "Risk Assessment",
+      "domain": "Sports",
+      "type": "skill",
+      "description": "Evaluating danger before physical action",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_020",
+      "label": "Kinesthetic Learning",
+      "domain": "Sports",
+      "type": "method",
+      "description": "Learning through physical movement and doing",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "node_021",
+      "label": "Cognitive Load",
+      "domain": "Psychology",
+      "type": "concept",
+      "description": "Amount of mental effort used in working memory",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_022",
+      "label": "Transfer Learning",
+      "domain": "Psychology",
+      "type": "concept",
+      "description": "Applying knowledge from one domain to another",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_023",
+      "label": "Flow State",
+      "domain": "Psychology",
+      "type": "state",
+      "description": "Mental state of complete absorption in activity",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_024",
+      "label": "Habit Formation",
+      "domain": "Psychology",
+      "type": "concept",
+      "description": "Process of creating automatic behavioral patterns",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_025",
+      "label": "Inversion Thinking",
+      "domain": "Mental_Models",
+      "type": "framework",
+      "description": "Solve problems backward - think of what you want to avoid",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_026",
+      "label": "Circle of Competence",
+      "domain": "Mental_Models",
+      "type": "framework",
+      "description": "Know what you know and don't know; stay in your lane",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_027",
+      "label": "Second-Order Thinking",
+      "domain": "Mental_Models",
+      "type": "framework",
+      "description": "Consider the consequences of consequences",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "node_028",
+      "label": "Occam's Razor",
+      "domain": "Mental_Models",
+      "type": "principle",
+      "description": "The simplest explanation is usually correct",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_029",
+      "label": "Feedback Loops",
+      "domain": "Mental_Models",
+      "type": "concept",
+      "description": "Circular processes where output becomes input",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "node_030",
+      "label": "Bayesian Thinking",
+      "domain": "Mental_Models",
+      "type": "framework",
+      "description": "Update beliefs as new evidence emerges",
+      "difficulty": "advanced"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_001",
+      "target": "node_005",
+      "relationship": "applies_to",
+      "strength": 0.85,
+      "description": "Decomposition (CS) \u2192 Audience Analysis: Break down audience into segments"
+    },
+    {
+      "source": "node_001",
+      "target": "node_009",
+      "relationship": "applies_to",
+      "strength": 0.9,
+      "description": "Decomposition \u2192 Transaction Cost: Breaking down fee structures"
+    },
+    {
+      "source": "node_001",
+      "target": "node_019",
+      "relationship": "applies_to",
+      "strength": 0.75,
+      "description": "Decomposition \u2192 Risk Assessment: Breaking complex risks into parts"
+    },
+    {
+      "source": "node_001",
+      "target": "node_021",
+      "relationship": "reduces",
+      "strength": 0.95,
+      "description": "Decomposition reduces Cognitive Load"
+    },
+    {
+      "source": "node_005",
+      "target": "node_008",
+      "relationship": "enables",
+      "strength": 0.9,
+      "description": "Audience Analysis enables Conflict Resolution"
+    },
+    {
+      "source": "node_005",
+      "target": "node_012",
+      "relationship": "similar_to",
+      "strength": 0.8,
+      "description": "Understanding audience = understanding trust networks"
+    },
+    {
+      "source": "node_009",
+      "target": "node_011",
+      "relationship": "modeled_by",
+      "strength": 0.85,
+      "description": "Transaction costs modeled by Game Theory"
+    },
+    {
+      "source": "node_009",
+      "target": "node_025",
+      "relationship": "uses",
+      "strength": 0.75,
+      "description": "Transaction costs + Inversion: What fees to avoid"
+    },
+    {
+      "source": "node_013",
+      "target": "node_016",
+      "relationship": "requires",
+      "strength": 0.9,
+      "description": "Chord progressions require Pattern Recognition"
+    },
+    {
+      "source": "node_014",
+      "target": "node_020",
+      "relationship": "similar_to",
+      "strength": 0.85,
+      "description": "Repetition mastery = Kinesthetic learning through practice"
+    },
+    {
+      "source": "node_015",
+      "target": "node_005",
+      "relationship": "informs",
+      "strength": 0.7,
+      "description": "Emotional resonance in music informs audience emotional state"
+    },
+    {
+      "source": "node_017",
+      "target": "node_014",
+      "relationship": "similar_to",
+      "strength": 0.95,
+      "description": "Progressive overload = Repetition mastery with increasing difficulty"
+    },
+    {
+      "source": "node_018",
+      "target": "node_004",
+      "relationship": "applies_to",
+      "strength": 0.75,
+      "description": "Spatial awareness applies to abstract system design"
+    },
+    {
+      "source": "node_021",
+      "target": "node_023",
+      "relationship": "prevents",
+      "strength": 0.8,
+      "description": "High cognitive load prevents Flow State"
+    },
+    {
+      "source": "node_022",
+      "target": "node_001",
+      "relationship": "uses",
+      "strength": 0.9,
+      "description": "Transfer learning uses decomposition to cross domains"
+    },
+    {
+      "source": "node_025",
+      "target": "node_019",
+      "relationship": "enhances",
+      "strength": 0.85,
+      "description": "Inversion enhances risk assessment (what to avoid)"
+    },
+    {
+      "source": "node_026",
+      "target": "node_012",
+      "relationship": "guides",
+      "strength": 0.8,
+      "description": "Circle of competence guides trust network participation"
+    },
+    {
+      "source": "node_027",
+      "target": "node_011",
+      "relationship": "extends",
+      "strength": 0.9,
+      "description": "Second-order thinking extends game theory analysis"
+    },
+    {
+      "source": "node_029",
+      "target": "node_017",
+      "relationship": "creates",
+      "strength": 0.85,
+      "description": "Feedback loops create progressive overload gains"
+    },
+    {
+      "source": "node_030",
+      "target": "node_022",
+      "relationship": "enables",
+      "strength": 0.85,
+      "description": "Bayesian thinking enables better transfer learning"
+    },
+    {
+      "source": "node_001",
+      "target": "node_002",
+      "relationship": "enables",
+      "strength": 0.95,
+      "description": "Decomposition enables modularity"
+    },
+    {
+      "source": "node_002",
+      "target": "node_003",
+      "relationship": "uses",
+      "strength": 0.9,
+      "description": "Modularity uses APIs for communication"
+    },
+    {
+      "source": "node_005",
+      "target": "node_006",
+      "relationship": "requires",
+      "strength": 0.95,
+      "description": "Audience analysis requires tone modulation"
+    },
+    {
+      "source": "node_009",
+      "target": "node_010",
+      "relationship": "manifests_as",
+      "strength": 0.9,
+      "description": "Transaction costs manifest as middleman economics"
+    },
+    {
+      "source": "node_013",
+      "target": "node_015",
+      "relationship": "creates",
+      "strength": 0.85,
+      "description": "Chord progressions create emotional resonance"
+    },
+    {
+      "source": "node_017",
+      "target": "node_019",
+      "relationship": "requires",
+      "strength": 0.8,
+      "description": "Progressive overload requires risk assessment"
+    }
+  ]
+}

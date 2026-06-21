@@ -1,0 +1,240 @@
+{
+  "personas": [
+    {
+      "id": "usr_001",
+      "type": "student_ug",
+      "name": "Alex Chen",
+      "age": 20,
+      "education": "Undergraduate - Computer Science",
+      "domains": [
+        "Technology",
+        "Music",
+        "Fitness",
+        "Business",
+        "Communication"
+      ],
+      "weekly_activities": [
+        "College classes (CS, English, Business)",
+        "Violin lessons",
+        "Gymnastics training",
+        "Car driving lessons",
+        "Tech project development",
+        "Family activities",
+        "Social outings"
+      ],
+      "knowledge_sources": [
+        {
+          "type": "class_notes",
+          "subject": "Computational Thinking",
+          "concept": "Decomposition",
+          "format": "text_photo",
+          "date": "2024-01-15"
+        },
+        {
+          "type": "class_notes",
+          "subject": "Public Speaking",
+          "concept": "Audience Adaptation",
+          "format": "voice_record",
+          "date": "2024-01-15"
+        },
+        {
+          "type": "class_activity",
+          "subject": "Business Economics",
+          "concept": "Transaction Fees",
+          "format": "photo_experience",
+          "date": "2024-01-16"
+        },
+        {
+          "type": "music_lesson",
+          "subject": "Violin",
+          "concept": "Chord Progressions & Emotion",
+          "format": "text_drawing",
+          "date": "2024-01-17"
+        },
+        {
+          "type": "sports_training",
+          "subject": "Gymnastics",
+          "concept": "Strength & Structure",
+          "format": "video_notes",
+          "date": "2024-01-18"
+        },
+        {
+          "type": "life_event",
+          "subject": "Observation",
+          "concept": "Maintenance & Safety",
+          "format": "text_reflection",
+          "date": "2024-01-19"
+        },
+        {
+          "type": "family_sharing",
+          "subject": "Leadership",
+          "concept": "Decision Impact",
+          "format": "voice_notes",
+          "date": "2024-01-20"
+        }
+      ],
+      "pain_points": [
+        "Mental overload from juggling multiple subjects",
+        "Difficulty connecting concepts across domains",
+        "Under pressure, forgets learned frameworks",
+        "Overthinking and anxiety before decisions",
+        "Feels knowledge is scattered and unusable"
+      ],
+      "goals": [
+        "Become a polymath thinker",
+        "Apply CS concepts to real life",
+        "Build cross-domain intuition",
+        "Improve decision-making under pressure",
+        "Create meaningful connections"
+      ]
+    },
+    {
+      "id": "usr_002",
+      "type": "professional_pm",
+      "name": "Sarah Johnson",
+      "age": 32,
+      "occupation": "Product Manager at Tech Startup",
+      "domains": [
+        "Product Management",
+        "Psychology",
+        "Finance",
+        "Health",
+        "Leadership"
+      ],
+      "weekly_activities": [
+        "Sprint planning & reviews",
+        "User research interviews",
+        "Cross-functional team meetings",
+        "Market analysis",
+        "Fitness & yoga",
+        "Reading (psychology, business)",
+        "Networking events"
+      ],
+      "knowledge_sources": [
+        {
+          "type": "work_meeting",
+          "subject": "Product Strategy",
+          "concept": "First Principles Thinking",
+          "format": "text_notes",
+          "date": "2024-01-15"
+        },
+        {
+          "type": "book_notes",
+          "subject": "Psychology",
+          "concept": "Cognitive Biases",
+          "format": "text_highlights",
+          "date": "2024-01-16"
+        },
+        {
+          "type": "podcast_notes",
+          "subject": "Leadership",
+          "concept": "Radical Candor",
+          "format": "voice_transcript",
+          "date": "2024-01-17"
+        },
+        {
+          "type": "workshop",
+          "subject": "Finance",
+          "concept": "Unit Economics",
+          "format": "screenshot_notes",
+          "date": "2024-01-18"
+        },
+        {
+          "type": "fitness",
+          "subject": "Health",
+          "concept": "Progressive Overload",
+          "format": "text_data",
+          "date": "2024-01-19"
+        }
+      ],
+      "pain_points": [
+        "Information scattered across tools",
+        "Difficulty applying book knowledge to work",
+        "Decision fatigue from too many choices",
+        "Struggles to explain complex ideas simply",
+        "Feels stuck in single-domain thinking"
+      ],
+      "goals": [
+        "Think like a C-suite executive",
+        "Make better decisions faster",
+        "Connect insights across fields",
+        "Build a personal knowledge system",
+        "Mentor others effectively"
+      ]
+    },
+    {
+      "id": "usr_003",
+      "type": "creative_professional",
+      "name": "Marcus Rivera",
+      "age": 28,
+      "occupation": "UX Designer & Illustrator",
+      "domains": [
+        "Design",
+        "Technology",
+        "Art History",
+        "Psychology",
+        "Entrepreneurship"
+      ],
+      "weekly_activities": [
+        "Design sprints & prototyping",
+        "Client meetings",
+        "Online courses (business, tech)",
+        "Museum visits & art study",
+        "Side project development",
+        "Yoga & meditation",
+        "Creative community events"
+      ],
+      "knowledge_sources": [
+        {
+          "type": "design_work",
+          "subject": "UX",
+          "concept": " affordances",
+          "format": "screenshot_notes",
+          "date": "2024-01-15"
+        },
+        {
+          "type": "museum_visit",
+          "subject": "Art History",
+          "concept": "Composition & Balance",
+          "format": "photo_reflection",
+          "date": "2024-01-16"
+        },
+        {
+          "type": "course_notes",
+          "subject": "Entrepreneurship",
+          "concept": "MVP & Validation",
+          "format": "text_drawing",
+          "date": "2024-01-17"
+        },
+        {
+          "type": "reading",
+          "subject": "Psychology",
+          "concept": "Flow State",
+          "format": "text_highlights",
+          "date": "2024-01-18"
+        },
+        {
+          "type": "side_project",
+          "subject": "Technology",
+          "concept": "API Integration",
+          "format": "code_notes",
+          "date": "2024-01-19"
+        }
+      ],
+      "pain_points": [
+        "Creative blocks from information overload",
+        "Difficulty translating art concepts to design",
+        "Overwhelm from multiple projects",
+        "Struggles with business side of creativity",
+        "Isolation from other polymaths"
+      ],
+      "goals": [
+        "Fuse art and technology thinking",
+        "Build a creative business",
+        "Develop systematic creativity",
+        "Connect with like-minded creators",
+        "Master visual thinking"
+      ]
+    }
+  ]
+}

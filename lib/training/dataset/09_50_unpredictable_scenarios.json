@@ -1,0 +1,2796 @@
+{
+  "metadata": {
+    "total_scenarios": 50,
+    "user_types_covered": [
+      "Student",
+      "Professional",
+      "Creative",
+      "Entrepreneur",
+      "Doctor",
+      "Athlete",
+      "Artist",
+      "Engineer",
+      "Teacher",
+      "Parent",
+      "Scientist",
+      "Musician"
+    ],
+    "scenario_categories": [
+      "Crisis",
+      "Creative Block",
+      "Negotiation",
+      "Innovation",
+      "Personal",
+      "Career",
+      "Social",
+      "Health",
+      "Financial",
+      "Unexpected"
+    ],
+    "description": "Unpredictable real-world scenarios where cross-domain AI synthesis creates novel solutions"
+  },
+  "scenarios": [
+    {
+      "id": "S001",
+      "title": "The Burning Building Presentation",
+      "user": "Startup founder, 30s",
+      "situation": "15 minutes before investor pitch, projector dies, no adapter. $2M funding on the line.",
+      "domains_triggered": [
+        "Technology",
+        "Psychology",
+        "Communication",
+        "Theater",
+        "Military"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Cascading failure under time pressure = NASA launch abort scenarios",
+        "cross_domain_solutions": [
+          {
+            "angle": "NASA Abort Mode",
+            "solution": "Switch to 'contingency protocol' - use whiteboard + hand-drawn slides. Investors see adaptability as leadership trait.",
+            "domains": [
+              "Military",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Theater Improv",
+            "solution": "Apply 'Yes, and...' principle. Acknowledge tech failure as 'real-time demo of how we handle crises.' Turn bug into feature.",
+            "domains": [
+              "Theater",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "Psychological Priming",
+            "solution": "Start with personal story (no slides needed). Engage emotion first, data second. Uses 'Peak-End Rule' to make ending memorable.",
+            "domains": [
+              "Psychology",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "Commander's Intent",
+            "solution": "Military 'commander's intent' - team knows goal (funding), not method (slides). Each member improvises their section.",
+            "domains": [
+              "Military",
+              "Business"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Tech failure becomes PROOF of team resilience. Investors fund because of the crash, not despite it.",
+      "mental_models_used": [
+        "Inversion",
+        "Second-Order Thinking",
+        "Lollapalooza Tendency"
+      ]
+    },
+    {
+      "id": "S002",
+      "title": "The Surgeon's Game Night",
+      "user": "Cardiac surgeon, 45",
+      "situation": "Playing poker with friends, losing consistently. Can't read opponents. Frustrated because she's brilliant at reading OR patients.",
+      "domains_triggered": [
+        "Medicine",
+        "Game Theory",
+        "Psychology",
+        "Poker",
+        "Body Language"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Pattern recognition transfer failure - same skill, different context",
+        "cross_domain_solutions": [
+          {
+            "angle": "Medical Diagnostic Protocol",
+            "solution": "Apply SOAP method to poker: Subjective (what they say) \u2192 Objective (betting patterns) \u2192 Assessment (hand strength) \u2192 Plan (your move).",
+            "domains": [
+              "Medicine",
+              "Game Theory"
+            ]
+          },
+          {
+            "angle": "Vital Sign Monitoring",
+            "solution": "In surgery, she monitors 5 vitals simultaneously. Create 'player vital signs': bet timing, breathing rate, chip handling, eye movement, posture shifts.",
+            "domains": [
+              "Medicine",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Surgical Checklist",
+            "solution": "Use Atul Gawande's surgical checklist for poker decisions: 'Before calling, verify: pot odds? Position? Opponent pattern? Emotional state?'",
+            "domains": [
+              "Medicine",
+              "Decision Making"
+            ]
+          },
+          {
+            "angle": "Triage Priority",
+            "solution": "Surgical triage - not all hands need equal attention. Fold weak hands fast (triage out), focus cognitive resources on critical hands.",
+            "domains": [
+              "Medicine",
+              "Game Theory"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "She's ALREADY a master poker player - she just uses different vocabulary. 'Patient deterioration' = 'opponent bluffing.'",
+      "mental_models_used": [
+        "Circle of Competence",
+        "Transfer Learning",
+        "Checklist Manifesto"
+      ]
+    },
+    {
+      "id": "S003",
+      "title": "The Chef's Code Bug",
+      "user": "Software engineer who used to be a chef, 28",
+      "situation": "Spent 6 hours debugging a race condition. Can't solve it. Getting angry at himself.",
+      "domains_triggered": [
+        "Technology",
+        "Cooking",
+        "Psychology",
+        "Manufacturing"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Race condition = timing problem = kitchen timing coordination",
+        "cross_domain_solutions": [
+          {
+            "angle": "Kitchen Brigade System",
+            "solution": "In kitchens, each station has a 'fire' timing. Apply 'mise en place' to threads: prepare all resources BEFORE starting parallel processes.",
+            "domains": [
+              "Cooking",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Recipe Sequencing",
+            "solution": "A recipe says 'while onions caramelize, prep chicken.' Race condition = doing step B before step A completes. Add explicit 'wait for caramelization' checkpoint.",
+            "domains": [
+              "Cooking",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Tasting As You Go",
+            "solution": "Chef tastes at each stage. Add 'taste points' - logging checkpoints after each async operation to identify WHERE timing breaks.",
+            "domains": [
+              "Cooking",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Clean As You Go",
+            "solution": "Kitchen gets chaotic = bugs accumulate. Apply 'clean as you go' - refactor one small timing issue each debug cycle, not just the current bug.",
+            "domains": [
+              "Cooking",
+              "Technology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Debugging is cooking. The bug is a burned dish. You don't fix burned food - you figure out WHICH step had wrong timing.",
+      "mental_models_used": [
+        "Analogy Transfer",
+        "First Principles",
+        "Inversion"
+      ]
+    },
+    {
+      "id": "S004",
+      "title": "The Dancer's Data Center Disaster",
+      "user": "Data center ops manager, former ballet dancer, 35",
+      "situation": "Cooling system failure. 500 servers overheating. Must decide: graceful shutdown (lose $1M/hour) or risk hardware damage.",
+      "domains_triggered": [
+        "Technology",
+        "Dance",
+        "Physics",
+        "Emergency Medicine",
+        "Military"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Grace under pressure with cascading physical consequences",
+        "cross_domain_solutions": [
+          {
+            "angle": "Ballet Center of Gravity",
+            "solution": "In ballet, you find center before moving. STOP all non-critical processes first (find center), THEN execute critical ones with remaining resources.",
+            "domains": [
+              "Dance",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Choreography Under Fatigue",
+            "solution": "Dancers simplify choreography when exhausted. Identify 'core servers' (the chorus) and 'expendable servers' (soloists). Sacrifice solos to save the show.",
+            "domains": [
+              "Dance",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Triage Medicine",
+            "solution": "ER triage: Black (let go), Red (save now), Yellow (save soon), Green (fine). Color-code servers by business criticality. Shutdown in reverse order.",
+            "domains": [
+              "Medicine",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Physics Heat Dissipation",
+            "solution": "Heat moves from hot to cold. Open all vents, create airflow path (hot aisle/cold aisle), use thermal mass of building structure as temporary heat sink.",
+            "domains": [
+              "Physics",
+              "Technology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "A pirouette requires spotting a fixed point while everything spins. In crisis, pick ONE metric (server temp at 85\u00b0C) and rotate everything else around it.",
+      "mental_models_used": [
+        "OODA Loop",
+        "Inversion",
+        "Margin of Safety"
+      ]
+    },
+    {
+      "id": "S005",
+      "title": "The Photographer's Hostage Negotiation",
+      "user": "HR manager who does street photography, 40",
+      "situation": "Two team members in screaming match. One threatens to quit. Project deadline tomorrow.",
+      "domains_triggered": [
+        "Human Resources",
+        "Photography",
+        "Psychology",
+        "FBI Negotiation",
+        "Diplomacy"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "High-stakes interpersonal conflict with time pressure = hostage negotiation dynamics",
+        "cross_domain_solutions": [
+          {
+            "angle": "FBI Tactical Empathy",
+            "solution": "Chris Voss method: 'It seems like you feel unappreciated for your late-night work.' Label emotions BEFORE problem-solving. Gets amygdala offline.",
+            "domains": [
+              "FBI Negotiation",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Photography Framing",
+            "solution": "In photography, changing frame changes meaning. Reframe: 'This isn't about the report. It's about feeling heard before a deadline.' Change the frame, change the outcome.",
+            "domains": [
+              "Photography",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "Rule of Thirds",
+            "solution": "Photo composition: subject at intersection, not center. Negotiation: neither person is the 'center.' Position solution at intersection of both needs.",
+            "domains": [
+              "Photography",
+              "Negotiation"
+            ]
+          },
+          {
+            "angle": "Diplomatic Immunity",
+            "solution": "UN diplomat trick: Create 'neutral zone' - physically move to different room. New environment = new behavior patterns. Conflict is place-bound.",
+            "domains": [
+              "Diplomacy",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "The person threatening to quit doesn't want to quit. They're taking YOU hostage to feel valued. The 'ransom' is acknowledgment.",
+      "mental_models_used": [
+        "Tactical Empathy",
+        "Reframing",
+        "Social Proof"
+      ]
+    },
+    {
+      "id": "S006",
+      "title": "The Jazz Musician's Investment Portfolio",
+      "user": "Jazz saxophonist learning finance, 32",
+      "situation": "Cannot understand diversification. Thinks more assets = better. Portfolio is 47 stocks, all tech. Losing money.",
+      "domains_triggered": [
+        "Music",
+        "Finance",
+        "Mathematics",
+        "Biology"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Diversification = harmony. Same concept, different domain.",
+        "cross_domain_solutions": [
+          {
+            "angle": "Jazz Ensemble Balance",
+            "solution": "A jazz quintet has 5 instruments in different registers. Portfolio = ensemble: bass (bonds), drums (cash), piano (blue chips), sax (growth), trumpet (speculative). Each plays different role.",
+            "domains": [
+              "Music",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Chord Voicing",
+            "solution": "Close voicing (all notes together) = correlated assets move together. Open voicing (spread out) = uncorrelated assets. Spread your 'notes' across sectors.",
+            "domains": [
+              "Music",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Improvisation Structure",
+            "solution": "Jazz improvises WITHIN structure (chord changes). Portfolio: set 'chord structure' (asset allocation), then improvise individual picks within each 'chord.'",
+            "domains": [
+              "Music",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Biological Ecosystem",
+            "solution": "Monoculture (one crop) = disease wipes all out. Polyculture (many crops) = resilience. 47 tech stocks = monoculture. You need a forest, not a cornfield.",
+            "domains": [
+              "Biology",
+              "Finance"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your portfolio should sound like a jazz ensemble - each instrument different, but harmonious together. Right now it's 47 saxophones.",
+      "mental_models_used": [
+        "Analogy Transfer",
+        "Diversification",
+        "Systems Thinking"
+      ]
+    },
+    {
+      "id": "S007",
+      "title": "The Beekeeper's Team Management",
+      "user": "Tech team lead, former beekeeper, 34",
+      "situation": "Team of 8 engineers unmotivated. Missed 3 sprints. Traditional management (1:1s, bonuses) not working.",
+      "domains_triggered": [
+        "Biology",
+        "Technology",
+        "Psychology",
+        "Military"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Colony behavior optimization = team motivation optimization",
+        "cross_domain_solutions": [
+          {
+            "angle": "Hive Communication (Waggle Dance)",
+            "solution": "Bees don't command - they share information. Create 'waggle dance' meetings where anyone can pitch ideas with data. Let team CHOOSE what to work on.",
+            "domains": [
+              "Biology",
+              "Management"
+            ]
+          },
+          {
+            "angle": "Queen Pheromone",
+            "solution": "Queen bee doesn't rule by force - she creates identity. Define team's 'hive purpose.' What's our honey? What do we protect? Identity > incentives.",
+            "domains": [
+              "Biology",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Swarm Intelligence",
+            "solution": "Bees solve complex problems through simple rules + interaction. Break sprint into micro-decisions. Each engineer 'votes' with commits. Collective intelligence emerges.",
+            "domains": [
+              "Biology",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Specialized Castes",
+            "solution": "Hive has workers, drones, guards, nurses. Map team to roles BY CHOICE not assignment. Let each person specialize in what energizes them.",
+            "domains": [
+              "Biology",
+              "Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your team isn't unmotivated - they're a hive without a waggle dance. They don't know where the flowers are.",
+      "mental_models_used": [
+        "Emergence",
+        "Self-Organization",
+        "Incentive Superresponse"
+      ]
+    },
+    {
+      "id": "S008",
+      "title": "The Gardener's Product Launch",
+      "user": "Product manager, avid gardener, 38",
+      "situation": "Launching app feature. Engineers want perfection. Marketing wants speed. Users want simplicity. Three-way conflict.",
+      "domains_triggered": [
+        "Product Management",
+        "Gardening",
+        "Biology",
+        "Negotiation"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Feature launch = growing season. Same seasonal constraints.",
+        "cross_domain_solutions": [
+          {
+            "angle": "Succession Planting",
+            "solution": "Gardeners plant crops in waves, not all at once. Launch 'minimum viable plot' first, then 'succession features' weekly. Each cohort gets something.",
+            "domains": [
+              "Gardening",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Hardiness Zones",
+            "solution": "Plants grow in zones matching their needs. Segment users by 'hardiness zone' - power users get complex features, casual users get simple. Same garden, different zones.",
+            "domains": [
+              "Gardening",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Pruning for Growth",
+            "solution": "Cutting branches redirects energy to fruit. Cut 3 planned features. Redirect ALL energy to 1 perfect feature. Less = more.",
+            "domains": [
+              "Gardening",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Companion Planting",
+            "solution": "Some plants grow better together (tomatoes + basil). Pair engineering complexity with marketing story. Hard technical feature + simple narrative = growth.",
+            "domains": [
+              "Gardening",
+              "Product Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your feature isn't a product - it's a plant. You can't harvest a tomato in winter. Launch season matters more than perfection.",
+      "mental_models_used": [
+        "Seasonal Thinking",
+        "Minimum Viable Product",
+        "Pruning"
+      ]
+    },
+    {
+      "id": "S009",
+      "title": "The Skateboarder's Boardroom Pitch",
+      "user": "16-year-old skateboarder pitching to school board for skate park funding",
+      "situation": "School board dismissive. 'Skateboarding isn't educational.' Need to reframe.",
+      "domains_triggered": [
+        "Skateboarding",
+        "Education",
+        "Physics",
+        "Psychology",
+        "Business"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Activity perceived as play contains deep learning mechanics",
+        "cross_domain_solutions": [
+          {
+            "angle": "Physics Laboratory",
+            "solution": "Skateboarding IS physics: angular momentum (ollies), friction (wheels), center of mass (balance), projectile motion (ramps). Propose 'Physics in Motion' STEM program.",
+            "domains": [
+              "Skateboarding",
+              "Physics",
+              "Education"
+            ]
+          },
+          {
+            "angle": "Risk Assessment Training",
+            "solution": "Every trick requires calculating speed, angle, fall probability. This is LITERAL decision science. Frame as 'real-time risk assessment training for future leaders.'",
+            "domains": [
+              "Skateboarding",
+              "Psychology",
+              "Education"
+            ]
+          },
+          {
+            "angle": "Iterative Design Thinking",
+            "solution": "Every skater prototypes: try trick \u2192 fall \u2192 adjust foot position \u2192 retry. This is design thinking loop. 'Students learn iterative problem-solving through embodied cognition.'",
+            "domains": [
+              "Skateboarding",
+              "Business",
+              "Education"
+            ]
+          },
+          {
+            "angle": "Community Economics",
+            "solution": "Show data: skate parks reduce property damage (skaters not grinding rails), increase foot traffic to local businesses, reduce youth crime. Economic argument beats educational argument.",
+            "domains": [
+              "Skateboarding",
+              "Business",
+              "Economics"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Don't argue that skateboarding is education. Argue that education is skateboarding - both are iterative learning through failure.",
+      "mental_models_used": [
+        "Reframing",
+        "Incentive Superresponse",
+        "Second-Order Thinking"
+      ]
+    },
+    {
+      "id": "S010",
+      "title": "The Mortician's Wedding Planner",
+      "user": "Wedding planner who used to work at a funeral home, 29",
+      "situation": "Bride's father died 2 weeks before wedding. Family wants to cancel. Bride devastated but wants to proceed.",
+      "domains_triggered": [
+        "Event Planning",
+        "Thanatology",
+        "Psychology",
+        "Ritual Studies",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "detected_pattern": "Funeral and wedding are both rites of passage requiring ritual integration",
+        "cross_domain_solutions": [
+          {
+            "angle": "Thanatology Ritual Integration",
+            "solution": "In funerals, we honor absence through presence (empty chair, photo, candle). Create 'honor seat' for father with his photo, favorite flower, handwritten note. Acknowledges grief within joy.",
+            "domains": [
+              "Thanatology",
+              "Event Planning"
+            ]
+          },
+          {
+            "angle": "Mexican Day of the Dead",
+            "solution": "D\u00eda de los Muertos celebrates life through death. Add 'celebration of life' moment in ceremony where guests share one memory of father. Turns grief into collective blessing.",
+            "domains": [
+              "Cultural Studies",
+              "Event Planning"
+            ]
+          },
+          {
+            "angle": "Psychological Dual Processing",
+            "solution": "Humans can hold joy AND grief simultaneously (not either/or). Frame ceremony as 'bittersweet ritual' - both emotions honored. This is healthier than suppression.",
+            "domains": [
+              "Psychology",
+              "Event Planning"
+            ]
+          },
+          {
+            "angle": "The Toast Transformation",
+            "solution": "Instead of traditional father-daughter dance, bride dances with father figure (brother/uncle) while slideshow of father plays. Transforms absence into presence through media.",
+            "domains": [
+              "Communication",
+              "Event Planning"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "A funeral celebrates a life that ended. A wedding celebrates a life beginning. Both need ritual to process transformation. This wedding is BOTH.",
+      "mental_models_used": [
+        "Both/And Thinking",
+        "Ritual Design",
+        "Emotional Intelligence"
+      ]
+    },
+    {
+      "id": "S011",
+      "title": "The Fisherman's Cybersecurity Breach",
+      "user": "Cybersecurity analyst who deep-sea fishes on weekends, 31",
+      "situation": "Company hit with sophisticated phishing attack. CEO demanding immediate 'net' to catch hackers. Team proposing expensive AI monitoring tool.",
+      "domains_triggered": [
+        "Cybersecurity",
+        "Fishing",
+        "Military",
+        "Psychology",
+        "Economics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Deep-Sea Trolling",
+            "solution": "Don't chase hackers - set 'lines' (honeypots) with\u8bf1\u9975 (attractive fake data). Wait for bite. Cheaper and more effective than chasing.",
+            "domains": [
+              "Fishing",
+              "Cybersecurity"
+            ]
+          },
+          {
+            "angle": "Catch and Release",
+            "solution": "In fishing, some catches are tagged and released to study migration. Let hackers 'succeed' in fake environment. Track their methods without them knowing.",
+            "domains": [
+              "Fishing",
+              "Cybersecurity"
+            ]
+          },
+          {
+            "angle": "Schooling Behavior",
+            "solution": "Fish school for protection. Hackers operate in groups too. Disrupt communication between them (take down their forums/IRC) and the 'school' scatters.",
+            "domains": [
+              "Fishing",
+              "Military"
+            ]
+          },
+          {
+            "angle": "Bait Selection",
+            "solution": "Different fish need different bait. Different hackers need different honeypots. Script kiddies = simple bait. APT groups = high-value fake credentials. Match bait to predator.",
+            "domains": [
+              "Fishing",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "The CEO wants to hunt. But fishing isn't hunting - it's understanding the predator's behavior and LETTING THEM come to you.",
+      "mental_models_used": [
+        "Asymmetric Warfare",
+        "Patience",
+        "Incentive Design"
+      ]
+    },
+    {
+      "id": "S012",
+      "title": "The Origami Artist's Architecture Crisis",
+      "user": "Architecture student, origami master, 24",
+      "situation": "Design assignment: build model of collapsible emergency shelter. Must fit in backpack, deploy in 30 seconds, withstand wind.",
+      "domains_triggered": [
+        "Architecture",
+        "Origami",
+        "Mathematics",
+        "Emergency Medicine",
+        "Engineering"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Miura Fold",
+            "solution": "Koryo Miura's space-folding algorithm (used in satellite solar panels): single motion deploys entire structure. Apply to shelter: pull one strap, shelter self-deploys.",
+            "domains": [
+              "Origami",
+              "Engineering"
+            ]
+          },
+          {
+            "angle": "Wet Folding Technique",
+            "solution": "Wet-folded origami is rigid yet flexible. Use water-activated memory material for poles: soft when folded, rigid when sprayed with water.",
+            "domains": [
+              "Origami",
+              "Material Science"
+            ]
+          },
+          {
+            "angle": "Modular Units",
+            "solution": "Origami polyhedra from identical units. Shelter = 6 identical panels that connect. Replace damaged panel without replacing whole shelter.",
+            "domains": [
+              "Origami",
+              "Architecture"
+            ]
+          },
+          {
+            "angle": "Crease Pattern",
+            "solution": "Origami crease patterns distribute stress along fold lines. Design shelter with 'fold lines' as structural ribs - like skeleton providing strength.",
+            "domains": [
+              "Origami",
+              "Architecture"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Satellites use origami. Your shelter can too. The fold IS the structure.",
+      "mental_models_used": [
+        "Biomimicry",
+        "Modularity",
+        "First Principles"
+      ]
+    },
+    {
+      "id": "S013",
+      "title": "The Comedian's Depression Therapy",
+      "user": "Stand-up comedian with clinical depression, 27",
+      "situation": "Therapist suggests journaling emotions. Finds it boring, stops after 3 days. But writes 20 pages of comedy material daily.",
+      "domains_triggered": [
+        "Comedy",
+        "Psychology",
+        "Writing",
+        "Neuroscience",
+        "Therapy"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Comedy as Exposure Therapy",
+            "solution": "Comedy IS processing pain. Richard Pryor, Maria Bamford use trauma as material. Don't journal separately - analyze your comedy bits as emotional Rorschach tests.",
+            "domains": [
+              "Comedy",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Setup-Punchline as Problem-Solution",
+            "solution": "Setup = emotional problem. Punchline = reframed perspective. Your best jokes reveal your coping mechanisms. Map: Setup \u2192 What pain? Punchline \u2192 What defense?",
+            "domains": [
+              "Comedy",
+              "Therapy"
+            ]
+          },
+          {
+            "angle": "Crowd Work as Mirror",
+            "solution": "When you riff with audience, you're practicing social connection. Analyze WHICH crowd interactions energize you vs drain you. This IS social anxiety data.",
+            "domains": [
+              "Comedy",
+              "Neuroscience"
+            ]
+          },
+          {
+            "angle": "Tagging as Cognitive Restructuring",
+            "solution": "Comedy 'tags' (additional punchlines) reframe same premise multiple ways. This is CBT cognitive restructuring! You're ALREADY doing therapy, just on stage.",
+            "domains": [
+              "Comedy",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your comedy isn't\u9003\u907f from depression - it's the most sophisticated emotional processing system possible. The audience's laughter is group therapy validation.",
+      "mental_models_used": [
+        "Reframing",
+        "Shadow Work",
+        "Flow State"
+      ]
+    },
+    {
+      "id": "S014",
+      "title": "The Grandmaster's Startup",
+      "user": "Chess grandmaster starting tech company, 42",
+      "situation": "Building team. Keeps hiring 'brilliant' people who fail. Realizes he's evaluating candidates like chess opponents, not collaborators.",
+      "domains_triggered": [
+        "Chess",
+        "Business",
+        "Psychology",
+        "Sports",
+        "Team Dynamics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Endgame vs Opening",
+            "solution": "Chess: openings are memorized, endgames are understood. In hiring, 'brilliant opening' = impressive resume. 'Endgame skill' = how they perform when tired, under-resourced. Test for endgame.",
+            "domains": [
+              "Chess",
+              "Business"
+            ]
+          },
+          {
+            "angle": "Piece Coordination",
+            "solution": "A queen alone can't checkmate. Pieces must coordinate. Hire for complementarity, not individual strength. Knight + bishop = mate. Engineer + designer = product.",
+            "domains": [
+              "Chess",
+              "Team Dynamics"
+            ]
+          },
+          {
+            "angle": "Sacrifice for Position",
+            "solution": "Grandmasters sacrifice material for positional advantage. Hire someone who costs more but creates strategic position. Short-term expense, long-term dominance.",
+            "domains": [
+              "Chess",
+              "Business"
+            ]
+          },
+          {
+            "angle": "Zealot vs Calculator",
+            "solution": "Chess has tacticians (calculate) and strategists (plan). Startups need BOTH. Your team is all calculators. Hire one zealot who believes when data is ambiguous.",
+            "domains": [
+              "Chess",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "In chess, you beat opponents. In business, you win WITH teammates. Same board, completely different game theory.",
+      "mental_models_used": [
+        "Game Theory",
+        "Team Composition",
+        "Long-term Thinking"
+      ]
+    },
+    {
+      "id": "S015",
+      "title": "The Translator's Code Refactor",
+      "user": "Software engineer, speaks 5 languages, 30",
+      "situation": "Legacy codebase in 'spaghetti code.' Needs refactoring. Keeps procrastinating because can't see the structure.",
+      "domains_triggered": [
+        "Technology",
+        "Linguistics",
+        "Writing",
+        "Architecture",
+        "Cognitive Science"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Translation as Decoding",
+            "solution": "Treat legacy code as 'dead language.' Create ' Rosetta Stone' - map each function to its intent in plain English. Translation reveals structure.",
+            "domains": [
+              "Linguistics",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Grammar Parsing",
+            "solution": "Natural languages have syntax trees. Code has ASTs (abstract syntax trees). Use linguistic parsing techniques to visualize code structure as tree diagram.",
+            "domains": [
+              "Linguistics",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Idiomatic Expression",
+            "solution": "Every language has idioms ('kick the bucket'). Code has idioms too ('for loop,' 'singleton pattern'). Learn the codebase's 'dialect' before refactoring.",
+            "domains": [
+              "Linguistics",
+              "Technology"
+            ]
+          },
+          {
+            "angle": "Bilingual Code Switching",
+            "solution": "Bilinguals switch languages effortlessly. Design system to 'code switch' between old and new architecture during transition. Bilingual systems work.",
+            "domains": [
+              "Linguistics",
+              "Architecture"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Code IS a language. You're not refactoring - you're translating from 'legacy dialect' to 'modern dialect.'",
+      "mental_models_used": [
+        "Linguistic Relativity",
+        "Pattern Recognition",
+        "Gradual Migration"
+      ]
+    },
+    {
+      "id": "S016",
+      "title": "The Climber's Supply Chain Disaster",
+      "user": "Supply chain manager, rock climber, 37",
+      "situation": "Port strike blocking 40% of inventory. Customers angry. CEO wants to sue port authority.",
+      "domains_triggered": [
+        "Supply Chain",
+        "Rock Climbing",
+        "Military",
+        "Biology",
+        "Negotiation"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Multi-Pitch Climbing",
+            "solution": "Climbers don't rely on one route. Have 3 'pitches' (paths) to summit. Build 3 supply routes: primary (port), secondary (air), tertiary (local). Always have pitch B.",
+            "domains": [
+              "Rock Climbing",
+              "Supply Chain"
+            ]
+          },
+          {
+            "angle": "Belay System",
+            "solution": "Climbing: belayer catches you if you fall. Supply chain: 'belay' inventory = safety stock. How much? Calculate 'fall distance' (lead time) \u00d7 'gravity' (demand rate).",
+            "domains": [
+              "Rock Climbing",
+              "Supply Chain"
+            ]
+          },
+          {
+            "angle": "Route Finding on Sight",
+            "solution": "When route is unknown, climbers 'read' the rock for features. Read your supply chain for hidden paths: competitors' unused capacity, government stockpiles, customer willingness to wait.",
+            "domains": [
+              "Rock Climbing",
+              "Military"
+            ]
+          },
+          {
+            "angle": "Redundancy in Ecosystems",
+            "solution": "Ecosystems survive because species overlap in function. If bees die, wasps pollinate. Map: which suppliers can produce each other's products? Redundancy = resilience.",
+            "domains": [
+              "Biology",
+              "Supply Chain"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Suing the port is like yelling at the mountain. The mountain doesn't care. Find another route.",
+      "mental_models_used": [
+        "Redundancy",
+        "Optionality",
+        "Systems Thinking"
+      ]
+    },
+    {
+      "id": "S017",
+      "title": "The Pilot's Parenting Crisis",
+      "user": "Airline pilot, parent of 3, 44",
+      "situation": "Constantly away. Kids becoming distant. Wife feels like single parent. Guilt affecting flight focus.",
+      "domains_triggered": [
+        "Aviation",
+        "Parenting",
+        "Psychology",
+        "Time Management",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Preflight Checklist",
+            "solution": "Pilots never skip preflight. Create 'pre-return checklist': review kids' recent photos/texts, prepare 3 questions about their week, set phone to 'family mode' before entering house.",
+            "domains": [
+              "Aviation",
+              "Parenting"
+            ]
+          },
+          {
+            "angle": "Autopilot Systems",
+            "solution": "Autopilot handles routine, pilot handles critical. Automate 'maintenance parenting': scheduled video calls, recurring deliveries (surprise boxes), automatic calendar entries for school events.",
+            "domains": [
+              "Aviation",
+              "Time Management"
+            ]
+          },
+          {
+            "angle": "Emergency Procedures (QRH)",
+            "solution": "Quick Reference Handbook for emergencies. Create 'Family QRH': Kid crisis? \u2192 Step 1: Listen without fixing. Step 2: Validate emotion. Step 3: Ask 'what do you need?' Not 'here's what to do.'",
+            "domains": [
+              "Aviation",
+              "Parenting"
+            ]
+          },
+          {
+            "angle": "Crew Resource Management",
+            "solution": "CRM: every crew member speaks up for safety. Apply to family: create 'speak up' culture where kids can challenge you. 'Dad, you promised X and forgot.' That's CRM working.",
+            "domains": [
+              "Aviation",
+              "Communication"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You're not 'away from family' - you're in a holding pattern. The trick is making the approach count every time.",
+      "mental_models_used": [
+        "Checklist Manifesto",
+        "Quality over Quantity",
+        "Crew Resource Management"
+      ]
+    },
+    {
+      "id": "S018",
+      "title": "The Archaeologist's Market Research",
+      "user": "Market researcher, former archaeologist, 36",
+      "situation": "Client wants to understand why Gen Z isn't buying their product. Traditional surveys showing contradictions.",
+      "domains_triggered": [
+        "Market Research",
+        "Archaeology",
+        "Anthropology",
+        "Psychology",
+        "Data Science"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Stratigraphic Excavation",
+            "solution": "Archaeologists dig in layers to understand timeline. Do 'stratigraphic interviews': ask about purchases from 5 years ago \u2192 1 year ago \u2192 last week. See how behavior EVOLVED, not just current state.",
+            "domains": [
+              "Archaeology",
+              "Market Research"
+            ]
+          },
+          {
+            "angle": "Artifact Context",
+            "solution": "A pot alone tells little. In context of other artifacts, it reveals civilization. Don't study the product - study the 'assemblage' of products in Gen Z's room. What surrounds your product?",
+            "domains": [
+              "Archaeology",
+              "Anthropology"
+            ]
+          },
+          {
+            "angle": "Taphonomic Analysis",
+            "solution": "Taphonomy: how objects get buried/preserved. Apply to 'abandoned cart' data: not WHY they didn't buy, but what happened BETWEEN add-to-cart and abandonment. The 'sediment' of their decision.",
+            "domains": [
+              "Archaeology",
+              "Data Science"
+            ]
+          },
+          {
+            "angle": "Ethnographic Immersion",
+            "solution": "Archaeologists live at dig sites. Don't survey - IMMERSE. Have client team live as Gen Z for 48 hours: same budget, same apps, same schedule. Embodied insight beats survey data.",
+            "domains": [
+              "Archaeology",
+              "Anthropology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Surveys ask what people THINK they do. Archaeology reveals what people ACTUALLY did. Apply taphonomy to shopping carts.",
+      "mental_models_used": [
+        "Contextual Inquiry",
+        "Temporal Analysis",
+        "Embodied Cognition"
+      ]
+    },
+    {
+      "id": "S019",
+      "title": "The Bartender's UX Redesign",
+      "user": "UX designer, bartended through college, 29",
+      "situation": "App redesign failing user testing. Users 'don't get' the navigation. Team wants to add tutorials.",
+      "domains_triggered": [
+        "UX Design",
+        "Bartending",
+        "Psychology",
+        "Architecture",
+        "Cognitive Science"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Bar Layout Design",
+            "solution": "Good bars: beer on tap immediately visible, top-shelf up high, well liquor in arm's reach. App: most-used features = 'on tap' (visible), premium features = 'top shelf' (discoverable), common actions = 'well' (one tap away).",
+            "domains": [
+              "Bartending",
+              "UX Design"
+            ]
+          },
+          {
+            "angle": "Regular's Recognition",
+            "solution": "Bartenders remember regulars' drinks. App should recognize 'regulars' - frequent users see personalized shortcuts. First-timers see popular options. Same bar, different experience.",
+            "domains": [
+              "Bartending",
+              "UX Design"
+            ]
+          },
+          {
+            "angle": "Last Call Psychology",
+            "solution": "'Last call' creates urgency without panic. Design 'gentle nudges' not 'blocking modals.' Guide users subtly, don't trap them. The best bars make you WANT to leave, not force you out.",
+            "domains": [
+              "Bartending",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Workspace Triangle",
+            "solution": "Kitchen triangle: stove-sink-fridge in efficient layout. App 'interaction triangle': primary action \u2192 secondary \u2192 back. Measure task completion in 'steps' not seconds.",
+            "domains": [
+              "Bartending",
+              "Architecture"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "A bar is the original UX. People don't need tutorials to order a drink. Your app shouldn't need them either.",
+      "mental_models_used": [
+        "Affordances",
+        "Progressive Disclosure",
+        "Spatial Memory"
+      ]
+    },
+    {
+      "id": "S020",
+      "title": "The Astronomer's Dating Problem",
+      "user": "Astrophysicist, socially awkward, 30",
+      "situation": "Keeps boring dates with space facts. Wants to connect but defaults to 'lecture mode' when nervous.",
+      "domains_triggered": [
+        "Astronomy",
+        "Psychology",
+        "Communication",
+        "Storytelling",
+        "Neuroscience"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Narrative Astronomy",
+            "solution": "Don't explain black holes - tell STORIES. 'Imagine you're spaghetti falling into a black hole...' (spaghettification). Facts inform, stories transform. Start with emotional hook, end with fact.",
+            "domains": [
+              "Astronomy",
+              "Storytelling"
+            ]
+          },
+          {
+            "angle": "Scale Relatability",
+            "solution": "Astronomy fails because scales are unimaginable. Use relational scaling: 'If Earth were a grape, the Sun would be a yoga ball 100 meters away.' Relate cosmic to kitchen.",
+            "domains": [
+              "Astronomy",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "Curiosity Gap Theory",
+            "solution": "George Loewenstein: curiosity is gap between what we know and want to know. Don't TELL - ASK. 'Why do you think stars twinkle?' \u2192 Let them guess \u2192 Reveal. Engagement beats information.",
+            "domains": [
+              "Astronomy",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Mirror Neuron Activation",
+            "solution": "Mirror neurons fire when we see emotions, not facts. Share how YOU feel looking at stars (awe, smallness, connection). Emotion is contagious. Facts aren't.",
+            "domains": [
+              "Astronomy",
+              "Neuroscience"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You're not boring - you're just speaking the wrong language. Stars are fascinating; the way you describe them determines if others see it.",
+      "mental_models_used": [
+        "Storytelling",
+        "Curiosity Gap",
+        "Emotional Contagion"
+      ]
+    },
+    {
+      "id": "S021",
+      "title": "The Tattoo Artist's Brand Strategy",
+      "user": "Brand strategist, former tattoo artist, 33",
+      "situation": "Client (luxury watch brand) wants 'edgy' rebrand. Keeps suggesting clich\u00e9s (skulls, black everything).",
+      "domains_triggered": [
+        "Branding",
+        "Tattoo Art",
+        "Luxury Marketing",
+        "Psychology",
+        "Art History"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Commitment Art",
+            "solution": "Tattoos are permanent commitments. Luxury buyers want permanence too. Frame brand as 'ink commitment' - not trendy, but timeless. 'What would you want on your skin at 80?'",
+            "domains": [
+              "Tattoo Art",
+              "Branding"
+            ]
+          },
+          {
+            "angle": "Negative Space Mastery",
+            "solution": "Best tattoos use skin as part of design (negative space). Luxury = restraint. Don't add black - remove everything unnecessary until only essence remains. Mies van der Rohe: 'Less is more.'",
+            "domains": [
+              "Tattoo Art",
+              "Art History"
+            ]
+          },
+          {
+            "angle": "Custom vs Flash",
+            "solution": "Tattoo: 'flash' = premade, 'custom' = personal. Luxury = custom. Every customer should feel their watch was designed FOR them, not picked from catalog.",
+            "domains": [
+              "Tattoo Art",
+              "Luxury Marketing"
+            ]
+          },
+          {
+            "angle": "Pain as Transformation",
+            "solution": "Tattoo pain creates emotional bond with art. Create 'friction' in buying process (waitlists, customization rituals). Effort = value perception.",
+            "domains": [
+              "Tattoo Art",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Luxury and tattoos are both PERMANENT statements of identity. Your client wants a brand people would tattoo on themselves.",
+      "mental_models_used": [
+        "Permanence Bias",
+        "Effort Heuristic",
+        "Restraint"
+      ]
+    },
+    {
+      "id": "S022",
+      "title": "The Locksmith's Privacy Framework",
+      "user": "Privacy engineer, former locksmith, 35",
+      "situation": "Company wants 'maximum security' for user data. Users complaining it's too hard to access their own accounts.",
+      "domains_triggered": [
+        "Privacy Engineering",
+        "Locksmithing",
+        "Psychology",
+        "UX Design",
+        "Security"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Key Hierarchy",
+            "solution": "Locksmiths use master key systems: one key opens all, individual keys open one. Data access: 'master key' = emergency access, 'individual key' = daily use. Different keys for different needs.",
+            "domains": [
+              "Locksmithing",
+              "Privacy Engineering"
+            ]
+          },
+          {
+            "angle": "Lock Picking Resistance",
+            "solution": "A lock too complex becomes a wall. Security = ease for owner + difficulty for attacker. Measure: 'pick time' for attacker vs 'unlock time' for owner. Owner should always be faster.",
+            "domains": [
+              "Locksmithing",
+              "UX Design"
+            ]
+          },
+          {
+            "angle": "Key Duplication Control",
+            "solution": "Restricted keyways prevent unauthorized copies. Apply: API keys that expire, one-time passwords, biometric 'non-duplicable' access. Keys that copy themselves are vulnerabilities.",
+            "domains": [
+              "Locksmithing",
+              "Security"
+            ]
+          },
+          {
+            "angle": "Emergency Override",
+            "solution": "Every safe has emergency override. Users forget passwords. Build 'locksmith access' - verified recovery that respects privacy (zero-knowledge proof). You CAN recover without seeing data.",
+            "domains": [
+              "Locksmithing",
+              "Privacy Engineering"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "A lock that keeps out the owner is a prison, not protection. Security must be USABLE or people bypass it.",
+      "mental_models_used": [
+        "Usability-Security Tradeoff",
+        "Threat Modeling",
+        "Zero-Knowledge Proof"
+      ]
+    },
+    {
+      "id": "S023",
+      "title": "The Kindergarten Teacher's AI Ethics",
+      "user": "AI ethics researcher, former kindergarten teacher, 39",
+      "situation": "Tech company deploying AI in education. Wants to 'optimize learning efficiency.' She's horrified.",
+      "domains_triggered": [
+        "AI Ethics",
+        "Early Childhood Education",
+        "Psychology",
+        "Pedagogy",
+        "Philosophy"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Play-Based Learning",
+            "solution": "Kindergarten: play IS learning. AI should measure 'engagement depth' not 'completion speed.' A child staring at a block tower is learning physics. Don't rush the play.",
+            "domains": [
+              "Education",
+              "AI Ethics"
+            ]
+          },
+          {
+            "angle": "Social-Emotional First",
+            "solution": "Kindergarten prioritizes SEL over academics. EdTech should prioritize 'did this child feel safe to fail?' over 'did they get 100%?' Emotional safety enables learning.",
+            "domains": [
+              "Education",
+              "AI Ethics"
+            ]
+          },
+          {
+            "angle": "Developmental Readiness",
+            "solution": "You can't teach reading before phonological awareness. AI shouldn't push content before cognitive readiness. 'Efficiency' that ignores readiness is abuse.",
+            "domains": [
+              "Education",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "The Whole Child",
+            "solution": "Kindergarten sees child as whole being: physical, emotional, social, cognitive. EdTech metrics should include ALL four. Optimizing one at others' expense creates broken humans.",
+            "domains": [
+              "Education",
+              "Philosophy"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Tech 'optimizes' learning like a factory. But children aren't products - they're gardens. Gardens don't optimize; they grow.",
+      "mental_models_used": [
+        "Holistic Thinking",
+        "Developmental Psychology",
+        "Ethics of Care"
+      ]
+    },
+    {
+      "id": "S024",
+      "title": "The Pro Gamer's Executive Coaching",
+      "user": "Executive coach, former esports pro, 31",
+      "situation": "Coaching Fortune 500 CEO on leadership. CEO dismissive of 'gaming' background. Team losing market share to nimbler competitors.",
+      "domains_triggered": [
+        "Esports",
+        "Executive Coaching",
+        "Business Strategy",
+        "Psychology",
+        "Military"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Meta-Game Strategy",
+            "solution": "In esports, 'meta' is the dominant strategy everyone uses. To win, predict the NEXT meta, not current one. Your competitor IS the current meta. What comes AFTER their strategy?",
+            "domains": [
+              "Esports",
+              "Business Strategy"
+            ]
+          },
+          {
+            "angle": "APM (Actions Per Minute)",
+            "solution": "Pro gamers have 300+ APM. CEOs need decision speed AND accuracy. Train 'decision APM': micro-decisions (delegate) \u2192 macro-decisions (strategic) \u2192 auto-pilot (systems).",
+            "domains": [
+              "Esports",
+              "Executive Coaching"
+            ]
+          },
+          {
+            "angle": "GG (Good Game) Mentality",
+            "solution": "Esports: 'GG' at end means respect regardless of outcome. Create 'post-mortem not blame-storming' culture. Every loss = data. Emotional neutrality accelerates learning.",
+            "domains": [
+              "Esports",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Smurf Detection",
+            "solution": "In gaming, 'smurfs' are masters pretending to be novices. Business: identify which competitors are ACTUALLY struggling vs playing weak. Don't attack a smurf's apparent weakness.",
+            "domains": [
+              "Esports",
+              "Business Strategy"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your CEO thinks gaming is child's play. But esports is a $2B industry where teenagers make million-dollar decisions in milliseconds. Who's more prepared for your market?",
+      "mental_models_used": [
+        "Meta-Strategy",
+        "Decision Velocity",
+        "Emotional Regulation"
+      ]
+    },
+    {
+      "id": "S025",
+      "title": "The Veterinarian's Customer Success",
+      "user": "Customer Success lead, former vet tech, 30",
+      "situation": "SaaS customers churning despite good product. Support tickets show frustration, not feature requests.",
+      "domains_triggered": [
+        "Customer Success",
+        "Veterinary Medicine",
+        "Psychology",
+        "Communication",
+        "Biology"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Triage Tenderness",
+            "solution": "Vets triage: critical first, then urgent, then routine. Customer success: 'critical' = about to churn, 'urgent' = frustrated, 'routine' = question. But give tenderness at ALL levels.",
+            "domains": [
+              "Veterinary Medicine",
+              "Customer Success"
+            ]
+          },
+          {
+            "angle": "Pain Scale Communication",
+            "solution": "Animals can't say where it hurts. Neither can frustrated customers. Use 'pain scale' questions: 'On 1-10, how blocked are you?' Then investigate systematically.",
+            "domains": [
+              "Veterinary Medicine",
+              "Customer Success"
+            ]
+          },
+          {
+            "angle": "Preventive Care Model",
+            "solution": "Vets schedule checkups BEFORE problems. Customer success: proactive outreach before renewal. 'Annual exam' = quarterly business reviews. Prevent churn, don't react to it.",
+            "domains": [
+              "Veterinary Medicine",
+              "Customer Success"
+            ]
+          },
+          {
+            "angle": "Species-Specific Care",
+            "solution": "You don't treat cats like dogs. Don't treat enterprise customers like SMBs. Different 'species' need different care protocols. Customize the experience by segment.",
+            "domains": [
+              "Veterinary Medicine",
+              "Customer Success"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your customers aren't leaving because of features. They're leaving because they feel like numbers, not patients. Care protocols prevent churn.",
+      "mental_models_used": [
+        "Preventive Care",
+        "Triage",
+        "Empathy Mapping"
+      ]
+    },
+    {
+      "id": "S026",
+      "title": "The Firefighter's Burnout Recovery",
+      "user": "ER doctor, former wildland firefighter, 41",
+      "situation": "Severe burnout. Working 80-hour weeks. Can't say no. Saving everyone but destroying self.",
+      "domains_triggered": [
+        "Emergency Medicine",
+        "Firefighting",
+        "Psychology",
+        "Physiology",
+        "Military"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Fire Line Safety",
+            "solution": "Firefighters: 'Never outrun your escape route.' Medicine: you can't save patients if you're exhausted. Set 'fire line' - absolute boundaries. Cross it = everyone dies (including you).",
+            "domains": [
+              "Firefighting",
+              "Medicine"
+            ]
+          },
+          {
+            "angle": "Rotation Protocol",
+            "solution": "Wildland crews rotate: 2 weeks on, 2 days off. Medicine needs same. 'Spike camp' = 48-hour complete disconnect. No phone, no email. Recovery is EQUIPMENT, not luxury.",
+            "domains": [
+              "Firefighting",
+              "Physiology"
+            ]
+          },
+          {
+            "angle": "Incident Command System",
+            "solution": "Fires: one Incident Commander, clear hierarchy. Medicine: you're trying to BE everyone. Delegate like ICS: Operations (patient care), Planning (scheduling), Logistics (supplies), Finance (billing).",
+            "domains": [
+              "Firefighting",
+              "Medicine"
+            ]
+          },
+          {
+            "angle": "Burnover Survival",
+            "solution": "When fire overruns position, deploy fire shelter. Your 'fire shelter': what SAVES you when overwhelmed? Meditation? Friend? Walk? Know it BEFORE you need it.",
+            "domains": [
+              "Firefighting",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "A dead firefighter saves no one. A burned-out doctor heals no one. Your self-care is PROTECTIVE EQUIPMENT, not indulgence.",
+      "mental_models_used": [
+        "Boundary Setting",
+        "Sustainability",
+        "Delegation"
+      ]
+    },
+    {
+      "id": "S027",
+      "title": "The Auctioneer's Negotiation Framework",
+      "user": "Sales director, former art auctioneer, 43",
+      "situation": "Enterprise deal stuck. Client won't commit. Price isn't the issue - something else is blocking.",
+      "domains_triggered": [
+        "Sales",
+        "Auctioneering",
+        "Psychology",
+        "Game Theory",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Reserve Price Psychology",
+            "solution": "Auctions: reserve price is secret minimum. In sales, the client's 'reserve' isn't money - it's risk tolerance. Find their hidden reserve: 'What's the minimum outcome you'd accept?'",
+            "domains": [
+              "Auctioneering",
+              "Sales"
+            ]
+          },
+          {
+            "angle": "Bidding Momentum",
+            "solution": "Auctioneers create rhythm: 'I have 100, who'll give 200?' Build momentum through micro-commitments. 'Can we agree on timeline?' \u2192 'On implementation team?' \u2192 'On contract?' Each yes = momentum.",
+            "domains": [
+              "Auctioneering",
+              "Sales"
+            ]
+          },
+          {
+            "angle": "Lot Aggregation",
+            "solution": "Some lots sell better as sets. 'I'll give you X IF you also take Y.' Bundle the blocker with the winner. Make the deal feel like a collection, not a transaction.",
+            "domains": [
+              "Auctioneering",
+              "Game Theory"
+            ]
+          },
+          {
+            "angle": "The Hammer Moment",
+            "solution": "'Going once... going twice...' creates urgency without pressure. Create 'hammer moment': 'This pricing is available through Friday. Not to pressure - to give you decision clarity.'",
+            "domains": [
+              "Auctioneering",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "The client isn't saying no. They're waiting for the 'going twice' to know the price is real. Create the moment, don't push the sale.",
+      "mental_models_used": [
+        "Urgency Creation",
+        "Micro-Commitments",
+        "Risk Reframing"
+      ]
+    },
+    {
+      "id": "S028",
+      "title": "The Zoologist's Team Culture Fix",
+      "user": "Engineering manager, zoology background, 34",
+      "situation": "Team has 'brilliant jerk.' Top performer, toxic to others. HR says 'document everything.' Team morale collapsing.",
+      "domains_triggered": [
+        "Management",
+        "Zoology",
+        "Psychology",
+        "Evolutionary Biology",
+        "Team Dynamics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Alpha Male Redirection",
+            "solution": "In primate troops, alphas maintain position through coalition support, not individual strength. Redirect the 'alpha' to TEACH others. Their status now depends on team's success, not individual output.",
+            "domains": [
+              "Zoology",
+              "Management"
+            ]
+          },
+          {
+            "angle": "Symbiotic Pairing",
+            "solution": "Nature: clownfish + anemone, both benefit. Pair 'brilliant jerk' with team member who has complementary skill they RESPECT. Mutual dependency creates cooperation.",
+            "domains": [
+              "Zoology",
+              "Team Dynamics"
+            ]
+          },
+          {
+            "angle": "Trophic Cascade",
+            "solution": "Remove wolves from Yellowstone \u2192 deer overpopulate \u2192 rivers change. Removing top performer without fixing system causes cascade. First build others' capabilities, THEN transition.",
+            "domains": [
+              "Zoology",
+              "Management"
+            ]
+          },
+          {
+            "angle": "Display Behavior Channeling",
+            "solution": "Peacocks display to attract mates. Your 'jerk' displays competence to attract status. Give them stage: tech talks, blog posts, mentoring. Channel display into contribution.",
+            "domains": [
+              "Zoology",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "In nature, there's no 'brilliant jerk' - only mismatched ecological niches. Find their right role in the ecosystem.",
+      "mental_models_used": [
+        "Ecological Thinking",
+        "Status Redirection",
+        "Systems Intervention"
+      ]
+    },
+    {
+      "id": "S029",
+      "title": "The Sculptor's Technical Documentation",
+      "user": "Technical writer, sculptor on weekends, 28",
+      "situation": "Developers hate reading docs. Support burden increasing. Management wants video tutorials ($$$).",
+      "domains_triggered": [
+        "Technical Writing",
+        "Sculpture",
+        "Education",
+        "UX Design",
+        "Cognitive Science"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Subtractive Method",
+            "solution": "Sculpture: remove stone to reveal form. Documentation: start with full working example, then 'subtract' to show what each part does. Start complete, then decompose.",
+            "domains": [
+              "Sculpture",
+              "Technical Writing"
+            ]
+          },
+          {
+            "angle": "Maquette Approach",
+            "solution": "Sculptors build small models before large works. Create 'maquette docs' - 2-minute working demos BEFORE full documentation. Preview creates appetite for detail.",
+            "domains": [
+              "Sculpture",
+              "Technical Writing"
+            ]
+          },
+          {
+            "angle": "Negative Space Emphasis",
+            "solution": "Sculpture: space BETWEEN forms is as important as forms. Documentation: what you DON'T document (assumptions, defaults) is where bugs hide. Document the negative space.",
+            "domains": [
+              "Sculpture",
+              "Technical Writing"
+            ]
+          },
+          {
+            "angle": "Material Truth",
+            "solution": "Sculptors respect material properties (marble vs clay). Respect developer 'material': docs should be copy-pasteable, tested, in their IDE. Meet them where they work.",
+            "domains": [
+              "Sculpture",
+              "UX Design"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Documentation isn't a book - it's a sculpture. Developers don't read marble; they need clay they can reshape.",
+      "mental_models_used": [
+        "Subtractive Design",
+        "Progressive Disclosure",
+        "Materiality"
+      ]
+    },
+    {
+      "id": "S030",
+      "title": "The Somatic Therapist's Productivity Hack",
+      "user": "Remote worker with ADHD, sees somatic therapist, 26",
+      "situation": "Can't focus on work. Tried Pomodoro, apps, caffeine. Body feels 'stuck' but mind is racing.",
+      "domains_triggered": [
+        "Productivity",
+        "Somatic Therapy",
+        "Neuroscience",
+        "Psychology",
+        "Physiology"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Body-First Attention",
+            "solution": "Somatic therapy: body holds trauma/focus. Before work: 2 minutes of shaking (TRE), jumping, or stretching. Discharge stuck energy BEFORE trying to focus. Body ready \u2192 mind follows.",
+            "domains": [
+              "Somatic Therapy",
+              "Productivity"
+            ]
+          },
+          {
+            "angle": "Orienting Response",
+            "solution": "Animals orient to novelty, then return to grazing. ADHD brain stuck in orienting. Give scheduled 'orienting breaks' - 5 min every 25 min to check phone/window. Contained novelty prevents leakage.",
+            "domains": [
+              "Somatic Therapy",
+              "Neuroscience"
+            ]
+          },
+          {
+            "angle": "Grounding Techniques",
+            "solution": "Somatic: feel feet on floor to anchor. Work at standing desk, sit on therapy ball, or keep textured object at desk. Physical grounding anchors wandering attention.",
+            "domains": [
+              "Somatic Therapy",
+              "Physiology"
+            ]
+          },
+          {
+            "angle": "Pendulation Between States",
+            "solution": "Somatic therapy oscillates between tension and relaxation. Work in oscillation: 20 min focused work \u2192 5 min somatic release (stretch, breathe, shake). Pendulation prevents burnout.",
+            "domains": [
+              "Somatic Therapy",
+              "Productivity"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your mind isn't broken - your body is asking for attention first. ADHD isn't a focus problem; it's a body-mind disconnection.",
+      "mental_models_used": [
+        "Embodied Cognition",
+        "Regulation",
+        "Accommodation over Overcoming"
+      ]
+    },
+    {
+      "id": "S031",
+      "title": "The Meteorologist's Project Forecasting",
+      "user": "Project manager, meteorology degree, 38",
+      "situation": "Projects ALWAYS miss deadlines. Team estimates 'sunny' but 'storms' always hit.",
+      "domains_triggered": [
+        "Project Management",
+        "Meteorology",
+        "Statistics",
+        "Psychology",
+        "Systems Thinking"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Ensemble Forecasting",
+            "solution": "Meteorologists run 50+ models, take average. PMs use one estimate. Create 'ensemble estimates': best case, worst case, most likely, then weighted average. Single estimates are always wrong.",
+            "domains": [
+              "Meteorology",
+              "Project Management"
+            ]
+          },
+          {
+            "angle": "Cone of Uncertainty",
+            "solution": "Hurricane forecasts show cone, not point. Project timelines should show 'cone of uncertainty' - wider farther out. Commit to near-term precisely, long-term loosely.",
+            "domains": [
+              "Meteorology",
+              "Project Management"
+            ]
+          },
+          {
+            "angle": "Frontal Boundary Prediction",
+            "solution": "Storms form at boundaries (cold/warm fronts). Projects fail at boundaries too: handoffs, scope changes, stakeholder shifts. Monitor 'frontal boundaries' most closely.",
+            "domains": [
+              "Meteorology",
+              "Project Management"
+            ]
+          },
+          {
+            "angle": "Probability of Precipitation",
+            "solution": "40% rain = 40% of area gets rain, or 100% chance in 40% of area. '80% chance on time' means what? Define probability explicitly. Ambiguity kills projects.",
+            "domains": [
+              "Meteorology",
+              "Statistics"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your team forecasts like weather reporters: 'sunny tomorrow!' But weather forecasts beyond 5 days are coin flips. Your 3-month project estimate is fiction.",
+      "mental_models_used": [
+        "Ensemble Thinking",
+        "Uncertainty Visualization",
+        "Boundary Monitoring"
+      ]
+    },
+    {
+      "id": "S032",
+      "title": "The Sommelier's Hiring Filter",
+      "user": "Startup founder, former sommelier, 36",
+      "situation": "Hiring engineers. Getting 500 applications per role. Can't evaluate technical skills. Wasting time on bad fits.",
+      "domains_triggered": [
+        "Hiring",
+        "Sommelier",
+        "Sensory Analysis",
+        "Psychology",
+        "Pattern Recognition"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Blind Tasting Method",
+            "solution": "Sommeliers taste blind to avoid bias. Create 'blind coding challenge': remove names, schools, years of experience. Grade only the code. Eliminates pedigree bias.",
+            "domains": [
+              "Sommelier",
+              "Hiring"
+            ]
+          },
+          {
+            "angle": "Tasting Notes System",
+            "solution": "Wine: structured notes (sight, smell, taste, finish). Interview: structured evaluation (problem-solving, communication, curiosity, culture fit). Same systematic approach prevents halo effect.",
+            "domains": [
+              "Sommelier",
+              "Hiring"
+            ]
+          },
+          {
+            "angle": "Terroir Assessment",
+            "solution": "Wine quality comes from terroir (environment). Assess candidate's 'terroir': What did they build WITH their resources? Underdog with great output > privileged with good output.",
+            "domains": [
+              "Sommelier",
+              "Hiring"
+            ]
+          },
+          {
+            "angle": "Pairing Intuition",
+            "solution": "Great sommeliers pair wine to food, not just evaluate wine. Great hires pair with team needs. Ask: 'What team configuration would make you most effective?' Self-awareness = pairing skill.",
+            "domains": [
+              "Sommelier",
+              "Hiring"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You're tasting 500 wines when you need a pairing. The best wine isn't the highest-rated; it's the one that makes the food sing.",
+      "mental_models_used": [
+        "Blind Evaluation",
+        "Structured Assessment",
+        "Context Matching"
+      ]
+    },
+    {
+      "id": "S033",
+      "title": "The Paramedic's Product Launch Crisis",
+      "user": "Product lead, former paramedic, 33",
+      "situation": "Launch day. Critical bug found. Team panicking. CEO demanding rollback. Users waiting.",
+      "domains_triggered": [
+        "Product Management",
+        "Emergency Medicine",
+        "Military",
+        "Psychology",
+        "Crisis Management"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "ABC Protocol",
+            "solution": "Paramedics: Airway, Breathing, Circulation - in THAT order. Product crisis: User Safety, Core Function, Nice-to-Have - in THAT order. Bug affects safety? Rollback. Core function? Patch. Cosmetic? Note and proceed.",
+            "domains": [
+              "Emergency Medicine",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Golden Hour",
+            "solution": "Trauma: first hour is critical. Product launch: first hour of user experience sets perception. Decision: can we fix bug within golden hour? Yes \u2192 patch. No \u2192 rollback. Time is the variable.",
+            "domains": [
+              "Emergency Medicine",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Triage Tagging",
+            "solution": "EMS uses color tags: black (expectant), red (immediate), yellow (delayed), green (minor). Tag every bug this way. Work red first. Most 'crises' are yellow or green.",
+            "domains": [
+              "Emergency Medicine",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Scene Safety First",
+            "solution": "Paramedics don't enter unsafe scene. Product: don't push fix from panicked state. 2-minute team breather ( box breathing) \u2192 THEN decide. Panic decisions create more casualties.",
+            "domains": [
+              "Emergency Medicine",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your CEO is the bystander screaming 'Do something!' The paramedic knows: first calm down, then assess, THEN act. Wrong action is worse than no action.",
+      "mental_models_used": [
+        "Triage",
+        "Protocol Under Pressure",
+        "Emotional Regulation"
+      ]
+    },
+    {
+      "id": "S034",
+      "title": "The Social Engineer's Security Awareness",
+      "user": "Security awareness trainer, former social engineer (reformed), 40",
+      "situation": "Company keeps falling for phishing. Traditional training (videos, quizzes) not working. Employees clicking everything.",
+      "domains_triggered": [
+        "Cybersecurity",
+        "Social Engineering",
+        "Psychology",
+        "Game Design",
+        "Theater"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Inoculation Theory",
+            "solution": "Like vaccines, expose to WEAKENED phishing attempts. Send harmless but realistic phishing emails. Clickers get immediate training (not punishment). Build immunity through exposure.",
+            "domains": [
+              "Social Engineering",
+              "Psychology"
+            ]
+          },
+          {
+            "angle": "Social Proof Inversion",
+            "solution": "Social engineers use social proof ('everyone clicked this'). Invert: create visible leaderboard of people who CAUGHT phishing attempts. Make security cool through peer validation.",
+            "domains": [
+              "Social Engineering",
+              "Game Design"
+            ]
+          },
+          {
+            "angle": "Pretexting as Theater",
+            "solution": "Social engineering = improv theater. Train employees to 'stay in character' as security-conscious employee. Practice scripted responses to common pretexts. Theater builds automatic responses.",
+            "domains": [
+              "Social Engineering",
+              "Theater"
+            ]
+          },
+          {
+            "angle": "Reward the Reporter",
+            "solution": "Social engineers rely on silence. Create 'report bounty': $10 gift card for every phishing email reported. Make reporting MORE rewarding than the scam itself.",
+            "domains": [
+              "Social Engineering",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You hired a reformed social engineer. Instead of teaching defense, teach them to THINK like attackers. The best defense is understanding the offense.",
+      "mental_models_used": [
+        "Inoculation",
+        "Social Proof",
+        "Gamification",
+        "Offense as Defense"
+      ]
+    },
+    {
+      "id": "S035",
+      "title": "The Cartographer's Strategy Visualization",
+      "user": "Strategy consultant, cartography PhD, 42",
+      "situation": "Client can't understand strategic plan. 50-slide deck. Eyes glazing over. Decision makers confused.",
+      "domains_triggered": [
+        "Strategy",
+        "Cartography",
+        "Data Visualization",
+        "Psychology",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Topographic Mapping",
+            "solution": "Cartographers show elevation with contour lines. Show strategic 'elevation': market position, competitive advantage, resource height. Flat strategy = flat engagement. Topography creates understanding.",
+            "domains": [
+              "Cartography",
+              "Strategy"
+            ]
+          },
+          {
+            "angle": "Legend and Scale",
+            "solution": "Every map has legend and scale. Every strategy needs: legend (what colors/symbols mean) and scale (time, money, market size). Without these, the map is art, not navigation.",
+            "domains": [
+              "Cartography",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "North Arrow Orientation",
+            "solution": "Maps have north arrow for orientation. Strategy needs 'north star' metric. When everything is important, nothing is. One arrow. One metric. Everything else navigates toward it.",
+            "domains": [
+              "Cartography",
+              "Strategy"
+            ]
+          },
+          {
+            "angle": "Layered Information",
+            "solution": "Good maps show layers: political, physical, climate. Strategy: show layers separately - market layer, operational layer, financial layer. Let users toggle. Information overload = layer overflow.",
+            "domains": [
+              "Cartography",
+              "Data Visualization"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your 50 slides are a map without north. Cartographers solved information density 500 years ago. Steal from them.",
+      "mental_models_used": [
+        "Spatial Thinking",
+        "Information Hierarchy",
+        "Orientation"
+      ]
+    },
+    {
+      "id": "S036",
+      "title": "The Calligrapher's Code Review",
+      "user": "Senior developer, calligraphy master, 35",
+      "situation": "Junior developer's code is 'ugly' - works but messy. Other seniors want to rewrite. He sees potential.",
+      "domains_triggered": [
+        "Software Engineering",
+        "Calligraphy",
+        "Education",
+        "Aesthetics",
+        "Psychology"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Kata Practice",
+            "solution": "Calligraphy: practice same character 1000 times before variation. Code review: don't rewrite - have junior refactor THEIR code 3 times. Mastery comes from iteration, not replacement.",
+            "domains": [
+              "Calligraphy",
+              "Software Engineering"
+            ]
+          },
+          {
+            "angle": "Stroke Order Matters",
+            "solution": "Calligraphy: wrong stroke order = ugly character even if final looks okay. Code: structure (stroke order) matters more than output. Teach structural elegance, not just functionality.",
+            "domains": [
+              "Calligraphy",
+              "Software Engineering"
+            ]
+          },
+          {
+            "angle": "Copying the Masters",
+            "solution": "Calligraphy students copy masters before original work. Have junior study beautifully-written code in same language. Copy style before creating style. Apprenticeship > criticism.",
+            "domains": [
+              "Calligraphy",
+              "Education"
+            ]
+          },
+          {
+            "angle": "The Beauty of Constraint",
+            "solution": "Calligraphy uses specific brush, paper, ink. Constraints create beauty. Give junior 'calligraphic constraints': max function length, required naming conventions, mandatory comments. Beauty emerges from constraint.",
+            "domains": [
+              "Calligraphy",
+              "Software Engineering"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Ugly working code is raw clay. Rewriting it is throwing away their work. Teaching them to shape it is mentorship.",
+      "mental_models_used": [
+        "Mastery Through Repetition",
+        "Constraint Creativity",
+        "Apprenticeship"
+      ]
+    },
+    {
+      "id": "S037",
+      "title": "The Urban Planner's Algorithm Design",
+      "user": "ML engineer, urban planning degree, 29",
+      "situation": "Recommendation algorithm creating filter bubbles. Users angry about 'same suggestions.' Ethics team concerned.",
+      "domains_triggered": [
+        "Machine Learning",
+        "Urban Planning",
+        "Sociology",
+        "Ethics",
+        "Design"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Mixed-Use Zoning",
+            "solution": "Urban planners prevent monoculture with mixed-use zoning. Algorithm: enforce 'content zoning' - 70% familiar, 20% adjacent, 10% serendipitous. Zoning prevents filter bubbles.",
+            "domains": [
+              "Urban Planning",
+              "Machine Learning"
+            ]
+          },
+          {
+            "angle": "Green Space Requirement",
+            "solution": "Cities require parks: common ground between neighborhoods. Algorithm needs 'serendipity parks' - content that bridges user clusters. Shared discovery creates community.",
+            "domains": [
+              "Urban Planning",
+              "Machine Learning"
+            ]
+          },
+          {
+            "angle": "Traffic Calming",
+            "solution": "Speed bumps slow traffic for safety. Algorithm 'engagement bumps': occasional friction that makes users pause, think, choose. Not everything should be effortless.",
+            "domains": [
+              "Urban Planning",
+              "Design"
+            ]
+          },
+          {
+            "angle": "Gentrification Prevention",
+            "solution": "Gentrification pushes out diversity. Algorithms push out niche content. Implement 'diversity protection': minimum representation for small creators, like affordable housing mandates.",
+            "domains": [
+              "Urban Planning",
+              "Ethics"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your algorithm built a city where everyone lives in identical suburbs. Great cities have neighborhoods, serendipity, and friction. So should your algorithm.",
+      "mental_models_used": [
+        "Zoning",
+        "Diversity Mandate",
+        "Friction by Design"
+      ]
+    },
+    {
+      "id": "S038",
+      "title": "The Midwife's Change Management",
+      "user": "Change management consultant, former midwife, 44",
+      "situation": "Company merging departments. Employees terrified. Leadership pushing 'fast transition.' Resistance everywhere.",
+      "domains_triggered": [
+        "Change Management",
+        "Midwifery",
+        "Psychology",
+        "Physiology",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Labor Stages",
+            "solution": "Midwifery: labor has stages, each with different needs. Change management: denial stage (listen), resistance stage (validate), exploration stage (guide), commitment stage (celebrate). Match intervention to stage.",
+            "domains": [
+              "Midwifery",
+              "Change Management"
+            ]
+          },
+          {
+            "angle": "Don't Fight the Contraction",
+            "solution": "Midwives teach: fighting contractions increases pain. Change: fighting resistance increases resistance. Work WITH it: 'Your concerns are valid. Let's address them.' Resistance becomes information.",
+            "domains": [
+              "Midwifery",
+              "Change Management"
+            ]
+          },
+          {
+            "angle": "Birth Plan Flexibility",
+            "solution": "Birth plans change. Midwives prepare for multiple scenarios. Change management: create Plan A, B, C. Announce flexibility upfront. 'We're navigating together, not following a map.'",
+            "domains": [
+              "Midwifery",
+              "Change Management"
+            ]
+          },
+          {
+            "angle": "Postpartum Support",
+            "solution": "Midwives visit after birth. Change management needs 'post-implementation support.' The birth (launch) is just the beginning. New systems need nurturing to survive.",
+            "domains": [
+              "Midwifery",
+              "Change Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your CEO wants a C-section (fast, controlled). But this organization needs a natural birth - longer, but healthier attachment to the new structure.",
+      "mental_models_used": [
+        "Stage-Appropriate Intervention",
+        "Working With Resistance",
+        "Post-Implementation Care"
+      ]
+    },
+    {
+      "id": "S039",
+      "title": "The Perfumer's Brand Differentiation",
+      "user": "Brand consultant, trained perfumer, 37",
+      "situation": "Coffee shop chain indistinguishable from competitors. 'Third place' concept overused. Need unique positioning.",
+      "domains_triggered": [
+        "Branding",
+        "Perfumery",
+        "Sensory Marketing",
+        "Psychology",
+        "Neuroscience"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Fragrance Pyramid",
+            "solution": "Perfumes have top, middle, base notes unfolding over time. Coffee experience: 'top note' = entry/aroma, 'middle' = ordering/interaction, 'base' = lingering/memory. Design each note intentionally.",
+            "domains": [
+              "Perfumery",
+              "Branding"
+            ]
+          },
+          {
+            "angle": "Signature Scent Creation",
+            "solution": "Develop proprietary cafe scent: roast + vanilla + cedar. Scent is most emotional sense. Customers will identify your brand by smell before logo. Olfactory branding is underexploited.",
+            "domains": [
+              "Perfumery",
+              "Sensory Marketing"
+            ]
+          },
+          {
+            "angle": "Olfactory Memory",
+            "solution": "Smell links directly to amygdala/hippocampus (memory/emotion). Create scent-memory associations: specific drink = specific scent note. 'Their lavender latte smells like vacation.'",
+            "domains": [
+              "Perfumery",
+              "Neuroscience"
+            ]
+          },
+          {
+            "angle": "Niche vs Designer",
+            "solution": "Perfumery: mass market (designer) vs artisan (niche). Position as 'niche coffee' - limited batches, single origin stories, barista as 'nose' (expert). Scarcity + expertise = premium.",
+            "domains": [
+              "Perfumery",
+              "Branding"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Starbucks owns the color green. No one owns coffee SCENT. The nose is the only sense with a direct line to memory. That's your battlefield.",
+      "mental_models_used": [
+        "Sensory Branding",
+        "Olfactory Memory",
+        "Niche Positioning"
+      ]
+    },
+    {
+      "id": "S040",
+      "title": "The Cicerone's Learning Path Design",
+      "user": "EdTech designer, certified Cicerone (beer expert), 32",
+      "situation": "Online course completion rates 12%. Students overwhelmed by content. Traditional scaffolding not helping.",
+      "domains_triggered": [
+        "Education",
+        "Cicerone",
+        "Gamification",
+        "Cognitive Science",
+        "Experience Design"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Beer Flight Progression",
+            "solution": "Beer flights: 4-5 small samples, light to dark. Course: 'knowledge flights' - 4-5 micro-lessons, easy to hard, 5 min each. Completion feels achievable. Achievement builds motivation.",
+            "domains": [
+              "Cicerone",
+              "Education"
+            ]
+          },
+          {
+            "angle": "Style Guidelines",
+            "solution": "Cicerones learn beer styles systematically (BJCP guidelines). Course: create 'knowledge style guidelines' - clear rubrics for what mastery looks like at each level. Rubrics reduce anxiety.",
+            "domains": [
+              "Cicerone",
+              "Education"
+            ]
+          },
+          {
+            "angle": "Tasting Grid",
+            "solution": "Beer tasting uses structured grid (appearance, aroma, flavor, mouthfeel, overall). Learning: structured reflection grid after each module. 'What did you learn? How will you use it? What connects?'",
+            "domains": [
+              "Cicerone",
+              "Cognitive Science"
+            ]
+          },
+          {
+            "angle": "Food Pairing",
+            "solution": "Beer + food = better than either alone. Learning: pair concepts with student's existing knowledge. 'You know X? This is like X but with Y.' Pairing makes new knowledge digestible.",
+            "domains": [
+              "Cicerone",
+              "Cognitive Science"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "12% completion means your course is a 12% ABV barleywine when students need a tasting flight. Small sips, multiple tastes, gradual building.",
+      "mental_models_used": [
+        "Progressive Disclosure",
+        "Scaffolded Complexity",
+        "Sensory Learning"
+      ]
+    },
+    {
+      "id": "S041",
+      "title": "The Ghostwriter's Authenticity Crisis",
+      "user": "CEO ghostwriter, identity crisis, 38",
+      "situation": "Writes brilliant LinkedIn posts for executives. Gets no credit. Building their brands while invisible. Feels hollow.",
+      "domains_triggered": [
+        "Writing",
+        "Psychology",
+        "Branding",
+        "Philosophy",
+        "Theater"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Method Acting",
+            "solution": "Method actors become the character fully. Ghostwriting IS method acting - you channel their voice so completely it becomes indistinguishable. You're not invisible; you're a shape-shifter.",
+            "domains": [
+              "Theater",
+              "Writing"
+            ]
+          },
+          {
+            "angle": "Invisible Architecture",
+            "solution": "Architects of historic buildings often unknown. But the building stands. Your words will influence thousands. Credit is fleeting; impact is permanent. Be the architect, not the statue.",
+            "domains": [
+              "Architecture",
+              "Philosophy"
+            ]
+          },
+          {
+            "angle": "Oracle Model",
+            "solution": "In ancient Greece, oracles spoke for gods. The oracle's VALUE was channeling wisdom beyond themselves. Position as 'executive whisperer' - your brand is making others eloquent.",
+            "domains": [
+              "Philosophy",
+              "Branding"
+            ]
+          },
+          {
+            "angle": "Shadow Integration",
+            "solution": "Jungian shadow: the unseen self contains power. Your 'shadow' work IS the work. Launch anonymous publication. Write raw, unfiltered. Visibility isn't the only form of authorship.",
+            "domains": [
+              "Psychology",
+              "Writing"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You're not a ghost; you're a medium. The message matters more than the messenger. But maybe it's time to speak for yourself too.",
+      "mental_models_used": [
+        "Shadow Work",
+        "Impact over Credit",
+        "Dual Identity"
+      ]
+    },
+    {
+      "id": "S042",
+      "title": "The Glassblower's Crisis Communication",
+      "user": "PR director, glassblowing artist, 41",
+      "situation": "Client data breach. Media frenzy. Client wants to 'deny and minimize.' You know that's suicide.",
+      "domains_triggered": [
+        "Public Relations",
+        "Glassblowing",
+        "Crisis Management",
+        "Psychology",
+        "Physics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Annealing Process",
+            "solution": "Glass must cool slowly (anneal) or it shatters. Crisis communication: cool down slowly. Don't rush to resolution. Let the heat dissipate through transparency before final shape.",
+            "domains": [
+              "Glassblowing",
+              "Crisis Management"
+            ]
+          },
+          {
+            "angle": "Molten State Honesty",
+            "solution": "Glass is honest in molten state - you see impurities immediately. Crisis: admit what you know NOW, even if incomplete. Partial honesty beats complete denial. Glass that looks clear is trusted.",
+            "domains": [
+              "Glassblowing",
+              "Public Relations"
+            ]
+          },
+          {
+            "angle": "The Pontil Mark",
+            "solution": "Handblown glass has pontil mark (where rod attached) - proof of handmade authenticity. In crisis: show your 'pontil mark' - the human effort, the care, the imperfection that proves authenticity.",
+            "domains": [
+              "Glassblowing",
+              "Public Relations"
+            ]
+          },
+          {
+            "angle": "Stress Distribution",
+            "solution": "Glass shatters at stress concentration points. Crisis: identify where stress concentrates (angriest customers, most exposed data). Reinforce those points first before addressing edge cases.",
+            "domains": [
+              "Glassblowing",
+              "Crisis Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your client wants to quench the glass fast. But rapid cooling creates fracture lines you can't see until it shatters. Anneal the crisis.",
+      "mental_models_used": [
+        "Transparency",
+        "Controlled Cooling",
+        "Stress Management"
+      ]
+    },
+    {
+      "id": "S043",
+      "title": "The Archaeologist's Feature Prioritization",
+      "user": "PM at SaaS company, archaeology background, 30",
+      "situation": "50 feature requests from customers. CEO wants all of them. Engineering says impossible. Stalemate.",
+      "domains_triggered": [
+        "Product Management",
+        "Archaeology",
+        "Anthropology",
+        "Decision Making",
+        "History"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Stratigraphic Priority",
+            "solution": "Archaeologists dig by layers (strata). Features: which are 'surface level' (quick wins) vs 'deep strata' (foundational)? Dig surface first for morale, then deep for structure.",
+            "domains": [
+              "Archaeology",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Radiocarbon Dating",
+            "solution": "Date artifacts to place in timeline. Features: which become MORE valuable over time (compound interest) vs depreciating? Prioritize compounding features.",
+            "domains": [
+              "Archaeology",
+              "Decision Making"
+            ]
+          },
+          {
+            "angle": "Cultural Significance",
+            "solution": "Not all artifacts are equal - some transform understanding of civilization. Identify your 'Rosetta Stone' feature - the one that unlocks everything else. Build that.",
+            "domains": [
+              "Archaeology",
+              "Product Management"
+            ]
+          },
+          {
+            "angle": "Excavation Grid",
+            "solution": "Archaeologists work in grids, not randomly. Divide feature requests into 'grids' by user segment, technical complexity, and business value. Systematic exploration beats random digging.",
+            "domains": [
+              "Archaeology",
+              "Product Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your CEO is a treasure hunter who wants to dig everywhere. Archaeology teaches: systematic grid search finds more than random digging.",
+      "mental_models_used": [
+        "Stratification",
+        "Compound Value",
+        "Systematic Exploration"
+      ]
+    },
+    {
+      "id": "S044",
+      "title": "The Referee's Conflict Resolution",
+      "user": "HR mediator, FIFA referee, 36",
+      "situation": "Two VPs fighting over budget. Escalating to CEO. Both have valid points. Zero-sum mindset.",
+      "domains_triggered": [
+        "HR",
+        "Refereeing",
+        "Game Theory",
+        "Psychology",
+        "Negotiation"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Advantage Rule",
+            "solution": "Soccer: play advantage if fouled team benefits. Don't stop play for minor fouls. In conflict: if one VP's proposal actually benefits both, let it play out. Don't enforce 'fairness' that hurts both.",
+            "domains": [
+              "Refereeing",
+              "Negotiation"
+            ]
+          },
+          {
+            "angle": "The Yellow Card",
+            "solution": "Referees warn before ejecting. Issue 'yellow card' to both: 'Next personal attack and we go to CEO with both of you looking bad.' Controlled escalation prevents explosion.",
+            "domains": [
+              "Refereeing",
+              "HR"
+            ]
+          },
+          {
+            "angle": "Offside Trap",
+            "solution": "Defenders coordinate to catch attacker offside. Both VPs think they're 'on side' with CEO. Reveal: 'If this goes to CEO, BOTH budgets get cut.' Shared threat creates cooperation.",
+            "domains": [
+              "Refereeing",
+              "Game Theory"
+            ]
+          },
+          {
+            "angle": "Extra Time Allocation",
+            "solution": "Referee adds time for stoppages. Meeting time: 'We have 30 minutes of actual discussion time. Personal attacks stop the clock.' Time pressure focuses on substance.",
+            "domains": [
+              "Refereeing",
+              "HR"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "As referee, you don't decide who wins. You ensure fair play so the better strategy emerges naturally.",
+      "mental_models_used": [
+        "Advantage Rule",
+        "Controlled Escalation",
+        "Shared Threat"
+      ]
+    },
+    {
+      "id": "S045",
+      "title": "The Diplomat's Family Meeting",
+      "user": "Diplomat, struggling with family dynamics, 45",
+      "situation": "Negotiates international treaties successfully. Can't get teenage kids to do chores. Family chaos.",
+      "domains_triggered": [
+        "Diplomacy",
+        "Parenting",
+        "Psychology",
+        "Negotiation",
+        "Communication"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Track II Diplomacy",
+            "solution": "Official diplomacy (Track I) often fails. Track II uses unofficial channels. Parenting: official rules ('do chores') fail. Use Track II: casual conversation while driving, text messages, notes. Informal influence.",
+            "domains": [
+              "Diplomacy",
+              "Parenting"
+            ]
+          },
+          {
+            "angle": "Mutually Assured Destruction",
+            "solution": "Nuclear deterrence: both sides lose if either attacks. Family: 'If nobody does chores, nobody goes anywhere.' Shared negative outcome creates cooperation without authority.",
+            "domains": [
+              "Diplomacy",
+              "Parenting"
+            ]
+          },
+          {
+            "angle": "Cultural Exchange Program",
+            "solution": "Diplomacy builds understanding through exchange. Exchange roles: kid plans family dinner, parent does kid's homework (or tries). Empathy emerges from walking in others' shoes.",
+            "domains": [
+              "Diplomacy",
+              "Parenting"
+            ]
+          },
+          {
+            "angle": "Summit Meeting Protocol",
+            "solution": "State dinners have strict protocol for a reason - structure prevents conflict. Family meetings: agenda, time limit, speaking object (only holder speaks), no interrupting. Diplomatic immunity from sarcasm.",
+            "domains": [
+              "Diplomacy",
+              "Communication"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You negotiate with nations because you can't control them. Apply same logic to teens. Sovereignty is non-negotiable; treaties are.",
+      "mental_models_used": [
+        "Track II Diplomacy",
+        "Shared Consequences",
+        "Structured Communication"
+      ]
+    },
+    {
+      "id": "S046",
+      "title": "The Watchmaker's Distributed Systems",
+      "user": "Distributed systems engineer, watchmaker grandfather, 33",
+      "situation": "Microservices architecture has cascading failures. One service down = everything down. Team adding more monitoring.",
+      "domains_triggered": [
+        "Software Engineering",
+        "Horology",
+        "Engineering",
+        "Systems Thinking",
+        "Physics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Escapement Mechanism",
+            "solution": "Watches use escapement: transfers energy in controlled pulses, preventing gear overrun. Microservices need 'escapement': circuit breakers that release load in controlled pulses, not complete shutdown.",
+            "domains": [
+              "Horology",
+              "Software Engineering"
+            ]
+          },
+          {
+            "angle": "Jewel Bearings",
+            "solution": "Watch jewels reduce friction at critical points. Microservices: add 'jewels' (caching, load balancing) at high-friction connection points. Reduce wear where services connect.",
+            "domains": [
+              "Horology",
+              "Software Engineering"
+            ]
+          },
+          {
+            "angle": "Mainspring Design",
+            "solution": "Mainspring stores energy, releases gradually. Add 'mainsprings' to architecture: request buffers that absorb spikes, release gradually. Prevents cascade from traffic bursts.",
+            "domains": [
+              "Horology",
+              "Software Engineering"
+            ]
+          },
+          {
+            "angle": "Complication Independence",
+            "solution": "Watch complications (chronograph, moon phase) operate independently but share mainspring. Design services with shared infrastructure but independent failure domains. One complication fails, watch still tells time.",
+            "domains": [
+              "Horology",
+              "Software Engineering"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your grandfather's watch has run for 50 years without 'monitoring.' Mechanical watches solved distributed systems in 1750.",
+      "mental_models_used": [
+        "Mechanical Resilience",
+        "Decoupling",
+        "Buffering"
+      ]
+    },
+    {
+      "id": "S047",
+      "title": "The Quartermaster's Resource Allocation",
+      "user": "Startup CFO, former military quartermaster, 39",
+      "situation": "18-month runway. 6 departments all 'critical.' Series A uncertain. Need impossible prioritization.",
+      "domains_triggered": [
+        "Finance",
+        "Military",
+        "Game Theory",
+        "Decision Making",
+        "Economics"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Mission-Essential Equipment",
+            "solution": "Quartermasters: mission-essential (must have), mission-enhancing (nice to have), personal comfort (cut first). Ruthless categorization. If the mission fails without it, it's essential. Everything else is luxury.",
+            "domains": [
+              "Military",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Squad-Based Resupply",
+            "solution": "Military resupplies frontline units first, rear units scavenge. Identify your 'frontline' department - the one directly generating revenue or preventing churn. Feed the fighters.",
+            "domains": [
+              "Military",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Operational Pause",
+            "solution": "Military calls operational pauses when exhausted. Consider strategic pause: halt all non-essential spending for 1 month. Cash conservation > progress. Live to fight another day.",
+            "domains": [
+              "Military",
+              "Finance"
+            ]
+          },
+          {
+            "angle": "Force Multiplier Investment",
+            "solution": "Quartermasters invest in force multipliers (radios, transportation). Which $1 spent generates $10? One great engineer > three mediocre ones. Concentrate, don't dilute.",
+            "domains": [
+              "Military",
+              "Economics"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "In combat, quartermasters are hated until supply runs out. Then they're heroes. Be the unpopular quartermaster now, or the bankrupt founder later.",
+      "mental_models_used": [
+        "Ruthless Prioritization",
+        "Frontline Focus",
+        "Force Multipliers"
+      ]
+    },
+    {
+      "id": "S048",
+      "title": "The Sushi Chef's Onboarding Design",
+      "user": "People ops lead, trained at sushi restaurant, 27",
+      "situation": "New hires overwhelmed first week. 50 documents, 12 meetings, 3 systems. 30% quit in month 1.",
+      "domains_triggered": [
+        "HR",
+        "Culinary Arts",
+        "Psychology",
+        "Education",
+        "Experience Design"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Omakase Progression",
+            "solution": "Sushi omakase: chef serves light \u2192 rich \u2192 sweet, paced perfectly. Onboarding: start with 'light' (culture, people), progress to 'rich' (complex systems), end 'sweet' (early win). Sequence matters.",
+            "domains": [
+              "Culinary Arts",
+              "HR"
+            ]
+          },
+          {
+            "angle": "Itamae Apprenticeship",
+            "solution": "Sushi apprentices start washing rice for 2 years. Not punishment - foundation. Onboarding: have new hire master ONE thing perfectly in week 1. Depth > breadth. Confidence builds from mastery.",
+            "domains": [
+              "Culinary Arts",
+              "HR"
+            ]
+          },
+          {
+            "angle": "Counter Interaction",
+            "solution": "Sushi counter: chef watches customer, adjusts pace. Onboarding: assign 'itamae buddy' who reads new hire's state and adjusts. Real-time calibration beats static checklists.",
+            "domains": [
+              "Culinary Arts",
+              "HR"
+            ]
+          },
+          {
+            "angle": "Freshness Principle",
+            "solution": "Sushi: ingredients must be fresh, timing critical. Onboarding: front-load interactions with direct manager and team. Day 1 freshness matters more than perfect process.",
+            "domains": [
+              "Culinary Arts",
+              "Psychology"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Your onboarding is a buffet when it should be omakase. 50 documents = 50 mediocre bites. 5 perfect experiences = loyalty.",
+      "mental_models_used": [
+        "Sequencing",
+        "Mastery Over Coverage",
+        "Freshness",
+        "Apprenticeship"
+      ]
+    },
+    {
+      "id": "S049",
+      "title": "The Blacksmith's Mental Health Startup",
+      "user": "Therapist building mental health app, blacksmith hobbyist, 43",
+      "situation": "App has 10K downloads, 200 daily active. Users download, use once, disappear. Retention crisis.",
+      "domains_triggered": [
+        "Mental Health",
+        "Blacksmithing",
+        "Product Management",
+        "Psychology",
+        "Behavioral Design"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Heating and Cooling",
+            "solution": "Blacksmith: heat to shape, cool to set. App: 'heat' moments (high engagement exercises), then 'cool' moments (reflection, journaling). Alternate to prevent emotional burnout.",
+            "domains": [
+              "Blacksmithing",
+              "Mental Health"
+            ]
+          },
+          {
+            "angle": "Forge Your Own Sword",
+            "solution": "Blacksmithing is transformational - raw metal becomes tool. Reframe app: users aren't 'consumers,' they're forgers. Each session = forging a mental tool THEY created. Ownership increases retention.",
+            "domains": [
+              "Blacksmithing",
+              "Behavioral Design"
+            ]
+          },
+          {
+            "angle": "Hammer and Anvil Rhythm",
+            "solution": "Smithing has rhythm: heat, hammer, heat, hammer. App needs rhythm: daily micro-practice (hammer) + weekly deep work (heat). Predictable rhythm creates habit.",
+            "domains": [
+              "Blacksmithing",
+              "Behavioral Design"
+            ]
+          },
+          {
+            "angle": "Quenching the Blade",
+            "solution": "Blade is quenched (rapidly cooled) to harden. 'Quench' moments: when user has breakthrough, immediately capture it (journal, voice note). Heat without quenching = soft metal = forgotten insight.",
+            "domains": [
+              "Blacksmithing",
+              "Mental Health"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "Mental health is blacksmithing: heat (challenge), shape (practice), quench (capture). Your app is just the heating. Users need the full forge.",
+      "mental_models_used": [
+        "Transformational Framing",
+        "Rhythm Design",
+        "Capture at Peak"
+      ]
+    },
+    {
+      "id": "S050",
+      "title": "The Puppeteer's Remote Team Management",
+      "user": "Remote team manager, marionette artist, 40",
+      "situation": "Managing 15 remote employees across 8 time zones. Feels like controlling puppets - pulls strings, no real connection. Team disengaged.",
+      "domains_triggered": [
+        "Management",
+        "Puppetry",
+        "Psychology",
+        "Theater",
+        "Remote Work"
+      ],
+      "ai_synthesis": {
+        "cross_domain_solutions": [
+          {
+            "angle": "Bunraku Collaborative Puppetry",
+            "solution": "Japanese Bunraku: 3 puppeteers per doll, all visible. Remote work: make the 'strings' visible. Share your decision process, constraints, pressures. Transparency replaces control.",
+            "domains": [
+              "Puppetry",
+              "Management"
+            ]
+          },
+          {
+            "angle": "Puppet as Extension",
+            "solution": "Puppeteers project emotion through puppets. Remote: your Slack messages, emails ARE your puppet. How you 'move' (write) creates emotion. Craft every message like a puppeteer crafts gesture.",
+            "domains": [
+              "Puppetry",
+              "Communication"
+            ]
+          },
+          {
+            "angle": "Audience Participation",
+            "solution": "Ventriloquism involves audience. Remote: stop performing AT team, start performing WITH them. Shared documents, real-time collaboration, 'yes, and' in meetings. Puppetry becomes play.",
+            "domains": [
+              "Puppetry",
+              "Remote Work"
+            ]
+          },
+          {
+            "angle": "Cut the Strings",
+            "solution": "Best puppet moment: when puppet seems alive, strings invisible. Ultimate remote management: team functions so well they don't feel managed. Your goal is invisibility, not control.",
+            "domains": [
+              "Puppetry",
+              "Management"
+            ]
+          }
+        ]
+      },
+      "unpredictable_insight": "You're not a puppeteer; you're trying to be. Great remote management is like great puppetry - the audience forgets the strings exist.",
+      "mental_models_used": [
+        "Transparency over Control",
+        "Performance as Communication",
+        "Invisible Management"
+      ]
+    }
+  ]
+}

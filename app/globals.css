@@ -38,3 +38,436 @@ body {
 .excalidraw {
   --color-primary: var(--polymath-accent) !important;
 }
+
+/* --------------------------------------------------------------------- */
+/* Apple-tier additive tokens — non-destructive (does not touch polymath) */
+/* --------------------------------------------------------------------- */
+:root {
+  --apple-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --apple-glass-bg: rgba(20, 22, 32, 0.55);
+  --apple-glass-bg-strong: rgba(20, 22, 32, 0.78);
+  --apple-glass-bg-light: rgba(255, 255, 255, 0.04);
+  --apple-hairline: rgba(255, 255, 255, 0.07);
+  --apple-hairline-strong: rgba(255, 255, 255, 0.14);
+  --apple-text: rgba(245, 245, 247, 0.96);
+  --apple-text-secondary: rgba(245, 245, 247, 0.62);
+  --apple-text-tertiary: rgba(245, 245, 247, 0.38);
+  --apple-accent: #5b8dff;
+  --apple-accent-soft: rgba(91, 141, 255, 0.16);
+  --apple-success: #30d158;
+  --apple-warning: #ff9f0a;
+  --apple-danger: #ff453a;
+  --apple-radius-sm: 8px;
+  --apple-radius-md: 14px;
+  --apple-radius-lg: 22px;
+  --apple-radius-xl: 28px;
+  --apple-shadow-1: 0 1px 3px rgba(0,0,0,0.18), 0 2px 12px rgba(0,0,0,0.08);
+  --apple-shadow-2: 0 4px 14px rgba(0,0,0,0.22), 0 12px 40px rgba(0,0,0,0.18);
+  --apple-shadow-glow: 0 0 30px rgba(91, 141, 255, 0.18);
+}
+
+.apple-font {
+  font-family: var(--apple-font);
+  letter-spacing: -0.01em;
+  font-feature-settings: "ss01", "cv11";
+}
+.apple-display {
+  font-family: var(--apple-font);
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+.apple-card {
+  background: var(--apple-glass-bg);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid var(--apple-hairline);
+  border-radius: var(--apple-radius-lg);
+  box-shadow: var(--apple-shadow-1);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+.apple-card:hover {
+  border-color: var(--apple-hairline-strong);
+  box-shadow: var(--apple-shadow-2);
+}
+
+.apple-card-strong {
+  background: var(--apple-glass-bg-strong);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid var(--apple-hairline-strong);
+  border-radius: var(--apple-radius-lg);
+}
+
+.apple-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--apple-glass-bg-light);
+  color: var(--apple-text-secondary);
+  border: 1px solid var(--apple-hairline);
+}
+
+.apple-button {
+  font-family: var(--apple-font);
+  font-weight: 590;
+  letter-spacing: -0.005em;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: var(--apple-accent);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.18) inset, 0 4px 12px rgba(91,141,255,0.35);
+  transition: transform 120ms ease, box-shadow 200ms ease, filter 200ms ease;
+  cursor: pointer;
+}
+.apple-button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.apple-button:active { transform: translateY(0); filter: brightness(0.96); }
+
+.apple-button-ghost {
+  font-family: var(--apple-font);
+  font-weight: 590;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--apple-glass-bg-light);
+  color: var(--apple-text);
+  border: 1px solid var(--apple-hairline);
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.apple-button-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--apple-hairline-strong);
+}
+
+.apple-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--apple-hairline-strong), transparent);
+}
+
+.apple-mesh-bg {
+  background:
+    radial-gradient(1200px 600px at 12% -10%, rgba(91,141,255,0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 10%, rgba(255, 102, 196, 0.10), transparent 60%),
+    radial-gradient(700px 700px at 50% 120%, rgba(48, 209, 88, 0.08), transparent 60%),
+    #07080f;
+}
+
+.apple-hairline-x { border-top: 1px solid var(--apple-hairline); }
+
+.apple-shimmer {
+  background: linear-gradient(110deg, transparent 8%, rgba(255,255,255,0.06) 18%, transparent 33%);
+  background-size: 200% 100%;
+  animation: appleShimmer 2.8s linear infinite;
+}
+@keyframes appleShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.apple-fade-in {
+  animation: appleFadeIn 420ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes appleFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.apple-slide-dots > button {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.25);
+  transition: width 280ms ease, background 280ms ease;
+}
+.apple-slide-dots > button[data-active="1"] {
+  width: 24px;
+  background: var(--apple-text);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 8px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.16); background-clip: padding-box; }
+
+/* --------------------------------------------------------------------- */
+/* Apple HIG system colors (Dark) + Material Design 3 tonal palette      */
+/* Additive only — does not touch existing apple-* or polymath-* tokens. */
+/* References: developer.apple.com/design/human-interface-guidelines/color */
+/*             m3.material.io · ixdf.org/literature/topics/color          */
+/* --------------------------------------------------------------------- */
+:root {
+  /* Apple HIG dark system colors (vivid) */
+  --hig-red:        #ff453a;
+  --hig-orange:     #ff9f0a;
+  --hig-yellow:     #ffd60a;
+  --hig-green:      #30d158;
+  --hig-mint:       #66d4cf;
+  --hig-teal:       #6ac4dc;
+  --hig-cyan:       #5ac8f5;
+  --hig-blue:       #0a84ff;
+  --hig-indigo:     #5e5ce6;
+  --hig-purple:     #bf5af2;
+  --hig-pink:       #ff375f;
+  --hig-brown:      #ac8e68;
+  --hig-gray:       #98989d;
+  --hig-gray-2:     #aeaeb2;
+  --hig-gray-3:     #c7c7cc;
+
+  /* MD3 tonal palette · primary (Polymath-tuned indigo→cobalt) */
+  --md-p-0:   #000000;
+  --md-p-10:  #0b1336;
+  --md-p-20:  #182253;
+  --md-p-30:  #283273;
+  --md-p-40:  #3c4796;
+  --md-p-50:  #5b6cff;
+  --md-p-60:  #7d8eff;
+  --md-p-70:  #a0adff;
+  --md-p-80:  #c3cbff;
+  --md-p-90:  #e2e6ff;
+  --md-p-95:  #f1f3ff;
+  --md-p-99:  #fbfbff;
+
+  /* MD3 tonal palette · secondary (calm teal) */
+  --md-s-10:  #001f24;
+  --md-s-20:  #003640;
+  --md-s-30:  #004f5b;
+  --md-s-40:  #006978;
+  --md-s-50:  #008497;
+  --md-s-60:  #00a0b6;
+  --md-s-70:  #44bdd5;
+  --md-s-80:  #6fd9f0;
+  --md-s-90:  #b6ebf6;
+
+  /* MD3 tonal palette · tertiary (warm coral-pink) */
+  --md-t-10:  #3a0017;
+  --md-t-20:  #5a112a;
+  --md-t-30:  #7a2540;
+  --md-t-40:  #9d3a58;
+  --md-t-50:  #c25072;
+  --md-t-60:  #df6f8e;
+  --md-t-70:  #ff8dab;
+  --md-t-80:  #ffafc6;
+  --md-t-90:  #ffd9e1;
+
+  /* MD3 surface elevations (dark) */
+  --md-surface-1: #0e1119;
+  --md-surface-2: #131725;
+  --md-surface-3: #161d2f;
+  --md-surface-4: #1a2238;
+  --md-surface-5: #1f2942;
+  --md-surface-tint: rgba(91,108,255,0.08);
+
+  /* MD3 / HIG state layers (interaction) */
+  --state-hover:    rgba(255,255,255,0.06);
+  --state-focus:    rgba(255,255,255,0.10);
+  --state-pressed:  rgba(255,255,255,0.12);
+  --state-selected: rgba(91,108,255,0.18);
+
+  /* WCAG AA on-color text pairs */
+  --on-primary:   #ffffff;
+  --on-secondary: #ffffff;
+  --on-tertiary:  #ffffff;
+  --on-surface:   #e6e8ee;
+  --on-surface-variant: #c4c7d2;
+
+  /* 8pt spacing scale */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+
+  /* MD3 type ramp */
+  --md-display-l: 600 56px/64px var(--apple-font);
+  --md-display-m: 600 44px/52px var(--apple-font);
+  --md-display-s: 600 36px/44px var(--apple-font);
+  --md-headline-l:600 32px/40px var(--apple-font);
+  --md-headline-m:600 28px/36px var(--apple-font);
+  --md-headline-s:600 24px/32px var(--apple-font);
+  --md-title-l:   600 22px/28px var(--apple-font);
+  --md-title-m:   600 16px/24px var(--apple-font);
+  --md-title-s:   600 14px/20px var(--apple-font);
+  --md-body-l:    400 16px/24px var(--apple-font);
+  --md-body-m:    400 14px/20px var(--apple-font);
+  --md-body-s:    400 12px/16px var(--apple-font);
+  --md-label-l:   600 14px/20px var(--apple-font);
+  --md-label-m:   600 12px/16px var(--apple-font);
+  --md-label-s:   600 11px/16px var(--apple-font);
+
+  /* MD3 motion easing + duration tokens */
+  --easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --easing-standard:   cubic-bezier(0.2, 0, 0, 1);
+  --easing-decel:      cubic-bezier(0, 0, 0, 1);
+  --easing-accel:      cubic-bezier(0.3, 0, 1, 1);
+  --dur-50:   50ms;
+  --dur-100:  100ms;
+  --dur-200:  200ms;
+  --dur-300:  300ms;
+  --dur-400:  400ms;
+  --dur-700:  700ms;
+}
+
+/* MD3 surface elevation utilities */
+.md-surface-1 { background: var(--md-surface-1); }
+.md-surface-2 { background: var(--md-surface-2); }
+.md-surface-3 { background: var(--md-surface-3); }
+.md-surface-4 { background: var(--md-surface-4); }
+.md-surface-5 { background: var(--md-surface-5); }
+
+/* MD3 type utility classes */
+.t-display-l   { font: var(--md-display-l);   letter-spacing: -0.022em; }
+.t-display-m   { font: var(--md-display-m);   letter-spacing: -0.018em; }
+.t-display-s   { font: var(--md-display-s);   letter-spacing: -0.012em; }
+.t-headline-l  { font: var(--md-headline-l);  letter-spacing: -0.008em; }
+.t-headline-m  { font: var(--md-headline-m);  letter-spacing: -0.006em; }
+.t-headline-s  { font: var(--md-headline-s);  letter-spacing: -0.004em; }
+.t-title-l     { font: var(--md-title-l); }
+.t-title-m     { font: var(--md-title-m); }
+.t-body-l      { font: var(--md-body-l); }
+.t-body-m      { font: var(--md-body-m); }
+.t-body-s      { font: var(--md-body-s); }
+.t-label-l     { font: var(--md-label-l); }
+.t-label-m     { font: var(--md-label-m); }
+.t-label-s     { font: var(--md-label-s); }
+
+/* HIG / MD3 semantic color helpers (dark) */
+.c-fg          { color: var(--apple-text); }
+.c-fg-secondary{ color: var(--apple-text-secondary); }
+.c-fg-tertiary { color: var(--apple-text-tertiary); }
+.c-primary     { color: var(--md-p-70); }
+.c-secondary   { color: var(--md-s-80); }
+.c-tertiary    { color: var(--md-t-80); }
+.c-success     { color: var(--hig-green); }
+.c-warning     { color: var(--hig-orange); }
+.c-danger      { color: var(--hig-red); }
+.c-info        { color: var(--hig-blue); }
+
+.bg-primary-container   { background: rgba(91,108,255,0.18); color: var(--md-p-90); }
+.bg-secondary-container { background: rgba(0,160,182,0.18); color: var(--md-s-90); }
+.bg-tertiary-container  { background: rgba(223,111,142,0.18); color: var(--md-t-90); }
+
+/* Buttons (MD3 filled / tonal / outlined / text) */
+.btn-filled {
+  font: var(--md-label-l);
+  padding: 10px 20px;
+  border-radius: 22px;
+  background: var(--md-p-50);
+  color: var(--on-primary);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  transition: background var(--dur-200) var(--easing-emphasized), transform var(--dur-100) var(--easing-emphasized), box-shadow var(--dur-200) var(--easing-emphasized);
+  cursor: pointer;
+}
+.btn-filled:hover { background: var(--md-p-60); box-shadow: 0 4px 12px rgba(91,108,255,0.35); }
+.btn-filled:active { transform: translateY(0.5px); background: var(--md-p-40); }
+
+.btn-tonal {
+  font: var(--md-label-l);
+  padding: 10px 20px;
+  border-radius: 22px;
+  background: var(--state-selected);
+  color: var(--md-p-90);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--dur-200) var(--easing-emphasized);
+}
+.btn-tonal:hover { background: rgba(91,108,255,0.26); }
+
+.btn-outlined {
+  font: var(--md-label-l);
+  padding: 9px 18px;
+  border-radius: 22px;
+  background: transparent;
+  color: var(--md-p-70);
+  border: 1px solid var(--apple-hairline-strong);
+  cursor: pointer;
+  transition: background var(--dur-200) var(--easing-emphasized), border-color var(--dur-200) var(--easing-emphasized);
+}
+.btn-outlined:hover { background: var(--state-hover); border-color: var(--md-p-70); }
+
+.btn-text {
+  font: var(--md-label-l);
+  padding: 9px 14px;
+  border-radius: 18px;
+  background: transparent;
+  color: var(--md-p-70);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-text:hover { background: var(--state-hover); }
+
+/* MD3 chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font: var(--md-label-m);
+  background: var(--state-hover);
+  color: var(--apple-text);
+  border: 1px solid var(--apple-hairline);
+}
+.chip[aria-selected="true"] {
+  background: var(--state-selected);
+  color: var(--md-p-90);
+  border-color: transparent;
+}
+
+/* Field (MD3 outlined text field, dark) */
+.field {
+  font: var(--md-body-l);
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+  color: var(--apple-text);
+  border: 1px solid var(--apple-hairline);
+  outline: none;
+  transition: border-color var(--dur-200) var(--easing-emphasized), box-shadow var(--dur-200) var(--easing-emphasized);
+}
+.field:focus {
+  border-color: var(--md-p-60);
+  box-shadow: 0 0 0 4px rgba(91,108,255,0.18);
+}
+
+/* Focus ring (accessibility) */
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(91,108,255,0.45), 0 0 0 5px rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+
+/* MD3 motion utilities */
+.motion-emphasized { transition-timing-function: var(--easing-emphasized); transition-duration: var(--dur-300); }
+.motion-standard   { transition-timing-function: var(--easing-standard);   transition-duration: var(--dur-200); }
+
+/* MD3 elevation shadows (5 tiers) */
+.elev-1 { box-shadow: 0 1px 2px rgba(0,0,0,0.30), 0 1px 3px 1px rgba(0,0,0,0.15); }
+.elev-2 { box-shadow: 0 1px 2px rgba(0,0,0,0.30), 0 2px 6px 2px rgba(0,0,0,0.15); }
+.elev-3 { box-shadow: 0 1px 3px rgba(0,0,0,0.30), 0 4px 8px 3px rgba(0,0,0,0.15); }
+.elev-4 { box-shadow: 0 2px 3px rgba(0,0,0,0.30), 0 6px 10px 4px rgba(0,0,0,0.15); }
+.elev-5 { box-shadow: 0 4px 4px rgba(0,0,0,0.30), 0 8px 12px 6px rgba(0,0,0,0.15); }
+
+/* Selection */
+::selection {
+  background: rgba(91,108,255,0.32);
+  color: #ffffff;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .apple-fade-in, .apple-shimmer, .motion-emphasized, .motion-standard {
+    animation: none !important;
+    transition: none !important;
+  }
+}

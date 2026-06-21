@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "description": "AI-powered daily decision and priority framework based on C-suite/scientific methodologies",
+    "methodologies_referenced": [
+      "Charlie Munger's Mental Models",
+      "Ray Dalio's Principles",
+      "Jeff Bezos's Decision Framework",
+      "FBI Critical Thinking",
+      "NASA Risk Assessment",
+      "Socratic Method",
+      "OODA Loop (Military)",
+      "Pre-Mortem Analysis"
+    ]
+  },
+  "frameworks": [
+    {
+      "id": "fw_morning",
+      "name": "Morning Priority Synthesis",
+      "description": "Daily priority setting based on AI analysis of knowledge graph and goals",
+      "trigger": "Morning (user-defined time)",
+      "questions": [
+        {
+          "id": "q_001",
+          "category": "Plan Review",
+          "question": "What was the primary plan you set for yourself yesterday?",
+          "type": "open_response",
+          "ai_analysis": "Compares stated plan with actual captured activities",
+          "mental_model": "Consistency Tendency (mm_005)"
+        },
+        {
+          "id": "q_002",
+          "category": "Dependency Check",
+          "question": "Yesterday you noted X was happening. Is Y (the dependent task) now ready to proceed?",
+          "type": "conditional_yes_no",
+          "ai_analysis": "Links related tasks from knowledge graph",
+          "mental_model": "Second-Order Thinking (mm_049)"
+        },
+        {
+          "id": "q_003",
+          "category": "Information Verification",
+          "question": "Person X told you about [topic]. Have you verified that information? How complete is your understanding?",
+          "type": "scale_1_5",
+          "ai_analysis": "Cross-references with research agent findings",
+          "mental_model": "Authority-Misinfluence (mm_020)"
+        },
+        {
+          "id": "q_004",
+          "category": "Utility Assessment",
+          "question": "The information from X about [topic] - how is it useful across your domains: Health, Career, Relationships, Learning, Finances?",
+          "type": "multi_domain_rating",
+          "ai_analysis": "Maps utility to user's domain knowledge graph",
+          "mental_model": "Opportunity Cost (mm_050)"
+        },
+        {
+          "id": "q_005",
+          "category": "Priority Ranking",
+          "question": "Among tasks X, Y, and Z - which comes first? How does each affect the others if delayed?",
+          "type": "ranking_with_reasoning",
+          "ai_analysis": "Builds dependency map, suggests optimal ordering",
+          "mental_model": "Decision Trees (mm_051)"
+        },
+        {
+          "id": "q_006",
+          "category": "Inversion Check",
+          "question": "If you were to fail today, what would be the single biggest cause? How can you eliminate that risk?",
+          "type": "open_response",
+          "ai_analysis": "Stores failure modes, builds personal risk profile",
+          "mental_model": "Inversion (mm_047)"
+        },
+        {
+          "id": "q_007",
+          "category": "Energy Alignment",
+          "question": "What type of work matches your current energy level? Analytical, Creative, Administrative, Social, Physical?",
+          "type": "energy_matching",
+          "ai_analysis": "Suggests task types based on time-of-day patterns",
+          "mental_model": "Circle of Competence (mm_048)"
+        }
+      ]
+    },
+    {
+      "id": "fw_steel_man",
+      "name": "Steelmanning & Opposition Thinking",
+      "description": "Force users to strengthen opposing views before making decisions",
+      "trigger": "Before major decisions or when conflict detected",
+      "questions": [
+        {
+          "id": "q_008",
+          "question": "You want to do X. What would someone very smart who disagrees with you say?",
+          "type": "open_response",
+          "ai_analysis": "Uses research agent to find counter-arguments",
+          "mental_model": "Steel-Manning (mm_054)"
+        },
+        {
+          "id": "q_009",
+          "question": "What's the strongest evidence that you're wrong about this?",
+          "type": "open_response",
+          "ai_analysis": "Searches for disconfirming evidence",
+          "mental_model": "Confirmation Bias Override"
+        },
+        {
+          "id": "q_010",
+          "question": "If you had to bet your life savings on the opposite outcome, what evidence would you need?",
+          "type": "open_response",
+          "ai_analysis": "Calibrates confidence level",
+          "mental_model": "Skin in the Game (Taleb)"
+        }
+      ]
+    },
+    {
+      "id": "fw_pre_mortem",
+      "name": "Pre-Mortem Analysis",
+      "description": "Imagine future failure and work backward to prevent it",
+      "trigger": "Weekly or before major projects",
+      "questions": [
+        {
+          "id": "q_011",
+          "question": "It's 6 months from now and this project/decision failed spectacularly. What went wrong? List 3 things.",
+          "type": "list_response",
+          "ai_analysis": "Builds failure mode database for user",
+          "mental_model": "Pre-Mortem (mm_052)"
+        },
+        {
+          "id": "q_012",
+          "question": "For each failure mode: What one action today would prevent this?",
+          "type": "action_mapping",
+          "ai_analysis": "Creates preventive action checklist",
+          "mental_model": "Inversion (mm_047)"
+        },
+        {
+          "id": "q_013",
+          "question": "What early warning signals should you watch for?",
+          "type": "list_response",
+          "ai_analysis": "Sets up monitoring triggers",
+          "mental_model": "Feedback Loops (mm_033)"
+        }
+      ]
+    },
+    {
+      "id": "fw_cross_domain",
+      "name": "Cross-Domain Application",
+      "description": "Forces transfer learning between domains",
+      "trigger": "When new concept captured or daily prompt",
+      "questions": [
+        {
+          "id": "q_014",
+          "question": "You learned [CONCEPT] in [DOMAIN_A]. How would this apply to [DOMAIN_B] where you also spend time?",
+          "type": "transfer_response",
+          "ai_analysis": "Suggests domain pairings from knowledge graph",
+          "mental_model": "Transfer Learning (psychology)"
+        },
+        {
+          "id": "q_015",
+          "question": "If you explained [CONCEPT] using an analogy from a completely different field, what would it be?",
+          "type": "creative_analogy",
+          "ai_analysis": "Builds novel connections in knowledge graph",
+          "mental_model": "First Principles Thinking"
+        },
+        {
+          "id": "q_016",
+          "question": "What would happen if you applied the OPPOSITE of this concept in another domain?",
+          "type": "inversion_creative",
+          "ai_analysis": "Generates counter-intuitive insights",
+          "mental_model": "Inversion (mm_047)"
+        }
+      ]
+    },
+    {
+      "id": "fw_reflection",
+      "name": "Evening Reflection & Calibration",
+      "description": "Daily review to build learning loops",
+      "trigger": "Evening",
+      "questions": [
+        {
+          "id": "q_017",
+          "question": "What was your best decision today? Why?",
+          "type": "open_response",
+          "ai_analysis": "Identifies successful patterns",
+          "mental_model": "Positive Reinforcement"
+        },
+        {
+          "id": "q_018",
+          "question": "What would you do differently if you could relive today?",
+          "type": "open_response",
+          "ai_analysis": "Builds regret-minimization profile",
+          "mental_model": "Regret Minimization Framework (Bezos)"
+        },
+        {
+          "id": "q_019",
+          "question": "Did you use any mental model today consciously? Which one?",
+          "type": "mental_model_identification",
+          "ai_analysis": "Tracks mental model adoption over time",
+          "mental_model": "Metacognition"
+        },
+        {
+          "id": "q_020",
+          "question": "Rate your day: Energy (1-10), Productivity (1-10), Learning (1-10), Connection (1-10). What correlated with the highest scores?",
+          "type": "multi_metric",
+          "ai_analysis": "Finds personal optimization patterns",
+          "mental_model": "Feedback Loops (mm_033)"
+        }
+      ]
+    }
+  ],
+  "sample_daily_flow": {
+    "user_id": "usr_001",
+    "date": "2024-01-22",
+    "morning_session": {
+      "ai_priority_list": [
+        {
+          "rank": 1,
+          "task": "Review CS decomposition notes before class quiz",
+          "reasoning": "High confidence test, recent learning, core concept"
+        },
+        {
+          "rank": 2,
+          "task": "Practice violin chord progression (15 min)",
+          "reasoning": "Spaced repetition optimal at this interval"
+        },
+        {
+          "rank": 3,
+          "task": "Draft response to gym coach about schedule conflict",
+          "reasoning": "Unresolved dependency blocking training plan"
+        },
+        {
+          "rank": 4,
+          "task": "Read business case study on transaction fees",
+          "reasoning": "Connects to recent Skittles game learning, high transfer potential"
+        }
+      ],
+      "socratic_prompts_used": [
+        "q_001",
+        "q_004",
+        "q_005",
+        "q_006"
+      ]
+    },
+    "midday_capture": [
+      {
+        "time": "10:30",
+        "type": "class_notes",
+        "content": "Professor explained recursion as 'dream within a dream' - need to connect to decomposition",
+        "auto_linked_to": [
+          "node_001",
+          "node_004"
+        ]
+      },
+      {
+        "time": "14:00",
+        "type": "observation",
+        "content": "Saw construction team using modular prefab components - like software modules!",
+        "auto_linked_to": [
+          "node_002"
+        ]
+      }
+    ],
+    "evening_reflection": {
+      "best_decision": "Used audience adaptation framework from English class in group project discussion",
+      "cross_domain_connection": "Recursion in CS \u2192 Music (fractal compositions) \u2192 Business (recursive customer feedback)",
+      "mental_model_used": "Transfer Learning",
+      "energy_score": 8,
+      "productivity_score": 7,
+      "learning_score": 9,
+      "connection_score": 8
+    }
+  }
+}
